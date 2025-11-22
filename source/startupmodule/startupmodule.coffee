@@ -5,11 +5,10 @@ import { createLogFunctions } from "thingy-debug"
 #endregion
 
 ############################################################
-import * as sci from "./scimodule.js"
+import * as tradovate from "./tradovatemodule.js"
 
 ############################################################
 export serviceStartup = ->
     log "serviceStartup"
-    # other startup moves
-    sci.prepareAndExpose()
+    await tradovate.simpleTest()
     return
