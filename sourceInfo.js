@@ -1,5 +1,7 @@
 module.exports = {
     getDependencies: () => {
-        return { }
+        return { 
+            "cached-persistentstate": "^0.0.1",
+        }
     }
 }
