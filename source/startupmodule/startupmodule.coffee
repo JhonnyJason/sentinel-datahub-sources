@@ -10,5 +10,5 @@ import * as tradovate from "./tradovatemodule.js"
 ############################################################
 export serviceStartup = ->
     log "serviceStartup"
-    await tradovate.simpleTest()
+    # await tradovate.startSession()
     return
