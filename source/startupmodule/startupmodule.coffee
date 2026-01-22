@@ -6,9 +6,11 @@ import { createLogFunctions } from "thingy-debug"
 
 ############################################################
 import * as tradovate from "./tradovatemodule.js"
+import * as mrktStack from "./marketstackmodule.js"
 
 ############################################################
 export serviceStartup = ->
     log "serviceStartup"
     # await tradovate.startSession()
+    await mrktStack.executeSpecialMission()
     return
