@@ -2,11 +2,12 @@ import { addModulesToDebug } from "thingy-debug"
 
 ############################################################
 modulesToDebug = {
-    bugsnitch: true
+    # bugsnitch: true
+    datamodule: true
     marketstackmodule: true
     scimodule: true
     startupmodule: true
-    tradovatemodule: true
+    # tradovatemodule: true
 }
 
 addModulesToDebug(modulesToDebug)

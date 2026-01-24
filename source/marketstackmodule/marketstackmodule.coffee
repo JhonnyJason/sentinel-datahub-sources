@@ -19,7 +19,9 @@ currenciesDataPath = path.resolve(".", "currencies.json")
 symbolsData = []
 currenciesData = []
 
-
+############################################################
+# to protect a general rate limit - we need to block the API
+apiBlocked = false 
 
 ############################################################
 export initialize = (c) ->
@@ -27,6 +29,234 @@ export initialize = (c) ->
     if c.mrktStackSecret? then accessToken = c.mrktStackSecret
     if c.urlMrktStack? then apiURL = c.urlMrktStack
     return
+
+
+############################################################
+#region Stock EOD API - Pull Model
+
+############################################################
+# Main export: Get all available history for a ticker
+# Returns: { dataSet, reachedHistoryStart, reachedPlanLimit }
+export getStockAllHistory = (ticker) ->
+    log "getStockAllHistory: #{ticker}"
+
+    result = { dataSet: null, reachedHistoryStart: false, reachedPlanLimit: false }
+
+    # Fetch all pages
+    fetchResult = await fetchAllEodPages(ticker)
+    return fetchResult unless fetchResult? # when API is blocked, we receive null
+
+    if fetchResult.error?
+        if isPlanLimitError(fetchResult.error)
+            result.reachedPlanLimit = true
+            log "We have reached our Plan limit!"
+        else
+            log "API error: #{fetchResult.error.code}: #{fetchResult.error.message}"
+        return result
+
+    if fetchResult.data.length == 0
+        log "We did not receive any data!"
+        result.reachedHistoryStart = true  # No data means we've got everything (nothing)
+        return result
+
+    # Normalize to DataSet format
+    dataSet = normalizeEodResponse(fetchResult.data, ticker)
+
+    # Gap-fill missing days
+    dataSet = gapFillDataSet(dataSet)
+
+    result.dataSet = dataSet
+    log "We should have found all completed data!"
+    
+    result.reachedHistoryStart = true  # We fetched all available data
+
+    return result
+
+
+############################################################
+# Fetch all EOD pages for a ticker (handles pagination)
+fetchAllEodPages = (ticker) ->
+    log "fetchAllEodPages: #{ticker}"
+    if apiBlocked then return null
+    try
+        apiBlocked = true
+
+        allData = []
+        offset = 0
+        limit = 1000
+
+        startMS = performance.now()
+        counter = 0
+
+        loop
+            pageResult = await fetchEodPage(ticker, { offset, limit })
+            counter++
+
+            # Check for errors
+            err = pageResult.error 
+            if err? then return { error: err, data: allData }
+
+            # Accumulate data
+            allData.push(...pageResult.data)
+
+            # Check if we have all data
+            pagination = pageResult.pagination
+            if allData.length >= pagination.total then return {data: allData}
+
+            # Prepare next page
+            offset += limit
+
+            # check timing and wait if we run the risk of exceeding the rate-limit
+            # the general rate limit is 5 API calls /s - check timing every 5th call
+            # if we are below 1s wait until the second has ended - then reset.
+            # This way we may run
+            if counter % 5 == 0
+                timeMS = performance.now() - startMS
+                # make it 1001ms to combat if our clock is 1promille faster
+                missingPeriodMS =  1001 - timeMS 
+                if missingPeriodMS > 0 then await waitMS(missingPeriodMS)
+                log "counter: #{counter} => missingPerdiodMS: #{missingPeriodMS}"
+                startMS = performance.now()
+
+    catch err then log err
+    finally apiBlocked = false
+
+############################################################
+# Fetch single EOD page
+fetchEodPage = (ticker, { offset, limit }) ->
+    log "fetchEodPage: #{ticker} offset=#{offset}"
+
+    # Normalize ticker (BRK.B → BRK-B)
+    apiTicker = ticker.replace(/\./g, "-")
+
+    params = new URLSearchParams({
+        access_key: accessToken
+        symbols: apiTicker
+        sort: "ASC"  # Chronological order (oldest first)
+        limit: limit.toString()
+        offset: offset.toString()
+    })
+
+    url = "#{apiURL}/eod?#{params.toString()}"
+
+    try
+        response = await fetch(url)
+    catch err
+        log "Network error: #{err.message}"
+        return { error: { code: "network_error", message: err.message } }
+
+    try
+        body = await response.json()
+
+        if body.error?
+            return { error: body.error }
+
+        return { data: body.data, pagination: body.pagination }
+    catch err
+        log "Parse error: #{err.message}"
+        return { error: { code: "parse_error", message: err.message } }
+
+
+############################################################
+# Normalize API response to DataSet format
+# Input: array of EOD records from API
+# Output: { meta: { startDate, endDate, interval }, data: [[h,l,c], ...] }
+normalizeEodResponse = (apiData, ticker) ->
+    log "normalizeEodResponse: #{apiData.length} records"
+
+    if apiData.length == 0
+        return null
+
+    # API data is sorted ASC (oldest first) - verify and extract
+    # Each record: { date, symbol, open, high, low, close, volume, exchange, price_currency }
+
+    # Extract dates and price data
+    dataPoints = []
+    for record in apiData
+        # Extract just the date part (YYYY-MM-DD) from potential ISO timestamp
+        dateStr = record.date.substring(0, 10)
+        dataPoints.push({
+            date: dateStr
+            high: record.high
+            low: record.low
+            close: record.close
+        })
+
+    # Build DataSet
+    startDate = dataPoints[0].date
+    endDate = dataPoints[dataPoints.length - 1].date
+
+    # Convert to array format [high, low, close]
+    data = dataPoints.map((p) -> [p.high, p.low, p.close])
+
+    return {
+        meta: { startDate, endDate, interval: "1d" }
+        data: data
+        # Keep raw dates for gap-filling (will be removed after)
+        _dates: dataPoints.map((p) -> p.date)
+    }
+
+
+############################################################
+# Fill gaps in data (missing trading days)
+# Missing days get [lastClose, lastClose, lastClose]
+gapFillDataSet = (dataSet) ->
+    log "gapFillDataSet"
+
+    if !dataSet? or dataSet.data.length == 0
+        return dataSet
+
+    { meta, data, _dates } = dataSet
+
+    # Build date → dataPoint map
+    dateMap = {}
+    for i in [0..._dates.length]
+        dateMap[_dates[i]] = data[i]
+
+    # Generate all dates in range
+    allDates = generateDateRange(meta.startDate, meta.endDate)
+
+    # Fill gaps
+    filledData = []
+    lastClose = data[0][2]  # Initial close value
+
+    for date in allDates
+        if dateMap[date]?
+            filledData.push(dateMap[date])
+            lastClose = dateMap[date][2]
+        else
+            # Gap: use last close for all values
+            filledData.push([lastClose, lastClose, lastClose])
+
+    return {
+        meta: meta
+        data: filledData
+    }
+
+
+############################################################
+# Generate array of date strings from start to end (inclusive)
+generateDateRange = (startDate, endDate) ->
+    dates = []
+    current = new Date(startDate + "T00:00:00Z")
+    end = new Date(endDate + "T00:00:00Z")
+
+    while current <= end
+        dates.push(current.toISOString().substring(0, 10))
+        current.setUTCDate(current.getUTCDate() + 1)
+
+    return dates
+
+
+############################################################
+# Check if error indicates plan limit restriction
+isPlanLimitError = (error) ->
+    # MarketStack returns specific error codes for plan limits
+    # Common codes: "function_access_restricted", "https_access_restricted"
+    planLimitCodes = ["function_access_restricted", "https_access_restricted", "usage_limit_reached"]
+    return error.code in planLimitCodes
+
+#endregion
 
 ############################################################
 export executeSpecialMission = ->
