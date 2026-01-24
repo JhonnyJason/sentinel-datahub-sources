@@ -1,0 +1,3202 @@
+[
+  {
+    "symbol": "ASML.AS",
+    "name": "ASML HLDG"
+  },
+  {
+    "symbol": "ROG.S",
+    "name": "ROCHE HLDG P"
+  },
+  {
+    "symbol": "AZN.L",
+    "name": "ASTRAZENECA"
+  },
+  {
+    "symbol": "HSBA.L",
+    "name": "HSBC"
+  },
+  {
+    "symbol": "NOVN.S",
+    "name": "NOVARTIS"
+  },
+  {
+    "symbol": "NESN.S",
+    "name": "NESTLE"
+  },
+  {
+    "symbol": "SAPG.DE",
+    "name": "SAP"
+  },
+  {
+    "symbol": "SHEL.AS",
+    "name": "SHELL"
+  },
+  {
+    "symbol": "SIEGn.DE",
+    "name": "SIEMENS"
+  },
+  {
+    "symbol": "LVMH.PA",
+    "name": "LVMH MOET HENNESSY"
+  },
+  {
+    "symbol": "SAN.MC",
+    "name": "BCO SANTANDER"
+  },
+  {
+    "symbol": "ALVG.DE",
+    "name": "ALLIANZ"
+  },
+  {
+    "symbol": "NOVOb.CO",
+    "name": "NOVO NORDISK B"
+  },
+  {
+    "symbol": "SCHN.PA",
+    "name": "SCHNEIDER ELECTRIC"
+  },
+  {
+    "symbol": "ULVR.L",
+    "name": "UNILEVER PLC"
+  },
+  {
+    "symbol": "UBSG.S",
+    "name": "UBS GROUP"
+  },
+  {
+    "symbol": "TTEF.PA",
+    "name": "TOTALENERGIES"
+  },
+  {
+    "symbol": "AIR.PA",
+    "name": "AIRBUS"
+  },
+  {
+    "symbol": "BBVA.MC",
+    "name": "BCO BILBAO VIZCAYA ARGENTARIA"
+  },
+  {
+    "symbol": "IBE.MC",
+    "name": "IBERDROLA"
+  },
+  {
+    "symbol": "SAF.PA",
+    "name": "SAFRAN"
+  },
+  {
+    "symbol": "RR.L",
+    "name": "ROLLS ROYCE HLDG"
+  },
+  {
+    "symbol": "CRDI.MI",
+    "name": "UNICREDIT"
+  },
+  {
+    "symbol": "BATS.L",
+    "name": "BRITISH AMERICAN TOBACCO"
+  },
+  {
+    "symbol": "ABBN.S",
+    "name": "ABB"
+  },
+  {
+    "symbol": "CFR.S",
+    "name": "CIE FINANCIERE RICHEMONT"
+  },
+  {
+    "symbol": "DTEGn.DE",
+    "name": "DEUTSCHE TELEKOM"
+  },
+  {
+    "symbol": "ZURN.S",
+    "name": "ZURICH INSURANCE GROUP"
+  },
+  {
+    "symbol": "SASY.PA",
+    "name": "SANOFI"
+  },
+  {
+    "symbol": "ENR1n.DE",
+    "name": "SIEMENS ENERGY"
+  },
+  {
+    "symbol": "AIRP.PA",
+    "name": "AIR LIQUIDE"
+  },
+  {
+    "symbol": "ISP.MI",
+    "name": "INTESA SANPAOLO"
+  },
+  {
+    "symbol": "OREP.PA",
+    "name": "L'OREAL"
+  },
+  {
+    "symbol": "GSK.L",
+    "name": "GSK"
+  },
+  {
+    "symbol": "BNPP.PA",
+    "name": "BNP PARIBAS"
+  },
+  {
+    "symbol": "ESLX.PA",
+    "name": "ESSILORLUXOTTICA"
+  },
+  {
+    "symbol": "BP.L",
+    "name": "BP"
+  },
+  {
+    "symbol": "BARC.L",
+    "name": "BARCLAYS"
+  },
+  {
+    "symbol": "HRMS.PA",
+    "name": "HERMES INTERNATIONAL"
+  },
+  {
+    "symbol": "RIO.L",
+    "name": "RIO TINTO"
+  },
+  {
+    "symbol": "MUVGn.DE",
+    "name": "MUENCHENER RUECK"
+  },
+  {
+    "symbol": "AXAF.PA",
+    "name": "AXA"
+  },
+  {
+    "symbol": "INGA.AS",
+    "name": "ING GRP"
+  },
+  {
+    "symbol": "RHMG.DE",
+    "name": "RHEINMETALL"
+  },
+  {
+    "symbol": "SGEF.PA",
+    "name": "VINCI"
+  },
+  {
+    "symbol": "ENEI.MI",
+    "name": "ENEL"
+  },
+  {
+    "symbol": "NG.L",
+    "name": "NATIONAL GRID"
+  },
+  {
+    "symbol": "LLOY.L",
+    "name": "LLOYDS BANKING GRP"
+  },
+  {
+    "symbol": "PRX.AS",
+    "name": "Prosus"
+  },
+  {
+    "symbol": "REL.L",
+    "name": "RELX PLC"
+  },
+  {
+    "symbol": "DBKGn.DE",
+    "name": "DEUTSCHE BANK"
+  },
+  {
+    "symbol": "ITX.MC",
+    "name": "Industria de Diseno Textil SA"
+  },
+  {
+    "symbol": "NWG.L",
+    "name": "NATWEST GROUP"
+  },
+  {
+    "symbol": "BAES.L",
+    "name": "BAE SYSTEMS"
+  },
+  {
+    "symbol": "ABI.BR",
+    "name": "ANHEUSER-BUSCH INBEV"
+  },
+  {
+    "symbol": "INVEb.ST",
+    "name": "INVESTOR B"
+  },
+  {
+    "symbol": "SOGN.PA",
+    "name": "GRP SOCIETE GENERALE"
+  },
+  {
+    "symbol": "NDAFI.HE",
+    "name": "NORDEA BANK"
+  },
+  {
+    "symbol": "LSEG.L",
+    "name": "LONDON STOCK EXCHANGE"
+  },
+  {
+    "symbol": "DANO.PA",
+    "name": "DANONE"
+  },
+  {
+    "symbol": "IFXGn.DE",
+    "name": "INFINEON TECHNOLOGIES"
+  },
+  {
+    "symbol": "CPG.L",
+    "name": "COMPASS GRP"
+  },
+  {
+    "symbol": "RKT.L",
+    "name": "RECKITT BENCKISER GRP"
+  },
+  {
+    "symbol": "GLEN.L",
+    "name": "GLENCORE PLC"
+  },
+  {
+    "symbol": "HOLN.S",
+    "name": "Holcim"
+  },
+  {
+    "symbol": "ARGX.BR",
+    "name": "ARGENX"
+  },
+  {
+    "symbol": "VOLVb.ST",
+    "name": "VOLVO B"
+  },
+  {
+    "symbol": "SGOB.PA",
+    "name": "SAINT GOBAIN"
+  },
+  {
+    "symbol": "MBGn.DE",
+    "name": "MERCEDES-BENZ GROUP"
+  },
+  {
+    "symbol": "DSV.CO",
+    "name": "DSV"
+  },
+  {
+    "symbol": "DHLn.DE",
+    "name": "DEUTSCHE POST"
+  },
+  {
+    "symbol": "SRENH.S",
+    "name": "SWISS REINSURANCE COMPANY"
+  },
+  {
+    "symbol": "DB1Gn.DE",
+    "name": "DEUTSCHE BOERSE"
+  },
+  {
+    "symbol": "ENGIE.PA",
+    "name": "ENGIE"
+  },
+  {
+    "symbol": "DGE.L",
+    "name": "DIAGEO"
+  },
+  {
+    "symbol": "ADYEN.AS",
+    "name": "ADYEN"
+  },
+  {
+    "symbol": "LONN.S",
+    "name": "LONZA"
+  },
+  {
+    "symbol": "BASFn.DE",
+    "name": "BASF"
+  },
+  {
+    "symbol": "ATCOa.ST",
+    "name": "ATLAS COPCO A"
+  },
+  {
+    "symbol": "GASI.MI",
+    "name": "ASSICURAZIONI GENERALI"
+  },
+  {
+    "symbol": "AAL.L",
+    "name": "ANGLO AMERICAN"
+  },
+  {
+    "symbol": "RACE.MI",
+    "name": "FERRARI"
+  },
+  {
+    "symbol": "HLN.L",
+    "name": "HALEON"
+  },
+  {
+    "symbol": "STAN.L",
+    "name": "STANDARD CHARTERED"
+  },
+  {
+    "symbol": "III.L",
+    "name": "3I GROUP PLC."
+  },
+  {
+    "symbol": "CABK.MC",
+    "name": "CAIXABANK"
+  },
+  {
+    "symbol": "BAYGn.DE",
+    "name": "BAYER"
+  },
+  {
+    "symbol": "EONGn.DE",
+    "name": "E.ON"
+  },
+  {
+    "symbol": "EXPN.L",
+    "name": "EXPERIAN"
+  },
+  {
+    "symbol": "ALCC.S",
+    "name": "ALCON"
+  },
+  {
+    "symbol": "PRU.L",
+    "name": "PRUDENTIAL"
+  },
+  {
+    "symbol": "LEGD.PA",
+    "name": "LEGRAND"
+  },
+  {
+    "symbol": "ASSAb.ST",
+    "name": "ASSA ABLOY"
+  },
+  {
+    "symbol": "TSCO.L",
+    "name": "TESCO"
+  },
+  {
+    "symbol": "ENI.MI",
+    "name": "ENI"
+  },
+  {
+    "symbol": "AD.AS",
+    "name": "AHOLD DELHAIZE"
+  },
+  {
+    "symbol": "ERST.VI",
+    "name": "ERSTE GROUP BANK"
+  },
+  {
+    "symbol": "RWEG.DE",
+    "name": "RWE"
+  },
+  {
+    "symbol": "SSE.L",
+    "name": "SCOTTISH & SOUTHERN ENERGY"
+  },
+  {
+    "symbol": "NOKIA.HE",
+    "name": "NOKIA"
+  },
+  {
+    "symbol": "SAND.ST",
+    "name": "SANDVIK"
+  },
+  {
+    "symbol": "UCB.BR",
+    "name": "UCB"
+  },
+  {
+    "symbol": "EQTAB.ST",
+    "name": "EQT"
+  },
+  {
+    "symbol": "ADSGn.DE",
+    "name": "ADIDAS"
+  },
+  {
+    "symbol": "HEIG.DE",
+    "name": "HEIDELBERG MATERIALS"
+  },
+  {
+    "symbol": "SEBa.ST",
+    "name": "SKANDINAVISKA ENSKILDA BK A"
+  },
+  {
+    "symbol": "AMA.MC",
+    "name": "AMADEUS IT GROUP"
+  },
+  {
+    "symbol": "ORAN.PA",
+    "name": "ORANGE"
+  },
+  {
+    "symbol": "SLHN.S",
+    "name": "SWISS LIFE HLDG"
+  },
+  {
+    "symbol": "SIKA.S",
+    "name": "SIKA"
+  },
+  {
+    "symbol": "DANSKE.CO",
+    "name": "DANSKE BANK"
+  },
+  {
+    "symbol": "SDZ.S",
+    "name": "SANDOZ GROUP"
+  },
+  {
+    "symbol": "SWEDa.ST",
+    "name": "SWEDBANK"
+  },
+  {
+    "symbol": "FER.MC",
+    "name": "FERROVIAL"
+  },
+  {
+    "symbol": "GALD.S",
+    "name": "GALDERMA GROUP N"
+  },
+  {
+    "symbol": "IMB.L",
+    "name": "IMPERIAL BRANDS"
+  },
+  {
+    "symbol": "BMWG.DE",
+    "name": "BMW"
+  },
+  {
+    "symbol": "GIVN.S",
+    "name": "GIVAUDAN"
+  },
+  {
+    "symbol": "SAMPO.HE",
+    "name": "SAMPO"
+  },
+  {
+    "symbol": "PRY.MI",
+    "name": "PRYSMIAN"
+  },
+  {
+    "symbol": "ASMI.AS",
+    "name": "ASM INTERNATIONAL"
+  },
+  {
+    "symbol": "CBKG.DE",
+    "name": "COMMERZBANK"
+  },
+  {
+    "symbol": "RYA.I",
+    "name": "RYANAIR"
+  },
+  {
+    "symbol": "AMRZ.S",
+    "name": "AMRIZE"
+  },
+  {
+    "symbol": "KBC.BR",
+    "name": "KBC GRP"
+  },
+  {
+    "symbol": "UMG.AS",
+    "name": "UMG"
+  },
+  {
+    "symbol": "ERICb.ST",
+    "name": "ERICSSON LM B"
+  },
+  {
+    "symbol": "AHT.L",
+    "name": "ASHTEAD GRP"
+  },
+  {
+    "symbol": "CAPP.PA",
+    "name": "CAP GEMINI"
+  },
+  {
+    "symbol": "KNEBV.HE",
+    "name": "KONE B"
+  },
+  {
+    "symbol": "AV.L",
+    "name": "AVIVA"
+  },
+  {
+    "symbol": "PGHN.S",
+    "name": "PARTNERS GRP HLDG"
+  },
+  {
+    "symbol": "VWS.CO",
+    "name": "VESTAS WIND SYSTEMS"
+  },
+  {
+    "symbol": "GEBN.S",
+    "name": "GEBERIT"
+  },
+  {
+    "symbol": "VOD.L",
+    "name": "VODAFONE GRP"
+  },
+  {
+    "symbol": "TCFP.PA",
+    "name": "THALES"
+  },
+  {
+    "symbol": "OTPB.BU",
+    "name": "OTP BANK"
+  },
+  {
+    "symbol": "PRTP.PA",
+    "name": "Kering"
+  },
+  {
+    "symbol": "VOWG_p.DE",
+    "name": "VOLKSWAGEN PREF"
+  },
+  {
+    "symbol": "PUBP.PA",
+    "name": "PUBLICIS GRP"
+  },
+  {
+    "symbol": "WLSNc.AS",
+    "name": "WOLTERS KLUWER"
+  },
+  {
+    "symbol": "HEXAb.ST",
+    "name": "HEXAGON B"
+  },
+  {
+    "symbol": "FREG.DE",
+    "name": "FRESENIUS"
+  },
+  {
+    "symbol": "MICP.PA",
+    "name": "MICHELIN"
+  },
+  {
+    "symbol": "HEIN.AS",
+    "name": "HEINEKEN"
+  },
+  {
+    "symbol": "BMPS.MI",
+    "name": "BANCA MONTE DEI PASCHI"
+  },
+  {
+    "symbol": "DTGGe.DE",
+    "name": "DAIMLER TRUCK"
+  },
+  {
+    "symbol": "DNB.OL",
+    "name": "DNB BANK"
+  },
+  {
+    "symbol": "LDOF.MI",
+    "name": "LEONARDO"
+  },
+  {
+    "symbol": "VIE.PA",
+    "name": "VEOLIA ENVIRONNEMENT"
+  },
+  {
+    "symbol": "AIBG.I",
+    "name": "AIB GROUP"
+  },
+  {
+    "symbol": "CAGR.PA",
+    "name": "CREDIT AGRICOLE"
+  },
+  {
+    "symbol": "SHBa.ST",
+    "name": "SVENSKA HANDELSBANKEN A"
+  },
+  {
+    "symbol": "NXT.L",
+    "name": "NEXT"
+  },
+  {
+    "symbol": "STLAM.MI",
+    "name": "STELLANTIS"
+  },
+  {
+    "symbol": "MTXGn.DE",
+    "name": "MTU AERO ENGINES"
+  },
+  {
+    "symbol": "NSISb.CO",
+    "name": "NOVONESIS"
+  },
+  {
+    "symbol": "PHG.AS",
+    "name": "PHILIPS"
+  },
+  {
+    "symbol": "HBANC.S",
+    "name": "HELVETIA BALOISE HLDG"
+  },
+  {
+    "symbol": "REP.MC",
+    "name": "REPSOL"
+  },
+  {
+    "symbol": "IHG.L",
+    "name": "INTERCONTINENTAL HOTELS GRP"
+  },
+  {
+    "symbol": "VNAn.DE",
+    "name": "Vonovia SE"
+  },
+  {
+    "symbol": "ABNd.AS",
+    "name": "ABN AMRO BANK"
+  },
+  {
+    "symbol": "ACS.MC",
+    "name": "ACS"
+  },
+  {
+    "symbol": "AENA.MC",
+    "name": "AENA SME"
+  },
+  {
+    "symbol": "GMAB.CO",
+    "name": "GENMAB"
+  },
+  {
+    "symbol": "DAST.PA",
+    "name": "DASSAULT SYSTEMS"
+  },
+  {
+    "symbol": "PKO.WA",
+    "name": "PKO BANK"
+  },
+  {
+    "symbol": "MT.AS",
+    "name": "ARCELORMITTAL"
+  },
+  {
+    "symbol": "SABE.MC",
+    "name": "BCO SABADELL"
+  },
+  {
+    "symbol": "EQNR.OL",
+    "name": "EQUINOR"
+  },
+  {
+    "symbol": "NN.AS",
+    "name": "NN GROUP"
+  },
+  {
+    "symbol": "EMII.MI",
+    "name": "BPER Banca"
+  },
+  {
+    "symbol": "SAABb.ST",
+    "name": "SAAB B"
+  },
+  {
+    "symbol": "SGSN.S",
+    "name": "SGS"
+  },
+  {
+    "symbol": "LGEN.L",
+    "name": "LEGAL & GENERAL GRP"
+  },
+  {
+    "symbol": "HNRGn.DE",
+    "name": "HANNOVER RUECK"
+  },
+  {
+    "symbol": "MRCG.DE",
+    "name": "MERCK"
+  },
+  {
+    "symbol": "SCMN.S",
+    "name": "SWISSCOM"
+  },
+  {
+    "symbol": "HLMA.L",
+    "name": "HALMA"
+  },
+  {
+    "symbol": "KPN.AS",
+    "name": "KPN"
+  },
+  {
+    "symbol": "STMMI.MI",
+    "name": "STMICROELECTRONICS"
+  },
+  {
+    "symbol": "BIRG.I",
+    "name": "BANK OF IRELAND GROUP"
+  },
+  {
+    "symbol": "WRT1V.HE",
+    "name": "WARTSILA"
+  },
+  {
+    "symbol": "SHLG.DE",
+    "name": "SIEMENS HEALTHINEERS"
+  },
+  {
+    "symbol": "ANTO.L",
+    "name": "ANTOFAGASTA"
+  },
+  {
+    "symbol": "BAMI.MI",
+    "name": "BANCO BPM"
+  },
+  {
+    "symbol": "ESSITYb.ST",
+    "name": "Essity B"
+  },
+  {
+    "symbol": "PERP.PA",
+    "name": "PERNOD RICARD"
+  },
+  {
+    "symbol": "BAER.S",
+    "name": "JULIUS BAER GRP"
+  },
+  {
+    "symbol": "FBK.MI",
+    "name": "FINECOBANK"
+  },
+  {
+    "symbol": "CLNX.MC",
+    "name": "CELLNEX TELECOM"
+  },
+  {
+    "symbol": "BOL.ST",
+    "name": "BOLIDEN"
+  },
+  {
+    "symbol": "BT.L",
+    "name": "BT GRP"
+  },
+  {
+    "symbol": "PKN.WA",
+    "name": "ORLEN"
+  },
+  {
+    "symbol": "SCHP.S",
+    "name": "SCHINDLER P"
+  },
+  {
+    "symbol": "UPM.HE",
+    "name": "UPM KYMMENE"
+  },
+  {
+    "symbol": "INF.L",
+    "name": "INFORMA"
+  },
+  {
+    "symbol": "TEF.MC",
+    "name": "TELEFONICA"
+  },
+  {
+    "symbol": "LOGN.S",
+    "name": "LOGITECH INTERNATIONAL"
+  },
+  {
+    "symbol": "TRN.MI",
+    "name": "TERNA"
+  },
+  {
+    "symbol": "KYGa.I",
+    "name": "KERRY GRP"
+  },
+  {
+    "symbol": "ALFA.ST",
+    "name": "ALFA LAVAL"
+  },
+  {
+    "symbol": "SN.L",
+    "name": "SMITH & NEPHEW"
+  },
+  {
+    "symbol": "MONC.MI",
+    "name": "MONCLER"
+  },
+  {
+    "symbol": "LISP.S",
+    "name": "LINDT & SPRUENGLI P"
+  },
+  {
+    "symbol": "RTO.L",
+    "name": "RENTOKIL INITIAL"
+  },
+  {
+    "symbol": "EPIRa.ST",
+    "name": "EPIROC A"
+  },
+  {
+    "symbol": "BOUY.PA",
+    "name": "BOUYGUES"
+  },
+  {
+    "symbol": "FOUG.PA",
+    "name": "EIFFAGE"
+  },
+  {
+    "symbol": "SGE.L",
+    "name": "SAGE GRP"
+  },
+  {
+    "symbol": "STMN.S",
+    "name": "STRAUMANN"
+  },
+  {
+    "symbol": "EDP.LS",
+    "name": "EDP (PT)"
+  },
+  {
+    "symbol": "DSFIR.AS",
+    "name": "DSM FIRMENICH AG"
+  },
+  {
+    "symbol": "SRG.MI",
+    "name": "SNAM RETE GAS"
+  },
+  {
+    "symbol": "KSP.I",
+    "name": "KINGSPAN GRP"
+  },
+  {
+    "symbol": "COLOb.CO",
+    "name": "COLOPLAST B"
+  },
+  {
+    "symbol": "ICAG.L",
+    "name": "IAG"
+  },
+  {
+    "symbol": "VACN.S",
+    "name": "VAT GROUP AG"
+  },
+  {
+    "symbol": "SOON.S",
+    "name": "SONOVA"
+  },
+  {
+    "symbol": "NBGr.AT",
+    "name": "NATIONAL BANK OF GREECE"
+  },
+  {
+    "symbol": "HNKG_p.DE",
+    "name": "HENKEL PREF"
+  },
+  {
+    "symbol": "SPSN.S",
+    "name": "SWISS PRIME SITE"
+  },
+  {
+    "symbol": "CARLb.CO",
+    "name": "CARLSBERG B"
+  },
+  {
+    "symbol": "ACCP.PA",
+    "name": "ACCOR"
+  },
+  {
+    "symbol": "SGRO.L",
+    "name": "SEGRO"
+  },
+  {
+    "symbol": "ENX.PA",
+    "name": "EURONEXT"
+  },
+  {
+    "symbol": "AKZO.AS",
+    "name": "AKZO NOBEL"
+  },
+  {
+    "symbol": "PST.MI",
+    "name": "POSTE ITALIANE"
+  },
+  {
+    "symbol": "URW.PA",
+    "name": "UNIBAIL-RODAMCO-WESTFIELD"
+  },
+  {
+    "symbol": "KNIN.S",
+    "name": "KUEHNE + NAGEL"
+  },
+  {
+    "symbol": "BAWG.VI",
+    "name": "BAWAG GROUP AG"
+  },
+  {
+    "symbol": "BESI.AS",
+    "name": "BE SEMICONDUCTOR"
+  },
+  {
+    "symbol": "ADML.L",
+    "name": "ADMIRAL GRP"
+  },
+  {
+    "symbol": "BVI.PA",
+    "name": "BUREAU VERITAS"
+  },
+  {
+    "symbol": "ELE.MC",
+    "name": "ENDESA"
+  },
+  {
+    "symbol": "AGES.BR",
+    "name": "AGEAS"
+  },
+  {
+    "symbol": "KOG.OL",
+    "name": "KONGSBERG GRUPPEN"
+  },
+  {
+    "symbol": "METSO.HE",
+    "name": "METSO"
+  },
+  {
+    "symbol": "CARR.PA",
+    "name": "CARREFOUR"
+  },
+  {
+    "symbol": "CCH.L",
+    "name": "COCA-COLA HBC"
+  },
+  {
+    "symbol": "UU.L",
+    "name": "UNITED UTILITIES GRP"
+  },
+  {
+    "symbol": "MOWI.OL",
+    "name": "MOWI"
+  },
+  {
+    "symbol": "SY1G.DE",
+    "name": "SYMRISE"
+  },
+  {
+    "symbol": "BKT.MC",
+    "name": "BANKINTER"
+  },
+  {
+    "symbol": "KGH.WA",
+    "name": "KGHM"
+  },
+  {
+    "symbol": "CNA.L",
+    "name": "CENTRICA"
+  },
+  {
+    "symbol": "PZU.WA",
+    "name": "PZU GROUP"
+  },
+  {
+    "symbol": "ASRNL.AS",
+    "name": "ASR NEDERLAND NV"
+  },
+  {
+    "symbol": "SMIN.L",
+    "name": "SMITHS GRP"
+  },
+  {
+    "symbol": "ALSO.PA",
+    "name": "ALSTOM"
+  },
+  {
+    "symbol": "CEZP.PR",
+    "name": "CEZ"
+  },
+  {
+    "symbol": "NHY.OL",
+    "name": "NORSK HYDRO"
+  },
+  {
+    "symbol": "SVT.L",
+    "name": "SEVERN TRENT"
+  },
+  {
+    "symbol": "PEO.WA",
+    "name": "PEKAO"
+  },
+  {
+    "symbol": "EURBr.AT",
+    "name": "EUROBANK"
+  },
+  {
+    "symbol": "FMEG.DE",
+    "name": "FRESENIUS MEDICAL CARE"
+  },
+  {
+    "symbol": "WEIR.L",
+    "name": "WEIR GRP"
+  },
+  {
+    "symbol": "QIA.DE",
+    "name": "QIAGEN"
+  },
+  {
+    "symbol": "TELIA.ST",
+    "name": "TELIA COMPANY"
+  },
+  {
+    "symbol": "G1AG.DE",
+    "name": "GEA GRP"
+  },
+  {
+    "symbol": "BEIG.DE",
+    "name": "BEIERSDORF"
+  },
+  {
+    "symbol": "NESTE.HE",
+    "name": "NESTE"
+  },
+  {
+    "symbol": "SKAb.ST",
+    "name": "SKANSKA B"
+  },
+  {
+    "symbol": "BEAN.S",
+    "name": "BELIMO HOLDING"
+  },
+  {
+    "symbol": "SPIE.PA",
+    "name": "SPIE"
+  },
+  {
+    "symbol": "UNPI.MI",
+    "name": "UNIPOL ASSICURAZIONI"
+  },
+  {
+    "symbol": "AEGN.AS",
+    "name": "AEGON"
+  },
+  {
+    "symbol": "BCP.LS",
+    "name": "BCO COMERCIAL PORTUGUES"
+  },
+  {
+    "symbol": "ITRK.L",
+    "name": "INTERTEK GRP"
+  },
+  {
+    "symbol": "EVOG.ST",
+    "name": "EVOLUTION"
+  },
+  {
+    "symbol": "DPLM.L",
+    "name": "DIPLOMA"
+  },
+  {
+    "symbol": "HMb.ST",
+    "name": "HENNES & MAURITZ B"
+  },
+  {
+    "symbol": "WISEa.L",
+    "name": "WISE A"
+  },
+  {
+    "symbol": "MRON.L",
+    "name": "MELROSE INDUSTRIES"
+  },
+  {
+    "symbol": "FORTUM.HE",
+    "name": "FORTUM"
+  },
+  {
+    "symbol": "SJP.L",
+    "name": "ST.JAMES'S PLACE CAPITAL"
+  },
+  {
+    "symbol": "TEL2b.ST",
+    "name": "TELE2 B"
+  },
+  {
+    "symbol": "ADDTb.ST",
+    "name": "ADDTECH B"
+  },
+  {
+    "symbol": "TEL.OL",
+    "name": "TELENOR"
+  },
+  {
+    "symbol": "MKS.L",
+    "name": "MARKS & SPENCER GRP"
+  },
+  {
+    "symbol": "RXL.PA",
+    "name": "REXEL"
+  },
+  {
+    "symbol": "BNZL.L",
+    "name": "BUNZL"
+  },
+  {
+    "symbol": "PSON.L",
+    "name": "PEARSON"
+  },
+  {
+    "symbol": "SKFb.ST",
+    "name": "SKF B"
+  },
+  {
+    "symbol": "ORSTED.CO",
+    "name": "ORSTED"
+  },
+  {
+    "symbol": "LOIM.PA",
+    "name": "KLEPIERRE"
+  },
+  {
+    "symbol": "ACBr.AT",
+    "name": "ALPHA BANK"
+  },
+  {
+    "symbol": "HEIO.AS",
+    "name": "HEINEKEN HLDG"
+  },
+  {
+    "symbol": "IMI.L",
+    "name": "IMI"
+  },
+  {
+    "symbol": "EUFI.PA",
+    "name": "EUROFINS SCIENTIFIC"
+  },
+  {
+    "symbol": "TRELb.ST",
+    "name": "TRELLEBORG B"
+  },
+  {
+    "symbol": "LIFCOb.ST",
+    "name": "LIFCO B"
+  },
+  {
+    "symbol": "ABVX.PA",
+    "name": "ABIVAX"
+  },
+  {
+    "symbol": "CONG.DE",
+    "name": "CONTINENTAL"
+  },
+  {
+    "symbol": "BOPr.AT",
+    "name": "PIRAEUS BANK"
+  },
+  {
+    "symbol": "RENA.PA",
+    "name": "RENAULT"
+  },
+  {
+    "symbol": "PHNX.L",
+    "name": "PHOENIX GROUP HDG."
+  },
+  {
+    "symbol": "SOBIV.ST",
+    "name": "SWEDISH ORPHAN BIOVITRUM"
+  },
+  {
+    "symbol": "BAB.L",
+    "name": "BABCOCK INTERNATIONAL"
+  },
+  {
+    "symbol": "ABF.L",
+    "name": "ASSOCIATED BRITISH FOODS"
+  },
+  {
+    "symbol": "GAW.L",
+    "name": "GAMES WORKSHOP"
+  },
+  {
+    "symbol": "MNG.L",
+    "name": "M&G"
+  },
+  {
+    "symbol": "MAERSKb.CO",
+    "name": "A.P.MOLLER-MAERSK B"
+  },
+  {
+    "symbol": "ORK.OL",
+    "name": "ORKLA"
+  },
+  {
+    "symbol": "PNDORA.CO",
+    "name": "PANDORA"
+  },
+  {
+    "symbol": "PSPN.S",
+    "name": "PSP SWISS PROPERTY"
+  },
+  {
+    "symbol": "FRES.L",
+    "name": "FRESNILLO"
+  },
+  {
+    "symbol": "TRYG.CO",
+    "name": "TRYG"
+  },
+  {
+    "symbol": "ORNBV.HE",
+    "name": "ORION B"
+  },
+  {
+    "symbol": "ICGIN.L",
+    "name": "ICG"
+  },
+  {
+    "symbol": "MICCT.AS",
+    "name": "THE MAGNUM ICE CREAM COMPANY"
+  },
+  {
+    "symbol": "SECUb.ST",
+    "name": "SECURITAS B"
+  },
+  {
+    "symbol": "TLXGn.DE",
+    "name": "TALANX"
+  },
+  {
+    "symbol": "OMVV.VI",
+    "name": "OMV"
+  },
+  {
+    "symbol": "INDUc.ST",
+    "name": "INDUSTRIVARDEN C"
+  },
+  {
+    "symbol": "EXOR.AS",
+    "name": "EXOR NV"
+  },
+  {
+    "symbol": "AKRBP.OL",
+    "name": "AKER BP"
+  },
+  {
+    "symbol": "KCRA.HE",
+    "name": "KONECRANES"
+  },
+  {
+    "symbol": "STERV.HE",
+    "name": "STORA ENSO R"
+  },
+  {
+    "symbol": "G24n.DE",
+    "name": "SCOUT24"
+  },
+  {
+    "symbol": "HOTG.DE",
+    "name": "HOCHTIEF"
+  },
+  {
+    "symbol": "STB.OL",
+    "name": "STOREBRAND"
+  },
+  {
+    "symbol": "LPPP.WA",
+    "name": "LPP"
+  },
+  {
+    "symbol": "SBRY.L",
+    "name": "SAINSBURY (J)"
+  },
+  {
+    "symbol": "KBX.DE",
+    "name": "KNORR BREMSE"
+  },
+  {
+    "symbol": "ACLN.S",
+    "name": "ACCELLERON INDUSTRIES"
+  },
+  {
+    "symbol": "SATG_p.DE",
+    "name": "SARTORIUS PREF."
+  },
+  {
+    "symbol": "BTRW.L",
+    "name": "BARRATT REDROW"
+  },
+  {
+    "symbol": "SCAb.ST",
+    "name": "SVENSKA CELLULOSA AKTIE. SCA B"
+  },
+  {
+    "symbol": "KGF.L",
+    "name": "KINGFISHER"
+  },
+  {
+    "symbol": "REDE.MC",
+    "name": "Redeia Corporacion"
+  },
+  {
+    "symbol": "ROTLV.BX",
+    "name": "BCA TRANSILVANIA"
+  },
+  {
+    "symbol": "PSHG_p.DE",
+    "name": "PORSCHE AUTOMOBIL HLDG PREF"
+  },
+  {
+    "symbol": "BNRGn.DE",
+    "name": "BRENNTAG"
+  },
+  {
+    "symbol": "GALP.LS",
+    "name": "GALP ENERGIA"
+  },
+  {
+    "symbol": "IG.MI",
+    "name": "ITALGAS"
+  },
+  {
+    "symbol": "ZALG.DE",
+    "name": "ZALANDO"
+  },
+  {
+    "symbol": "INDT.ST",
+    "name": "INDUTRADE"
+  },
+  {
+    "symbol": "TLIT.MI",
+    "name": "TELECOM ITALIA"
+  },
+  {
+    "symbol": "NTGY.MC",
+    "name": "Naturgy Energy Group"
+  },
+  {
+    "symbol": "TENR.MI",
+    "name": "TENARIS"
+  },
+  {
+    "symbol": "NEKG.DE",
+    "name": "NEMETSCHEK"
+  },
+  {
+    "symbol": "STDM.PA",
+    "name": "SARTORIUS STEDIM BIOTECH"
+  },
+  {
+    "symbol": "SQN.S",
+    "name": "SWISSQUOTE 'R'"
+  },
+  {
+    "symbol": "GTT.PA",
+    "name": "GAZTRANSPORT ET TECHNIGAZ"
+  },
+  {
+    "symbol": "AUTOA.L",
+    "name": "AUTO TRADER GROUP"
+  },
+  {
+    "symbol": "SPX.L",
+    "name": "SPIRAX"
+  },
+  {
+    "symbol": "NKT.CO",
+    "name": "NKT"
+  },
+  {
+    "symbol": "BEZG.L",
+    "name": "BEAZLEY"
+  },
+  {
+    "symbol": "CTEC.L",
+    "name": "CONVATEC PLC"
+  },
+  {
+    "symbol": "GBLB.BR",
+    "name": "GRP BRUXELLES LAMBERT"
+  },
+  {
+    "symbol": "ELISA.HE",
+    "name": "ELISA CORPORATION"
+  },
+  {
+    "symbol": "YAR.OL",
+    "name": "YARA"
+  },
+  {
+    "symbol": "LTMC.MI",
+    "name": "LOTTOMATICA GROUP"
+  },
+  {
+    "symbol": "JMT.LS",
+    "name": "JERONIMO MARTINS"
+  },
+  {
+    "symbol": "BEIJb.ST",
+    "name": "BEIJER REF AB"
+  },
+  {
+    "symbol": "ALEP.WA",
+    "name": "ALLEGRO.EU"
+  },
+  {
+    "symbol": "HSX.L",
+    "name": "HISCOX"
+  },
+  {
+    "symbol": "ELI.BR",
+    "name": "ELIA GROUP"
+  },
+  {
+    "symbol": "ASELS.IS",
+    "name": "ASELSAN ELNK.SANVETC."
+  },
+  {
+    "symbol": "RECI.MI",
+    "name": "RECORDATI"
+  },
+  {
+    "symbol": "BIOX.PA",
+    "name": "BIOMERIEUX"
+  },
+  {
+    "symbol": "ALSYDB.CO",
+    "name": "AL SYDBANK"
+  },
+  {
+    "symbol": "LAND.L",
+    "name": "LAND SECURITIES"
+  },
+  {
+    "symbol": "BRBY.L",
+    "name": "BURBERRY"
+  },
+  {
+    "symbol": "DCC.L",
+    "name": "DCC"
+  },
+  {
+    "symbol": "KESKOB.HE",
+    "name": "KESKO"
+  },
+  {
+    "symbol": "ENT.L",
+    "name": "ENTAIN"
+  },
+  {
+    "symbol": "GALE.S",
+    "name": "GALENICA SANTE AG"
+  },
+  {
+    "symbol": "UHR.S",
+    "name": "SWATCH BEARER"
+  },
+  {
+    "symbol": "RILBA.CO",
+    "name": "RINGKJOBING LANDBOBANK"
+  },
+  {
+    "symbol": "HWDN.L",
+    "name": "HOWDEN JOINERY GRP"
+  },
+  {
+    "symbol": "IGG.L",
+    "name": "IG GRP HLDG"
+  },
+  {
+    "symbol": "AVOL.S",
+    "name": "AVOLTA"
+  },
+  {
+    "symbol": "JYSK.CO",
+    "name": "JYSKE BANK"
+  },
+  {
+    "symbol": "FHZN.S",
+    "name": "FLUGHAFEN ZURICH"
+  },
+  {
+    "symbol": "KRKG.LJ",
+    "name": "KRKA"
+  },
+  {
+    "symbol": "LHAG.DE",
+    "name": "LUFTHANSA"
+  },
+  {
+    "symbol": "P911_p.DE",
+    "name": "DR ING HC F PORSCHE PREF."
+  },
+  {
+    "symbol": "JDEP.AS",
+    "name": "JDE PEET S"
+  },
+  {
+    "symbol": "ACKB.BR",
+    "name": "ACKERMANS & VAN HAAREN"
+  },
+  {
+    "symbol": "SPL1.WA",
+    "name": "SANTANDER BANK POLSKA"
+  },
+  {
+    "symbol": "PSN.L",
+    "name": "PERSIMMON"
+  },
+  {
+    "symbol": "WTB.L",
+    "name": "WHITBREAD"
+  },
+  {
+    "symbol": "BARN.S",
+    "name": "BARRY CALLEBAUT"
+  },
+  {
+    "symbol": "DHER.DE",
+    "name": "DELIVERY HERO"
+  },
+  {
+    "symbol": "GETP.PA",
+    "name": "Getlink"
+  },
+  {
+    "symbol": "RBIV.VI",
+    "name": "RAIFFEISEN BANK INTERNATIONAL"
+  },
+  {
+    "symbol": "SYENS.BR",
+    "name": "SYENSQO"
+  },
+  {
+    "symbol": "AM.PA",
+    "name": "DASSAULT AVIATION"
+  },
+  {
+    "symbol": "GJFG.OL",
+    "name": "GJENSIDIGE FORSIKRING"
+  },
+  {
+    "symbol": "KGX.DE",
+    "name": "KION GROUP"
+  },
+  {
+    "symbol": "NIBEb.ST",
+    "name": "NIBE INDUSTRIER B"
+  },
+  {
+    "symbol": "LMPL.L",
+    "name": "LONDONMETRIC PROPERTY PLC"
+  },
+  {
+    "symbol": "NEXS.PA",
+    "name": "NEXANS"
+  },
+  {
+    "symbol": "MRL.MC",
+    "name": "MERLIN PROPERTIES SOCIMI"
+  },
+  {
+    "symbol": "LEGn.DE",
+    "name": "LEG IMMOBILIEN"
+  },
+  {
+    "symbol": "DNP.WA",
+    "name": "DINO POLSKA SA"
+  },
+  {
+    "symbol": "BLND.L",
+    "name": "BRITISH LAND COMPANY"
+  },
+  {
+    "symbol": "BIMAS.IS",
+    "name": "BIM BIRLESIK MAGAZALAR"
+  },
+  {
+    "symbol": "SCOR.PA",
+    "name": "SCOR"
+  },
+  {
+    "symbol": "RMV.L",
+    "name": "RIGHTMOVE GRP"
+  },
+  {
+    "symbol": "AMUN.PA",
+    "name": "AMUNDI"
+  },
+  {
+    "symbol": "EVDG.DE",
+    "name": "CTS EVENTIM"
+  },
+  {
+    "symbol": "ANA.MC",
+    "name": "ACCIONA S.A."
+  },
+  {
+    "symbol": "TKAG.DE",
+    "name": "THYSSENKRUPP"
+  },
+  {
+    "symbol": "EDEN.PA",
+    "name": "EDENRED"
+  },
+  {
+    "symbol": "R3NK.DE",
+    "name": "RENK"
+  },
+  {
+    "symbol": "GF.S",
+    "name": "GEORG FISCHER"
+  },
+  {
+    "symbol": "BALDb.ST",
+    "name": "FASTIGHETS BALDER B"
+  },
+  {
+    "symbol": "TUB.BR",
+    "name": "FINANCIERE DE TUBIZE"
+  },
+  {
+    "symbol": "AYV.PA",
+    "name": "Ayvens"
+  },
+  {
+    "symbol": "AAK.ST",
+    "name": "AAK"
+  },
+  {
+    "symbol": "HAGG.DE",
+    "name": "HENSOLDT"
+  },
+  {
+    "symbol": "GETIb.ST",
+    "name": "GETINGE B"
+  },
+  {
+    "symbol": "MTLNr.AT",
+    "name": "METLEN ENERGY & METALS"
+  },
+  {
+    "symbol": "TW.L",
+    "name": "TAYLOR WIMPEY"
+  },
+  {
+    "symbol": "ANDR.VI",
+    "name": "ANDRITZ"
+  },
+  {
+    "symbol": "ABDN.L",
+    "name": "ABERDEEN GROUP"
+  },
+  {
+    "symbol": "IPN.PA",
+    "name": "IPSEN"
+  },
+  {
+    "symbol": "BMED.MI",
+    "name": "BANCA MEDIOLANUM"
+  },
+  {
+    "symbol": "IMCD.AS",
+    "name": "IMCD"
+  },
+  {
+    "symbol": "BKGH.L",
+    "name": "BERKELEY GRP HLDG"
+  },
+  {
+    "symbol": "IDR.MC",
+    "name": "INDRA SISTEMAS"
+  },
+  {
+    "symbol": "AKBNK.IS",
+    "name": "AKBANK"
+  },
+  {
+    "symbol": "SAVE.ST",
+    "name": "NORDNET"
+  },
+  {
+    "symbol": "WPP.L",
+    "name": "WPP"
+  },
+  {
+    "symbol": "ELIS.PA",
+    "name": "ELIS"
+  },
+  {
+    "symbol": "BALF.L",
+    "name": "BALFOUR BEATTY"
+  },
+  {
+    "symbol": "WDPP.BR",
+    "name": "WDP"
+  },
+  {
+    "symbol": "VOES.VI",
+    "name": "VOESTALPINE"
+  },
+  {
+    "symbol": "ISS.CO",
+    "name": "ISS AS"
+  },
+  {
+    "symbol": "TE.PA",
+    "name": "Technip Energies"
+  },
+  {
+    "symbol": "ADEN.S",
+    "name": "ADECCO"
+  },
+  {
+    "symbol": "VEND.OL",
+    "name": "VEND MARKETPLACES"
+  },
+  {
+    "symbol": "VALMT.HE",
+    "name": "Valmet"
+  },
+  {
+    "symbol": "SDR.L",
+    "name": "SCHRODERS"
+  },
+  {
+    "symbol": "MNDI.L",
+    "name": "MONDI"
+  },
+  {
+    "symbol": "SOF.BR",
+    "name": "SOFINA"
+  },
+  {
+    "symbol": "AVANZ.ST",
+    "name": "AVANZA BANK HLDG"
+  },
+  {
+    "symbol": "JMAT.L",
+    "name": "JOHNSON MATTHEY"
+  },
+  {
+    "symbol": "BZU.MI",
+    "name": "BUZZI"
+  },
+  {
+    "symbol": "VERB.VI",
+    "name": "VERBUND"
+  },
+  {
+    "symbol": "SAGAb.ST",
+    "name": "SAGAX 'B'"
+  },
+  {
+    "symbol": "TUI1n.DE",
+    "name": "TUI"
+  },
+  {
+    "symbol": "CDR.WA",
+    "name": "CD PROJECT SA"
+  },
+  {
+    "symbol": "AZMT.MI",
+    "name": "AZIMUT HLDG"
+  },
+  {
+    "symbol": "EMSN.S",
+    "name": "EMS-CHEMIE HLDG"
+  },
+  {
+    "symbol": "ZELA.CO",
+    "name": "ZEALAND PHARMA"
+  },
+  {
+    "symbol": "SB1NO.OL",
+    "name": "SPAREBANK 1 SOR-NORGE ASA"
+  },
+  {
+    "symbol": "CRDA.L",
+    "name": "CRODA INTERNATIONAL"
+  },
+  {
+    "symbol": "MAP.MC",
+    "name": "MAPFRE"
+  },
+  {
+    "symbol": "SALM.OL",
+    "name": "SALMAR"
+  },
+  {
+    "symbol": "SUBC.OL",
+    "name": "SUBSEA7"
+  },
+  {
+    "symbol": "TEMN.S",
+    "name": "TEMENOS"
+  },
+  {
+    "symbol": "LAGRb.ST",
+    "name": "LAGERCRANTZ GROUP 'B'"
+  },
+  {
+    "symbol": "SSABb.ST",
+    "name": "SSAB B"
+  },
+  {
+    "symbol": "ITPG.MI",
+    "name": "INTERPUMP GRP"
+  },
+  {
+    "symbol": "BBOXT.L",
+    "name": "TRITAX BIG BOX REIT"
+  },
+  {
+    "symbol": "GFCP.PA",
+    "name": "GECINA"
+  },
+  {
+    "symbol": "AG1G.DE",
+    "name": "AUTO1 GROUP"
+  },
+  {
+    "symbol": "BGEO.L",
+    "name": "LION FINANCE GROUP"
+  },
+  {
+    "symbol": "VSURE.ST",
+    "name": "VERISURE"
+  },
+  {
+    "symbol": "ZEG.L",
+    "name": "ZEGONA COMMUNICATIONS"
+  },
+  {
+    "symbol": "THYAO.IS",
+    "name": "TURK HAVA YOLLARI"
+  },
+  {
+    "symbol": "ALKb.CO",
+    "name": "ALK-ABELLO B"
+  },
+  {
+    "symbol": "IVG.MI",
+    "name": "IVECO GROUP"
+  },
+  {
+    "symbol": "BWY.L",
+    "name": "BELLWAY"
+  },
+  {
+    "symbol": "TEPRF.PA",
+    "name": "TELEPERFORMANCE"
+  },
+  {
+    "symbol": "SIGNC.S",
+    "name": "SIG GROUP AG"
+  },
+  {
+    "symbol": "NDXG.DE",
+    "name": "NORDEX"
+  },
+  {
+    "symbol": "ITV.L",
+    "name": "ITV"
+  },
+  {
+    "symbol": "KCHOL.IS",
+    "name": "KOC HLDG"
+  },
+  {
+    "symbol": "EDPR.LS",
+    "name": "EDP RENOVAVEIS"
+  },
+  {
+    "symbol": "EXHO.PA",
+    "name": "SODEXO"
+  },
+  {
+    "symbol": "BKOM.PR",
+    "name": "KOMERCNI BANKA"
+  },
+  {
+    "symbol": "A2.MI",
+    "name": "A2A"
+  },
+  {
+    "symbol": "CAST.ST",
+    "name": "CASTELLUM"
+  },
+  {
+    "symbol": "CVC.AS",
+    "name": "CVC CAPITAL PARTNERS"
+  },
+  {
+    "symbol": "GDRB.BU",
+    "name": "RICHTER GEDEON"
+  },
+  {
+    "symbol": "BKWB.S",
+    "name": "BKW"
+  },
+  {
+    "symbol": "BC8G.DE",
+    "name": "BECHTLE"
+  },
+  {
+    "symbol": "GBFG.DE",
+    "name": "BILFINGER"
+  },
+  {
+    "symbol": "MOLB.BU",
+    "name": "MOL Hungarian Oil and Gas"
+  },
+  {
+    "symbol": "RAND.AS",
+    "name": "RANDSTAD"
+  },
+  {
+    "symbol": "OPAr.AT",
+    "name": "OPAP"
+  },
+  {
+    "symbol": "INVP.L",
+    "name": "INVESTEC"
+  },
+  {
+    "symbol": "FNTGn.DE",
+    "name": "FREENET"
+  },
+  {
+    "symbol": "UMI.BR",
+    "name": "UMICORE"
+  },
+  {
+    "symbol": "LUNDb.ST",
+    "name": "LUNDBERGFORETAGEN B"
+  },
+  {
+    "symbol": "CCL.L",
+    "name": "CARNIVAL"
+  },
+  {
+    "symbol": "ROSNP.BX",
+    "name": "OMV PETROM"
+  },
+  {
+    "symbol": "ALLN.S",
+    "name": "ALLREAL HLDG"
+  },
+  {
+    "symbol": "SECTb.ST",
+    "name": "SECTRA 'B'"
+  },
+  {
+    "symbol": "RS1R.L",
+    "name": "RS Group"
+  },
+  {
+    "symbol": "AKE.PA",
+    "name": "ARKEMA"
+  },
+  {
+    "symbol": "RAAG.DE",
+    "name": "RATIONAL"
+  },
+  {
+    "symbol": "DEHr.AT",
+    "name": "PUBLIC POWER"
+  },
+  {
+    "symbol": "WBSV.VI",
+    "name": "WIENERBERGER"
+  },
+  {
+    "symbol": "BCU.MI",
+    "name": "BRUNELLO CUCINELLI"
+  },
+  {
+    "symbol": "BGN.MI",
+    "name": "BCA GENERALI"
+  },
+  {
+    "symbol": "EVKn.DE",
+    "name": "EVONIK INDUSTRIES"
+  },
+  {
+    "symbol": "TUPRS.IS",
+    "name": "TURKIYE PETROL RAFIN."
+  },
+  {
+    "symbol": "MBK.WA",
+    "name": "MBANK"
+  },
+  {
+    "symbol": "CPRI.MI",
+    "name": "DAVIDE CAMPARI"
+  },
+  {
+    "symbol": "IETB.BR",
+    "name": "D'IETEREN GROUP"
+  },
+  {
+    "symbol": "RBREW.CO",
+    "name": "ROYAL UNIBREW"
+  },
+  {
+    "symbol": "DRX.L",
+    "name": "DRAX GRP"
+  },
+  {
+    "symbol": "SRP.L",
+    "name": "SERCO GRP"
+  },
+  {
+    "symbol": "FTKn.DE",
+    "name": "FLATEXDEGIRO N"
+  },
+  {
+    "symbol": "HRA.MI",
+    "name": "HERA"
+  },
+  {
+    "symbol": "AOO.BR",
+    "name": "AEDIFICA"
+  },
+  {
+    "symbol": "CMBN.S",
+    "name": "CEMBRA MONEY BANK"
+  },
+  {
+    "symbol": "LOTB.BR",
+    "name": "LOTUS BAKERIES"
+  },
+  {
+    "symbol": "SPMI.MI",
+    "name": "SAIPEM"
+  },
+  {
+    "symbol": "INCH.L",
+    "name": "INCHCAPE"
+  },
+  {
+    "symbol": "SBMO.AS",
+    "name": "SBM OFFSHORE"
+  },
+  {
+    "symbol": "SFZN.S",
+    "name": "SIEGFRIED 'R'"
+  },
+  {
+    "symbol": "BOLL.PA",
+    "name": "BOLLORE"
+  },
+  {
+    "symbol": "AAF.L",
+    "name": "AIRTEL AFRICA PLC"
+  },
+  {
+    "symbol": "BABr.AT",
+    "name": "JUMBO"
+  },
+  {
+    "symbol": "UNI.MC",
+    "name": "UNICAJA BANCO S.A."
+  },
+  {
+    "symbol": "MYCR.ST",
+    "name": "MYCRONIC"
+  },
+  {
+    "symbol": "ENAG.MC",
+    "name": "ENAGAS"
+  },
+  {
+    "symbol": "CVO.PA",
+    "name": "COVIVIO"
+  },
+  {
+    "symbol": "ROR.L",
+    "name": "ROTORK"
+  },
+  {
+    "symbol": "CWK.L",
+    "name": "CRANSWICK"
+  },
+  {
+    "symbol": "NAFG.DE",
+    "name": "AURUBIS"
+  },
+  {
+    "symbol": "BCVN.S",
+    "name": "BANQUE CANTONALE VAUDOISE"
+  },
+  {
+    "symbol": "MANTA.HE",
+    "name": "Mandatum"
+  },
+  {
+    "symbol": "SUNN.S",
+    "name": "SUNRISE N A"
+  },
+  {
+    "symbol": "LATOb.ST",
+    "name": "LATOUR INVESTMENT B"
+  },
+  {
+    "symbol": "COFB.BR",
+    "name": "COFINIMMO"
+  },
+  {
+    "symbol": "EMG.L",
+    "name": "MAN GRP"
+  },
+  {
+    "symbol": "BOCHGRr.AT",
+    "name": "BANK OF CYPRUS HLD"
+  },
+  {
+    "symbol": "ROCKb.CO",
+    "name": "ROCKWOOL B"
+  },
+  {
+    "symbol": "MOBN.S",
+    "name": "MOBIMO HLDG"
+  },
+  {
+    "symbol": "ACPP.WA",
+    "name": "ASSECO POLAND"
+  },
+  {
+    "symbol": "GL9.I",
+    "name": "GLANBIA"
+  },
+  {
+    "symbol": "PHP.L",
+    "name": "PRIMARY HEALTH PROPS."
+  },
+  {
+    "symbol": "AXFO.ST",
+    "name": "AXFOOD"
+  },
+  {
+    "symbol": "SWECb.ST",
+    "name": "SWECO 'B'"
+  },
+  {
+    "symbol": "PLUSP.L",
+    "name": "PLUS500"
+  },
+  {
+    "symbol": "GRLS.MC",
+    "name": "GRIFOLS"
+  },
+  {
+    "symbol": "HIK.L",
+    "name": "HIKMA PHARMACEUTICALS"
+  },
+  {
+    "symbol": "HUH1V.HE",
+    "name": "HUHTAMAKI"
+  },
+  {
+    "symbol": "ALLFG.AS",
+    "name": "ALLFUNDS GROUP"
+  },
+  {
+    "symbol": "PNN.L",
+    "name": "PENNON GRP"
+  },
+  {
+    "symbol": "ENKAI.IS",
+    "name": "ENKA INSAAT"
+  },
+  {
+    "symbol": "SUN.S",
+    "name": "SULZER"
+  },
+  {
+    "symbol": "KBCA.BR",
+    "name": "KBC ANCORA"
+  },
+  {
+    "symbol": "FDJU.PA",
+    "name": "FDJ UNITED"
+  },
+  {
+    "symbol": "INPST.AS",
+    "name": "INPOST"
+  },
+  {
+    "symbol": "REY.MI",
+    "name": "REPLY"
+  },
+  {
+    "symbol": "FRO.OL",
+    "name": "FRONTLINE"
+  },
+  {
+    "symbol": "DIOR.PA",
+    "name": "CHRISTIAN DIOR"
+  },
+  {
+    "symbol": "TOM.OL",
+    "name": "TOMRA SYSTEMS"
+  },
+  {
+    "symbol": "VLLP.PA",
+    "name": "VALLOUREC"
+  },
+  {
+    "symbol": "QLT.L",
+    "name": "QUILTER"
+  },
+  {
+    "symbol": "INGP.WA",
+    "name": "ING BANK SLASKI BSK"
+  },
+  {
+    "symbol": "ARDS.AS",
+    "name": "ARCADIS"
+  },
+  {
+    "symbol": "OSBO.L",
+    "name": "OSB GROUP"
+  },
+  {
+    "symbol": "DEMANT.CO",
+    "name": "DEMANT"
+  },
+  {
+    "symbol": "AALB.AS",
+    "name": "AALBERTS"
+  },
+  {
+    "symbol": "VAR.OL",
+    "name": "VAR ENERGI"
+  },
+  {
+    "symbol": "DLG.MI",
+    "name": "DE LONGHI"
+  },
+  {
+    "symbol": "VATN.S",
+    "name": "VALIANT"
+  },
+  {
+    "symbol": "OTEr.AT",
+    "name": "OTE"
+  },
+  {
+    "symbol": "VLOF.PA",
+    "name": "VALEO"
+  },
+  {
+    "symbol": "FRAG.DE",
+    "name": "FRAPORT"
+  },
+  {
+    "symbol": "MTO.L",
+    "name": "MITIE GROUP"
+  },
+  {
+    "symbol": "FLS.CO",
+    "name": "FLSMIDTH & COMPANY"
+  },
+  {
+    "symbol": "ADP.PA",
+    "name": "ADP"
+  },
+  {
+    "symbol": "BUCN.S",
+    "name": "BUCHER INDUSTRIES"
+  },
+  {
+    "symbol": "LIGHT.AS",
+    "name": "SIGNIFY"
+  },
+  {
+    "symbol": "HUBN.S",
+    "name": "HUBER+SUHNER 'R'"
+  },
+  {
+    "symbol": "TEGG.DE",
+    "name": "TAG IMMOBILIEN AG"
+  },
+  {
+    "symbol": "FPE3_p.DE",
+    "name": "FUCHS PREF"
+  },
+  {
+    "symbol": "VZN.S",
+    "name": "VZ HOLDING 'N'"
+  },
+  {
+    "symbol": "SHCS.L",
+    "name": "SHAFTESBURY CAPITAL"
+  },
+  {
+    "symbol": "SOPR.PA",
+    "name": "SOPRA STERIA GROUP"
+  },
+  {
+    "symbol": "LOOMIS.ST",
+    "name": "LOOMIS"
+  },
+  {
+    "symbol": "HOLMb.ST",
+    "name": "HOLMEN B"
+  },
+  {
+    "symbol": "RUBF.PA",
+    "name": "RUBIS"
+  },
+  {
+    "symbol": "UTG.L",
+    "name": "UNITE GROUP PLC"
+  },
+  {
+    "symbol": "THULE.ST",
+    "name": "THULE GROUP"
+  },
+  {
+    "symbol": "BAMN.AS",
+    "name": "BAM GROEP KON."
+  },
+  {
+    "symbol": "MILP.WA",
+    "name": "BANK MILLENNIUM"
+  },
+  {
+    "symbol": "PROT.OL",
+    "name": "PROTECTOR FORSIKRING"
+  },
+  {
+    "symbol": "MGNS.L",
+    "name": "MORGAN SINDALL GROUP"
+  },
+  {
+    "symbol": "PAFR.L",
+    "name": "PAN AFRICAN RESOURCES"
+  },
+  {
+    "symbol": "JTC.L",
+    "name": "JTC GROUP"
+  },
+  {
+    "symbol": "ACX.MC",
+    "name": "ACERINOX"
+  },
+  {
+    "symbol": "CAMX.ST",
+    "name": "CAMURUS"
+  },
+  {
+    "symbol": "VIGR.VI",
+    "name": "VIENNA INSURANCE"
+  },
+  {
+    "symbol": "BYG.L",
+    "name": "BIG YELLOW GROUP"
+  },
+  {
+    "symbol": "BFT.WA",
+    "name": "BENEFIT SYSTEMS"
+  },
+  {
+    "symbol": "YKBNK.IS",
+    "name": "YAPI VE KREDI BANKASI"
+  },
+  {
+    "symbol": "KEMIRA.HE",
+    "name": "KEMIRA"
+  },
+  {
+    "symbol": "QQ.L",
+    "name": "QINETIQ GRP"
+  },
+  {
+    "symbol": "SBNOR.OL",
+    "name": "SPAREBANKEN NORGE"
+  },
+  {
+    "symbol": "PUMG.DE",
+    "name": "PUMA"
+  },
+  {
+    "symbol": "CTPNV.AS",
+    "name": "CTP NV"
+  },
+  {
+    "symbol": "VID.MC",
+    "name": "VIDRALA"
+  },
+  {
+    "symbol": "ALRR.WA",
+    "name": "ALIOR BANK"
+  },
+  {
+    "symbol": "ISCTR.IS",
+    "name": "TURKIYE IS BANKASI"
+  },
+  {
+    "symbol": "AMV0n.DE",
+    "name": "AUMOVIO"
+  },
+  {
+    "symbol": "JUSTJ.L",
+    "name": "JUST GROUP"
+  },
+  {
+    "symbol": "FRVIA.PA",
+    "name": "FORVIA"
+  },
+  {
+    "symbol": "INWT.MI",
+    "name": "INWIT"
+  },
+  {
+    "symbol": "ZAB.WA",
+    "name": "ZABKA GROUP"
+  },
+  {
+    "symbol": "WIHL.ST",
+    "name": "WIHLBORGS FASTIGHETER"
+  },
+  {
+    "symbol": "JD.L",
+    "name": "JD SPORTS FASHION"
+  },
+  {
+    "symbol": "NEXII.MI",
+    "name": "NEXI SPA"
+  },
+  {
+    "symbol": "EFGN.S",
+    "name": "EFG INTERNATIONAL N"
+  },
+  {
+    "symbol": "SAHOL.IS",
+    "name": "HACI OMER SABANCI HLDG"
+  },
+  {
+    "symbol": "MWDP.PA",
+    "name": "WENDEL"
+  },
+  {
+    "symbol": "EZJ.L",
+    "name": "EASYJET"
+  },
+  {
+    "symbol": "TCAPI.L",
+    "name": "TP ICAP"
+  },
+  {
+    "symbol": "DKSH.S",
+    "name": "DKSH HOLDING"
+  },
+  {
+    "symbol": "MING.OL",
+    "name": "SPAREBANK 1 SMN"
+  },
+  {
+    "symbol": "TPRO.MI",
+    "name": "TECHNOPROBE SPA"
+  },
+  {
+    "symbol": "TBCG.L",
+    "name": "TBC BANK GROUP"
+  },
+  {
+    "symbol": "TCELL.IS",
+    "name": "TURKCELL ILETISIM HIZM."
+  },
+  {
+    "symbol": "SCTS.L",
+    "name": "SOFTCAT"
+  },
+  {
+    "symbol": "BPTB.L",
+    "name": "BRIDGEPOINT GROUP"
+  },
+  {
+    "symbol": "BAKKA.OL",
+    "name": "BAKKAFROST"
+  },
+  {
+    "symbol": "LTEN.PA",
+    "name": "ALTEN"
+  },
+  {
+    "symbol": "UTDI.DE",
+    "name": "UNITED INTERNET"
+  },
+  {
+    "symbol": "AMBUb.CO",
+    "name": "AMBU 'B'"
+  },
+  {
+    "symbol": "CCC.L",
+    "name": "COMPUTACENTER"
+  },
+  {
+    "symbol": "VTYV.L",
+    "name": "VISTRY GROUP"
+  },
+  {
+    "symbol": "TPE.WA",
+    "name": "TAURON"
+  },
+  {
+    "symbol": "SFSN.S",
+    "name": "SFS GROUP"
+  },
+  {
+    "symbol": "KTY.WA",
+    "name": "KETY"
+  },
+  {
+    "symbol": "EURA.PA",
+    "name": "EURAZEO"
+  },
+  {
+    "symbol": "DLN.L",
+    "name": "DERWENT LONDON"
+  },
+  {
+    "symbol": "HPOLb.ST",
+    "name": "HEXPOL 'B'"
+  },
+  {
+    "symbol": "DOKA.S",
+    "name": "dorma+kaba"
+  },
+  {
+    "symbol": "PIRC.MI",
+    "name": "PIRELLI & C. S.P.A."
+  },
+  {
+    "symbol": "MTRS.ST",
+    "name": "MUNTERS GROUP AB"
+  },
+  {
+    "symbol": "MTCM.MI",
+    "name": "MAIRE"
+  },
+  {
+    "symbol": "SCYR.MC",
+    "name": "SACYR"
+  },
+  {
+    "symbol": "CAN.L",
+    "name": "CANAL+"
+  },
+  {
+    "symbol": "FLUI.MC",
+    "name": "FLUIDRA"
+  },
+  {
+    "symbol": "VOPA.AS",
+    "name": "VOPAK"
+  },
+  {
+    "symbol": "KRU.WA",
+    "name": "KRUK"
+  },
+  {
+    "symbol": "VLAN.AS",
+    "name": "VAN LANSCHOT KEMPEN"
+  },
+  {
+    "symbol": "MONET.PR",
+    "name": "MONETA MONEY BANK"
+  },
+  {
+    "symbol": "SDFGn.DE",
+    "name": "K + S"
+  },
+  {
+    "symbol": "NOD.OL",
+    "name": "NORDIC SEMICONDUCTOR"
+  },
+  {
+    "symbol": "NETCG.CO",
+    "name": "NETCOMPANY GROUP AS"
+  },
+  {
+    "symbol": "MORr.AT",
+    "name": "MOTOR OIL (HELLAS)"
+  },
+  {
+    "symbol": "BAVA.CO",
+    "name": "BAVARIAN NORDIC"
+  },
+  {
+    "symbol": "PAALb.CO",
+    "name": "PER AARSLEFF HOLDING B"
+  },
+  {
+    "symbol": "IWG.L",
+    "name": "INTERNATIONAL WORKPLACE GROUP"
+  },
+  {
+    "symbol": "BANB.S",
+    "name": "BACHEM HOLDING"
+  },
+  {
+    "symbol": "HMSO.L",
+    "name": "HAMMERSON"
+  },
+  {
+    "symbol": "SINCH.ST",
+    "name": "SINCH"
+  },
+  {
+    "symbol": "VIS.MC",
+    "name": "VISCOFAN"
+  },
+  {
+    "symbol": "SOLB.BR",
+    "name": "SOLVAY"
+  },
+  {
+    "symbol": "PUIGb.MC",
+    "name": "PUIG BRANDS B"
+  },
+  {
+    "symbol": "HIAB.HE",
+    "name": "HIAB"
+  },
+  {
+    "symbol": "GNS.L",
+    "name": "GENUS"
+  },
+  {
+    "symbol": "HTWS.L",
+    "name": "HELIOS TOWERS PLC"
+  },
+  {
+    "symbol": "EMMN.S",
+    "name": "EMMI AG"
+  },
+  {
+    "symbol": "GRG.L",
+    "name": "GREGGS"
+  },
+  {
+    "symbol": "AIXGn.DE",
+    "name": "AIXTRON"
+  },
+  {
+    "symbol": "HILS.L",
+    "name": "HILL & SMITH"
+  },
+  {
+    "symbol": "BMEB.L",
+    "name": "B&M EUROPEAN VALUE RETAIL"
+  },
+  {
+    "symbol": "GN.CO",
+    "name": "GN STORE NORD"
+  },
+  {
+    "symbol": "TIETO.HE",
+    "name": "TIETOEVRY"
+  },
+  {
+    "symbol": "EKTAb.ST",
+    "name": "ELEKTA B"
+  },
+  {
+    "symbol": "PAGPA.L",
+    "name": "Paragon Banking Group PLC"
+  },
+  {
+    "symbol": "VONN.S",
+    "name": "VONTOBEL"
+  },
+  {
+    "symbol": "BDXP.WA",
+    "name": "BUDIMEX"
+  },
+  {
+    "symbol": "ALMB.CO",
+    "name": "ALM BRAND"
+  },
+  {
+    "symbol": "SESFd.PA",
+    "name": "SES"
+  },
+  {
+    "symbol": "BILL.ST",
+    "name": "BILLERUD"
+  },
+  {
+    "symbol": "8TRA.DE",
+    "name": "TRATON SE"
+  },
+  {
+    "symbol": "AZE.BR",
+    "name": "AZELIS GROUP"
+  },
+  {
+    "symbol": "LUKN.S",
+    "name": "LUZERNER KANTONALBANK"
+  },
+  {
+    "symbol": "TITCr.AT",
+    "name": "TITAN"
+  },
+  {
+    "symbol": "ISB.IC",
+    "name": "ISLANDSBANKI"
+  },
+  {
+    "symbol": "PANDXb.ST",
+    "name": "PANDOX B"
+  },
+  {
+    "symbol": "WALLb.ST",
+    "name": "WALLENSTAM B"
+  },
+  {
+    "symbol": "KINVb.ST",
+    "name": "KINNEVIK B"
+  },
+  {
+    "symbol": "AT1.DE",
+    "name": "AROUNDTOWN (FRA)"
+  },
+  {
+    "symbol": "SSPG.L",
+    "name": "SSP GROUP"
+  },
+  {
+    "symbol": "KOJAMO.HE",
+    "name": "KOJAMO OYJ"
+  },
+  {
+    "symbol": "COA.L",
+    "name": "COATS GROUP"
+  },
+  {
+    "symbol": "ARION.IC",
+    "name": "ARION BANKI"
+  },
+  {
+    "symbol": "SAFE.L",
+    "name": "SAFESTORE HOLDINGS"
+  },
+  {
+    "symbol": "HRMr.AT",
+    "name": "GEK TERNA"
+  },
+  {
+    "symbol": "IFCN.S",
+    "name": "INFICON"
+  },
+  {
+    "symbol": "BCHN.S",
+    "name": "BURCKHARDT CMPSN.HLDG."
+  },
+  {
+    "symbol": "GFTU_u.L",
+    "name": "GRAFTON GRP"
+  },
+  {
+    "symbol": "KRNG.DE",
+    "name": "KRONES"
+  },
+  {
+    "symbol": "AMPF.MI",
+    "name": "AMPLIFON"
+  },
+  {
+    "symbol": "VOLCARb.ST",
+    "name": "VOLVO CAR B"
+  },
+  {
+    "symbol": "VU.PA",
+    "name": "VUSIONGROUP"
+  },
+  {
+    "symbol": "SGKN.S",
+    "name": "ST GALLER KANTONALBANK"
+  },
+  {
+    "symbol": "OUT1V.HE",
+    "name": "OUTOKUMPU"
+  },
+  {
+    "symbol": "CATE.ST",
+    "name": "CATENA"
+  },
+  {
+    "symbol": "PGE.WA",
+    "name": "PGE"
+  },
+  {
+    "symbol": "DIAS.MI",
+    "name": "DIASORIN"
+  },
+  {
+    "symbol": "LRE.L",
+    "name": "LANCASHIRE HOLDINGS"
+  },
+  {
+    "symbol": "LOG.MC",
+    "name": "LOGISTA"
+  },
+  {
+    "symbol": "KARN.S",
+    "name": "KARDEX 'B'"
+  },
+  {
+    "symbol": "ASKER.ST",
+    "name": "ASKER HEALTHCARE GROUP"
+  },
+  {
+    "symbol": "COTNE.S",
+    "name": "COMET HOLDINGS 'R'"
+  },
+  {
+    "symbol": "STRV.VI",
+    "name": "STRABAG"
+  },
+  {
+    "symbol": "SOLS.MI",
+    "name": "SOL"
+  },
+  {
+    "symbol": "TECN.S",
+    "name": "TECAN"
+  },
+  {
+    "symbol": "NCCb.ST",
+    "name": "NCC B"
+  },
+  {
+    "symbol": "DWSG.DE",
+    "name": "DWS GROUP GMBH & CO. KGAA"
+  },
+  {
+    "symbol": "UNIQ.VI",
+    "name": "UNIQA VERSICHERUNGEN"
+  },
+  {
+    "symbol": "ASMDEEb.ST",
+    "name": "ASMODEE GROUP B"
+  },
+  {
+    "symbol": "ALIFb.ST",
+    "name": "ADDLIFE"
+  },
+  {
+    "symbol": "INRN.S",
+    "name": "INTERROLL"
+  },
+  {
+    "symbol": "VIV.PA",
+    "name": "VIVENDI"
+  },
+  {
+    "symbol": "BETSb.ST",
+    "name": "BETSSON B"
+  },
+  {
+    "symbol": "SWON.S",
+    "name": "SOFTWAREONE HOLDING"
+  },
+  {
+    "symbol": "JUNG_p.DE",
+    "name": "JUNGHEINRICH PREF"
+  },
+  {
+    "symbol": "BRAV.ST",
+    "name": "BRAVIDA HOLDING AB"
+  },
+  {
+    "symbol": "OCDO.L",
+    "name": "OCADO"
+  },
+  {
+    "symbol": "TGYM.MI",
+    "name": "TECHNOGYM"
+  },
+  {
+    "symbol": "HLE.DE",
+    "name": "HELLA"
+  },
+  {
+    "symbol": "STORb.ST",
+    "name": "STORSKOGEN GROUP B"
+  },
+  {
+    "symbol": "BFF.MI",
+    "name": "BFF BANK S.P.A."
+  },
+  {
+    "symbol": "AJBA.L",
+    "name": "AJ BELL PLC"
+  },
+  {
+    "symbol": "GARAN.IS",
+    "name": "TURKIYE GARANTI BANKASI"
+  },
+  {
+    "symbol": "EREGL.IS",
+    "name": "EREGLI DEMIR CELIK"
+  },
+  {
+    "symbol": "COFA.PA",
+    "name": "COFACE"
+  },
+  {
+    "symbol": "DNLM.L",
+    "name": "DUNELM GROUP"
+  },
+  {
+    "symbol": "IREE.MI",
+    "name": "IREN"
+  },
+  {
+    "symbol": "CLN.S",
+    "name": "CLARIANT"
+  },
+  {
+    "symbol": "CURY.L",
+    "name": "CURRYS"
+  },
+  {
+    "symbol": "CHEMM.CO",
+    "name": "CHEMOMETEC"
+  },
+  {
+    "symbol": "BFIT.AS",
+    "name": "BASIC-FIT"
+  },
+  {
+    "symbol": "DOCO.VI",
+    "name": "DO & CO"
+  },
+  {
+    "symbol": "TATE.L",
+    "name": "TATE & LYLE"
+  },
+  {
+    "symbol": "FABG.ST",
+    "name": "FABEGE"
+  },
+  {
+    "symbol": "FCT.MI",
+    "name": "FINCANTIERI"
+  },
+  {
+    "symbol": "WBD.MI",
+    "name": "WEBUILD"
+  },
+  {
+    "symbol": "HLUNb.CO",
+    "name": "H. LUNDBECK B"
+  },
+  {
+    "symbol": "SVS.L",
+    "name": "SAVILLS"
+  },
+  {
+    "symbol": "BOSSn.DE",
+    "name": "HUGO BOSS"
+  },
+  {
+    "symbol": "MONTE.BR",
+    "name": "MONTEA"
+  },
+  {
+    "symbol": "ENOG.L",
+    "name": "ENERGEAN PLC"
+  },
+  {
+    "symbol": "AKER.OL",
+    "name": "AKER A"
+  },
+  {
+    "symbol": "LXSG.DE",
+    "name": "LANXESS"
+  },
+  {
+    "symbol": "TGS.OL",
+    "name": "TGS ASA"
+  },
+  {
+    "symbol": "AIRF.PA",
+    "name": "AIR FRANCE-KLM"
+  },
+  {
+    "symbol": "MCOVb.ST",
+    "name": "MEDICOVER AB"
+  },
+  {
+    "symbol": "HUSQb.ST",
+    "name": "HUSQVARNA B"
+  },
+  {
+    "symbol": "VIRB.PA",
+    "name": "VIRBAC"
+  },
+  {
+    "symbol": "CHG.L",
+    "name": "CHEMRING GRP"
+  },
+  {
+    "symbol": "TPK.L",
+    "name": "TRAVIS PERKINS"
+  },
+  {
+    "symbol": "AFXG.DE",
+    "name": "CARL ZEISS MEDITEC"
+  },
+  {
+    "symbol": "BRBI.MI",
+    "name": "BREMBO"
+  },
+  {
+    "symbol": "CCCP.WA",
+    "name": "CCC SA"
+  },
+  {
+    "symbol": "ALSN.S",
+    "name": "ALSO HOLDING"
+  },
+  {
+    "symbol": "SEBF.PA",
+    "name": "SEB"
+  },
+  {
+    "symbol": "ROKOb.ST",
+    "name": "ROKO B"
+  },
+  {
+    "symbol": "GRI.L",
+    "name": "GRAINGER"
+  },
+  {
+    "symbol": "AFRY.ST",
+    "name": "AFRY"
+  },
+  {
+    "symbol": "BOY.L",
+    "name": "BODYCOTE"
+  },
+  {
+    "symbol": "COL.MC",
+    "name": "COLONIAL SFL"
+  },
+  {
+    "symbol": "YPSN.S",
+    "name": "YPSOMED HOLDING R"
+  },
+  {
+    "symbol": "WCHG.DE",
+    "name": "WACKER CHEMIE"
+  },
+  {
+    "symbol": "HEM.ST",
+    "name": "HEMNET"
+  },
+  {
+    "symbol": "LIAB.ST",
+    "name": "LINDAB INTERNATIONAL"
+  },
+  {
+    "symbol": "IOSn.DE",
+    "name": "IONOS GROUP"
+  },
+  {
+    "symbol": "LANDI.S",
+    "name": "LANDIS GYR GROUP AG"
+  },
+  {
+    "symbol": "CKN.L",
+    "name": "CLARKSON"
+  },
+  {
+    "symbol": "GPEG.L",
+    "name": "GREAT PORTLAND ESTATES"
+  },
+  {
+    "symbol": "OXIG.L",
+    "name": "OXFORD INSTRUMENTS"
+  },
+  {
+    "symbol": "HAFNI.OL",
+    "name": "HAFNIA"
+  },
+  {
+    "symbol": "FROTO.IS",
+    "name": "FORD OTOSAN"
+  },
+  {
+    "symbol": "PFD.L",
+    "name": "PREMIER FOODS"
+  },
+  {
+    "symbol": "ARYN.S",
+    "name": "ARYZTA"
+  },
+  {
+    "symbol": "TWKNc.AS",
+    "name": "TKH GROUP"
+  },
+  {
+    "symbol": "SRAIL.S",
+    "name": "STADLER RAIL AG"
+  },
+  {
+    "symbol": "DOFG.OL",
+    "name": "DOF GROUP"
+  },
+  {
+    "symbol": "BURE.ST",
+    "name": "BURE EQUITY"
+  },
+  {
+    "symbol": "TEP.L",
+    "name": "TELECOM PLUS"
+  },
+  {
+    "symbol": "BCG.L",
+    "name": "BALTIC CLASSIFIEDS GROUP"
+  },
+  {
+    "symbol": "NYFO.ST",
+    "name": "NYFOSA"
+  },
+  {
+    "symbol": "PETSP.L",
+    "name": "PETS AT HOME PLC"
+  },
+  {
+    "symbol": "REIT.AS",
+    "name": "REINET INVESTMENTS"
+  },
+  {
+    "symbol": "NLBR.LJ",
+    "name": "NOVA LJUBLJANSKA BANK DD NPV"
+  },
+  {
+    "symbol": "SNG.BX",
+    "name": "ROMGAZ S A"
+  },
+  {
+    "symbol": "ROH2O.BX",
+    "name": "SCTEA.DE PRODUCERE A ENERGIEI HIDROCENTR"
+  },
+  {
+    "symbol": "SOAC.BR",
+    "name": "SOLVAC"
+  },
+  {
+    "symbol": "PETG.LJ",
+    "name": "PETROL D.D."
+  },
+  {
+    "symbol": "VEI.OL",
+    "name": "VEIDEKKE"
+  },
+  {
+    "symbol": "BRGB.OL",
+    "name": "Borregaard"
+  },
+  {
+    "symbol": "HT.ZA",
+    "name": "HRVATSKI TELEKOM"
+  }
+]

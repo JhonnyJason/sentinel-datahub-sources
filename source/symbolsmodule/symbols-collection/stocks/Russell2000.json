@@ -1,0 +1,7814 @@
+[
+  {
+    "symbol": "BE",
+    "name": "BLOOM ENERGY CLASS A CORP"
+  },
+  {
+    "symbol": "CRDO",
+    "name": "CREDO TECHNOLOGY GROUP HOLDING LTD"
+  },
+  {
+    "symbol": "KTOS",
+    "name": "KRATOS DEFENSE AND SECURITY SOLUTI"
+  },
+  {
+    "symbol": "HL",
+    "name": "HECLA MINING"
+  },
+  {
+    "symbol": "FN",
+    "name": "FABRINET"
+  },
+  {
+    "symbol": "SATS",
+    "name": "ECHOSTAR CORP CLASS A"
+  },
+  {
+    "symbol": "IONQ",
+    "name": "IONQ INC"
+  },
+  {
+    "symbol": "CDE",
+    "name": "COEUR MINING INC"
+  },
+  {
+    "symbol": "NXT",
+    "name": "NEXTPOWER INC CLASS A"
+  },
+  {
+    "symbol": "GH",
+    "name": "GUARDANT HEALTH INC"
+  },
+  {
+    "symbol": "RMBS",
+    "name": "RAMBUS INC"
+  },
+  {
+    "symbol": "BBIO",
+    "name": "BRIDGEBIO PHARMA INC"
+  },
+  {
+    "symbol": "AVAV",
+    "name": "AEROVIRONMENT INC"
+  },
+  {
+    "symbol": "STRL",
+    "name": "STERLING INFRASTRUCTURE INC"
+  },
+  {
+    "symbol": "SPXC",
+    "name": "SPX TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "DY",
+    "name": "DYCOM INDUSTRIES INC"
+  },
+  {
+    "symbol": "TTMI",
+    "name": "TTM TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "AEIS",
+    "name": "ADVANCED ENERGY INDUSTRIES INC"
+  },
+  {
+    "symbol": "ENSG",
+    "name": "ENSIGN GROUP INC"
+  },
+  {
+    "symbol": "OKLO",
+    "name": "OKLO INC CLASS A"
+  },
+  {
+    "symbol": "SANM",
+    "name": "SANMINA CORP"
+  },
+  {
+    "symbol": "GTLS",
+    "name": "CHART INDUSTRIES INC"
+  },
+  {
+    "symbol": "UMBF",
+    "name": "UMB FINANCIAL CORP"
+  },
+  {
+    "symbol": "MDGL",
+    "name": "MADRIGAL PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "UEC",
+    "name": "URANIUM ENERGY CORP"
+  },
+  {
+    "symbol": "ARWR",
+    "name": "ARROWHEAD PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "QBTS",
+    "name": "D WAVE QUANTUM INC"
+  },
+  {
+    "symbol": "CMC",
+    "name": "COMMERCIAL METALS"
+  },
+  {
+    "symbol": "IDCC",
+    "name": "INTERDIGITAL INC"
+  },
+  {
+    "symbol": "COMP",
+    "name": "COMPASS INC CLASS A"
+  },
+  {
+    "symbol": "ONB",
+    "name": "OLD NATIONAL BANCORP"
+  },
+  {
+    "symbol": "CTRE",
+    "name": "CARETRUST REIT INC"
+  },
+  {
+    "symbol": "RNA",
+    "name": "AVIDITY BIOSCIENCES INC"
+  },
+  {
+    "symbol": "MOGA",
+    "name": "MOOG INC CLASS A"
+  },
+  {
+    "symbol": "APLD",
+    "name": "APPLIED DIGITAL CORP"
+  },
+  {
+    "symbol": "AHR",
+    "name": "AMERICAN HEALTHCARE REIT INC"
+  },
+  {
+    "symbol": "JBTM",
+    "name": "JBT MAREL CORP"
+  },
+  {
+    "symbol": "WTS",
+    "name": "WATTS WATER TECHNOLOGIES INC CLASS"
+  },
+  {
+    "symbol": "PRIM",
+    "name": "PRIMORIS SERVICES CORP"
+  },
+  {
+    "symbol": "SITM",
+    "name": "SITIME CORP"
+  },
+  {
+    "symbol": "LUMN",
+    "name": "LUMEN TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "AXSM",
+    "name": "AXSOME THERAPEUTICS INC"
+  },
+  {
+    "symbol": "PRAX",
+    "name": "PRAXIS PRECISION MEDICINES INC"
+  },
+  {
+    "symbol": "RGTI",
+    "name": "RIGETTI COMPUTING INC"
+  },
+  {
+    "symbol": "MOD",
+    "name": "MODINE MANUFACTURING"
+  },
+  {
+    "symbol": "ORA",
+    "name": "ORMAT TECH INC"
+  },
+  {
+    "symbol": "JXN",
+    "name": "JACKSON FINANCIAL INC CLASS A"
+  },
+  {
+    "symbol": "CADE",
+    "name": "CADENCE BANK"
+  },
+  {
+    "symbol": "CYTK",
+    "name": "CYTOKINETICS INC"
+  },
+  {
+    "symbol": "HQY",
+    "name": "HEALTHEQUITY INC"
+  },
+  {
+    "symbol": "FLR",
+    "name": "FLUOR CORP"
+  },
+  {
+    "symbol": "EAT",
+    "name": "BRINKER INTERNATIONAL INC"
+  },
+  {
+    "symbol": "IBP",
+    "name": "INSTALLED BUILDING PRODUCTS INC"
+  },
+  {
+    "symbol": "KRYS",
+    "name": "KRYSTAL BIOTECH INC"
+  },
+  {
+    "symbol": "ZWS",
+    "name": "ZURN ELKAY WATER SOLUTIONS CORP"
+  },
+  {
+    "symbol": "SMTC",
+    "name": "SEMTECH CORP"
+  },
+  {
+    "symbol": "JOBY",
+    "name": "JOBY AVIATION INC CLASS A"
+  },
+  {
+    "symbol": "GKOS",
+    "name": "GLAUKOS CORP"
+  },
+  {
+    "symbol": "FSS",
+    "name": "FEDERAL SIGNAL CORP"
+  },
+  {
+    "symbol": "FCFS",
+    "name": "FIRSTCASH HOLDINGS INC"
+  },
+  {
+    "symbol": "CWAN",
+    "name": "CLEARWATER ANALYTICS HOLDINGS INC"
+  },
+  {
+    "symbol": "CWST",
+    "name": "CASELLA WASTE SYSTEMS INC CLASS A"
+  },
+  {
+    "symbol": "PIPR",
+    "name": "PIPER SANDLER COMPANIES"
+  },
+  {
+    "symbol": "GATX",
+    "name": "GATX CORP"
+  },
+  {
+    "symbol": "FORM",
+    "name": "FORMFACTOR INC"
+  },
+  {
+    "symbol": "ENS",
+    "name": "ENERSYS"
+  },
+  {
+    "symbol": "TRNO",
+    "name": "TERRENO REALTY REIT CORP"
+  },
+  {
+    "symbol": "MIR",
+    "name": "MIRION TECHNOLOGIES INC CLASS A"
+  },
+  {
+    "symbol": "GBCI",
+    "name": "GLACIER BANCORP INC"
+  },
+  {
+    "symbol": "PL",
+    "name": "PLANET LABS CLASS A"
+  },
+  {
+    "symbol": "UFPI",
+    "name": "UFP INDUSTRIES INC"
+  },
+  {
+    "symbol": "TMHC",
+    "name": "TAYLOR MORRISON HOME CORP"
+  },
+  {
+    "symbol": "EPRT",
+    "name": "ESSENTIAL PROPERTIES REALTY TRUST"
+  },
+  {
+    "symbol": "BOOT",
+    "name": "BOOT BARN HOLDINGS INC"
+  },
+  {
+    "symbol": "VLY",
+    "name": "VALLEY NATIONAL"
+  },
+  {
+    "symbol": "XTSLA",
+    "name": "BLK CSH FND TREASURY SL AGENCY"
+  },
+  {
+    "symbol": "TXNM",
+    "name": "TXNM ENERGY INC"
+  },
+  {
+    "symbol": "UBSI",
+    "name": "UNITED BANKSHARES INC"
+  },
+  {
+    "symbol": "RIOT",
+    "name": "RIOT PLATFORMS INC"
+  },
+  {
+    "symbol": "HWC",
+    "name": "HANCOCK WHITNEY CORP"
+  },
+  {
+    "symbol": "RHP",
+    "name": "RYMAN HOSPITALITY PROPERTIES REIT"
+  },
+  {
+    "symbol": "HIMS",
+    "name": "HIMS HERS HEALTH INC CLASS A"
+  },
+  {
+    "symbol": "ESE",
+    "name": "ESCO TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "PTCT",
+    "name": "PTC THERAPEUTICS INC"
+  },
+  {
+    "symbol": "ESNT",
+    "name": "ESSENT GROUP LTD"
+  },
+  {
+    "symbol": "OPCH",
+    "name": "OPTION CARE HEALTH INC"
+  },
+  {
+    "symbol": "CIFR",
+    "name": "CIPHER MINING INC"
+  },
+  {
+    "symbol": "PCVX",
+    "name": "VAXCYTE INC"
+  },
+  {
+    "symbol": "AUB",
+    "name": "ATLANTIC UNION BANKSHARES CORP"
+  },
+  {
+    "symbol": "POR",
+    "name": "PORTLAND GENERAL ELECTRIC"
+  },
+  {
+    "symbol": "ACA",
+    "name": "ARCOSA INC"
+  },
+  {
+    "symbol": "HOMB",
+    "name": "HOME BANCSHARES INC"
+  },
+  {
+    "symbol": "HUT",
+    "name": "HUT CORP"
+  },
+  {
+    "symbol": "RYTM",
+    "name": "RHYTHM PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "SWX",
+    "name": "SOUTHWEST GAS HOLDINGS INC"
+  },
+  {
+    "symbol": "ABCB",
+    "name": "AMERIS BANCORP"
+  },
+  {
+    "symbol": "MMS",
+    "name": "MAXIMUS INC"
+  },
+  {
+    "symbol": "COGT",
+    "name": "COGENT BIOSCIENCES INC"
+  },
+  {
+    "symbol": "BCPC",
+    "name": "BALCHEM CORP"
+  },
+  {
+    "symbol": "BIPC",
+    "name": "BROOKFIELD INFRASTRUCTURE CORP CLA"
+  },
+  {
+    "symbol": "ALKS",
+    "name": "ALKERMES"
+  },
+  {
+    "symbol": "NUVL",
+    "name": "NUVALENT INC CLASS A"
+  },
+  {
+    "symbol": "CVCO",
+    "name": "CAVCO INDUSTRIES INC"
+  },
+  {
+    "symbol": "BKH",
+    "name": "BLACK HILLS CORP"
+  },
+  {
+    "symbol": "EOSE",
+    "name": "EOS ENERGY ENTERPRISES INC CLASS A"
+  },
+  {
+    "symbol": "SNEX",
+    "name": "STONEX GROUP INC"
+  },
+  {
+    "symbol": "SKY",
+    "name": "CHAMPION HOMES INC"
+  },
+  {
+    "symbol": "CRNX",
+    "name": "CRINETICS PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "HRI",
+    "name": "HERC HOLDINGS INC"
+  },
+  {
+    "symbol": "CSW",
+    "name": "CSW INDUSTRIALS INC"
+  },
+  {
+    "symbol": "GVA",
+    "name": "GRANITE CONSTRUCTION INC"
+  },
+  {
+    "symbol": "ACHR",
+    "name": "ARCHER AVIATION INC CLASS A"
+  },
+  {
+    "symbol": "CVLT",
+    "name": "COMMVAULT SYSTEMS INC"
+  },
+  {
+    "symbol": "AGX",
+    "name": "ARGAN INC"
+  },
+  {
+    "symbol": "CORZ",
+    "name": "CORE SCIENTIFIC INC"
+  },
+  {
+    "symbol": "BCO",
+    "name": "BRINKS"
+  },
+  {
+    "symbol": "STEP",
+    "name": "STEPSTONE GROUP INC CLASS A"
+  },
+  {
+    "symbol": "MTH",
+    "name": "MERITAGE CORP"
+  },
+  {
+    "symbol": "VSAT",
+    "name": "VIASAT INC"
+  },
+  {
+    "symbol": "AX",
+    "name": "AXOS FINANCIAL INC"
+  },
+  {
+    "symbol": "ROAD",
+    "name": "CONSTRUCTION PARTNERS INC CLASS A"
+  },
+  {
+    "symbol": "IRTC",
+    "name": "IRHYTHM HOLDINGS"
+  },
+  {
+    "symbol": "KRG",
+    "name": "KITE REALTY GROUP TRUST REIT"
+  },
+  {
+    "symbol": "HCC",
+    "name": "WARRIOR MET COAL INC"
+  },
+  {
+    "symbol": "MRCY",
+    "name": "MERCURY SYSTEMS INC"
+  },
+  {
+    "symbol": "LMND",
+    "name": "LEMONADE INC"
+  },
+  {
+    "symbol": "CNR",
+    "name": "CORE NATURAL RESOURCES INC"
+  },
+  {
+    "symbol": "UUUU",
+    "name": "ENERGY FUELS INC"
+  },
+  {
+    "symbol": "LEU",
+    "name": "CENTRUS ENERGY CORP CLASS A"
+  },
+  {
+    "symbol": "NOVT",
+    "name": "NOVANTA INC"
+  },
+  {
+    "symbol": "SIGI",
+    "name": "SELECTIVE INSURANCE GROUP INC"
+  },
+  {
+    "symbol": "BMI",
+    "name": "BADGER METER INC"
+  },
+  {
+    "symbol": "NPO",
+    "name": "ENPRO INC"
+  },
+  {
+    "symbol": "GPI",
+    "name": "GROUP AUTOMOTIVE INC"
+  },
+  {
+    "symbol": "SLAB",
+    "name": "SILICON LABORATORIES INC"
+  },
+  {
+    "symbol": "VSEC",
+    "name": "VSE CORP"
+  },
+  {
+    "symbol": "SR",
+    "name": "SPIRE INC"
+  },
+  {
+    "symbol": "ABG",
+    "name": "ASBURY AUTOMOTIVE GROUP INC"
+  },
+  {
+    "symbol": "RDNT",
+    "name": "RADNET INC"
+  },
+  {
+    "symbol": "MATX",
+    "name": "MATSON INC"
+  },
+  {
+    "symbol": "MMSI",
+    "name": "MERIT MEDICAL SYSTEMS INC"
+  },
+  {
+    "symbol": "PLXS",
+    "name": "PLEXUS CORP"
+  },
+  {
+    "symbol": "CNX",
+    "name": "CNX RESOURCES CORP"
+  },
+  {
+    "symbol": "PTGX",
+    "name": "PROTAGONIST THERAPEUTICS INC"
+  },
+  {
+    "symbol": "NJR",
+    "name": "NEW JERSEY RESOURCES CORP"
+  },
+  {
+    "symbol": "QLYS",
+    "name": "QUALYS INC"
+  },
+  {
+    "symbol": "AROC",
+    "name": "ARCHROCK INC"
+  },
+  {
+    "symbol": "MAC",
+    "name": "MACERICH REIT"
+  },
+  {
+    "symbol": "ATMU",
+    "name": "ATMUS FILTRATION TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "CRSP",
+    "name": "CRISPR THERAPEUTICS AG"
+  },
+  {
+    "symbol": "BTU",
+    "name": "PEABODY ENERGY CORP"
+  },
+  {
+    "symbol": "OGS",
+    "name": "ONE GAS INC"
+  },
+  {
+    "symbol": "REZI",
+    "name": "RESIDEO TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "SSRM",
+    "name": "SSR MINING INC"
+  },
+  {
+    "symbol": "TCBI",
+    "name": "TEXAS CAPITAL BANCSHARES INC"
+  },
+  {
+    "symbol": "OSIS",
+    "name": "OSI SYSTEMS INC"
+  },
+  {
+    "symbol": "BDC",
+    "name": "BELDEN INC"
+  },
+  {
+    "symbol": "ASB",
+    "name": "ASSOCIATED BANCORP"
+  },
+  {
+    "symbol": "LAUR",
+    "name": "LAUREATE EDUCATION INC"
+  },
+  {
+    "symbol": "SBRA",
+    "name": "SABRA HEALTH CARE REIT INC"
+  },
+  {
+    "symbol": "ANF",
+    "name": "ABERCROMBIE AND FITCH CLASS A"
+  },
+  {
+    "symbol": "KNF",
+    "name": "KNIFE RIVER CORP"
+  },
+  {
+    "symbol": "TGTX",
+    "name": "TG THERAPEUTICS INC"
+  },
+  {
+    "symbol": "RDN",
+    "name": "RADIAN GROUP INC"
+  },
+  {
+    "symbol": "PECO",
+    "name": "PHILLIPS EDISON AND COMPANY INC"
+  },
+  {
+    "symbol": "MC",
+    "name": "MOELIS CLASS A"
+  },
+  {
+    "symbol": "FFIN",
+    "name": "FIRST FINANCIAL BANKSHARES INC"
+  },
+  {
+    "symbol": "SFBS",
+    "name": "SERVISFIRST BANCSHARES INC"
+  },
+  {
+    "symbol": "PI",
+    "name": "IMPINJ INC"
+  },
+  {
+    "symbol": "VSCO",
+    "name": "VICTORIA S SECRET"
+  },
+  {
+    "symbol": "EBC",
+    "name": "EASTERN BANKSHARES INC"
+  },
+  {
+    "symbol": "ITRI",
+    "name": "ITRON INC"
+  },
+  {
+    "symbol": "TMDX",
+    "name": "TRANSMEDICS GROUP INC"
+  },
+  {
+    "symbol": "PJT",
+    "name": "PJT PARTNERS INC CLASS A"
+  },
+  {
+    "symbol": "ACIW",
+    "name": "ACI WORLDWIDE INC"
+  },
+  {
+    "symbol": "PFSI",
+    "name": "PENNYMAC FINANCIAL SERVICES INC"
+  },
+  {
+    "symbol": "LNTH",
+    "name": "LANTHEUS HOLDINGS INC"
+  },
+  {
+    "symbol": "FTDR",
+    "name": "FRONTDOOR INC"
+  },
+  {
+    "symbol": "URBN",
+    "name": "URBAN OUTFITTERS INC"
+  },
+  {
+    "symbol": "BTSG",
+    "name": "BRIGHTSPRING HEALTH SERVICES INC"
+  },
+  {
+    "symbol": "TDS",
+    "name": "TELEPHONE AND DATA SYSTEMS INC"
+  },
+  {
+    "symbol": "ATGE",
+    "name": "ADTALEM GLOBAL EDUCATION INC"
+  },
+  {
+    "symbol": "PATK",
+    "name": "PATRICK INDUSTRIES INC"
+  },
+  {
+    "symbol": "IESC",
+    "name": "IES INC"
+  },
+  {
+    "symbol": "RIG",
+    "name": "TRANSOCEAN LTD"
+  },
+  {
+    "symbol": "MGY",
+    "name": "MAGNOLIA OIL GAS CORP CLASS A"
+  },
+  {
+    "symbol": "MUR",
+    "name": "MURPHY OIL CORP"
+  },
+  {
+    "symbol": "NE",
+    "name": "NOBLE CORPORATION PLC"
+  },
+  {
+    "symbol": "FOLD",
+    "name": "AMICUS THERAPEUTICS INC"
+  },
+  {
+    "symbol": "VIAV",
+    "name": "VIAVI SOLUTIONS INC"
+  },
+  {
+    "symbol": "NWE",
+    "name": "NORTHWESTERN ENERGY GROUP INC"
+  },
+  {
+    "symbol": "UCB",
+    "name": "UNITED COMMUNITY BANKS INC"
+  },
+  {
+    "symbol": "LTH",
+    "name": "LIFE TIME GROUP HOLDINGS INC"
+  },
+  {
+    "symbol": "HASI",
+    "name": "HA SUSTAINABLE INFRASTRUCTURE CAPI"
+  },
+  {
+    "symbol": "AIR",
+    "name": "AAR CORP"
+  },
+  {
+    "symbol": "AEO",
+    "name": "AMERICAN EAGLE OUTFITTERS INC"
+  },
+  {
+    "symbol": "SKYW",
+    "name": "SKYWEST INC"
+  },
+  {
+    "symbol": "MWA",
+    "name": "MUELLER WATER PRODUCTS INC SERIES"
+  },
+  {
+    "symbol": "SXT",
+    "name": "SENSIENT TECHNOLOGIES CORP"
+  },
+  {
+    "symbol": "IRT",
+    "name": "INDEPENDENCE REALTY INC TRUST"
+  },
+  {
+    "symbol": "QTWO",
+    "name": "Q2 HOLDINGS INC"
+  },
+  {
+    "symbol": "CNO",
+    "name": "CNO FINANCIAL GROUP INC"
+  },
+  {
+    "symbol": "FLG",
+    "name": "FLAGSTAR BANK NATIONAL ASSOCIATION"
+  },
+  {
+    "symbol": "POWL",
+    "name": "POWELL INDUSTRIES INC"
+  },
+  {
+    "symbol": "ADMA",
+    "name": "ADMA BIOLOGICS INC"
+  },
+  {
+    "symbol": "WK",
+    "name": "WORKIVA INC CLASS A"
+  },
+  {
+    "symbol": "INDV",
+    "name": "INDIVIOR PLC"
+  },
+  {
+    "symbol": "KYMR",
+    "name": "KYMERA THERAPEUTICS INC"
+  },
+  {
+    "symbol": "RUN",
+    "name": "SUNRUN INC"
+  },
+  {
+    "symbol": "WULF",
+    "name": "TERAWULF INC"
+  },
+  {
+    "symbol": "INDB",
+    "name": "INDEPENDENT BANK CORP"
+  },
+  {
+    "symbol": "SOUN",
+    "name": "SOUNDHOUND AI INC CLASS A"
+  },
+  {
+    "symbol": "IBOC",
+    "name": "INTERNATIONAL BANCSHARES CORP"
+  },
+  {
+    "symbol": "MYRG",
+    "name": "MYR GROUP INC"
+  },
+  {
+    "symbol": "RUSHA",
+    "name": "RUSH ENTERPRISES INC CLASS A"
+  },
+  {
+    "symbol": "VISN",
+    "name": "VISTANCE NETWORKS INC"
+  },
+  {
+    "symbol": "ALHC",
+    "name": "ALIGNMENT HEALTHCARE INC"
+  },
+  {
+    "symbol": "MARA",
+    "name": "MARA HOLDINGS INC"
+  },
+  {
+    "symbol": "PRM",
+    "name": "PERIMETER SOLUTIONS INC"
+  },
+  {
+    "symbol": "UPST",
+    "name": "UPSTART HOLDINGS INC"
+  },
+  {
+    "symbol": "GLNG",
+    "name": "GOLAR LNG LTD"
+  },
+  {
+    "symbol": "TEX",
+    "name": "TEREX CORP"
+  },
+  {
+    "symbol": "KBH",
+    "name": "KB HOME"
+  },
+  {
+    "symbol": "CBT",
+    "name": "CABOT CORP"
+  },
+  {
+    "symbol": "ASO",
+    "name": "ACADEMY SPORTS AND OUTDOORS INC"
+  },
+  {
+    "symbol": "LGND",
+    "name": "LIGAND PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "WHD",
+    "name": "CACTUS INC CLASS A"
+  },
+  {
+    "symbol": "ZETA",
+    "name": "ZETA GLOBAL HOLDINGS CORP CLASS A"
+  },
+  {
+    "symbol": "FELE",
+    "name": "FRANKLIN ELECTRIC INC"
+  },
+  {
+    "symbol": "GHC",
+    "name": "GRAHAM HOLDINGS COMPANY CLASS B"
+  },
+  {
+    "symbol": "KAI",
+    "name": "KADANT INC"
+  },
+  {
+    "symbol": "ENVA",
+    "name": "ENOVA INTERNATIONAL INC"
+  },
+  {
+    "symbol": "VRNS",
+    "name": "VARONIS SYSTEMS INC"
+  },
+  {
+    "symbol": "MIRM",
+    "name": "MIRUM PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "NHI",
+    "name": "NATIONAL HEALTH INVESTORS REIT INC"
+  },
+  {
+    "symbol": "SRRK",
+    "name": "SCHOLAR ROCK HOLDING CORP"
+  },
+  {
+    "symbol": "OUT",
+    "name": "OUTFRONT MEDIA INC"
+  },
+  {
+    "symbol": "SIG",
+    "name": "SIGNET JEWELERS LTD"
+  },
+  {
+    "symbol": "EXPO",
+    "name": "EXPONENT INC"
+  },
+  {
+    "symbol": "STNE",
+    "name": "STONECO LTD CLASS A"
+  },
+  {
+    "symbol": "ICUI",
+    "name": "ICU MEDICAL INC"
+  },
+  {
+    "symbol": "BKU",
+    "name": "BANKUNITED INC"
+  },
+  {
+    "symbol": "PSMT",
+    "name": "PRICESMART INC"
+  },
+  {
+    "symbol": "AZZ",
+    "name": "AZZ INC"
+  },
+  {
+    "symbol": "SKT",
+    "name": "TANGER INC"
+  },
+  {
+    "symbol": "PII",
+    "name": "POLARIS INC"
+  },
+  {
+    "symbol": "VICR",
+    "name": "VICOR CORP"
+  },
+  {
+    "symbol": "RNST",
+    "name": "RENASANT CORP"
+  },
+  {
+    "symbol": "FULT",
+    "name": "FULTON FINANCIAL CORP"
+  },
+  {
+    "symbol": "SHAK",
+    "name": "SHAKE SHACK INC CLASS A"
+  },
+  {
+    "symbol": "BOX",
+    "name": "BOX INC CLASS A"
+  },
+  {
+    "symbol": "MHO",
+    "name": "M I HOMES INC"
+  },
+  {
+    "symbol": "CRC",
+    "name": "CALIFORNIA RESOURCES CORP"
+  },
+  {
+    "symbol": "LCII",
+    "name": "LCI INDUSTRIES"
+  },
+  {
+    "symbol": "KFY",
+    "name": "KORN FERRY"
+  },
+  {
+    "symbol": "BNL",
+    "name": "BROADSTONE NET LEASE INC"
+  },
+  {
+    "symbol": "DAN",
+    "name": "DANA INCORPORATED INC"
+  },
+  {
+    "symbol": "CLSK",
+    "name": "CLEANSPARK INC"
+  },
+  {
+    "symbol": "GRAL",
+    "name": "GRAIL INC"
+  },
+  {
+    "symbol": "VRRM",
+    "name": "VERRA MOBILITY CORP CLASS A"
+  },
+  {
+    "symbol": "PCH",
+    "name": "POTLATCHDELTIC CORP"
+  },
+  {
+    "symbol": "DORM",
+    "name": "DORMAN PRODUCTS INC"
+  },
+  {
+    "symbol": "CALM",
+    "name": "CAL MAINE FOODS INC"
+  },
+  {
+    "symbol": "FIBK",
+    "name": "FIRST INTERSTATE BANCSYSTEM INC"
+  },
+  {
+    "symbol": "CATY",
+    "name": "CATHAY GENERAL BANCORP"
+  },
+  {
+    "symbol": "FBP",
+    "name": "FIRST BANCORP"
+  },
+  {
+    "symbol": "DOCN",
+    "name": "DIGITALOCEAN HOLDINGS INC"
+  },
+  {
+    "symbol": "CDP",
+    "name": "COPT DEFENSE PROPERTIES"
+  },
+  {
+    "symbol": "SPSC",
+    "name": "SPS COMMERCE INC"
+  },
+  {
+    "symbol": "SYNA",
+    "name": "SYNAPTICS INC"
+  },
+  {
+    "symbol": "OTTR",
+    "name": "OTTER TAIL CORP"
+  },
+  {
+    "symbol": "LIVN",
+    "name": "LIVANOVA PLC"
+  },
+  {
+    "symbol": "CELC",
+    "name": "CELCUITY INC"
+  },
+  {
+    "symbol": "VAL",
+    "name": "VALARIS LTD"
+  },
+  {
+    "symbol": "WSBC",
+    "name": "WESBANCO INC"
+  },
+  {
+    "symbol": "PLMR",
+    "name": "PALOMAR HOLDINGS INC"
+  },
+  {
+    "symbol": "CBU",
+    "name": "COMMUNITY FINANCIAL SYSTEM INC"
+  },
+  {
+    "symbol": "WSFS",
+    "name": "WSFS FINANCIAL CORP"
+  },
+  {
+    "symbol": "CALX",
+    "name": "CALIX NETWORKS INC"
+  },
+  {
+    "symbol": "SLG",
+    "name": "SL GREEN REALTY REIT CORP"
+  },
+  {
+    "symbol": "AVNT",
+    "name": "AVIENT CORP"
+  },
+  {
+    "symbol": "VCYT",
+    "name": "VERACYTE INC"
+  },
+  {
+    "symbol": "HAE",
+    "name": "HAEMONETICS CORP"
+  },
+  {
+    "symbol": "MZTI",
+    "name": "MARZETTI"
+  },
+  {
+    "symbol": "TPC",
+    "name": "TUTOR PERINI CORP"
+  },
+  {
+    "symbol": "LBRT",
+    "name": "LIBERTY ENERGY INC CLASS A"
+  },
+  {
+    "symbol": "KGS",
+    "name": "KODIAK GAS SERVICES INC"
+  },
+  {
+    "symbol": "ACAD",
+    "name": "ACADIA PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "BGC",
+    "name": "BGC GROUP INC CLASS A"
+  },
+  {
+    "symbol": "KTB",
+    "name": "KONTOOR BRANDS INC"
+  },
+  {
+    "symbol": "REVG",
+    "name": "REV GROUP INC"
+  },
+  {
+    "symbol": "PBH",
+    "name": "PRESTIGE CONSUMER HEALTHCARE INC"
+  },
+  {
+    "symbol": "GFF",
+    "name": "GRIFFON CORP"
+  },
+  {
+    "symbol": "WAY",
+    "name": "WAYSTAR HOLDING CORP"
+  },
+  {
+    "symbol": "AVA",
+    "name": "AVISTA CORP"
+  },
+  {
+    "symbol": "SHOO",
+    "name": "STEVEN MADDEN LTD"
+  },
+  {
+    "symbol": "OPLN",
+    "name": "OPENLANE INC"
+  },
+  {
+    "symbol": "GNW",
+    "name": "GENWORTH FINANCIAL INC"
+  },
+  {
+    "symbol": "FUL",
+    "name": "HB FULLER"
+  },
+  {
+    "symbol": "BCC",
+    "name": "BOISE CASCADE"
+  },
+  {
+    "symbol": "HP",
+    "name": "HELMERICH &amp; PAYNE INC"
+  },
+  {
+    "symbol": "CGON",
+    "name": "CG ONCOLOGY INC"
+  },
+  {
+    "symbol": "CSTM",
+    "name": "CONSTELLIUM SE CLASS A"
+  },
+  {
+    "symbol": "TERN",
+    "name": "TERNS PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "APGE",
+    "name": "APOGEE THERAPEUTICS INC"
+  },
+  {
+    "symbol": "BXMT",
+    "name": "BLACKSTONE MORTGAGE TRUST REIT CLA"
+  },
+  {
+    "symbol": "GPOR",
+    "name": "GULFPORT ENERGY CORP"
+  },
+  {
+    "symbol": "VCTR",
+    "name": "VICTORY CAPITAL HOLDINGS CLASS A I"
+  },
+  {
+    "symbol": "XENE",
+    "name": "XENON PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "USD",
+    "name": "USD CASH"
+  },
+  {
+    "symbol": "GSAT",
+    "name": "GLOBALSTAR VOTING INC"
+  },
+  {
+    "symbol": "MTRN",
+    "name": "MATERION CORP"
+  },
+  {
+    "symbol": "TGNA",
+    "name": "TEGNA INC"
+  },
+  {
+    "symbol": "RRR",
+    "name": "RED ROCK RESORTS ORS CLASS A INC"
+  },
+  {
+    "symbol": "LRN",
+    "name": "STRIDE INC"
+  },
+  {
+    "symbol": "SBCF",
+    "name": "SEACOAST BANKING OF FLORIDA"
+  },
+  {
+    "symbol": "KLIC",
+    "name": "KULICKE AND SOFFA INDUSTRIES INC"
+  },
+  {
+    "symbol": "OSCR",
+    "name": "OSCAR HEALTH INC CLASS A"
+  },
+  {
+    "symbol": "NG",
+    "name": "NOVAGOLD RESOURCES INC"
+  },
+  {
+    "symbol": "HNI",
+    "name": "HNI CORP"
+  },
+  {
+    "symbol": "SFNC",
+    "name": "SIMMONS FIRST NATIONAL CORP CLASS"
+  },
+  {
+    "symbol": "UNF",
+    "name": "UNIFIRST CORP"
+  },
+  {
+    "symbol": "NMIH",
+    "name": "NMI HOLDINGS INC"
+  },
+  {
+    "symbol": "ITGR",
+    "name": "INTEGER HOLDINGS CORP"
+  },
+  {
+    "symbol": "HURN",
+    "name": "HURON CONSULTING GROUP INC"
+  },
+  {
+    "symbol": "HWKN",
+    "name": "HAWKINS INC"
+  },
+  {
+    "symbol": "TBBK",
+    "name": "BANCORP INC"
+  },
+  {
+    "symbol": "YOU",
+    "name": "CLEAR SECURE INC CLASS A"
+  },
+  {
+    "symbol": "TPH",
+    "name": "TRI POINTE HOMES INC"
+  },
+  {
+    "symbol": "BEAM",
+    "name": "BEAM THERAPEUTICS INC"
+  },
+  {
+    "symbol": "LXP",
+    "name": "LXP INDUSTRIAL TRUST"
+  },
+  {
+    "symbol": "SXI",
+    "name": "STANDEX INTERNATIONAL CORP"
+  },
+  {
+    "symbol": "MGEE",
+    "name": "MGE ENERGY INC"
+  },
+  {
+    "symbol": "ARQT",
+    "name": "ARCUTIS BIOTHERAPEUTICS INC"
+  },
+  {
+    "symbol": "GTX",
+    "name": "GARRETT MOTION INC"
+  },
+  {
+    "symbol": "TDW",
+    "name": "TIDEWATER INC"
+  },
+  {
+    "symbol": "CPK",
+    "name": "CHESAPEAKE UTILITIES CORP"
+  },
+  {
+    "symbol": "BKD",
+    "name": "BROOKDALE SENIOR LIVING INC"
+  },
+  {
+    "symbol": "CPRI",
+    "name": "CAPRI HOLDINGS LTD"
+  },
+  {
+    "symbol": "BOH",
+    "name": "BANK OF HAWAII CORP"
+  },
+  {
+    "symbol": "ACLS",
+    "name": "AXCELIS TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "FFBC",
+    "name": "FIRST FINANCIAL BANCORP"
+  },
+  {
+    "symbol": "HUBG",
+    "name": "HUB GROUP INC CLASS A"
+  },
+  {
+    "symbol": "IDYA",
+    "name": "IDEAYA BIOSCIENCES INC"
+  },
+  {
+    "symbol": "APLE",
+    "name": "APPLE HOSPITALITY REIT INC"
+  },
+  {
+    "symbol": "HGV",
+    "name": "HILTON GRAND VACATIONS INC"
+  },
+  {
+    "symbol": "OII",
+    "name": "OCEANEERING INTERNATIONAL INC"
+  },
+  {
+    "symbol": "AWR",
+    "name": "AMERICAN STATES WATER"
+  },
+  {
+    "symbol": "WDFC",
+    "name": "WD-40"
+  },
+  {
+    "symbol": "ABM",
+    "name": "ABM INDUSTRIES INC"
+  },
+  {
+    "symbol": "APAM",
+    "name": "ARTISAN PARTNERS ASSET MANAGEMENT"
+  },
+  {
+    "symbol": "TARS",
+    "name": "TARSUS PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "CARG",
+    "name": "CARGURUS INC CLASS A"
+  },
+  {
+    "symbol": "NATL",
+    "name": "NCR ATLEOS CORP"
+  },
+  {
+    "symbol": "CAKE",
+    "name": "CHEESECAKE FACTORY INC"
+  },
+  {
+    "symbol": "CPRX",
+    "name": "CATALYST PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "AMBA",
+    "name": "AMBARELLA INC"
+  },
+  {
+    "symbol": "AGYS",
+    "name": "AGILYSYS INC"
+  },
+  {
+    "symbol": "CVBF",
+    "name": "CVB FINANCIAL CORP"
+  },
+  {
+    "symbol": "PBF",
+    "name": "PBF ENERGY INC CLASS A"
+  },
+  {
+    "symbol": "AMR",
+    "name": "ALPHA METALLURGICAL RESOURCE INC"
+  },
+  {
+    "symbol": "PRVA",
+    "name": "PRIVIA HEALTH GROUP INC"
+  },
+  {
+    "symbol": "AKR",
+    "name": "ACADIA REALTY TRUST REIT"
+  },
+  {
+    "symbol": "MGRC",
+    "name": "MCGRATH RENT"
+  },
+  {
+    "symbol": "BANC",
+    "name": "BANC OF CALIFORNIA INC"
+  },
+  {
+    "symbol": "AAP",
+    "name": "ADVANCE AUTO PARTS INC"
+  },
+  {
+    "symbol": "DIOD",
+    "name": "DIODES INC"
+  },
+  {
+    "symbol": "DBRG",
+    "name": "DIGITALBRIDGE GROUP INC CLASS A"
+  },
+  {
+    "symbol": "TENB",
+    "name": "TENABLE HOLDINGS INC"
+  },
+  {
+    "symbol": "TOWN",
+    "name": "TOWNEBANK"
+  },
+  {
+    "symbol": "ACMR",
+    "name": "ACM RESEARCH CLASS A INC"
+  },
+  {
+    "symbol": "BL",
+    "name": "BLACKLINE INC"
+  },
+  {
+    "symbol": "PPTA",
+    "name": "PERPETUA RESOURCES CORP"
+  },
+  {
+    "symbol": "PHIN",
+    "name": "PHINIA INC"
+  },
+  {
+    "symbol": "DNOW",
+    "name": "DNOW INC"
+  },
+  {
+    "symbol": "SUPN",
+    "name": "SUPERNUS PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "NMRK",
+    "name": "NEWMARK GROUP INC CLASS A"
+  },
+  {
+    "symbol": "CUBI",
+    "name": "CUSTOMERS BANCORP INC"
+  },
+  {
+    "symbol": "STNG",
+    "name": "SCORPIO TANKERS INC"
+  },
+  {
+    "symbol": "CWT",
+    "name": "CALIFORNIA WATER SERVICE GROUP"
+  },
+  {
+    "symbol": "XMTR",
+    "name": "XOMETRY INC CLASS A"
+  },
+  {
+    "symbol": "VC",
+    "name": "VISTEON CORP"
+  },
+  {
+    "symbol": "ADPT",
+    "name": "ADAPTIVE BIOTECHNOLOGIES CORP"
+  },
+  {
+    "symbol": "KMT",
+    "name": "KENNAMETAL INC"
+  },
+  {
+    "symbol": "TWST",
+    "name": "TWIST BIOSCIENCE CORP"
+  },
+  {
+    "symbol": "WRBY",
+    "name": "WARBY PARKER INC CLASS A"
+  },
+  {
+    "symbol": "SPHR",
+    "name": "SPHERE ENTERTAINMENT CLASS A"
+  },
+  {
+    "symbol": "WAFD",
+    "name": "WAFD INC"
+  },
+  {
+    "symbol": "GT",
+    "name": "GOODYEAR TIRE &amp; RUBBER"
+  },
+  {
+    "symbol": "VRDN",
+    "name": "VIRIDIAN THERAPEUTICS ORS INC"
+  },
+  {
+    "symbol": "FBK",
+    "name": "FB FINANCIAL CORP"
+  },
+  {
+    "symbol": "GOLF",
+    "name": "ACUSHNET HOLDINGS CORP"
+  },
+  {
+    "symbol": "PTEN",
+    "name": "PATTERSON UTI ENERGY INC"
+  },
+  {
+    "symbol": "HE",
+    "name": "HAWAIIAN ELECTRIC INDUSTRIES INC"
+  },
+  {
+    "symbol": "LQDA",
+    "name": "LIQUIDIA CORP"
+  },
+  {
+    "symbol": "COCO",
+    "name": "THE VITA COCO COMPANY INC"
+  },
+  {
+    "symbol": "PFS",
+    "name": "PROVIDENT FINANCIAL SERVICES INC"
+  },
+  {
+    "symbol": "VERA",
+    "name": "VERA THERAPEUTICS INC CLASS A"
+  },
+  {
+    "symbol": "POWI",
+    "name": "POWER INTEGRATIONS INC"
+  },
+  {
+    "symbol": "CON",
+    "name": "CONCENTRA GROUP HOLDINGS PARENT IN"
+  },
+  {
+    "symbol": "TRMK",
+    "name": "TRUSTMARK CORP"
+  },
+  {
+    "symbol": "CENX",
+    "name": "CENTURY ALUMINUM"
+  },
+  {
+    "symbol": "RXO",
+    "name": "RXO INC"
+  },
+  {
+    "symbol": "PRK",
+    "name": "PARK NATIONAL CORP"
+  },
+  {
+    "symbol": "SMR",
+    "name": "NUSCALE POWER CORP CLASS A"
+  },
+  {
+    "symbol": "FCPT",
+    "name": "FOUR CORNERS PROPERTY INC TRUST"
+  },
+  {
+    "symbol": "CNK",
+    "name": "CINEMARK HOLDINGS INC"
+  },
+  {
+    "symbol": "UE",
+    "name": "URBAN EDGE PROPERTIES"
+  },
+  {
+    "symbol": "PLUG",
+    "name": "PLUG POWER INC"
+  },
+  {
+    "symbol": "JOE",
+    "name": "ST JOE"
+  },
+  {
+    "symbol": "TXG",
+    "name": "10X GENOMICS INC CLASS A"
+  },
+  {
+    "symbol": "BBAI",
+    "name": "BIGBEAR.AI HOLDINGS INC"
+  },
+  {
+    "symbol": "FBNC",
+    "name": "FIRST BANCORP"
+  },
+  {
+    "symbol": "BBT",
+    "name": "BEACON FINANCIAL CORP"
+  },
+  {
+    "symbol": "DNLI",
+    "name": "DENALI THERAPEUTICS INC"
+  },
+  {
+    "symbol": "ATKR",
+    "name": "ATKORE INC"
+  },
+  {
+    "symbol": "NGVT",
+    "name": "INGEVITY CORP"
+  },
+  {
+    "symbol": "CC",
+    "name": "CHEMOURS"
+  },
+  {
+    "symbol": "MCY",
+    "name": "MERCURY GENERAL CORP"
+  },
+  {
+    "symbol": "BANF",
+    "name": "BANCFIRST CORP"
+  },
+  {
+    "symbol": "UPWK",
+    "name": "UPWORK INC"
+  },
+  {
+    "symbol": "GEO",
+    "name": "GEO GROUP INC"
+  },
+  {
+    "symbol": "SDRL",
+    "name": "SEADRILL LTD"
+  },
+  {
+    "symbol": "SEI",
+    "name": "SOLARIS OILFIELD INFRASTRUCTURE IN"
+  },
+  {
+    "symbol": "NSIT",
+    "name": "INSIGHT ENTERPRISES INC"
+  },
+  {
+    "symbol": "RELY",
+    "name": "REMITLY GLOBAL INC"
+  },
+  {
+    "symbol": "CURB",
+    "name": "CURBLINE PROPERTIES"
+  },
+  {
+    "symbol": "CHEF",
+    "name": "CHEFS WAREHOUSE INC"
+  },
+  {
+    "symbol": "PLUS",
+    "name": "EPLUS"
+  },
+  {
+    "symbol": "IVT",
+    "name": "INVENTRUST PROPERTIES CORP"
+  },
+  {
+    "symbol": "ACLX",
+    "name": "ARCELLX INC"
+  },
+  {
+    "symbol": "MSGE",
+    "name": "MADISON SQUARE GARDEN ENTERTAINMEN"
+  },
+  {
+    "symbol": "LC",
+    "name": "LENDINGCLUB CORP"
+  },
+  {
+    "symbol": "QUBT",
+    "name": "QUANTUM COMPUTING INC"
+  },
+  {
+    "symbol": "ALRM",
+    "name": "ALARM.COM HOLDINGS INC"
+  },
+  {
+    "symbol": "OI",
+    "name": "O I GLASS INC"
+  },
+  {
+    "symbol": "NBTB",
+    "name": "NBT BANCORP INC"
+  },
+  {
+    "symbol": "TVTX",
+    "name": "TRAVERE THERAPEUTICS INC"
+  },
+  {
+    "symbol": "ATRO",
+    "name": "ASTRONICS CORP"
+  },
+  {
+    "symbol": "INSW",
+    "name": "INTERNATIONAL SEAWAYS INC"
+  },
+  {
+    "symbol": "IMNM",
+    "name": "IMMUNOME INC"
+  },
+  {
+    "symbol": "SYRE",
+    "name": "SPYRE THERAPEUTICS INC"
+  },
+  {
+    "symbol": "PTON",
+    "name": "PELOTON INTERACTIVE CLASS A INC"
+  },
+  {
+    "symbol": "BANR",
+    "name": "BANNER CORP"
+  },
+  {
+    "symbol": "FRME",
+    "name": "FIRST MERCHANTS CORP"
+  },
+  {
+    "symbol": "CWK",
+    "name": "CUSHMAN AND WAKEFIELD LTD"
+  },
+  {
+    "symbol": "AAOI",
+    "name": "APPLIED OPTOELECTRONICS INC"
+  },
+  {
+    "symbol": "OMCL",
+    "name": "OMNICELL INC"
+  },
+  {
+    "symbol": "VSH",
+    "name": "VISHAY INTERTECHNOLOGY INC"
+  },
+  {
+    "symbol": "NOG",
+    "name": "NORTHERN OIL AND GAS INC"
+  },
+  {
+    "symbol": "GRBK",
+    "name": "GREEN BRICK PARTNERS INC"
+  },
+  {
+    "symbol": "CSGS",
+    "name": "CSG SYSTEMS INTERNATIONAL INC"
+  },
+  {
+    "symbol": "FRSH",
+    "name": "FRESHWORKS INC CLASS A"
+  },
+  {
+    "symbol": "MRX",
+    "name": "MAREX GROUP PLC"
+  },
+  {
+    "symbol": "HI",
+    "name": "HILLENBRAND INC"
+  },
+  {
+    "symbol": "HLIO",
+    "name": "HELIOS TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "TIC",
+    "name": "TIC SOLUTIONS INC"
+  },
+  {
+    "symbol": "CTRI",
+    "name": "CENTURI HOLDINGS INC"
+  },
+  {
+    "symbol": "CBZ",
+    "name": "CBIZ INC"
+  },
+  {
+    "symbol": "TRN",
+    "name": "TRINITY INDUSTRIES INC"
+  },
+  {
+    "symbol": "EPAC",
+    "name": "ENERPAC TOOL GROUP CORP CLASS A"
+  },
+  {
+    "symbol": "KWR",
+    "name": "QUAKER HOUGHTON CORP"
+  },
+  {
+    "symbol": "BUSE",
+    "name": "FIRST BUSEY CORP"
+  },
+  {
+    "symbol": "ADEA",
+    "name": "ADEIA INC"
+  },
+  {
+    "symbol": "NTB",
+    "name": "BANK OF NT BUTTERFIELD &amp; SON LTD"
+  },
+  {
+    "symbol": "ASGN",
+    "name": "ASGN INC"
+  },
+  {
+    "symbol": "DYN",
+    "name": "DYNE THERAPEUTICS INC"
+  },
+  {
+    "symbol": "SM",
+    "name": "SM ENERGY"
+  },
+  {
+    "symbol": "NEOG",
+    "name": "NEOGEN CORP"
+  },
+  {
+    "symbol": "INTA",
+    "name": "INTAPP INC"
+  },
+  {
+    "symbol": "EFSC",
+    "name": "ENTERPRISE FINANCIAL SERVICES CORP"
+  },
+  {
+    "symbol": "PRDO",
+    "name": "PERDOCEO EDUCATION CORP"
+  },
+  {
+    "symbol": "BELFB",
+    "name": "BEL FUSE INC CLASS B"
+  },
+  {
+    "symbol": "KALU",
+    "name": "KAISER ALUMINIUM CORP"
+  },
+  {
+    "symbol": "LUNR",
+    "name": "INTUITIVE MACHINES INC CLASS A"
+  },
+  {
+    "symbol": "LASR",
+    "name": "NLIGHT INC"
+  },
+  {
+    "symbol": "GENI",
+    "name": "GENIUS SPORTS LTD"
+  },
+  {
+    "symbol": "OCUL",
+    "name": "OCULAR THERAPEUTIX INC"
+  },
+  {
+    "symbol": "EYE",
+    "name": "NATIONAL VISION HOLDINGS INC"
+  },
+  {
+    "symbol": "BULL",
+    "name": "WEBULL CORP CLASS A"
+  },
+  {
+    "symbol": "UCTT",
+    "name": "ULTRA CLEAN HOLDINGS INC"
+  },
+  {
+    "symbol": "ARCB",
+    "name": "ARCBEST CORP"
+  },
+  {
+    "symbol": "KN",
+    "name": "KNOWLES CORP"
+  },
+  {
+    "symbol": "MTX",
+    "name": "MINERALS TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "BLKB",
+    "name": "BLACKBAUD INC"
+  },
+  {
+    "symbol": "WD",
+    "name": "WALKER &amp; DUNLOP INC"
+  },
+  {
+    "symbol": "CXW",
+    "name": "CORECIVIC REIT INC"
+  },
+  {
+    "symbol": "AMRX",
+    "name": "AMNEAL PHARMACEUTICALS INC CLASS A"
+  },
+  {
+    "symbol": "PLAB",
+    "name": "PHOTRONICS INC"
+  },
+  {
+    "symbol": "DX",
+    "name": "DYNEX CAPITAL REIT INC"
+  },
+  {
+    "symbol": "ARR",
+    "name": "ARMOUR RESIDENTIAL REIT INC"
+  },
+  {
+    "symbol": "BRZE",
+    "name": "BRAZE INC CLASS A"
+  },
+  {
+    "symbol": "UNFI",
+    "name": "UNITED NATURAL FOODS INC"
+  },
+  {
+    "symbol": "ANDE",
+    "name": "ANDERSONS INC"
+  },
+  {
+    "symbol": "TPB",
+    "name": "TURNING POINT BRANDS INC"
+  },
+  {
+    "symbol": "CRGY",
+    "name": "CRESCENT ENERGY CLASS A"
+  },
+  {
+    "symbol": "CALY",
+    "name": "CALLAWAY GOLF COMPANY"
+  },
+  {
+    "symbol": "SLNO",
+    "name": "SOLENO THERAPEUTICS INC"
+  },
+  {
+    "symbol": "IBRX",
+    "name": "IMMUNITYBIO INC"
+  },
+  {
+    "symbol": "CRVL",
+    "name": "CORVEL CORP"
+  },
+  {
+    "symbol": "WERN",
+    "name": "WERNER ENTERPRISES INC"
+  },
+  {
+    "symbol": "EXTR",
+    "name": "EXTREME NETWORKS INC"
+  },
+  {
+    "symbol": "ATEC",
+    "name": "ALPHATEC HOLDNGS INC"
+  },
+  {
+    "symbol": "MGNI",
+    "name": "MAGNITE INC"
+  },
+  {
+    "symbol": "DRH",
+    "name": "DIAMONDROCK HOSPITALITY"
+  },
+  {
+    "symbol": "QDEL",
+    "name": "QUIDELORTHO CORP"
+  },
+  {
+    "symbol": "STRA",
+    "name": "STRATEGIC EDUCATION INC"
+  },
+  {
+    "symbol": "OSW",
+    "name": "ONESPAWORLD HOLDINGS LTD"
+  },
+  {
+    "symbol": "UFPT",
+    "name": "UFP TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "NTCT",
+    "name": "NETSCOUT SYSTEMS INC"
+  },
+  {
+    "symbol": "IOSP",
+    "name": "INNOSPEC INC"
+  },
+  {
+    "symbol": "ADUS",
+    "name": "ADDUS HOMECARE CORP"
+  },
+  {
+    "symbol": "EWTX",
+    "name": "EDGEWISE THERAPEUTICS INC"
+  },
+  {
+    "symbol": "HLMN",
+    "name": "HILLMAN SOLUTIONS CORP"
+  },
+  {
+    "symbol": "ALG",
+    "name": "ALAMO GROUP INC"
+  },
+  {
+    "symbol": "CECO",
+    "name": "CECO ENVIRONMENTAL CORP"
+  },
+  {
+    "symbol": "VECO",
+    "name": "VEECO INSTRUMENTS INC"
+  },
+  {
+    "symbol": "KSS",
+    "name": "KOHLS CORP"
+  },
+  {
+    "symbol": "SMPL",
+    "name": "THE SIMPLY GOOD FOODS COMPANY"
+  },
+  {
+    "symbol": "BUR",
+    "name": "BURFORD CAPITAL LTD"
+  },
+  {
+    "symbol": "LION",
+    "name": "LIONSGATE STUDIOS CORP"
+  },
+  {
+    "symbol": "CNS",
+    "name": "COHEN &amp; STEERS INC"
+  },
+  {
+    "symbol": "WT",
+    "name": "WISDOMTREE INC"
+  },
+  {
+    "symbol": "DAVE",
+    "name": "DAVE INC CLASS A"
+  },
+  {
+    "symbol": "OFG",
+    "name": "OFG BANCORP"
+  },
+  {
+    "symbol": "NIC",
+    "name": "NICOLET BANKSHARES INC"
+  },
+  {
+    "symbol": "GNL",
+    "name": "GLOBAL NET LEASE INC"
+  },
+  {
+    "symbol": "AVDL",
+    "name": "AVADEL PHARMACEUTICALS ORD"
+  },
+  {
+    "symbol": "EVTC",
+    "name": "EVERTEC INC"
+  },
+  {
+    "symbol": "NWN",
+    "name": "NORTHWEST NATURAL HOLDING COMPANY"
+  },
+  {
+    "symbol": "FCF",
+    "name": "FIRST COMMONWEALTH FINANCIAL CORP"
+  },
+  {
+    "symbol": "IE",
+    "name": "IVANHOE ELECTRIC INC"
+  },
+  {
+    "symbol": "WGS",
+    "name": "GENEDX HOLDINGS CORP CLASS A"
+  },
+  {
+    "symbol": "ARDX",
+    "name": "ARDELYX INC"
+  },
+  {
+    "symbol": "MD",
+    "name": "PEDIATRIX MEDICAL GROUP INC"
+  },
+  {
+    "symbol": "NRIX",
+    "name": "NURIX THERAPEUTICS INC"
+  },
+  {
+    "symbol": "PGNY",
+    "name": "PROGYNY INC"
+  },
+  {
+    "symbol": "ATRC",
+    "name": "ATRICURE INC"
+  },
+  {
+    "symbol": "PAGS",
+    "name": "PAGSEGURO DIGITAL LTD CLASS A"
+  },
+  {
+    "symbol": "VCEL",
+    "name": "VERICEL CORP"
+  },
+  {
+    "symbol": "TNET",
+    "name": "TRINET GROUP INCINARY"
+  },
+  {
+    "symbol": "SONO",
+    "name": "SONOS INC"
+  },
+  {
+    "symbol": "PARR",
+    "name": "PAR PACIFIC HOLDINGS INC"
+  },
+  {
+    "symbol": "NWBI",
+    "name": "NORTHWEST BANCSHARES INC"
+  },
+  {
+    "symbol": "IRON",
+    "name": "DISC MEDICINE INC"
+  },
+  {
+    "symbol": "AORT",
+    "name": "ARTIVION INC"
+  },
+  {
+    "symbol": "BWIN",
+    "name": "BALDWIN INSURANCE GROUP INC CLASS"
+  },
+  {
+    "symbol": "SYBT",
+    "name": "STOCK YARDS BANCORP INC"
+  },
+  {
+    "symbol": "STC",
+    "name": "STEWART INFO SERVICES CORP"
+  },
+  {
+    "symbol": "HMN",
+    "name": "HORACE MANN EDUCATORS CORP"
+  },
+  {
+    "symbol": "BHE",
+    "name": "BENCHMARK ELECTRONICS INC"
+  },
+  {
+    "symbol": "HCI",
+    "name": "HCI GROUP INC"
+  },
+  {
+    "symbol": "CASH",
+    "name": "PATHWARD FINANCIAL INC"
+  },
+  {
+    "symbol": "IMVT",
+    "name": "IMMUNOVANT INC"
+  },
+  {
+    "symbol": "WLDN",
+    "name": "WILLDAN GROUP INC"
+  },
+  {
+    "symbol": "NHC",
+    "name": "NATIONAL HEALTHCARE CORP"
+  },
+  {
+    "symbol": "AVPT",
+    "name": "AVEPOINT INC CLASS A"
+  },
+  {
+    "symbol": "ADNT",
+    "name": "ADIENT PLC"
+  },
+  {
+    "symbol": "GEF",
+    "name": "GREIF INC CLASS A"
+  },
+  {
+    "symbol": "PRGS",
+    "name": "PROGRESS SOFTWARE CORP"
+  },
+  {
+    "symbol": "INOD",
+    "name": "INNODATA INC"
+  },
+  {
+    "symbol": "ROG",
+    "name": "ROGERS CORP"
+  },
+  {
+    "symbol": "TILE",
+    "name": "INTERFACE INC"
+  },
+  {
+    "symbol": "RCUS",
+    "name": "ARCUS BIOSCIENCES INC"
+  },
+  {
+    "symbol": "CCS",
+    "name": "CENTURY COMMUNITIES INC"
+  },
+  {
+    "symbol": "DHT",
+    "name": "DHT HOLDINGS INC"
+  },
+  {
+    "symbol": "LMAT",
+    "name": "LEMAITRE VASCULAR INC"
+  },
+  {
+    "symbol": "HLF",
+    "name": "HERBALIFE LTD"
+  },
+  {
+    "symbol": "CRK",
+    "name": "COMSTOCK RESOURCES INC"
+  },
+  {
+    "symbol": "LGN",
+    "name": "LEGENCE CORP CLASS A"
+  },
+  {
+    "symbol": "SLVM",
+    "name": "SYLVAMO CORP"
+  },
+  {
+    "symbol": "DBD",
+    "name": "DIEBOLD NIXDORF INC"
+  },
+  {
+    "symbol": "AUPH",
+    "name": "AURINIA PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "RXRX",
+    "name": "RECURSION PHARMACEUTICALS INC CLAS"
+  },
+  {
+    "symbol": "ICFI",
+    "name": "ICF INTERNATIONAL INC"
+  },
+  {
+    "symbol": "ERAS",
+    "name": "ERASCA INC"
+  },
+  {
+    "symbol": "SNDX",
+    "name": "SYNDAX PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "BFH",
+    "name": "BREAD FINANCIAL HOLDINGS INC"
+  },
+  {
+    "symbol": "BATRK",
+    "name": "ATLANTA BRAVES HOLDINGS INC SERIES"
+  },
+  {
+    "symbol": "BKE",
+    "name": "BUCKLE INC"
+  },
+  {
+    "symbol": "KNTK",
+    "name": "KINETIK HOLDINGS INC CLASS A"
+  },
+  {
+    "symbol": "HTO",
+    "name": "H2O AMERICA"
+  },
+  {
+    "symbol": "MNKD",
+    "name": "MANNKIND CORP"
+  },
+  {
+    "symbol": "YELP",
+    "name": "YELP INC"
+  },
+  {
+    "symbol": "SHO",
+    "name": "SUNSTONE HOTEL INVESTORS REIT INC"
+  },
+  {
+    "symbol": "CHCO",
+    "name": "CITY HOLDING"
+  },
+  {
+    "symbol": "LTC",
+    "name": "LTC PROPERTIES REIT INC"
+  },
+  {
+    "symbol": "CLDX",
+    "name": "CELLDEX THERAPEUTICS INC"
+  },
+  {
+    "symbol": "RSI",
+    "name": "RUSH STREET INTERACTIVE INC CLASS"
+  },
+  {
+    "symbol": "NSP",
+    "name": "INSPERITY INC"
+  },
+  {
+    "symbol": "WOR",
+    "name": "WORTHINGTON ENTERPRISES INC"
+  },
+  {
+    "symbol": "AIN",
+    "name": "ALBANY INTERNATIONAL CORP CLASS A"
+  },
+  {
+    "symbol": "FLNC",
+    "name": "FLUENCE ENERGY INC CLASS A"
+  },
+  {
+    "symbol": "DK",
+    "name": "DELEK US HOLDINGS INC"
+  },
+  {
+    "symbol": "IPAR",
+    "name": "INTERPARFUMS INC"
+  },
+  {
+    "symbol": "USAR",
+    "name": "USA RARE EARTH INC CLASS A"
+  },
+  {
+    "symbol": "LEG",
+    "name": "LEGGETT &amp; PLATT INC"
+  },
+  {
+    "symbol": "FUN",
+    "name": "SIX FLAGS ENTERTAINMENT CORP"
+  },
+  {
+    "symbol": "REAL",
+    "name": "THE REALREAL INC"
+  },
+  {
+    "symbol": "SEM",
+    "name": "SELECT MEDICAL HOLDINGS CORP"
+  },
+  {
+    "symbol": "DXPE",
+    "name": "DXP ENTERPRISES INC"
+  },
+  {
+    "symbol": "PRCT",
+    "name": "PROCEPT BIOROBOTICS CORP"
+  },
+  {
+    "symbol": "HTH",
+    "name": "HILLTOP HOLDINGS INC"
+  },
+  {
+    "symbol": "AZTA",
+    "name": "AZENTA INC"
+  },
+  {
+    "symbol": "VAC",
+    "name": "MARRIOTT VACATIONS WORLDWIDE CORP"
+  },
+  {
+    "symbol": "MBC",
+    "name": "MASTERBRAND INC"
+  },
+  {
+    "symbol": "MXL",
+    "name": "MAXLINEAR INC"
+  },
+  {
+    "symbol": "LZB",
+    "name": "LA-Z-BOY INC"
+  },
+  {
+    "symbol": "JBLU",
+    "name": "JETBLUE AIRWAYS CORP"
+  },
+  {
+    "symbol": "AGM",
+    "name": "FEDERAL AGRICULTURAL MORTGAGE NON"
+  },
+  {
+    "symbol": "NBHC",
+    "name": "NATIONAL BANK HOLDINGS CORP CLASS"
+  },
+  {
+    "symbol": "GTY",
+    "name": "GETTY REALTY REIT CORP"
+  },
+  {
+    "symbol": "NEO",
+    "name": "NEOGENOMICS INC"
+  },
+  {
+    "symbol": "SKWD",
+    "name": "SKYWARD SPECIALTY INSURANCE GROUP"
+  },
+  {
+    "symbol": "GSHD",
+    "name": "GOOSEHEAD INSURANCE INC CLASS A"
+  },
+  {
+    "symbol": "MQ",
+    "name": "MARQETA INC CLASS A"
+  },
+  {
+    "symbol": "STBA",
+    "name": "S AND T BANCORP INC"
+  },
+  {
+    "symbol": "WVE",
+    "name": "WAVE LIFE SCIENCES LTD"
+  },
+  {
+    "symbol": "RAMP",
+    "name": "LIVERAMP HOLDINGS INC"
+  },
+  {
+    "symbol": "TFIN",
+    "name": "TRIUMPH FINANCIAL INC"
+  },
+  {
+    "symbol": "IMAX",
+    "name": "IMAX CORP"
+  },
+  {
+    "symbol": "HRMY",
+    "name": "HARMONY BIOSCIENCES HLDG INC"
+  },
+  {
+    "symbol": "DFTX",
+    "name": "DEFINIUM THERAPEUTICS INC"
+  },
+  {
+    "symbol": "SBH",
+    "name": "SALLY BEAUTY HOLDINGS INC"
+  },
+  {
+    "symbol": "RCAT",
+    "name": "RED CAT HOLDINGS INC"
+  },
+  {
+    "symbol": "TCBK",
+    "name": "TRICO BANCSHARES"
+  },
+  {
+    "symbol": "DCO",
+    "name": "DUCOMMUN INC"
+  },
+  {
+    "symbol": "PACS",
+    "name": "PACS GROUP INC"
+  },
+  {
+    "symbol": "FLYW",
+    "name": "FLYWIRE CORP"
+  },
+  {
+    "symbol": "AI",
+    "name": "C3 AI INC CLASS A"
+  },
+  {
+    "symbol": "ZD",
+    "name": "ZIFF DAVIS INC"
+  },
+  {
+    "symbol": "STEL",
+    "name": "STELLAR BANCORP INC"
+  },
+  {
+    "symbol": "DGII",
+    "name": "DIGI INTERNATIONAL INC"
+  },
+  {
+    "symbol": "OLMA",
+    "name": "OLEMA PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "SPNT",
+    "name": "SIRIUSPOINT LTD"
+  },
+  {
+    "symbol": "DVAX",
+    "name": "DYNAVAX TECHNOLOGIES CORP"
+  },
+  {
+    "symbol": "VVX",
+    "name": "V2X INC"
+  },
+  {
+    "symbol": "SGHC",
+    "name": "SUPER GROUP LTD"
+  },
+  {
+    "symbol": "NVTS",
+    "name": "NAVITAS SEMICONDUCTOR CORP"
+  },
+  {
+    "symbol": "NTST",
+    "name": "NETSTREIT CORP"
+  },
+  {
+    "symbol": "BLBD",
+    "name": "BLUE BIRD CORP"
+  },
+  {
+    "symbol": "FTRE",
+    "name": "FORTREA HOLDINGS INC"
+  },
+  {
+    "symbol": "HOPE",
+    "name": "HOPE BANCORP INC"
+  },
+  {
+    "symbol": "ARRY",
+    "name": "ARRAY TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "ANIP",
+    "name": "ANI PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "WWW",
+    "name": "WOLVERINE WORLD WIDE INC"
+  },
+  {
+    "symbol": "PAYO",
+    "name": "PAYONEER GLOBAL INC"
+  },
+  {
+    "symbol": "SPB",
+    "name": "SPECTRUM BRANDS HOLDINGS INC"
+  },
+  {
+    "symbol": "TRIP",
+    "name": "TRIPADVISOR INC"
+  },
+  {
+    "symbol": "NNI",
+    "name": "NELNET INC CLASS A"
+  },
+  {
+    "symbol": "AGIO",
+    "name": "AGIOS PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "GBX",
+    "name": "GREENBRIER INC"
+  },
+  {
+    "symbol": "ALEX",
+    "name": "ALEXANDER AND BALDWIN INC"
+  },
+  {
+    "symbol": "SHLS",
+    "name": "SHOALS TECHNOLOGIES GROUP INC CLAS"
+  },
+  {
+    "symbol": "LKFN",
+    "name": "LAKELAND FINANCIAL CORP"
+  },
+  {
+    "symbol": "ALMS",
+    "name": "ALUMIS INC"
+  },
+  {
+    "symbol": "QCRH",
+    "name": "QCR HOLDINGS INC"
+  },
+  {
+    "symbol": "PEB",
+    "name": "PEBBLEBROOK HOTEL TRUST REIT"
+  },
+  {
+    "symbol": "AAMI",
+    "name": "ACADIAN ASSET MANAGEMENT INC"
+  },
+  {
+    "symbol": "TALO",
+    "name": "TALOS ENERGY INC"
+  },
+  {
+    "symbol": "HROW",
+    "name": "HARROW INC"
+  },
+  {
+    "symbol": "AMLX",
+    "name": "AMYLYX PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "GABC",
+    "name": "GERMAN AMERICAN BANCORP INC"
+  },
+  {
+    "symbol": "TNK",
+    "name": "TEEKAY TANKERS LTD CLASS A"
+  },
+  {
+    "symbol": "NUVB",
+    "name": "NUVATION BIO INC CLASS A"
+  },
+  {
+    "symbol": "XHR",
+    "name": "XENIA HOTELS RESORTS REIT INC"
+  },
+  {
+    "symbol": "CMPO",
+    "name": "COMPOSECURE INC CLASS A"
+  },
+  {
+    "symbol": "JJSF",
+    "name": "J AND J SNACK FOODS CORP"
+  },
+  {
+    "symbol": "NVAX",
+    "name": "NOVAVAX INC"
+  },
+  {
+    "symbol": "COLL",
+    "name": "COLLEGIUM PHARMACEUTICAL INC"
+  },
+  {
+    "symbol": "CCB",
+    "name": "COASTAL FINANCIAL CORP"
+  },
+  {
+    "symbol": "PCT",
+    "name": "PURECYCLE TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "BRSL",
+    "name": "BRIGHTSTAR LOTTERY PLC"
+  },
+  {
+    "symbol": "MLYS",
+    "name": "MINERALYS THERAPEUTICS INC"
+  },
+  {
+    "symbol": "AXGN",
+    "name": "AXOGEN INC"
+  },
+  {
+    "symbol": "VYX",
+    "name": "NCR VOYIX CORP"
+  },
+  {
+    "symbol": "TTI",
+    "name": "TETRA TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "NTLA",
+    "name": "INTELLIA THERAPEUTICS INC"
+  },
+  {
+    "symbol": "TWO",
+    "name": "TWO HARBORS INVESTMENT CORP"
+  },
+  {
+    "symbol": "NN",
+    "name": "NEXTNAV INC"
+  },
+  {
+    "symbol": "XPRO",
+    "name": "EXPRO GROUP HOLDINGS NV"
+  },
+  {
+    "symbol": "TNC",
+    "name": "TENNANT"
+  },
+  {
+    "symbol": "CLMT",
+    "name": "CALUMET INC"
+  },
+  {
+    "symbol": "ROCK",
+    "name": "GIBRALTAR INDUSTRIES INC"
+  },
+  {
+    "symbol": "WKC",
+    "name": "WORLD KINECT CORP"
+  },
+  {
+    "symbol": "NVRI",
+    "name": "ENVIRI CORP"
+  },
+  {
+    "symbol": "CENTA",
+    "name": "CENTRAL GARDEN AND PET CLASS A"
+  },
+  {
+    "symbol": "ARI",
+    "name": "APOLLO COMMERCIAL REAL ESTATE FINA"
+  },
+  {
+    "symbol": "TGLS",
+    "name": "TECNOGLASS INC"
+  },
+  {
+    "symbol": "CTS",
+    "name": "CTS CORP"
+  },
+  {
+    "symbol": "ACVA",
+    "name": "ACV AUCTIONS INC CLASS A"
+  },
+  {
+    "symbol": "IIPR",
+    "name": "INNOVATIVE INDUSTRIAL PROPERTIES I"
+  },
+  {
+    "symbol": "LOB",
+    "name": "LIVE OAK BANCSHARES INC"
+  },
+  {
+    "symbol": "DEI",
+    "name": "DOUGLAS EMMETT REIT INC"
+  },
+  {
+    "symbol": "TNDM",
+    "name": "TANDEM DIABETES CARE INC"
+  },
+  {
+    "symbol": "BTDR",
+    "name": "BITDEER TECHNOLOGIES GROUP CLASS A"
+  },
+  {
+    "symbol": "BCRX",
+    "name": "BIOCRYST PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "CMPR",
+    "name": "CIMPRESS PLC"
+  },
+  {
+    "symbol": "XPEL",
+    "name": "XPEL INC"
+  },
+  {
+    "symbol": "DFIN",
+    "name": "DONNELLEY FINANCIAL SOLUTIONS INC"
+  },
+  {
+    "symbol": "AMSC",
+    "name": "AMERICAN SUPERCONDUCTOR CORP"
+  },
+  {
+    "symbol": "THR",
+    "name": "THERMON GROUP HOLDINGS INC"
+  },
+  {
+    "symbol": "NNE",
+    "name": "NANO NUCLEAR ENERGY INC"
+  },
+  {
+    "symbol": "OUST",
+    "name": "OUSTER INC"
+  },
+  {
+    "symbol": "NVCR",
+    "name": "NOVOCURE LTD"
+  },
+  {
+    "symbol": "CNOB",
+    "name": "CONNECTONE BANCORP INC"
+  },
+  {
+    "symbol": "PWP",
+    "name": "PERELLA WEINBERG PARTNERS CLASS A"
+  },
+  {
+    "symbol": "MLKN",
+    "name": "MILLERKNOLL INC"
+  },
+  {
+    "symbol": "USLM",
+    "name": "UNITED STATES LIME AND MINERALS IN"
+  },
+  {
+    "symbol": "CRAI",
+    "name": "CRA INTERNATIONAL INC"
+  },
+  {
+    "symbol": "ARLO",
+    "name": "ARLO TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "ENOV",
+    "name": "ENOVIS CORP"
+  },
+  {
+    "symbol": "FIVN",
+    "name": "FIVE9 INC"
+  },
+  {
+    "symbol": "CRI",
+    "name": "CARTERS INC"
+  },
+  {
+    "symbol": "ALKT",
+    "name": "ALKAMI TECHNOLOGY INC"
+  },
+  {
+    "symbol": "SILA",
+    "name": "SILA RLTY TR INC TRUST"
+  },
+  {
+    "symbol": "LNN",
+    "name": "LINDSAY CORP"
+  },
+  {
+    "symbol": "COHU",
+    "name": "COHU INC"
+  },
+  {
+    "symbol": "LADR",
+    "name": "LADDER CAPITAL CORP CLASS A"
+  },
+  {
+    "symbol": "HCSG",
+    "name": "HEALTHCARE SERVICES GROUP INC"
+  },
+  {
+    "symbol": "DHC",
+    "name": "DIVERSIFIED HEALTHCARE TRUST"
+  },
+  {
+    "symbol": "DCOM",
+    "name": "DIME COMMUNITY BANCSHARES INC"
+  },
+  {
+    "symbol": "PAR",
+    "name": "PAR TECHNOLOGY CORP"
+  },
+  {
+    "symbol": "EFC",
+    "name": "ELLINGTON FINANCIAL INC"
+  },
+  {
+    "symbol": "UVV",
+    "name": "UNIVERSAL CORP"
+  },
+  {
+    "symbol": "PRG",
+    "name": "PROG HOLDINGS INC"
+  },
+  {
+    "symbol": "ORKA",
+    "name": "ORUKA THERAPEUTICS INC"
+  },
+  {
+    "symbol": "STOK",
+    "name": "STOKE THERAPEUTICS INC"
+  },
+  {
+    "symbol": "WS",
+    "name": "WORTHINGTON STEEL INC"
+  },
+  {
+    "symbol": "NSSC",
+    "name": "NAPCO SECURITY TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "TNGX",
+    "name": "TANGO THERAPEUTICS INC"
+  },
+  {
+    "symbol": "BLX",
+    "name": "BANCO LATINOAMERICANO DE COMERCIO"
+  },
+  {
+    "symbol": "WGO",
+    "name": "WINNEBAGO INDUSTRIES INC"
+  },
+  {
+    "symbol": "PRLB",
+    "name": "PROTO LABS INC"
+  },
+  {
+    "symbol": "VERX",
+    "name": "VERTEX INC CLASS A"
+  },
+  {
+    "symbol": "ABR",
+    "name": "ARBOR REALTY TRUST REIT INC"
+  },
+  {
+    "symbol": "WINA",
+    "name": "WINMARK CORP"
+  },
+  {
+    "symbol": "ALGT",
+    "name": "ALLEGIANT TRAVEL"
+  },
+  {
+    "symbol": "UTI",
+    "name": "UNIVERSAL TECHNICAL INSTITUTE INC"
+  },
+  {
+    "symbol": "UMH",
+    "name": "UMH PROPERTIES INC"
+  },
+  {
+    "symbol": "UNIT",
+    "name": "UNITI GROUP INC"
+  },
+  {
+    "symbol": "USPH",
+    "name": "US PHYSICAL THERAPY INC"
+  },
+  {
+    "symbol": "CNMD",
+    "name": "CONMED CORP"
+  },
+  {
+    "symbol": "WLY",
+    "name": "JOHN WILEY AND SONS INC CLASS A"
+  },
+  {
+    "symbol": "SRCE",
+    "name": "1ST SOURCE CORP"
+  },
+  {
+    "symbol": "ECPG",
+    "name": "ENCORE CAPITAL GROUP INC"
+  },
+  {
+    "symbol": "CRVS",
+    "name": "CORVUS PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "OBK",
+    "name": "ORIGIN BANCORP INC"
+  },
+  {
+    "symbol": "ENVX",
+    "name": "ENOVIX CORP"
+  },
+  {
+    "symbol": "HG",
+    "name": "HAMILTON INSURANCE GROUP LTD CLASS"
+  },
+  {
+    "symbol": "CDRE",
+    "name": "CADRE HOLDINGS INC"
+  },
+  {
+    "symbol": "FDP",
+    "name": "FRESH DEL MONTE PRODUCE INC"
+  },
+  {
+    "symbol": "DOLE",
+    "name": "DOLE PLC"
+  },
+  {
+    "symbol": "ENR",
+    "name": "ENERGIZER HOLDINGS INC"
+  },
+  {
+    "symbol": "ECVT",
+    "name": "ECOVYST INC"
+  },
+  {
+    "symbol": "FSLY",
+    "name": "FASTLY INC CLASS A"
+  },
+  {
+    "symbol": "AMPX",
+    "name": "AMPRIUS TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "WABC",
+    "name": "WESTAMERICA BANCORPORATION"
+  },
+  {
+    "symbol": "PZZA",
+    "name": "PAPA JOHNS INTERNATIONAL INC"
+  },
+  {
+    "symbol": "PRA",
+    "name": "PROASSURANCE CORP"
+  },
+  {
+    "symbol": "THS",
+    "name": "TREEHOUSE FOODS INC"
+  },
+  {
+    "symbol": "BFC",
+    "name": "BANK FIRST CORP"
+  },
+  {
+    "symbol": "ATEN",
+    "name": "A10 NETWORKS INC"
+  },
+  {
+    "symbol": "NESR",
+    "name": "NATIONAL ENERGY SERVICES REUNITED"
+  },
+  {
+    "symbol": "RVLV",
+    "name": "REVOLVE GROUP CLASS A INC"
+  },
+  {
+    "symbol": "INVA",
+    "name": "INNOVIVA INC"
+  },
+  {
+    "symbol": "KW",
+    "name": "KENNEDY WILSON HOLDINGS INC"
+  },
+  {
+    "symbol": "ORC",
+    "name": "ORCHID ISLAND CAPITAL INC"
+  },
+  {
+    "symbol": "PMT",
+    "name": "PENNYMAC MORTGAGE INVESTMENT TRUST"
+  },
+  {
+    "symbol": "BHVN",
+    "name": "BIOHAVEN LTD"
+  },
+  {
+    "symbol": "LFST",
+    "name": "LIFESTANCE HEALTH GROUP INC"
+  },
+  {
+    "symbol": "SGRY",
+    "name": "SURGERY PARTNERS INC"
+  },
+  {
+    "symbol": "ZYME",
+    "name": "ZYMEWORKS INC"
+  },
+  {
+    "symbol": "TRUP",
+    "name": "TRUPANION INC"
+  },
+  {
+    "symbol": "ACT",
+    "name": "ENACT HOLDINGS INC"
+  },
+  {
+    "symbol": "VTOL",
+    "name": "BRISTOW GROUP INC"
+  },
+  {
+    "symbol": "DNTH",
+    "name": "DIANTHUS THERAPEUTICS INC"
+  },
+  {
+    "symbol": "EYPT",
+    "name": "EYEPOINT INC"
+  },
+  {
+    "symbol": "PEBO",
+    "name": "PEOPLES BANCORP INC"
+  },
+  {
+    "symbol": "MBX",
+    "name": "MBX BIOSCIENCES INC"
+  },
+  {
+    "symbol": "XERS",
+    "name": "XERIS BIOPHARMA HOLDINGS INC"
+  },
+  {
+    "symbol": "CSTL",
+    "name": "CASTLE BIOSCIENCES INC"
+  },
+  {
+    "symbol": "WTTR",
+    "name": "SELECT WATER SOLUTIONS INC CLASS A"
+  },
+  {
+    "symbol": "BORR",
+    "name": "BORR DRILLING LTD"
+  },
+  {
+    "symbol": "CCOI",
+    "name": "COGENT COMMUNICATIONS HOLDINGS INC"
+  },
+  {
+    "symbol": "HLIT",
+    "name": "HARMONIC INC"
+  },
+  {
+    "symbol": "VRE",
+    "name": "VERIS RESIDENTIAL INC"
+  },
+  {
+    "symbol": "NPKI",
+    "name": "NPK INTERNATIONAL INC"
+  },
+  {
+    "symbol": "PAX",
+    "name": "PATRIA INVESTMENTS LTD CLASS A"
+  },
+  {
+    "symbol": "MCRI",
+    "name": "MONARCH CASINO AND RESORT INC"
+  },
+  {
+    "symbol": "ASTE",
+    "name": "ASTEC INDUSTRIES INC"
+  },
+  {
+    "symbol": "GLUE",
+    "name": "MONTE ROSA THERAPEUTICS INC"
+  },
+  {
+    "symbol": "SCL",
+    "name": "STEPAN"
+  },
+  {
+    "symbol": "THRM",
+    "name": "GENTHERM INC"
+  },
+  {
+    "symbol": "PDFS",
+    "name": "PDF SOLUTIONS INC"
+  },
+  {
+    "symbol": "FA",
+    "name": "FIRST ADVANTAGE CORP"
+  },
+  {
+    "symbol": "ICHR",
+    "name": "ICHOR HOLDINGS LTD"
+  },
+  {
+    "symbol": "RLJ",
+    "name": "RLJ LODGING TRUST REIT"
+  },
+  {
+    "symbol": "APPN",
+    "name": "APPIAN CORP CLASS A"
+  },
+  {
+    "symbol": "SAFT",
+    "name": "SAFETY INSURANCE GROUP INC"
+  },
+  {
+    "symbol": "PBI",
+    "name": "PITNEY BOWES INC"
+  },
+  {
+    "symbol": "VRTS",
+    "name": "VIRTUS INVESTMENT PARTNERS INC"
+  },
+  {
+    "symbol": "OCFC",
+    "name": "OCEANFIRST FINANCIAL CORP"
+  },
+  {
+    "symbol": "TDOC",
+    "name": "TELADOC HEALTH INC"
+  },
+  {
+    "symbol": "PGY",
+    "name": "PAGAYA TECHNOLOGIES LTD CLASS A"
+  },
+  {
+    "symbol": "TRS",
+    "name": "TRIMAS CORP"
+  },
+  {
+    "symbol": "DLX",
+    "name": "DELUXE CORP"
+  },
+  {
+    "symbol": "LIF",
+    "name": "LIFE360 INC"
+  },
+  {
+    "symbol": "FIHL",
+    "name": "FIDELIS INSURANCE HOLDINGS LTD"
+  },
+  {
+    "symbol": "GRC",
+    "name": "GORMAN-RUPP"
+  },
+  {
+    "symbol": "LGIH",
+    "name": "LGI HOMES INC"
+  },
+  {
+    "symbol": "OSBC",
+    "name": "OLD SECOND BANCORP INC"
+  },
+  {
+    "symbol": "SEZL",
+    "name": "SEZZLE INC"
+  },
+  {
+    "symbol": "CDNA",
+    "name": "CAREDX INC"
+  },
+  {
+    "symbol": "CIM",
+    "name": "CHIMERA INVESTMENT CORP"
+  },
+  {
+    "symbol": "CSR",
+    "name": "CENTERSPACE"
+  },
+  {
+    "symbol": "GIII",
+    "name": "G III APPAREL GROUP LTD"
+  },
+  {
+    "symbol": "ASTH",
+    "name": "ASTRANA HEALTH INC"
+  },
+  {
+    "symbol": "TMP",
+    "name": "TOMPKINS FINANCIAL CORP"
+  },
+  {
+    "symbol": "UAMY",
+    "name": "UNITED STATES ANTIMONY CORP"
+  },
+  {
+    "symbol": "AHCO",
+    "name": "ADAPTHEALTH CORP"
+  },
+  {
+    "symbol": "LZ",
+    "name": "LEGALZOOM COM INC"
+  },
+  {
+    "symbol": "PENG",
+    "name": "PENGUIN SOLUTIONS INC"
+  },
+  {
+    "symbol": "PDM",
+    "name": "PIEDMONT REALTY TRUST INC CLASS A"
+  },
+  {
+    "symbol": "CLOV",
+    "name": "CLOVER HEALTH INVESTMENTS CORP CLA"
+  },
+  {
+    "symbol": "TSHA",
+    "name": "TAYSHA GENE THERAPIES INC"
+  },
+  {
+    "symbol": "MFA",
+    "name": "MFA FINANCIAL INC"
+  },
+  {
+    "symbol": "ELVN",
+    "name": "ENLIVEN THERAPEUTICS INC"
+  },
+  {
+    "symbol": "RLAY",
+    "name": "RELAY THERAPEUTICS INC"
+  },
+  {
+    "symbol": "LPG",
+    "name": "DORIAN LPG LTD"
+  },
+  {
+    "symbol": "JBGS",
+    "name": "JBG SMITH PROPERTIES"
+  },
+  {
+    "symbol": "HLX",
+    "name": "HELIX ENERGY SOLUTIONS GROUP INC"
+  },
+  {
+    "symbol": "BLFS",
+    "name": "BIOLIFE SOLUTIONS INC"
+  },
+  {
+    "symbol": "PRKS",
+    "name": "UNITED PARKS AND RESORTS INC"
+  },
+  {
+    "symbol": "CTBI",
+    "name": "COMMUNITY TRUST BANCORP INC"
+  },
+  {
+    "symbol": "EIG",
+    "name": "EMPLOYERS HOLDINGS INC"
+  },
+  {
+    "symbol": "TE",
+    "name": "T1 ENERGY INC"
+  },
+  {
+    "symbol": "UPB",
+    "name": "UPSTREAM BIO INC"
+  },
+  {
+    "symbol": "SMA",
+    "name": "SMARTSTOP SELF STORAGE REIT INC"
+  },
+  {
+    "symbol": "SKYT",
+    "name": "SKYWATER TECHNOLOGY INC"
+  },
+  {
+    "symbol": "FIGS",
+    "name": "FIGS INC CLASS A"
+  },
+  {
+    "symbol": "AMRC",
+    "name": "AMERESCO INC CLASS A"
+  },
+  {
+    "symbol": "UVSP",
+    "name": "UNIVEST FINANCIAL CORP"
+  },
+  {
+    "symbol": "STAA",
+    "name": "STAAR SURGICAL"
+  },
+  {
+    "symbol": "BY",
+    "name": "BYLINE BANCORP INC"
+  },
+  {
+    "symbol": "IMKTA",
+    "name": "INGLES MARKETS INC CLASS A"
+  },
+  {
+    "symbol": "UPBD",
+    "name": "UPBOUND GROUP INC"
+  },
+  {
+    "symbol": "FG",
+    "name": "F&amp;G ANNUITIES AND LIFE INC"
+  },
+  {
+    "symbol": "MIAX",
+    "name": "MIAMI INTERNATIONAL HOLDINGS INC"
+  },
+  {
+    "symbol": "REX",
+    "name": "REX AMERICAN RESOURCES CORP"
+  },
+  {
+    "symbol": "PNTG",
+    "name": "PENNANT GROUP INC"
+  },
+  {
+    "symbol": "JAMF",
+    "name": "JAMF HOLDING CORP"
+  },
+  {
+    "symbol": "SFL",
+    "name": "SFL LTD"
+  },
+  {
+    "symbol": "AAT",
+    "name": "AMERICAN ASSETS TRUST REIT INC"
+  },
+  {
+    "symbol": "SBSI",
+    "name": "SOUTHSIDE BANCSHARES INC"
+  },
+  {
+    "symbol": "AXL",
+    "name": "AMERICAN AXLE AND MANUFACTURING HO"
+  },
+  {
+    "symbol": "INVX",
+    "name": "INNOVEX INTERNATIONAL INC"
+  },
+  {
+    "symbol": "GBTG",
+    "name": "GLOBAL BUSINESS TRAVEL GROUP INC C"
+  },
+  {
+    "symbol": "GLDD",
+    "name": "GREAT LAKES DREDGE AND DOCK CORP"
+  },
+  {
+    "symbol": "DEA",
+    "name": "EASTERLY GOVERNMENT PROPERTIES INC"
+  },
+  {
+    "symbol": "GCT",
+    "name": "GIGACLOUD TECHNOLOGY INC CLASS A"
+  },
+  {
+    "symbol": "BV",
+    "name": "BRIGHTVIEW HOLDINGS INC"
+  },
+  {
+    "symbol": "FMBH",
+    "name": "FIRST MID BANCSHARES INC"
+  },
+  {
+    "symbol": "LILAK",
+    "name": "LIBERTY LATIN AMERICA LTD CLASS C"
+  },
+  {
+    "symbol": "MSEX",
+    "name": "MIDDLESEX WATER"
+  },
+  {
+    "symbol": "JBI",
+    "name": "JANUS INTERNATIONAL GROUP INC"
+  },
+  {
+    "symbol": "METC",
+    "name": "RAMACO RESOURCES INC CLASS A"
+  },
+  {
+    "symbol": "SAH",
+    "name": "SONIC AUTOMOTIVE INC CLASS A"
+  },
+  {
+    "symbol": "PD",
+    "name": "PAGERDUTY INC"
+  },
+  {
+    "symbol": "ESRT",
+    "name": "EMPIRE STATE REALTY REIT INC TRUST"
+  },
+  {
+    "symbol": "AMPH",
+    "name": "AMPHASTAR PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "EVLV",
+    "name": "EVOLV TECHNOLOGIES HOLDINGS INC CL"
+  },
+  {
+    "symbol": "MBIN",
+    "name": "MERCHANTS BANCORP"
+  },
+  {
+    "symbol": "VITL",
+    "name": "VITAL FARMS INC"
+  },
+  {
+    "symbol": "DAWN",
+    "name": "DAY ONE BIOPHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "ALH",
+    "name": "ALLIANCE LAUNDRY HOLDINGS INC"
+  },
+  {
+    "symbol": "SCSC",
+    "name": "SCANSOURCE INC"
+  },
+  {
+    "symbol": "NBR",
+    "name": "NABORS INDUSTRIES LTD"
+  },
+  {
+    "symbol": "DRVN",
+    "name": "DRIVEN BRANDS HOLDINGS INC"
+  },
+  {
+    "symbol": "CAPR",
+    "name": "CAPRICOR THERAPEUTICS INC"
+  },
+  {
+    "symbol": "TRVI",
+    "name": "TREVI THERAPEUTICS INC"
+  },
+  {
+    "symbol": "WMK",
+    "name": "WEIS MARKETS INC"
+  },
+  {
+    "symbol": "SNCY",
+    "name": "SUN COUNTRY AIRLINES HOLDINGS INC"
+  },
+  {
+    "symbol": "MAZE",
+    "name": "MAZE THERAPEUTICS INC"
+  },
+  {
+    "symbol": "ASAN",
+    "name": "ASANA INC CLASS A"
+  },
+  {
+    "symbol": "PLYM",
+    "name": "PLYMOUTH INDUSTRIAL REIT INC"
+  },
+  {
+    "symbol": "BBSI",
+    "name": "BARRETT BUSINESS SERVICES INC"
+  },
+  {
+    "symbol": "SDGR",
+    "name": "SCHRODINGER INC"
+  },
+  {
+    "symbol": "XNCR",
+    "name": "XENCOR INC"
+  },
+  {
+    "symbol": "AMWD",
+    "name": "AMERICAN WOODMARK CORP"
+  },
+  {
+    "symbol": "CLB",
+    "name": "CORE LABORATORIES INC"
+  },
+  {
+    "symbol": "HFWA",
+    "name": "HERITAGE FINANCIAL CORP"
+  },
+  {
+    "symbol": "BJRI",
+    "name": "BJS RESTAURANTS INC"
+  },
+  {
+    "symbol": "FWRG",
+    "name": "FIRST WATCH RESTAURANT GROUP INC"
+  },
+  {
+    "symbol": "COUR",
+    "name": "COURSERA INC"
+  },
+  {
+    "symbol": "GO",
+    "name": "GROCERY OUTLET HOLDING CORP"
+  },
+  {
+    "symbol": "RHLD",
+    "name": "RESOLUTE HOLDINGS MANAGEMENT INC"
+  },
+  {
+    "symbol": "AMPL",
+    "name": "AMPLITUDE INC CLASS A"
+  },
+  {
+    "symbol": "ALNT",
+    "name": "ALLIENT INC"
+  },
+  {
+    "symbol": "AESI",
+    "name": "ATLAS ENERGY SOLUTIONS INC"
+  },
+  {
+    "symbol": "PCRX",
+    "name": "PACIRA BIOSCIENCES INC"
+  },
+  {
+    "symbol": "NAVI",
+    "name": "NAVIENT CORP"
+  },
+  {
+    "symbol": "PUMP",
+    "name": "PROPETRO HOLDING CORP"
+  },
+  {
+    "symbol": "HAFC",
+    "name": "HANMI FINANCIAL CORP"
+  },
+  {
+    "symbol": "NBN",
+    "name": "NORTHEAST BANK"
+  },
+  {
+    "symbol": "PHR",
+    "name": "PHREESIA INC"
+  },
+  {
+    "symbol": "HBNC",
+    "name": "HORIZON BANCORP INC"
+  },
+  {
+    "symbol": "KOD",
+    "name": "KODIAK SCIENCES INC"
+  },
+  {
+    "symbol": "BHRB",
+    "name": "BURKE HERBERT FINANCIAL SERVICES C"
+  },
+  {
+    "symbol": "TRST",
+    "name": "TRUSTCO BANK CORP"
+  },
+  {
+    "symbol": "LMB",
+    "name": "LIMBACH HOLDINGS INC"
+  },
+  {
+    "symbol": "SOC",
+    "name": "SABLE OFFSHORE CORP CLASS A"
+  },
+  {
+    "symbol": "SVRA",
+    "name": "SAVARA INC"
+  },
+  {
+    "symbol": "AMAL",
+    "name": "AMALGAMATED FINANCIAL CORP"
+  },
+  {
+    "symbol": "MBWM",
+    "name": "MERCANTILE BANK CORP"
+  },
+  {
+    "symbol": "MCB",
+    "name": "METROPOLITAN BANK HOLDING CORP"
+  },
+  {
+    "symbol": "NX",
+    "name": "QUANEX BUILDING PRODUCTS CORP"
+  },
+  {
+    "symbol": "EPC",
+    "name": "EDGEWELL PERSONAL CARE"
+  },
+  {
+    "symbol": "ANAB",
+    "name": "ANAPTYSBIO INC"
+  },
+  {
+    "symbol": "CFFN",
+    "name": "CAPITOL FEDERAL FINANCIAL INC"
+  },
+  {
+    "symbol": "FUBO",
+    "name": "FUBOTV INC CLASS A"
+  },
+  {
+    "symbol": "BFLY",
+    "name": "BUTTERFLY NETWORK INC CLASS A"
+  },
+  {
+    "symbol": "SAFE",
+    "name": "SAFEHOLD INC"
+  },
+  {
+    "symbol": "PAHC",
+    "name": "PHIBRO ANIMAL HEALTH CORP CLASS A"
+  },
+  {
+    "symbol": "CWH",
+    "name": "CAMPING WORLD HOLDINGS INC CLASS A"
+  },
+  {
+    "symbol": "IRWD",
+    "name": "IRONWOOD PHARMA INC CLASS A"
+  },
+  {
+    "symbol": "FBRT",
+    "name": "FRANKLIN BSP REALTY TRUST INC"
+  },
+  {
+    "symbol": "UTL",
+    "name": "UNITIL CORP"
+  },
+  {
+    "symbol": "EXPI",
+    "name": "EXP WORLD HOLDINGS INC"
+  },
+  {
+    "symbol": "DAKT",
+    "name": "DAKTRONICS INC"
+  },
+  {
+    "symbol": "TDAY",
+    "name": "USA TODAY INC"
+  },
+  {
+    "symbol": "BBUC",
+    "name": "BROOKFIELD BUSINESS CORP CLASS A"
+  },
+  {
+    "symbol": "IRMD",
+    "name": "IRADIMED CORP"
+  },
+  {
+    "symbol": "INDI",
+    "name": "INDIE SEMICONDUCTOR INC CLASS A"
+  },
+  {
+    "symbol": "AEHR",
+    "name": "AEHR TEST SYSTEMS"
+  },
+  {
+    "symbol": "ROOT",
+    "name": "ROOT INC CLASS A"
+  },
+  {
+    "symbol": "SERV",
+    "name": "SERVE ROBOTICS INC"
+  },
+  {
+    "symbol": "SMP",
+    "name": "STANDARD MOTOR PRODUCTS INC"
+  },
+  {
+    "symbol": "APOG",
+    "name": "APOGEE ENTERPRISES INC"
+  },
+  {
+    "symbol": "NAT",
+    "name": "NORDIC AMERICAN TANKERS LTD"
+  },
+  {
+    "symbol": "EE",
+    "name": "EXCELERATE ENERGY INC CLASS A"
+  },
+  {
+    "symbol": "AMC",
+    "name": "AMC ENTERTAINMENT HOLDINGS INC CLA"
+  },
+  {
+    "symbol": "PLOW",
+    "name": "DOUGLAS DYNAMICS INC"
+  },
+  {
+    "symbol": "HTBK",
+    "name": "HERITAGE COMMERCE CORP"
+  },
+  {
+    "symbol": "ARVN",
+    "name": "ARVINAS INC"
+  },
+  {
+    "symbol": "DJCO",
+    "name": "DAILY JOURNAL CORP"
+  },
+  {
+    "symbol": "GOLD",
+    "name": "GOLD INC"
+  },
+  {
+    "symbol": "CMP",
+    "name": "COMPASS MINERALS INTERNATIONAL INC"
+  },
+  {
+    "symbol": "IART",
+    "name": "INTEGRA LIFESCIENCES HOLDINGS CORP"
+  },
+  {
+    "symbol": "FLNG",
+    "name": "FLEX LNG LTD"
+  },
+  {
+    "symbol": "CCNE",
+    "name": "CNB FINANCIAL CORP"
+  },
+  {
+    "symbol": "BFST",
+    "name": "BUSINESS FIRST BANCSHARES INC"
+  },
+  {
+    "symbol": "BBW",
+    "name": "BUILD A BEAR WORKSHOP INC"
+  },
+  {
+    "symbol": "RYI",
+    "name": "RYERSON HOLDING CORP"
+  },
+  {
+    "symbol": "MATW",
+    "name": "MATTHEWS INTERNATIONAL CORP CLASS"
+  },
+  {
+    "symbol": "FIZZ",
+    "name": "NATIONAL BEVERAGE CORP"
+  },
+  {
+    "symbol": "ORIC",
+    "name": "ORIC PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "QNST",
+    "name": "QUINSTREET INC"
+  },
+  {
+    "symbol": "RPD",
+    "name": "RAPID7 INC"
+  },
+  {
+    "symbol": "FOXF",
+    "name": "FOX FACTORY HOLDING CORP"
+  },
+  {
+    "symbol": "IDT",
+    "name": "IDT CORP CLASS B"
+  },
+  {
+    "symbol": "LINC",
+    "name": "LINCOLN EDUCATIONAL SERVICES CORP"
+  },
+  {
+    "symbol": "AMTB",
+    "name": "AMERANT BANCORP INC CLASS A"
+  },
+  {
+    "symbol": "SLDP",
+    "name": "SOLID POWER INC CLASS A"
+  },
+  {
+    "symbol": "GPRE",
+    "name": "GREEN PLAINS INC"
+  },
+  {
+    "symbol": "NBBK",
+    "name": "NB BANCORP INC"
+  },
+  {
+    "symbol": "OMER",
+    "name": "OMEROS CORP"
+  },
+  {
+    "symbol": "BKSY",
+    "name": "BLACKSKY TECHNOLOGY INC CLASS A"
+  },
+  {
+    "symbol": "PGEN",
+    "name": "PRECIGEN INC"
+  },
+  {
+    "symbol": "AIV",
+    "name": "APARTMENT INVESTMENT AND MANAGEMEN"
+  },
+  {
+    "symbol": "THFF",
+    "name": "FIRST FINANCIAL CORPORATION CORP"
+  },
+  {
+    "symbol": "DEC",
+    "name": "DIVERSIFIED ENERGY COMPANY PLC"
+  },
+  {
+    "symbol": "ESQ",
+    "name": "ESQUIRE FINANCIAL HOLDINGS INC"
+  },
+  {
+    "symbol": "BRSP",
+    "name": "BRIGHTSPIRE CAPITAL INC CLASS A"
+  },
+  {
+    "symbol": "YEXT",
+    "name": "YEXT INC"
+  },
+  {
+    "symbol": "CAC",
+    "name": "CAMDEN NATIONAL CORP"
+  },
+  {
+    "symbol": "SANA",
+    "name": "SANA BIOTECHNOLOGY INC"
+  },
+  {
+    "symbol": "CPF",
+    "name": "CENTRAL PACIFIC FINANCIAL CORP"
+  },
+  {
+    "symbol": "TBPH",
+    "name": "THERAVANCE BIOPHARMA INC"
+  },
+  {
+    "symbol": "UVE",
+    "name": "UNIVERSAL INSURANCE HOLDINGS INC"
+  },
+  {
+    "symbol": "CVI",
+    "name": "CVR ENERGY INC"
+  },
+  {
+    "symbol": "STGW",
+    "name": "STAGWELL INC CLASS A"
+  },
+  {
+    "symbol": "GHM",
+    "name": "GRAHAM CORP"
+  },
+  {
+    "symbol": "VSTS",
+    "name": "VESTIS CORP"
+  },
+  {
+    "symbol": "RWT",
+    "name": "REDWOOD TRUST REIT INC"
+  },
+  {
+    "symbol": "UFCS",
+    "name": "UNITED FIRE GROUP INC"
+  },
+  {
+    "symbol": "CMPX",
+    "name": "COMPASS THERAPEUTICS"
+  },
+  {
+    "symbol": "MYE",
+    "name": "MYERS INDUSTRIES INC"
+  },
+  {
+    "symbol": "IOVA",
+    "name": "IOVANCE BIOTHERAPEUTICS INC"
+  },
+  {
+    "symbol": "CXM",
+    "name": "SPRINKLR INC CLASS A"
+  },
+  {
+    "symbol": "EQBK",
+    "name": "EQUITY BANCSHARES INC CLASS A"
+  },
+  {
+    "symbol": "TYRA",
+    "name": "TYRA BIOSCIENCES INC"
+  },
+  {
+    "symbol": "KE",
+    "name": "KIMBALL ELECTRONICS INC"
+  },
+  {
+    "symbol": "UTZ",
+    "name": "UTZ BRANDS INC CLASS A"
+  },
+  {
+    "symbol": "TREE",
+    "name": "LENDINGTREE INC"
+  },
+  {
+    "symbol": "IBCP",
+    "name": "INDEPENDENT BANK CORP"
+  },
+  {
+    "symbol": "RDW",
+    "name": "REDWIRE CORP"
+  },
+  {
+    "symbol": "APEI",
+    "name": "AMERICAN PUBLIC EDUCATION INC"
+  },
+  {
+    "symbol": "MOFG",
+    "name": "MIDWESTONE FINANCIAL GROUP INC"
+  },
+  {
+    "symbol": "HTB",
+    "name": "HOMETRUST BANCSHARES INC"
+  },
+  {
+    "symbol": "MTUS",
+    "name": "METALLUS INC"
+  },
+  {
+    "symbol": "MEG",
+    "name": "MONTROSE ENVIRONMENTAL GRP INC"
+  },
+  {
+    "symbol": "MRTN",
+    "name": "MARTEN TRANSPORT LTD"
+  },
+  {
+    "symbol": "LQDT",
+    "name": "LIQUIDITY SERVICES INC"
+  },
+  {
+    "symbol": "CNNE",
+    "name": "CANNAE HOLDINGS INC"
+  },
+  {
+    "symbol": "PRSU",
+    "name": "PURSUIT ATTRACTIONS AND HOSPITALIT"
+  },
+  {
+    "symbol": "RAPP",
+    "name": "RAPPORT THERAPEUTICS INC"
+  },
+  {
+    "symbol": "PFBC",
+    "name": "PREFERRED BANK"
+  },
+  {
+    "symbol": "TROX",
+    "name": "TRONOX HOLDINGS PLC"
+  },
+  {
+    "symbol": "ERII",
+    "name": "ENERGY RECOVERY INC"
+  },
+  {
+    "symbol": "JBIO",
+    "name": "JADE BIOSCIENCES INC"
+  },
+  {
+    "symbol": "AMN",
+    "name": "AMN HEALTHCARE INC"
+  },
+  {
+    "symbol": "GERN",
+    "name": "GERON CORP"
+  },
+  {
+    "symbol": "CBRL",
+    "name": "CRACKER BARREL OLD COUNTRY STORE I"
+  },
+  {
+    "symbol": "SG",
+    "name": "SWEETGREEN INC CLASS A"
+  },
+  {
+    "symbol": "MSFUT",
+    "name": "CASH COLLATERAL MSFUT USD"
+  },
+  {
+    "symbol": "BTBT",
+    "name": "BIT DIGITAL INC"
+  },
+  {
+    "symbol": "ADAM",
+    "name": "ADAMAS INC TRUST"
+  },
+  {
+    "symbol": "EMBC",
+    "name": "EMBECTA CORP"
+  },
+  {
+    "symbol": "URGN",
+    "name": "UROGEN PHARMA LTD"
+  },
+  {
+    "symbol": "CMRE",
+    "name": "COSTAMARE INC"
+  },
+  {
+    "symbol": "MCHB",
+    "name": "MECHANICS BANCORP CLASS A"
+  },
+  {
+    "symbol": "AMSF",
+    "name": "AMERISAFE INC"
+  },
+  {
+    "symbol": "RGNX",
+    "name": "REGENXBIO INC"
+  },
+  {
+    "symbol": "SCHL",
+    "name": "SCHOLASTIC CORP"
+  },
+  {
+    "symbol": "EVER",
+    "name": "EVERQUOTE INC CLASS A"
+  },
+  {
+    "symbol": "PRCH",
+    "name": "PORCH GROUP INC"
+  },
+  {
+    "symbol": "ESPR",
+    "name": "ESPERION THERAPEUTICS INC"
+  },
+  {
+    "symbol": "ORRF",
+    "name": "ORRSTOWN FINANCIAL SERVICES INC"
+  },
+  {
+    "symbol": "KURA",
+    "name": "KURA ONCOLOGY INC"
+  },
+  {
+    "symbol": "IVR",
+    "name": "INVESCO MORTGAGE CAPITAL REIT INC"
+  },
+  {
+    "symbol": "ADTN",
+    "name": "ADTRAN HOLDINGS INC"
+  },
+  {
+    "symbol": "NXRT",
+    "name": "NEXPOINT RESIDENTIAL TRUST INC"
+  },
+  {
+    "symbol": "CBL",
+    "name": "CBL ASSOCIATES PROPERTIES INC"
+  },
+  {
+    "symbol": "CRML",
+    "name": "CRITICAL METALS CORP"
+  },
+  {
+    "symbol": "HTZ",
+    "name": "HERTZ GLOBAL HLDGS INC"
+  },
+  {
+    "symbol": "SXC",
+    "name": "SUNCOKE ENERGY INC"
+  },
+  {
+    "symbol": "NB",
+    "name": "NIOCORP DEVELOPMENTS LTD"
+  },
+  {
+    "symbol": "INBX",
+    "name": "INHIBRX BIOSCIENCES INC"
+  },
+  {
+    "symbol": "AIOT",
+    "name": "POWERFLEET INC"
+  },
+  {
+    "symbol": "ANNX",
+    "name": "ANNEXON INC"
+  },
+  {
+    "symbol": "AEVA",
+    "name": "AEVA TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "EGBN",
+    "name": "EAGLE BANCORP INC"
+  },
+  {
+    "symbol": "CNXN",
+    "name": "PC CONNECTION INC"
+  },
+  {
+    "symbol": "PVLA",
+    "name": "PALVELLA THERAPEUTICS INC"
+  },
+  {
+    "symbol": "TCMD",
+    "name": "TACTILE SYSTEMS TECHNOLOGY INC"
+  },
+  {
+    "symbol": "MATV",
+    "name": "MATIV HOLDINGS INC"
+  },
+  {
+    "symbol": "BZH",
+    "name": "BEAZER HOMES INC"
+  },
+  {
+    "symbol": "CCBG",
+    "name": "CAPITAL CITY BANK INC"
+  },
+  {
+    "symbol": "ASPI",
+    "name": "ASP ISOTOPES INC"
+  },
+  {
+    "symbol": "ALIT",
+    "name": "ALIGHT INC CLASS A"
+  },
+  {
+    "symbol": "RIGL",
+    "name": "RIGEL PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "PACB",
+    "name": "PACIFIC BIOSCIENCES OF CALIFORNIA"
+  },
+  {
+    "symbol": "RUM",
+    "name": "RUMBLE INC CLASS A"
+  },
+  {
+    "symbol": "AVBP",
+    "name": "ARRIVENT BIOPHARMA INC"
+  },
+  {
+    "symbol": "TR",
+    "name": "TOOTSIE ROLL INDUSTRIES INC"
+  },
+  {
+    "symbol": "MMI",
+    "name": "MARCUS &amp; MILLICHAP INC"
+  },
+  {
+    "symbol": "NEXT",
+    "name": "NEXTDECADE CORP"
+  },
+  {
+    "symbol": "RR",
+    "name": "RICHTECH ROBOTICS INC CLASS B"
+  },
+  {
+    "symbol": "PSIX",
+    "name": "POWER SOLUTIONS INTERNATIONAL INC"
+  },
+  {
+    "symbol": "WSR",
+    "name": "WHITESTONE REIT"
+  },
+  {
+    "symbol": "FSBC",
+    "name": "FIVE STAR BANCORP"
+  },
+  {
+    "symbol": "NRIM",
+    "name": "NORTHRIM BANCORP INC"
+  },
+  {
+    "symbol": "TRTX",
+    "name": "TPG RE FINANCE TRUST INC"
+  },
+  {
+    "symbol": "GDOT",
+    "name": "GREEN DOT CORP CLASS A"
+  },
+  {
+    "symbol": "MPB",
+    "name": "MID PENN BANCORP INC"
+  },
+  {
+    "symbol": "CARS",
+    "name": "CARS.COM INC"
+  },
+  {
+    "symbol": "SIBN",
+    "name": "SI BONE INC"
+  },
+  {
+    "symbol": "CTKB",
+    "name": "CYTEK BIOSCIENCES INC"
+  },
+  {
+    "symbol": "RBCAA",
+    "name": "REPUBLIC BANCORP INC CLASS A"
+  },
+  {
+    "symbol": "FISI",
+    "name": "FINANCIAL INSTITUTIONS INC"
+  },
+  {
+    "symbol": "GRDN",
+    "name": "GUARDIAN PHARMACY SERVICES INC CLA"
+  },
+  {
+    "symbol": "NWPX",
+    "name": "NWPX INFRASTRUCTURE INC"
+  },
+  {
+    "symbol": "SION",
+    "name": "SIONNA THERAPEUTICS INC"
+  },
+  {
+    "symbol": "BLMN",
+    "name": "BLOOMIN BRANDS INC"
+  },
+  {
+    "symbol": "RZLV",
+    "name": "REZOLVE AI PLC"
+  },
+  {
+    "symbol": "PRAA",
+    "name": "PRA GROUP INC"
+  },
+  {
+    "symbol": "SMBC",
+    "name": "SOUTHERN MISSOURI BANCORP INC"
+  },
+  {
+    "symbol": "MNRO",
+    "name": "MONRO INC"
+  },
+  {
+    "symbol": "FIP",
+    "name": "FTAI INFRASTRUCTURE INC"
+  },
+  {
+    "symbol": "HRTG",
+    "name": "HERITAGE INSURANCE HOLDINGS INC"
+  },
+  {
+    "symbol": "BBNX",
+    "name": "BETA BIONICS INC"
+  },
+  {
+    "symbol": "MDXG",
+    "name": "MIMEDX GROUP INC"
+  },
+  {
+    "symbol": "HNRG",
+    "name": "HALLADOR ENERGY"
+  },
+  {
+    "symbol": "HTFL",
+    "name": "HEARTFLOW INC"
+  },
+  {
+    "symbol": "AVAH",
+    "name": "AVEANNA HEALTHCARE HOLDINGS INC"
+  },
+  {
+    "symbol": "GNK",
+    "name": "GENCO SHIPPING AND TRADING LTD"
+  },
+  {
+    "symbol": "CGEM",
+    "name": "CULLINAN THERAPEUTICS INC"
+  },
+  {
+    "symbol": "ABUS",
+    "name": "ARBUTUS BIOPHARMA CORP"
+  },
+  {
+    "symbol": "KFRC",
+    "name": "KFORCE INC"
+  },
+  {
+    "symbol": "PLPC",
+    "name": "PREFORMED LINE PRODUCTS"
+  },
+  {
+    "symbol": "PX",
+    "name": "P10 INC CLASS A"
+  },
+  {
+    "symbol": "NPK",
+    "name": "NATIONAL PRESTO INDUSTRIES INC"
+  },
+  {
+    "symbol": "LIND",
+    "name": "LINDBLAD EXPEDITIONS HOLDINGS INC"
+  },
+  {
+    "symbol": "ZGN",
+    "name": "ERMENEGILDO ZEGNA NV"
+  },
+  {
+    "symbol": "MBUU",
+    "name": "MALIBU BOATS CLASS A INC"
+  },
+  {
+    "symbol": "VIR",
+    "name": "VIR BIOTECHNOLOGY INC"
+  },
+  {
+    "symbol": "BKV",
+    "name": "BKV CORP"
+  },
+  {
+    "symbol": "SPRY",
+    "name": "ARS PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "IIIN",
+    "name": "INSTEEL INDUSTRIES INC"
+  },
+  {
+    "symbol": "KOS",
+    "name": "KOSMOS ENERGY LTD"
+  },
+  {
+    "symbol": "CTLP",
+    "name": "CANTALOUPE INC"
+  },
+  {
+    "symbol": "SEMR",
+    "name": "SEMRUSH HOLDINGS INC CLASS A"
+  },
+  {
+    "symbol": "KALV",
+    "name": "KALVISTA PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "FLY",
+    "name": "FIREFLY AEROSPACE INC"
+  },
+  {
+    "symbol": "FWRD",
+    "name": "FORWARD AIR CORP"
+  },
+  {
+    "symbol": "AMBP",
+    "name": "ARDAGH METAL PACKAGING SA"
+  },
+  {
+    "symbol": "SHBI",
+    "name": "SHORE BANCSHARES INC"
+  },
+  {
+    "symbol": "GSM",
+    "name": "FERROGLOBE PLC"
+  },
+  {
+    "symbol": "EBS",
+    "name": "EMERGENT BIOSOLUTIONS INC"
+  },
+  {
+    "symbol": "AHL",
+    "name": "ASPEN INSURANCE HOLDINGS LTD CLASS"
+  },
+  {
+    "symbol": "HOV",
+    "name": "HOVNANIAN ENTERPRISES INC CLASS A"
+  },
+  {
+    "symbol": "GCMG",
+    "name": "GCM GROSVENOR INC CLASS A"
+  },
+  {
+    "symbol": "SMBK",
+    "name": "SMARTFINANCIAL INC"
+  },
+  {
+    "symbol": "SBGI",
+    "name": "SINCLAIR INC CLASS A"
+  },
+  {
+    "symbol": "CMCO",
+    "name": "COLUMBUS MCKINNON CORP"
+  },
+  {
+    "symbol": "CSV",
+    "name": "CARRIAGE SERVICES INC"
+  },
+  {
+    "symbol": "IDR",
+    "name": "IDAHO STRATEGIC RESOURCES INC"
+  },
+  {
+    "symbol": "EU",
+    "name": "ENCORE ENERGY CORP"
+  },
+  {
+    "symbol": "GDYN",
+    "name": "GRID DYNAMICS HOLDINGS INC CLASS A"
+  },
+  {
+    "symbol": "DFH",
+    "name": "DREAM FINDERS HOMES INC CLASS A"
+  },
+  {
+    "symbol": "BXC",
+    "name": "BLUELINX HOLDINGS INC"
+  },
+  {
+    "symbol": "MCW",
+    "name": "MISTER CAR WASH INC"
+  },
+  {
+    "symbol": "CBLL",
+    "name": "CERIBELL INC"
+  },
+  {
+    "symbol": "SFIX",
+    "name": "STITCH FIX INC CLASS A"
+  },
+  {
+    "symbol": "NTGR",
+    "name": "NETGEAR INC"
+  },
+  {
+    "symbol": "VREX",
+    "name": "VAREX IMAGING CORP"
+  },
+  {
+    "symbol": "PLAY",
+    "name": "DAVE AND BUSTERS ENTERTAINMENT INC"
+  },
+  {
+    "symbol": "AHH",
+    "name": "ARMADA HOFFLER PROPERTIES REIT INC"
+  },
+  {
+    "symbol": "JBSS",
+    "name": "JOHN B SANFILIPPO AND SON INC"
+  },
+  {
+    "symbol": "MCBS",
+    "name": "METROCITY BANKSHARES INC"
+  },
+  {
+    "symbol": "TRNS",
+    "name": "TRANSCAT INC"
+  },
+  {
+    "symbol": "SHEN",
+    "name": "SHENANDOAH TELECOMMUNICATIONS"
+  },
+  {
+    "symbol": "ACEL",
+    "name": "ACCEL ENTERTAINMENT INC CLASS A"
+  },
+  {
+    "symbol": "GSBC",
+    "name": "GREAT SOUTHERN BANCORP INC"
+  },
+  {
+    "symbol": "AROW",
+    "name": "ARROW FINANCIAL CORP"
+  },
+  {
+    "symbol": "WASH",
+    "name": "WASHINGTON TRUST BANCORP INC"
+  },
+  {
+    "symbol": "RES",
+    "name": "RPC INC"
+  },
+  {
+    "symbol": "ODC",
+    "name": "OIL DRI CORPORATION OF AMERICA"
+  },
+  {
+    "symbol": "IIIV",
+    "name": "I3 VERTICALS INC CLASS A"
+  },
+  {
+    "symbol": "FLGT",
+    "name": "FULGENT GENETICS INC"
+  },
+  {
+    "symbol": "AOSL",
+    "name": "ALPHA AND OMEGA SEMICONDUCTOR LTD"
+  },
+  {
+    "symbol": "MVST",
+    "name": "MICROVAST HOLDINGS INC"
+  },
+  {
+    "symbol": "DC",
+    "name": "DAKOTA GOLD CORP"
+  },
+  {
+    "symbol": "FCBC",
+    "name": "FIRST COMMUNITY BANKSHARES INC"
+  },
+  {
+    "symbol": "ETD",
+    "name": "ETHAN ALLEN INTERIORS INC"
+  },
+  {
+    "symbol": "OPK",
+    "name": "OPKO HEALTH INC"
+  },
+  {
+    "symbol": "JANX",
+    "name": "JANUX THERAPEUTICS INC"
+  },
+  {
+    "symbol": "CASS",
+    "name": "CASS INFORMATION SYSTEMS INC"
+  },
+  {
+    "symbol": "SLS",
+    "name": "SELLAS LIFE SCIENCES GROUP INC"
+  },
+  {
+    "symbol": "VPG",
+    "name": "VISHAY PRECISION GROUP INC"
+  },
+  {
+    "symbol": "APPS",
+    "name": "DIGITAL TURBINE INC"
+  },
+  {
+    "symbol": "RDVT",
+    "name": "RED VIOLET INC"
+  },
+  {
+    "symbol": "SEPN",
+    "name": "SEPTERNA INC"
+  },
+  {
+    "symbol": "DIN",
+    "name": "DINE BRANDS GLOBAL INC"
+  },
+  {
+    "symbol": "ALRS",
+    "name": "ALERUS FINANCIAL CORP"
+  },
+  {
+    "symbol": "CWCO",
+    "name": "CONSOLIDATED WATER LTD"
+  },
+  {
+    "symbol": "AVNS",
+    "name": "AVANOS MEDICAL INC"
+  },
+  {
+    "symbol": "AVO",
+    "name": "MISSION PRODUCE INC"
+  },
+  {
+    "symbol": "RYAM",
+    "name": "RAYONIER ADVANCED MATERIALS INC"
+  },
+  {
+    "symbol": "BLND",
+    "name": "BLEND LABS INC CLASS A"
+  },
+  {
+    "symbol": "SPFI",
+    "name": "SOUTH PLAINS FINANCIAL INC"
+  },
+  {
+    "symbol": "SD",
+    "name": "SANDRIDGE ENERGY INC"
+  },
+  {
+    "symbol": "KOP",
+    "name": "KOPPERS HOLDINGS INC"
+  },
+  {
+    "symbol": "NVGS",
+    "name": "NAVIGATOR HOLDINGS LTD"
+  },
+  {
+    "symbol": "BHB",
+    "name": "BAR HARBOR BANKSHARES"
+  },
+  {
+    "symbol": "SENEA",
+    "name": "SENECA FOODS CORP CLASS A"
+  },
+  {
+    "symbol": "CTO",
+    "name": "CTO REALTY GROWTH INC"
+  },
+  {
+    "symbol": "KROS",
+    "name": "KEROS THERAPEUTICS INC"
+  },
+  {
+    "symbol": "HZO",
+    "name": "MARINEMAX INC"
+  },
+  {
+    "symbol": "CEVA",
+    "name": "CEVA INC"
+  },
+  {
+    "symbol": "NRDS",
+    "name": "NERDWALLET INC CLASS A"
+  },
+  {
+    "symbol": "HIPO",
+    "name": "HIPPO HOLDINGS INC"
+  },
+  {
+    "symbol": "VTS",
+    "name": "VITESSE ENERGY INC"
+  },
+  {
+    "symbol": "CRMD",
+    "name": "CORMEDIX INC"
+  },
+  {
+    "symbol": "TALK",
+    "name": "TALKSPACE INC"
+  },
+  {
+    "symbol": "MAMA",
+    "name": "MAMAS CREATIONS INC"
+  },
+  {
+    "symbol": "NUS",
+    "name": "NU SKIN ENTERPRISES INC CLASS A"
+  },
+  {
+    "symbol": "LYTS",
+    "name": "LSI INDUSTRIES INC"
+  },
+  {
+    "symbol": "OXM",
+    "name": "OXFORD INDUSTRIES INC"
+  },
+  {
+    "symbol": "ARHS",
+    "name": "ARHAUS INC CLASS A"
+  },
+  {
+    "symbol": "OFIX",
+    "name": "ORTHOFIX MEDICAL INC"
+  },
+  {
+    "symbol": "PHAT",
+    "name": "PHATHOM PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "KOPN",
+    "name": "KOPIN CORP"
+  },
+  {
+    "symbol": "BCAX",
+    "name": "BICARA THERAPEUTICS INC"
+  },
+  {
+    "symbol": "CPS",
+    "name": "COOPER STANDARD HOLDINGS INC"
+  },
+  {
+    "symbol": "ALX",
+    "name": "ALEXANDERS REIT INC"
+  },
+  {
+    "symbol": "RUSHB",
+    "name": "RUSH ENTERPRISES INC CLASS B"
+  },
+  {
+    "symbol": "TDUP",
+    "name": "THREDUP INC CLASS A"
+  },
+  {
+    "symbol": "LXU",
+    "name": "LSB INDUSTRIES INC"
+  },
+  {
+    "symbol": "INN",
+    "name": "SUMMIT HOTEL PROPERTIES REIT INC"
+  },
+  {
+    "symbol": "MYGN",
+    "name": "MYRIAD GENETICS INC"
+  },
+  {
+    "symbol": "EHAB",
+    "name": "ENHABIT INC"
+  },
+  {
+    "symbol": "TK",
+    "name": "TEEKAY CORPORATION CORP LTD"
+  },
+  {
+    "symbol": "RGR",
+    "name": "STURM RUGER INC"
+  },
+  {
+    "symbol": "BDN",
+    "name": "BRANDYWINE REALTY TRUST REIT"
+  },
+  {
+    "symbol": "PKST",
+    "name": "PEAKSTONE REALTY TRUST CLASS E"
+  },
+  {
+    "symbol": "TCBX",
+    "name": "THIRD COAST BANCSHARES INC"
+  },
+  {
+    "symbol": "GDEN",
+    "name": "GOLDEN ENTERTAINMENT INC"
+  },
+  {
+    "symbol": "CYRX",
+    "name": "CRYOPORT INC"
+  },
+  {
+    "symbol": "GOSS",
+    "name": "GOSSAMER BIO INC"
+  },
+  {
+    "symbol": "NAVN",
+    "name": "NAVAN INC CLASS A"
+  },
+  {
+    "symbol": "AEBI",
+    "name": "AEBI SCHMIDT HOLDING AG"
+  },
+  {
+    "symbol": "ATXS",
+    "name": "ASTRIA THERAPEUTICS INC"
+  },
+  {
+    "symbol": "FMNB",
+    "name": "FARMERS NATIONAL BANC CORP"
+  },
+  {
+    "symbol": "UHT",
+    "name": "UNIVERSAL HEALTH REALTY INCOME TRU"
+  },
+  {
+    "symbol": "ZEUS",
+    "name": "OLYMPIC STEEL INC"
+  },
+  {
+    "symbol": "AIP",
+    "name": "ARTERIS INC"
+  },
+  {
+    "symbol": "ABAT",
+    "name": "AMERICAN BATTERY TECHNOLOGY COMPAN"
+  },
+  {
+    "symbol": "GOOD",
+    "name": "GLADSTONE COMMERCIAL REIT CORP"
+  },
+  {
+    "symbol": "HIFS",
+    "name": "HINGHAM INSTITUTION FOR SAVINGS"
+  },
+  {
+    "symbol": "FFIC",
+    "name": "FLUSHING FINANCIAL CORP"
+  },
+  {
+    "symbol": "FSUN",
+    "name": "FIRSTSUN CAPITAL BANCORP"
+  },
+  {
+    "symbol": "HPP",
+    "name": "HUDSON PACIFIC PROPERTIES REIT INC"
+  },
+  {
+    "symbol": "FOR",
+    "name": "FORESTAR GROUP INC"
+  },
+  {
+    "symbol": "NUTX",
+    "name": "NUTEX HEALTH INC"
+  },
+  {
+    "symbol": "OIS",
+    "name": "OIL STATES INTERNATIONAL INC"
+  },
+  {
+    "symbol": "FRGE",
+    "name": "FORGE GLOBAL HOLDINGS INC"
+  },
+  {
+    "symbol": "ACNB",
+    "name": "ACNB CORP"
+  },
+  {
+    "symbol": "WLFC",
+    "name": "WILLIS LEASE FINANCE CORP"
+  },
+  {
+    "symbol": "MSBI",
+    "name": "MIDLAND STATES BANCORP INC"
+  },
+  {
+    "symbol": "REPL",
+    "name": "REPLIMUNE GROUP INC"
+  },
+  {
+    "symbol": "SPT",
+    "name": "SPROUT SOCIAL INC CLASS A"
+  },
+  {
+    "symbol": "LAB",
+    "name": "STANDARD BIOTOOLS INC"
+  },
+  {
+    "symbol": "PGC",
+    "name": "PEAPACK GLADSTONE FINANCIAL CORP"
+  },
+  {
+    "symbol": "BSRR",
+    "name": "SIERRA BANCORP"
+  },
+  {
+    "symbol": "SABR",
+    "name": "SABRE CORP"
+  },
+  {
+    "symbol": "EGY",
+    "name": "VAALCO ENERGY INC"
+  },
+  {
+    "symbol": "HSTM",
+    "name": "HEALTHSTREAM INC"
+  },
+  {
+    "symbol": "BWMN",
+    "name": "BOWMAN CONSULTING GROUP LTD"
+  },
+  {
+    "symbol": "ZVRA",
+    "name": "ZEVRA THERAPEUTICS INC"
+  },
+  {
+    "symbol": "REAX",
+    "name": "REAL BROKERAGE INC"
+  },
+  {
+    "symbol": "CARE",
+    "name": "CARTER BANKSHARES INC"
+  },
+  {
+    "symbol": "PSNL",
+    "name": "PERSONALIS INC"
+  },
+  {
+    "symbol": "PFIS",
+    "name": "PEOPLES FINANCIAL SERVICES CORP"
+  },
+  {
+    "symbol": "BBBY",
+    "name": "BED BATH AND BEYOND INC"
+  },
+  {
+    "symbol": "FBIZ",
+    "name": "FIRST BUSINESS FINANCIAL SERVICES"
+  },
+  {
+    "symbol": "LTBR",
+    "name": "LIGHTBRIDGE CORP"
+  },
+  {
+    "symbol": "CLMB",
+    "name": "CLIMB GLOBAL SOLUTIONS INC"
+  },
+  {
+    "symbol": "OPTU",
+    "name": "OPTIMUM COMMUNICATIONS INC CLASS A"
+  },
+  {
+    "symbol": "HCKT",
+    "name": "HACKETT GROUP INC"
+  },
+  {
+    "symbol": "NFBK",
+    "name": "NORTHFIELD BANCORP INC"
+  },
+  {
+    "symbol": "BIOA",
+    "name": "BIOAGE LABS INC"
+  },
+  {
+    "symbol": "CHCT",
+    "name": "COMMUNITY HEALTHCARE TRUST INC"
+  },
+  {
+    "symbol": "CMCL",
+    "name": "CALEDONIA MINING PLC"
+  },
+  {
+    "symbol": "UDMY",
+    "name": "UDEMY INC"
+  },
+  {
+    "symbol": "SWBI",
+    "name": "SMITH WESSON BRANDS INC"
+  },
+  {
+    "symbol": "CAL",
+    "name": "CALERES INC"
+  },
+  {
+    "symbol": "MTW",
+    "name": "MANITOWOC INC"
+  },
+  {
+    "symbol": "GEVO",
+    "name": "GEVO INC"
+  },
+  {
+    "symbol": "GMRE",
+    "name": "GLOBAL MEDICAL REIT INC"
+  },
+  {
+    "symbol": "CERS",
+    "name": "CERUS CORP"
+  },
+  {
+    "symbol": "KREF",
+    "name": "KKR REAL ESTATE FINANCE INC TRUST"
+  },
+  {
+    "symbol": "KRUS",
+    "name": "KURA SUSHI USA INC"
+  },
+  {
+    "symbol": "CRNC",
+    "name": "CERENCE INC"
+  },
+  {
+    "symbol": "SSTK",
+    "name": "SHUTTERSTOCK INC"
+  },
+  {
+    "symbol": "KMTS",
+    "name": "KESTRA MEDICAL TECHNOLOGIES LTD"
+  },
+  {
+    "symbol": "PKE",
+    "name": "PARK AEROSPACE CORP"
+  },
+  {
+    "symbol": "SFST",
+    "name": "SOUTHERN FIRST BANCSHARES INC"
+  },
+  {
+    "symbol": "HTLD",
+    "name": "HEARTLAND EXPRESS INC"
+  },
+  {
+    "symbol": "ANGI",
+    "name": "ANGI INC CLASS A"
+  },
+  {
+    "symbol": "MLAB",
+    "name": "MESA LABORATORIES INC"
+  },
+  {
+    "symbol": "KRNY",
+    "name": "KEARNY FINANCIAL CORP"
+  },
+  {
+    "symbol": "ULCC",
+    "name": "FRONTIER GROUP HOLDINGS INC"
+  },
+  {
+    "symbol": "HBCP",
+    "name": "HOME BANCORP INC"
+  },
+  {
+    "symbol": "LXEO",
+    "name": "LEXEO THERAPEUTICS INC"
+  },
+  {
+    "symbol": "NABL",
+    "name": "N ABLE INC"
+  },
+  {
+    "symbol": "STKL",
+    "name": "SUNOPTA INC"
+  },
+  {
+    "symbol": "EBF",
+    "name": "ENNIS INC"
+  },
+  {
+    "symbol": "IHRT",
+    "name": "IHEARTMEDIA INC CLASS A"
+  },
+  {
+    "symbol": "ASIX",
+    "name": "ADVANSIX INC"
+  },
+  {
+    "symbol": "FULC",
+    "name": "FULCRUM THERAPEUTICS INC"
+  },
+  {
+    "symbol": "MITK",
+    "name": "MITEK SYSTEMS INC"
+  },
+  {
+    "symbol": "VOYG",
+    "name": "VOYAGER TECHNOLOGIES INC CLASS A"
+  },
+  {
+    "symbol": "HELE",
+    "name": "HELEN OF TROY LTD"
+  },
+  {
+    "symbol": "CLBK",
+    "name": "COLUMBIA FINANCIAL INC"
+  },
+  {
+    "symbol": "TWI",
+    "name": "TITAN INTERNATIONAL INC"
+  },
+  {
+    "symbol": "FET",
+    "name": "FORUM ENERGY TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "MLR",
+    "name": "MILLER INDUSTRIES INC"
+  },
+  {
+    "symbol": "FPI",
+    "name": "FARMLAND PARTNERS INC"
+  },
+  {
+    "symbol": "YORW",
+    "name": "YORK WATER"
+  },
+  {
+    "symbol": "AVXL",
+    "name": "ANAVEX LIFE SCIENCES CORP"
+  },
+  {
+    "symbol": "SLDE",
+    "name": "SLIDE INSURANCE HOLDINGS INC"
+  },
+  {
+    "symbol": "GIC",
+    "name": "GLOBAL INDUSTRIAL"
+  },
+  {
+    "symbol": "CIVB",
+    "name": "CIVISTA BANCSHARES INC"
+  },
+  {
+    "symbol": "EVH",
+    "name": "EVOLENT HEALTH INC CLASS A"
+  },
+  {
+    "symbol": "CVGW",
+    "name": "CALAVO GROWERS INC"
+  },
+  {
+    "symbol": "MAGN",
+    "name": "MAGNERA CORP"
+  },
+  {
+    "symbol": "VNDA",
+    "name": "VANDA PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "CVLG",
+    "name": "COVENANT LOGISTICS GROUP INC CLASS"
+  },
+  {
+    "symbol": "IMXI",
+    "name": "INTERNATIONAL MONEY EXPRESS INC"
+  },
+  {
+    "symbol": "CABO",
+    "name": "CABLE ONE INC"
+  },
+  {
+    "symbol": "DHIL",
+    "name": "DIAMOND HILL INVESTMENT GROUP INC"
+  },
+  {
+    "symbol": "DRUG",
+    "name": "BRIGHT MINDS BIOSCIENCES INC"
+  },
+  {
+    "symbol": "OSPN",
+    "name": "ONESPAN INC"
+  },
+  {
+    "symbol": "NPCE",
+    "name": "NEUROPACE INC"
+  },
+  {
+    "symbol": "BOW",
+    "name": "BOWHEAD SPECIALTY HOLDINGS INC"
+  },
+  {
+    "symbol": "EVEX",
+    "name": "EVE HOLDING INC"
+  },
+  {
+    "symbol": "MRVI",
+    "name": "MARAVAI LIFESCIENCES HOLDINGS INC"
+  },
+  {
+    "symbol": "NXDR",
+    "name": "NEXTDOOR HOLDINGS INC CLASS A"
+  },
+  {
+    "symbol": "TIPT",
+    "name": "TIPTREE INC"
+  },
+  {
+    "symbol": "ORN",
+    "name": "ORION GROUP INC"
+  },
+  {
+    "symbol": "CYH",
+    "name": "COMMUNITY HEALTH SYSTEMS INC"
+  },
+  {
+    "symbol": "UNTY",
+    "name": "UNITY BANCORP INC"
+  },
+  {
+    "symbol": "MH",
+    "name": "MCGRAW HILL INC"
+  },
+  {
+    "symbol": "PRTA",
+    "name": "PROTHENA PLC"
+  },
+  {
+    "symbol": "COFS",
+    "name": "CHOICEONE FINANCIAL SERVICES INC"
+  },
+  {
+    "symbol": "FLOC",
+    "name": "FLOWCO HOLDINGS INC CLASS A"
+  },
+  {
+    "symbol": "WRLD",
+    "name": "WORLD ACCEPTANCE CORP"
+  },
+  {
+    "symbol": "CCSI",
+    "name": "CONSENSUS CLOUD SOLUTIONS INC"
+  },
+  {
+    "symbol": "TTAM",
+    "name": "TITAN AMERICA SA"
+  },
+  {
+    "symbol": "ANGO",
+    "name": "ANGIODYNAMICS INC"
+  },
+  {
+    "symbol": "BMRC",
+    "name": "BANK OF MARIN BANCORP"
+  },
+  {
+    "symbol": "HY",
+    "name": "HYSTER YALE INC CLASS A"
+  },
+  {
+    "symbol": "GRPN",
+    "name": "GROUPON INC"
+  },
+  {
+    "symbol": "RBB",
+    "name": "RBB BANCORP"
+  },
+  {
+    "symbol": "BCAL",
+    "name": "CALIFORNIA BANCORP"
+  },
+  {
+    "symbol": "ABSI",
+    "name": "ABSCI CORP"
+  },
+  {
+    "symbol": "LBRX",
+    "name": "LB PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "ACRS",
+    "name": "ACLARIS THERAPEUTICS INC"
+  },
+  {
+    "symbol": "EVGO",
+    "name": "EVGO INC CLASS A"
+  },
+  {
+    "symbol": "CWBC",
+    "name": "COMMUNITY WEST BANCSHARES"
+  },
+  {
+    "symbol": "WEAV",
+    "name": "WEAVE COMMUNICATIONS INC"
+  },
+  {
+    "symbol": "ALT",
+    "name": "ALTIMMUNE INC"
+  },
+  {
+    "symbol": "WNC",
+    "name": "WABASH NATIONAL CORP"
+  },
+  {
+    "symbol": "PSTL",
+    "name": "POSTAL REALTY TRUST INC CLASS A"
+  },
+  {
+    "symbol": "NATR",
+    "name": "NATURES SUNSHINE PRODUCTS INC"
+  },
+  {
+    "symbol": "ARKO",
+    "name": "ARKO"
+  },
+  {
+    "symbol": "ASC",
+    "name": "ARDMORE SHIPPING CORP"
+  },
+  {
+    "symbol": "BWB",
+    "name": "BRIDGEWATER BANCSHARES INC"
+  },
+  {
+    "symbol": "FFWM",
+    "name": "FIRST FOUNDATION INC"
+  },
+  {
+    "symbol": "PRME",
+    "name": "PRIME MEDICINE INC"
+  },
+  {
+    "symbol": "DNA",
+    "name": "GINKGO BIOWORKS HOLDINGS INC CLASS"
+  },
+  {
+    "symbol": "GTN",
+    "name": "GRAY MEDIA INC"
+  },
+  {
+    "symbol": "SVV",
+    "name": "SAVERS VALUE VILLAGE INC"
+  },
+  {
+    "symbol": "GEFB",
+    "name": "GREIF INC CLASS B"
+  },
+  {
+    "symbol": "LXFR",
+    "name": "LUXFER HOLDINGS PLC"
+  },
+  {
+    "symbol": "CTOS",
+    "name": "CUSTOM TRUCK ONE SOURCE INC"
+  },
+  {
+    "symbol": "SRTA",
+    "name": "STRATA CRITICAL MEDICAL INC CLASS"
+  },
+  {
+    "symbol": "PTLO",
+    "name": "PORTILLO S INC CLASS A"
+  },
+  {
+    "symbol": "HBT",
+    "name": "HBT FINANCIAL INC"
+  },
+  {
+    "symbol": "GLRE",
+    "name": "GREENLIGHT CAPITAL LTD CLASS A"
+  },
+  {
+    "symbol": "WTBA",
+    "name": "WEST BANCORPORATION INC"
+  },
+  {
+    "symbol": "FRBA",
+    "name": "FIRST BANK"
+  },
+  {
+    "symbol": "CLNE",
+    "name": "CLEAN ENERGY FUELS CORP"
+  },
+  {
+    "symbol": "GRND",
+    "name": "GRINDR INC"
+  },
+  {
+    "symbol": "OLP",
+    "name": "ONE LIBERTY PROPERTIES REIT INC"
+  },
+  {
+    "symbol": "IBEX",
+    "name": "IBEX LTD"
+  },
+  {
+    "symbol": "ETON",
+    "name": "ETON PHARMACEUTCIALS INC"
+  },
+  {
+    "symbol": "BAND",
+    "name": "BANDWIDTH INC CLASS A"
+  },
+  {
+    "symbol": "REPX",
+    "name": "RILEY EXPLORATION PERMIAN INC"
+  },
+  {
+    "symbol": "GCO",
+    "name": "GENESCO INC"
+  },
+  {
+    "symbol": "MAX",
+    "name": "MEDIAALPHA INC CLASS A"
+  },
+  {
+    "symbol": "JACK",
+    "name": "JACK IN THE BOX INC"
+  },
+  {
+    "symbol": "ZBIO",
+    "name": "ZENAS BIOPHARMA INC"
+  },
+  {
+    "symbol": "MTRX",
+    "name": "MATRIX SERVICE"
+  },
+  {
+    "symbol": "GOGO",
+    "name": "GOGO INC"
+  },
+  {
+    "symbol": "RRBI",
+    "name": "RED RIVER BANCSHARES INC"
+  },
+  {
+    "symbol": "OBT",
+    "name": "ORANGE COUNTY BANCORP INC"
+  },
+  {
+    "symbol": "FMAO",
+    "name": "FARMERS AND MERCHANTS BANCORP INC"
+  },
+  {
+    "symbol": "CLPT",
+    "name": "CLEARPOINT NEURO INC"
+  },
+  {
+    "symbol": "ITIC",
+    "name": "INVESTORS TITLE"
+  },
+  {
+    "symbol": "BVS",
+    "name": "BIOVENTUS CLASS A INC"
+  },
+  {
+    "symbol": "SLDB",
+    "name": "SOLID BIOSCIENCES INC"
+  },
+  {
+    "symbol": "CDZI",
+    "name": "CADIZ INC"
+  },
+  {
+    "symbol": "IPI",
+    "name": "INTREPID POTASH INC"
+  },
+  {
+    "symbol": "SCVL",
+    "name": "SHOE CARNIVAL INC"
+  },
+  {
+    "symbol": "MCS",
+    "name": "THE MARCUS CORP"
+  },
+  {
+    "symbol": "BFS",
+    "name": "SAUL CENTERS REIT INC"
+  },
+  {
+    "symbol": "NEWT",
+    "name": "NEWTEKONE INC"
+  },
+  {
+    "symbol": "NMAX",
+    "name": "NEWSMAX INC CLASS B"
+  },
+  {
+    "symbol": "KODK",
+    "name": "EASTMAN KODAK"
+  },
+  {
+    "symbol": "ACCO",
+    "name": "ACCO BRANDS CORP"
+  },
+  {
+    "symbol": "BWFG",
+    "name": "BANKWELL FINANCIAL GROUP INC"
+  },
+  {
+    "symbol": "HVT",
+    "name": "HAVERTY FURNITURE COMPANIES INC"
+  },
+  {
+    "symbol": "CBNK",
+    "name": "CAPITAL BANCORP INC"
+  },
+  {
+    "symbol": "BYND",
+    "name": "BEYOND MEAT INC"
+  },
+  {
+    "symbol": "CODI",
+    "name": "COMPASS DIVERSIFIED"
+  },
+  {
+    "symbol": "BCML",
+    "name": "BAYCOM CORP"
+  },
+  {
+    "symbol": "CZNC",
+    "name": "CITIZENS AND NORTHERN CORP"
+  },
+  {
+    "symbol": "FEIM",
+    "name": "FREQUENCY ELECTRONICS INC"
+  },
+  {
+    "symbol": "AKBA",
+    "name": "AKEBIA THERAPEUTICS INC"
+  },
+  {
+    "symbol": "OEC",
+    "name": "ORION SA"
+  },
+  {
+    "symbol": "AQST",
+    "name": "AQUESTIVE THERAPEUTICS INC"
+  },
+  {
+    "symbol": "CLDT",
+    "name": "CHATHAM LODGING TRUST REIT"
+  },
+  {
+    "symbol": "RM",
+    "name": "REGIONAL MANAGEMENT CORP"
+  },
+  {
+    "symbol": "CLFD",
+    "name": "CLEARFIELD INC"
+  },
+  {
+    "symbol": "CBAN",
+    "name": "COLONY BANKCORP INC"
+  },
+  {
+    "symbol": "MOV",
+    "name": "MOVADO GROUP INC"
+  },
+  {
+    "symbol": "RC",
+    "name": "READY CAPITAL CORP"
+  },
+  {
+    "symbol": "MGTX",
+    "name": "MEIRAGTX HOLDINGS PLC"
+  },
+  {
+    "symbol": "MCFT",
+    "name": "MASTERCRAFT BOAT HOLDINGS INC"
+  },
+  {
+    "symbol": "RXST",
+    "name": "RXSIGHT INC"
+  },
+  {
+    "symbol": "NGS",
+    "name": "NATURAL GAS SERVICES GROUP INC"
+  },
+  {
+    "symbol": "MGPI",
+    "name": "MGP INGREDIENTS INC"
+  },
+  {
+    "symbol": "TRC",
+    "name": "TEJON RANCH"
+  },
+  {
+    "symbol": "ENTA",
+    "name": "ENANTA PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "ABX",
+    "name": "ABACUS GLOBAL MANAGEMENT INC CLASS"
+  },
+  {
+    "symbol": "VSTM",
+    "name": "VERASTEM INC"
+  },
+  {
+    "symbol": "IBTA",
+    "name": "IBOTTA INC CLASS A"
+  },
+  {
+    "symbol": "ONIT",
+    "name": "ONITY GROUP INC"
+  },
+  {
+    "symbol": "SVC",
+    "name": "SERVICE PROPERTIES TRUST"
+  },
+  {
+    "symbol": "EB",
+    "name": "EVENTBRITE CLASS A INC"
+  },
+  {
+    "symbol": "SLP",
+    "name": "SIMULATIONS PLUS INC"
+  },
+  {
+    "symbol": "ZUMZ",
+    "name": "ZUMIEZ INC"
+  },
+  {
+    "symbol": "TITN",
+    "name": "TITAN MACHINERY INC"
+  },
+  {
+    "symbol": "MVBF",
+    "name": "MVB FINANCIAL CORP"
+  },
+  {
+    "symbol": "BATRA",
+    "name": "ATLANTA BRAVES HOLDINGS INC SERIES"
+  },
+  {
+    "symbol": "CTGO",
+    "name": "CONTANGO ORE INC"
+  },
+  {
+    "symbol": "ATLC",
+    "name": "ATLANTICUS HOLDINGS CORP"
+  },
+  {
+    "symbol": "NGVC",
+    "name": "NATURAL GROCERS BY VITAMIN COTTAGE"
+  },
+  {
+    "symbol": "NAGE",
+    "name": "NIAGEN BIOSCIENCE INC"
+  },
+  {
+    "symbol": "NPB",
+    "name": "NORTHPOINTE BANCSHARES INC"
+  },
+  {
+    "symbol": "ILPT",
+    "name": "INDUSTRIAL LOGISTICS PROPERTIES TR"
+  },
+  {
+    "symbol": "STRT",
+    "name": "STRATTEC SECURITY CORP"
+  },
+  {
+    "symbol": "DDD",
+    "name": "3D SYSTEMS CORP"
+  },
+  {
+    "symbol": "DGICA",
+    "name": "DONEGAL GROUP INC CLASS A"
+  },
+  {
+    "symbol": "MNPR",
+    "name": "MONOPAR THERAPEUTICS INC"
+  },
+  {
+    "symbol": "CENT",
+    "name": "CENTRAL GARDEN AND PET"
+  },
+  {
+    "symbol": "SITC",
+    "name": "SITE CENTERS CORP"
+  },
+  {
+    "symbol": "FVR",
+    "name": "FRONTVIEW REIT INC"
+  },
+  {
+    "symbol": "FNLC",
+    "name": "FIRST BANCORP INC"
+  },
+  {
+    "symbol": "TRDA",
+    "name": "ENTRADA THERAPEUTICS INC"
+  },
+  {
+    "symbol": "PDLB",
+    "name": "PONCE FINANCIAL GROUP INC"
+  },
+  {
+    "symbol": "NVEC",
+    "name": "NVE CORP"
+  },
+  {
+    "symbol": "PKBK",
+    "name": "PARKE BANCORP INC"
+  },
+  {
+    "symbol": "BGS",
+    "name": "B AND G FOODS INC"
+  },
+  {
+    "symbol": "LAND",
+    "name": "GLADSTONE LAND REIT CORP"
+  },
+  {
+    "symbol": "CZFS",
+    "name": "CITIZENS FINANCIAL SERVICES INC"
+  },
+  {
+    "symbol": "FSBW",
+    "name": "FS BANCORP INC"
+  },
+  {
+    "symbol": "VLGEA",
+    "name": "VILLAGE SUPER MARKET INC CLASS A"
+  },
+  {
+    "symbol": "NECB",
+    "name": "NORTHEAST COMMUNITY BANCORP INC"
+  },
+  {
+    "symbol": "BH",
+    "name": "BIGLARI HOLDINGS INCINARY CLASS B"
+  },
+  {
+    "symbol": "QTRX",
+    "name": "QUANTERIX CORP"
+  },
+  {
+    "symbol": "SPIR",
+    "name": "SPIRE GLOBAL INC CLASS A"
+  },
+  {
+    "symbol": "HLLY",
+    "name": "HOLLEY INC"
+  },
+  {
+    "symbol": "KIDS",
+    "name": "ORTHOPEDIATRICS CORP"
+  },
+  {
+    "symbol": "FRST",
+    "name": "PRIMIS FINANCIAL CORP"
+  },
+  {
+    "symbol": "KELYA",
+    "name": "KELLY SERVICES INC CLASS A"
+  },
+  {
+    "symbol": "RCKT",
+    "name": "ROCKET PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "ADCT",
+    "name": "ADC THERAPEUTICS SA"
+  },
+  {
+    "symbol": "TLS",
+    "name": "TELOS CORPORATION CORP"
+  },
+  {
+    "symbol": "MBI",
+    "name": "MBIA INC"
+  },
+  {
+    "symbol": "FDMT",
+    "name": "4D MOLECULAR THERAPEUTICS INC"
+  },
+  {
+    "symbol": "DCTH",
+    "name": "DELCATH SYS INC"
+  },
+  {
+    "symbol": "NLOP",
+    "name": "NET LEASE OFFICE PROPERTIES"
+  },
+  {
+    "symbol": "LENZ",
+    "name": "LENZ THERAPEUTICS INC"
+  },
+  {
+    "symbol": "ACIC",
+    "name": "AMERICAN COASTAL INSURANCE CORP"
+  },
+  {
+    "symbol": "GNE",
+    "name": "GENIE ENERGY LTD CLASS B"
+  },
+  {
+    "symbol": "GBFH",
+    "name": "GBANK FINL HLDGS INC"
+  },
+  {
+    "symbol": "PBYI",
+    "name": "PUMA BIOTECHNOLOGY INC"
+  },
+  {
+    "symbol": "SATL",
+    "name": "SATELLOGIC INC CLASS A"
+  },
+  {
+    "symbol": "PLBC",
+    "name": "PLUMAS BANCORP"
+  },
+  {
+    "symbol": "SWIM",
+    "name": "LATHAM GROUP INC"
+  },
+  {
+    "symbol": "TSBK",
+    "name": "TIMBERLAND BANCORP INC"
+  },
+  {
+    "symbol": "LOCO",
+    "name": "EL POLLO LOCO INC"
+  },
+  {
+    "symbol": "AGL",
+    "name": "AGILON HEALTH"
+  },
+  {
+    "symbol": "ISTR",
+    "name": "INVESTAR HOLDING CORP"
+  },
+  {
+    "symbol": "FSTR",
+    "name": "LB FOSTER"
+  },
+  {
+    "symbol": "BYRN",
+    "name": "BYRNA TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "WSBF",
+    "name": "WATERSTONE FINANCIAL INC"
+  },
+  {
+    "symbol": "VOXR",
+    "name": "VOX ROYALTY CORP"
+  },
+  {
+    "symbol": "RNGR",
+    "name": "RANGER ENERGY SERVICES INC CLASS A"
+  },
+  {
+    "symbol": "NWFL",
+    "name": "NORWOOD FINANCIAL CORP"
+  },
+  {
+    "symbol": "HDSN",
+    "name": "HUDSON TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "OOMA",
+    "name": "OOMA INC"
+  },
+  {
+    "symbol": "ONTF",
+    "name": "ON24 INC"
+  },
+  {
+    "symbol": "PUBM",
+    "name": "PUBMATIC INC CLASS A"
+  },
+  {
+    "symbol": "XPER",
+    "name": "XPERI INC"
+  },
+  {
+    "symbol": "SB",
+    "name": "SAFE BULKERS INC"
+  },
+  {
+    "symbol": "PCB",
+    "name": "PCB BANCORP"
+  },
+  {
+    "symbol": "OSG",
+    "name": "OCTAVE SPECIALTY GROUP INC"
+  },
+  {
+    "symbol": "MPLT",
+    "name": "MAPLIGHT THERAPEUTICS INC"
+  },
+  {
+    "symbol": "CCRN",
+    "name": "CROSS COUNTRY HEALTHCARE INC"
+  },
+  {
+    "symbol": "ALDX",
+    "name": "ALDEYRA THERAPEUTICS INC"
+  },
+  {
+    "symbol": "BRBS",
+    "name": "BLUE RIDGE BANKSHARES INC"
+  },
+  {
+    "symbol": "KFS",
+    "name": "KINGSWAY FINANCIAL SERVICES INC"
+  },
+  {
+    "symbol": "MITT",
+    "name": "TPG MORTGAGE INVESTMENT TRUST INC"
+  },
+  {
+    "symbol": "CLW",
+    "name": "CLEARWATER PAPER CORP"
+  },
+  {
+    "symbol": "NFE",
+    "name": "NEW FORTRESS ENERGY INC CLASS A"
+  },
+  {
+    "symbol": "XRX",
+    "name": "XEROX HOLDINGS CORP"
+  },
+  {
+    "symbol": "DSGR",
+    "name": "DISTRIBUTION SOLUTIONS GROUP INC"
+  },
+  {
+    "symbol": "NATH",
+    "name": "NATHANS FAMOUS INC"
+  },
+  {
+    "symbol": "CADL",
+    "name": "CANDEL THERAPEUTICS INC"
+  },
+  {
+    "symbol": "CNDT",
+    "name": "CONDUENT INC"
+  },
+  {
+    "symbol": "SIGA",
+    "name": "SIGA TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "VIA",
+    "name": "VIA TRANSPORTATION INC CLASS A"
+  },
+  {
+    "symbol": "CMTG",
+    "name": "CLAROS MORTGAGE TRUST INC"
+  },
+  {
+    "symbol": "FRPH",
+    "name": "FRP HOLDINGS INC"
+  },
+  {
+    "symbol": "RMR",
+    "name": "RMR GROUP INC CLASS A"
+  },
+  {
+    "symbol": "NRC",
+    "name": "NATIONAL RESEARCH CORP"
+  },
+  {
+    "symbol": "HYLN",
+    "name": "HYLIION HOLDINGS CORP"
+  },
+  {
+    "symbol": "OPFI",
+    "name": "OPPFI INC CLASS A"
+  },
+  {
+    "symbol": "DMAC",
+    "name": "DIAMEDICA THERAPEUTICS INC"
+  },
+  {
+    "symbol": "MBCN",
+    "name": "MIDDLEFIELD BANC CORP"
+  },
+  {
+    "symbol": "CRSR",
+    "name": "CORSAIR GAMING INC"
+  },
+  {
+    "symbol": "ACRE",
+    "name": "ARES COMMERCIAL REAL ESTATE REIT C"
+  },
+  {
+    "symbol": "DNUT",
+    "name": "KRISPY KREME INC"
+  },
+  {
+    "symbol": "JRVR",
+    "name": "JAMES RIVER GROUP HOLDINGS INC"
+  },
+  {
+    "symbol": "MVIS",
+    "name": "MICROVISION INC"
+  },
+  {
+    "symbol": "ORGO",
+    "name": "ORGANOGENESIS HOLDINGS INC CLASS A"
+  },
+  {
+    "symbol": "SGHT",
+    "name": "SIGHT SCIENCES INC"
+  },
+  {
+    "symbol": "JELD",
+    "name": "JELD WEN HOLDING INC"
+  },
+  {
+    "symbol": "DBI",
+    "name": "DESIGNER BRANDS INC CLASS A"
+  },
+  {
+    "symbol": "BMBL",
+    "name": "BUMBLE INC CLASS A"
+  },
+  {
+    "symbol": "BELFA",
+    "name": "BEL FUSE INC CLASS A"
+  },
+  {
+    "symbol": "BOC",
+    "name": "BOSTON OMAHA CORP CLASS A"
+  },
+  {
+    "symbol": "JMSB",
+    "name": "JOHN MARSHALL BANCORP INC"
+  },
+  {
+    "symbol": "PLSE",
+    "name": "PULSE BIOSCIENCES INC"
+  },
+  {
+    "symbol": "HSHP",
+    "name": "HIMALAYA SHIPPING LTD"
+  },
+  {
+    "symbol": "PACK",
+    "name": "RANPAK HOLDINGS CORP CLASS A"
+  },
+  {
+    "symbol": "JOUT",
+    "name": "JOHNSON OUTDOORS INC CLASS A"
+  },
+  {
+    "symbol": "BLZE",
+    "name": "BACKBLAZE INC CLASS A"
+  },
+  {
+    "symbol": "ATEX",
+    "name": "ANTERIX INC"
+  },
+  {
+    "symbol": "CIA",
+    "name": "CITIZENS INC CLASS A"
+  },
+  {
+    "symbol": "TH",
+    "name": "TARGET HOSPITALITY CORP"
+  },
+  {
+    "symbol": "NCMI",
+    "name": "NATIONAL CINEMEDIA INC"
+  },
+  {
+    "symbol": "AVIR",
+    "name": "ATEA PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "EOLS",
+    "name": "EVOLUS INC"
+  },
+  {
+    "symbol": "AMCX",
+    "name": "AMC NETWORKS CLASS A INC"
+  },
+  {
+    "symbol": "RPAY",
+    "name": "REPAY HOLDINGS CORP CLASS A"
+  },
+  {
+    "symbol": "USNA",
+    "name": "USANA HEALTH SCIENCES INC"
+  },
+  {
+    "symbol": "XOMA",
+    "name": "XOMA ROYALTY CORP"
+  },
+  {
+    "symbol": "MEI",
+    "name": "METHODE ELECTRONICS INC"
+  },
+  {
+    "symbol": "SPOK",
+    "name": "SPOK HOLDINGS INC"
+  },
+  {
+    "symbol": "ALLO",
+    "name": "ALLOGENE THERAPEUTICS INC"
+  },
+  {
+    "symbol": "BKTI",
+    "name": "BK TECHNOLOGIES CORP"
+  },
+  {
+    "symbol": "PESI",
+    "name": "PERMA FIX ENVIRONMENTAL SERVICES I"
+  },
+  {
+    "symbol": "RBBN",
+    "name": "RIBBON COMMUNICATIONS INC"
+  },
+  {
+    "symbol": "SMC",
+    "name": "SUMMIT MIDSTREAM CORP"
+  },
+  {
+    "symbol": "PSFE",
+    "name": "PAYSAFE LTD"
+  },
+  {
+    "symbol": "VMD",
+    "name": "VIEMED HEALTHCARE INC"
+  },
+  {
+    "symbol": "ASST",
+    "name": "STRIVE INC CLASS A"
+  },
+  {
+    "symbol": "TSSI",
+    "name": "TSS INC"
+  },
+  {
+    "symbol": "ASLE",
+    "name": "AERSALE CORP"
+  },
+  {
+    "symbol": "LDI",
+    "name": "LOANDEPOT INC CLASS A"
+  },
+  {
+    "symbol": "LMNR",
+    "name": "LIMONEIRA"
+  },
+  {
+    "symbol": "FTK",
+    "name": "FLOTEK INDUSTRIES INC"
+  },
+  {
+    "symbol": "GRNT",
+    "name": "GRANITE RIDGE RESOURCES INC"
+  },
+  {
+    "symbol": "AVNW",
+    "name": "AVIAT NETWORKS INC"
+  },
+  {
+    "symbol": "MEC",
+    "name": "MAYVILLE ENGINEERING COMPANY INC"
+  },
+  {
+    "symbol": "PAL",
+    "name": "PROFICIENT AUTO LOGISTICS INC"
+  },
+  {
+    "symbol": "ASPN",
+    "name": "ASPEN AEROGELS INC"
+  },
+  {
+    "symbol": "RZLT",
+    "name": "REZOLUTE INC"
+  },
+  {
+    "symbol": "FVCB",
+    "name": "FVCBANKCORP INC"
+  },
+  {
+    "symbol": "ATLO",
+    "name": "AMES NATIONAL CORP"
+  },
+  {
+    "symbol": "KRMD",
+    "name": "KORU MEDICAL SYSTEMS INC"
+  },
+  {
+    "symbol": "BLFY",
+    "name": "BLUE FOUNDRY BANCORP"
+  },
+  {
+    "symbol": "RCKY",
+    "name": "ROCKY BRANDS INC"
+  },
+  {
+    "symbol": "ASUR",
+    "name": "ASURE SOFTWARE INC"
+  },
+  {
+    "symbol": "BKKT",
+    "name": "BAKKT HOLDINGS INC CLASS A"
+  },
+  {
+    "symbol": "DSGN",
+    "name": "DESIGN THERAPEUTICS INC"
+  },
+  {
+    "symbol": "ABEO",
+    "name": "ABEONA THERAPEUTICS INC"
+  },
+  {
+    "symbol": "WOOF",
+    "name": "PETCO HEALTH AND WELLNESS COMPANY"
+  },
+  {
+    "symbol": "INSE",
+    "name": "INSPIRED ENTERTAINMENT INC"
+  },
+  {
+    "symbol": "ALMU",
+    "name": "AELUMA INC"
+  },
+  {
+    "symbol": "TOI",
+    "name": "ONCOLOGY INSTITUTE INC"
+  },
+  {
+    "symbol": "USAU",
+    "name": "US GOLD CORP"
+  },
+  {
+    "symbol": "HNST",
+    "name": "THE HONEST COMPANY INC"
+  },
+  {
+    "symbol": "BRCB",
+    "name": "BLACK ROCK COFFEE BAR INC CLASS A"
+  },
+  {
+    "symbol": "OVLY",
+    "name": "OAK VALLEY BANCORP"
+  },
+  {
+    "symbol": "FDBC",
+    "name": "FIDELITY D AND D BANCORP INC"
+  },
+  {
+    "symbol": "AURA",
+    "name": "AURA BIOSCIENCES INC"
+  },
+  {
+    "symbol": "MYFW",
+    "name": "FIRST WESTERN FINANCIAL INC"
+  },
+  {
+    "symbol": "WBTN",
+    "name": "WEBTOON ENTERTAINMENT INC"
+  },
+  {
+    "symbol": "PCYO",
+    "name": "PURE CYCLE CORP"
+  },
+  {
+    "symbol": "HRTX",
+    "name": "HERON THERAPEUTICS INC"
+  },
+  {
+    "symbol": "LCNB",
+    "name": "LCNB CORP"
+  },
+  {
+    "symbol": "LFCR",
+    "name": "LIFECORE BIOMEDICAL INC"
+  },
+  {
+    "symbol": "ATNI",
+    "name": "ATN INTERNATIONAL INC"
+  },
+  {
+    "symbol": "FUNC",
+    "name": "FIRST UNITED CORP"
+  },
+  {
+    "symbol": "CMRC",
+    "name": "BIGCOMMERCE HOLDINGS INC SERIES"
+  },
+  {
+    "symbol": "FC",
+    "name": "FRANKLIN COVEY"
+  },
+  {
+    "symbol": "SLQT",
+    "name": "SELECTQUOTE INC"
+  },
+  {
+    "symbol": "PKOH",
+    "name": "PARK OHIO HOLDINGS CORP"
+  },
+  {
+    "symbol": "III",
+    "name": "INFORMATION SERVICES GROUP INC"
+  },
+  {
+    "symbol": "EGHT",
+    "name": "8X8 INC"
+  },
+  {
+    "symbol": "TBCH",
+    "name": "TURTLE BEACH CORP"
+  },
+  {
+    "symbol": "CTEV",
+    "name": "CLARITEV CORP CLASS A"
+  },
+  {
+    "symbol": "CTRN",
+    "name": "CITI TRENDS INC"
+  },
+  {
+    "symbol": "SSP",
+    "name": "EW SCRIPPS CLASS A"
+  },
+  {
+    "symbol": "ALCO",
+    "name": "ALICO INC"
+  },
+  {
+    "symbol": "NKSH",
+    "name": "NATIONAL BANKSHARES INC"
+  },
+  {
+    "symbol": "WYFI",
+    "name": "WHITEFIBER INC"
+  },
+  {
+    "symbol": "RLGT",
+    "name": "RADIANT LOGISTIC INC"
+  },
+  {
+    "symbol": "INR",
+    "name": "INFINITY NATURAL RESOURCES INC CLA"
+  },
+  {
+    "symbol": "OLPX",
+    "name": "OLAPLEX HOLDINGS INC"
+  },
+  {
+    "symbol": "NEXN",
+    "name": "NEXXEN INTERNATIONAL LTD"
+  },
+  {
+    "symbol": "LILA",
+    "name": "LIBERTY LATIN AMERICA LTD CLASS A"
+  },
+  {
+    "symbol": "REFI",
+    "name": "CHICAGO ATLANTIC REAL ESTATE FINAN"
+  },
+  {
+    "symbol": "PINE",
+    "name": "ALPINE INCOME PROPERTY TRUST INC"
+  },
+  {
+    "symbol": "SEVN",
+    "name": "SEVEN HILLS REALTY TRUST"
+  },
+  {
+    "symbol": "XPOF",
+    "name": "XPONENTIAL FITNESS INC CLASS A"
+  },
+  {
+    "symbol": "WNEB",
+    "name": "WESTERN NEW ENGLAND BANCORP INC"
+  },
+  {
+    "symbol": "CRCT",
+    "name": "CRICUT INC CLASS A"
+  },
+  {
+    "symbol": "CHMG",
+    "name": "CHEMUNG FINANCIAL CORP"
+  },
+  {
+    "symbol": "USCB",
+    "name": "USCB FINANCIAL HOLDINGS INC CLASS"
+  },
+  {
+    "symbol": "BSVN",
+    "name": "BANK7 CORP"
+  },
+  {
+    "symbol": "FRAF",
+    "name": "FRANKLIN FINANCIAL SERVICES CORP"
+  },
+  {
+    "symbol": "UIS",
+    "name": "UNISYS CORP"
+  },
+  {
+    "symbol": "TG",
+    "name": "TREDEGAR CORP"
+  },
+  {
+    "symbol": "RICK",
+    "name": "RCI HOSPITALITY HOLDINGS INC"
+  },
+  {
+    "symbol": "CRDA",
+    "name": "CRAWFORD CLASS A"
+  },
+  {
+    "symbol": "VEL",
+    "name": "VELOCITY FINANCIAL INC"
+  },
+  {
+    "symbol": "PANL",
+    "name": "PANGAEA LOGISTICS SOLUTIONS LTD"
+  },
+  {
+    "symbol": "DOMO",
+    "name": "DOMO INC CLASS B"
+  },
+  {
+    "symbol": "LPRO",
+    "name": "OPEN LENDING CORP"
+  },
+  {
+    "symbol": "BPRN",
+    "name": "PRINCETON BANCORP INC"
+  },
+  {
+    "symbol": "ARDT",
+    "name": "ARDENT HEALTH INC"
+  },
+  {
+    "symbol": "TECX",
+    "name": "TECTONIC THERAPEUTIC INC"
+  },
+  {
+    "symbol": "FBLA",
+    "name": "FB BANCORP INC"
+  },
+  {
+    "symbol": "VUZI",
+    "name": "VUZIX CORP"
+  },
+  {
+    "symbol": "OABI",
+    "name": "OMNIAB INC"
+  },
+  {
+    "symbol": "TNXP",
+    "name": "TONIX PHARMACEUTICALS HOLDING CORP"
+  },
+  {
+    "symbol": "CFFI",
+    "name": "C AND F FINANCIAL CORP"
+  },
+  {
+    "symbol": "JCAP",
+    "name": "JEFFERSON CAPITAL INC"
+  },
+  {
+    "symbol": "DOUG",
+    "name": "DOUGLAS ELLIMAN INC"
+  },
+  {
+    "symbol": "KRT",
+    "name": "KARAT PACKAGING INC"
+  },
+  {
+    "symbol": "PLTK",
+    "name": "PLAYTIKA HOLDING CORP"
+  },
+  {
+    "symbol": "TBRG",
+    "name": "TRUBRIDGE INC"
+  },
+  {
+    "symbol": "OPRT",
+    "name": "OPORTUN FINANCIAL CORP"
+  },
+  {
+    "symbol": "CRMT",
+    "name": "AMERICAS CAR MART INC"
+  },
+  {
+    "symbol": "LOVE",
+    "name": "LOVESAC COMPANY"
+  },
+  {
+    "symbol": "TRUE",
+    "name": "TRUECAR INC"
+  },
+  {
+    "symbol": "OSUR",
+    "name": "ORASURE TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "CD",
+    "name": "CHAINCE DIGITAL HOLDINGS INC"
+  },
+  {
+    "symbol": "AVR",
+    "name": "ANTERIS TECHNOLOGIES GLOBAL CORP"
+  },
+  {
+    "symbol": "VABK",
+    "name": "VIRGINIA NATIONAL BANKSHARES CORP"
+  },
+  {
+    "symbol": "SNWV",
+    "name": "SANUWAVE HEALTH INC"
+  },
+  {
+    "symbol": "EVC",
+    "name": "ENTRAVISION COMMUNICATIONS CORP CL"
+  },
+  {
+    "symbol": "AARD",
+    "name": "AARDVARK THERAPEUTICS INC"
+  },
+  {
+    "symbol": "QSI",
+    "name": "QUANTUM SI INC CLASS A"
+  },
+  {
+    "symbol": "FHTX",
+    "name": "FOGHORN THERAPEUTICS INC"
+  },
+  {
+    "symbol": "SNBR",
+    "name": "SLEEP NUMBER CORP"
+  },
+  {
+    "symbol": "TARA",
+    "name": "PROTARA THERAPEUTICS INC"
+  },
+  {
+    "symbol": "INBK",
+    "name": "FIRST INTERNET BANCORP"
+  },
+  {
+    "symbol": "PDYN",
+    "name": "PALLADYNE AI CORP"
+  },
+  {
+    "symbol": "NNOX",
+    "name": "NANO X IMAGING LTD"
+  },
+  {
+    "symbol": "WTI",
+    "name": "W AND T OFFSHORE INC"
+  },
+  {
+    "symbol": "THRY",
+    "name": "THRYV HOLDINGS INC"
+  },
+  {
+    "symbol": "EDIT",
+    "name": "EDITAS MEDICINE INC"
+  },
+  {
+    "symbol": "QUAD",
+    "name": "QUAD GRAPHICS INC CLASS A"
+  },
+  {
+    "symbol": "MFIN",
+    "name": "MEDALLION FINANCIAL CORP"
+  },
+  {
+    "symbol": "MASS",
+    "name": "908 DEVICES INC"
+  },
+  {
+    "symbol": "KINS",
+    "name": "KINGSTONE COMPANIES INC"
+  },
+  {
+    "symbol": "SKYH",
+    "name": "SKY HARBOUR GROUP CORP CLASS A"
+  },
+  {
+    "symbol": "EVCM",
+    "name": "EVERCOMMERCE INC"
+  },
+  {
+    "symbol": "IMMR",
+    "name": "IMMERSION CORP"
+  },
+  {
+    "symbol": "RMNI",
+    "name": "RIMINI STREET INC"
+  },
+  {
+    "symbol": "MG",
+    "name": "MISTRAS GROUP INC"
+  },
+  {
+    "symbol": "OPRX",
+    "name": "OPTIMIZERX CORP"
+  },
+  {
+    "symbol": "DSP",
+    "name": "VIANT TECHNOLOGY INC CLASS A"
+  },
+  {
+    "symbol": "PEBK",
+    "name": "PEOPLES BANCORP OF NORTH CAROLINA"
+  },
+  {
+    "symbol": "JAKK",
+    "name": "JAKKS PACIFIC INC"
+  },
+  {
+    "symbol": "ARCT",
+    "name": "ARCTURUS THERAPEUTICS HOLDINGS INC"
+  },
+  {
+    "symbol": "NC",
+    "name": "NACCO INDUSTRIES INC CLASS A"
+  },
+  {
+    "symbol": "BETR",
+    "name": "BETTER HOME FINANCE HOLDING CLASS"
+  },
+  {
+    "symbol": "CRDF",
+    "name": "CARDIFF ONCOLOGY INC"
+  },
+  {
+    "symbol": "WEYS",
+    "name": "WEYCO GROUP INC"
+  },
+  {
+    "symbol": "VYGR",
+    "name": "VOYAGER THERAPEUTICS INC"
+  },
+  {
+    "symbol": "SKYX",
+    "name": "SKYX PLATFORMS CORP"
+  },
+  {
+    "symbol": "VTEX",
+    "name": "VTEX CLASS A"
+  },
+  {
+    "symbol": "FCCO",
+    "name": "FIRST COMMUNITY CORP"
+  },
+  {
+    "symbol": "ELMD",
+    "name": "ELECTROMED INC"
+  },
+  {
+    "symbol": "CHRS",
+    "name": "COHERUS ONCOLOGY INC"
+  },
+  {
+    "symbol": "MPAA",
+    "name": "MOTORCAR PARTS OF AMERICA INC"
+  },
+  {
+    "symbol": "MRBK",
+    "name": "MERIDIAN CORP"
+  },
+  {
+    "symbol": "BHR",
+    "name": "BRAEMAR HOTELS RESORTS INC"
+  },
+  {
+    "symbol": "NGNE",
+    "name": "NEUROGENE INC"
+  },
+  {
+    "symbol": "ZIP",
+    "name": "ZIPRECRUITER INC CLASS A"
+  },
+  {
+    "symbol": "SKIN",
+    "name": "BEAUTY HEALTH COMPANY CLASS A CLAS"
+  },
+  {
+    "symbol": "BNTC",
+    "name": "BENITEC BIOPHARMA INC"
+  },
+  {
+    "symbol": "BOOM",
+    "name": "DMC GLOBAL INC"
+  },
+  {
+    "symbol": "FENC",
+    "name": "FENNEC PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "PRTH",
+    "name": "PRIORITY TECHNOLOGY HOLDINGS INC"
+  },
+  {
+    "symbol": "OPBK",
+    "name": "OP BANCORP"
+  },
+  {
+    "symbol": "ALTI",
+    "name": "ALTI GLOBAL INC CLASS A"
+  },
+  {
+    "symbol": "STRS",
+    "name": "STRATUS PROPERTIES INC"
+  },
+  {
+    "symbol": "ACH",
+    "name": "ACCENDRA HEALTH INC"
+  },
+  {
+    "symbol": "SNDA",
+    "name": "SONIDA SENIOR LIVING INC"
+  },
+  {
+    "symbol": "EGAN",
+    "name": "EGAIN CORP"
+  },
+  {
+    "symbol": "BRT",
+    "name": "BRT APARTMENTS CORP"
+  },
+  {
+    "symbol": "GCBC",
+    "name": "GREENE COUNTY BANCORP INC"
+  },
+  {
+    "symbol": "LEGH",
+    "name": "LEGACY HOUSING"
+  },
+  {
+    "symbol": "LAW",
+    "name": "CS DISCO INC"
+  },
+  {
+    "symbol": "WEST",
+    "name": "WESTROCK COFFEE"
+  },
+  {
+    "symbol": "LNKB",
+    "name": "LINKBANCORP INC"
+  },
+  {
+    "symbol": "LZM",
+    "name": "LIFEZONE METALS LTD"
+  },
+  {
+    "symbol": "TCX",
+    "name": "TUCOWS INC"
+  },
+  {
+    "symbol": "FXNC",
+    "name": "FIRST NATIONAL CORP"
+  },
+  {
+    "symbol": "STXS",
+    "name": "STEREOTAXIS INC"
+  },
+  {
+    "symbol": "TBI",
+    "name": "TRUEBLUE INC"
+  },
+  {
+    "symbol": "BZAI",
+    "name": "BLAIZE HOLDINGS INC"
+  },
+  {
+    "symbol": "FSFG",
+    "name": "FIRST SAVINGS FINANCIAL GROUP INC"
+  },
+  {
+    "symbol": "NXDT",
+    "name": "NEXPOINT DIVERSIFIED REAL ESTATE T"
+  },
+  {
+    "symbol": "PAYS",
+    "name": "PAYSIGN INC"
+  },
+  {
+    "symbol": "RGCO",
+    "name": "RGC RESOURCES INC"
+  },
+  {
+    "symbol": "HCAT",
+    "name": "HEALTH CATALYST INC"
+  },
+  {
+    "symbol": "SAMG",
+    "name": "SILVERCREST ASSET MANAGEMENT GROUP"
+  },
+  {
+    "symbol": "PBFS",
+    "name": "PIONEER BANCORP INC"
+  },
+  {
+    "symbol": "CMT",
+    "name": "CORE MOLDING TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "LRMR",
+    "name": "LARIMAR THERAPEUTICS INC"
+  },
+  {
+    "symbol": "CURI",
+    "name": "CURIOSITYSTREAM INC CLASS A"
+  },
+  {
+    "symbol": "AMBQ",
+    "name": "AMBIQ MICRO INC"
+  },
+  {
+    "symbol": "CATX",
+    "name": "PERSPECTIVE THERAPEUTICS INC"
+  },
+  {
+    "symbol": "MPTI",
+    "name": "M TRON INDUSTRIES INC"
+  },
+  {
+    "symbol": "RMAX",
+    "name": "RE MAX HOLDINGS INC CLASS A"
+  },
+  {
+    "symbol": "POWW",
+    "name": "OUTDOOR HOLDING"
+  },
+  {
+    "symbol": "KULR",
+    "name": "KULR TECHNOLOGY GROUP INC"
+  },
+  {
+    "symbol": "HUMA",
+    "name": "HUMACYTE INC"
+  },
+  {
+    "symbol": "INSG",
+    "name": "INSEEGO CORP"
+  },
+  {
+    "symbol": "ALEC",
+    "name": "ALECTOR INC"
+  },
+  {
+    "symbol": "FCAP",
+    "name": "FIRST CAPITAL INC"
+  },
+  {
+    "symbol": "ONEW",
+    "name": "ONEWATER MARINE CLASS A INC"
+  },
+  {
+    "symbol": "HWBK",
+    "name": "HAWTHORN BANCSHARES INC"
+  },
+  {
+    "symbol": "INGN",
+    "name": "INOGEN INC"
+  },
+  {
+    "symbol": "FNKO",
+    "name": "FUNKO INC CLASS A"
+  },
+  {
+    "symbol": "TTGT",
+    "name": "TECHTARGET INC"
+  },
+  {
+    "symbol": "AII",
+    "name": "AMERICAN INTEGRITY INSURANCE GROUP"
+  },
+  {
+    "symbol": "LE",
+    "name": "LAND END INC"
+  },
+  {
+    "symbol": "FFAI",
+    "name": "FARADAY FUTURE INTELLIGENT ELECTRI"
+  },
+  {
+    "symbol": "FLXS",
+    "name": "FLEXSTEEL INDUSTRIES INC"
+  },
+  {
+    "symbol": "MDWD",
+    "name": "MEDIWOUND LTD"
+  },
+  {
+    "symbol": "BNED",
+    "name": "BARNES AND NOBLE EDUCATION INC"
+  },
+  {
+    "symbol": "ACDC",
+    "name": "PROFRAC HOLDING CLASS A CORP"
+  },
+  {
+    "symbol": "SEG",
+    "name": "SEAPORT ENTERTAINMENT GROUP INC"
+  },
+  {
+    "symbol": "GETY",
+    "name": "GETTY IMAGES HOLDINGS INC CLASS A"
+  },
+  {
+    "symbol": "EFSI",
+    "name": "EAGLE FINANCIAL SERVICES INC"
+  },
+  {
+    "symbol": "RSVR",
+    "name": "RESERVOIR MEDIA INC"
+  },
+  {
+    "symbol": "OMDA",
+    "name": "OMADA HEALTH INC"
+  },
+  {
+    "symbol": "TLSI",
+    "name": "TRISALUS LF SC CM A"
+  },
+  {
+    "symbol": "GLSI",
+    "name": "GREENWICH LIFESCIENCES INC"
+  },
+  {
+    "symbol": "UTMD",
+    "name": "UTAH MEDICAL PRODUCTS INC"
+  },
+  {
+    "symbol": "OVBC",
+    "name": "OHIO VALLEY BANC CORP"
+  },
+  {
+    "symbol": "KLC",
+    "name": "KINDERCARE LEARNING COMPANIES INC"
+  },
+  {
+    "symbol": "CDXS",
+    "name": "CODEXIS INC"
+  },
+  {
+    "symbol": "RGP",
+    "name": "RESOURCES CONNECTION INC"
+  },
+  {
+    "symbol": "PLX",
+    "name": "PROTALIX BIOTHERAPEUTICS INC"
+  },
+  {
+    "symbol": "BALY",
+    "name": "BALLY S CORP"
+  },
+  {
+    "symbol": "LFMD",
+    "name": "LIFEMD INC"
+  },
+  {
+    "symbol": "HBB",
+    "name": "HAMILTON BEACH BRANDS HOLDING COMP"
+  },
+  {
+    "symbol": "ESCA",
+    "name": "ESCALADE INC"
+  },
+  {
+    "symbol": "SMHI",
+    "name": "SEACOR MARINE HOLDINGS INC"
+  },
+  {
+    "symbol": "KLTR",
+    "name": "KALTURA INC"
+  },
+  {
+    "symbol": "FINW",
+    "name": "FINWISE BANCORP"
+  },
+  {
+    "symbol": "BBCP",
+    "name": "CONCRETE PUMPING HOLDINGS INC"
+  },
+  {
+    "symbol": "JYNT",
+    "name": "JOINT CORP"
+  },
+  {
+    "symbol": "NREF",
+    "name": "NEXPOINT REAL ESTATE FINANCE INC"
+  },
+  {
+    "symbol": "CZWI",
+    "name": "CITIZENS COMMUNITY BANCORP INC"
+  },
+  {
+    "symbol": "BCBP",
+    "name": "BCB BANCORP INC"
+  },
+  {
+    "symbol": "MED",
+    "name": "MEDIFAST INC"
+  },
+  {
+    "symbol": "CMDB",
+    "name": "COSTAMARE BULKERS HOLDINGS LTD"
+  },
+  {
+    "symbol": "CBFV",
+    "name": "CB FINANCIAL SERVICES INC"
+  },
+  {
+    "symbol": "CBK",
+    "name": "COMMERCIAL BANCGROUP INC"
+  },
+  {
+    "symbol": "RELL",
+    "name": "RICHARDSON ELECTRONICS LTD"
+  },
+  {
+    "symbol": "BVFL",
+    "name": "BV FINANCIAL INC"
+  },
+  {
+    "symbol": "EVI",
+    "name": "EVI INDUSTRIES INC"
+  },
+  {
+    "symbol": "FATE",
+    "name": "FATE THERAPEUTICS INC"
+  },
+  {
+    "symbol": "ACTG",
+    "name": "ACACIA RESEARCH CORP"
+  },
+  {
+    "symbol": "ALTG",
+    "name": "ALTA EQUIPMENT GROUP INC CLASS A"
+  },
+  {
+    "symbol": "ELDN",
+    "name": "ELEDON PHARMACEUTICALS INC"
+  },
+  {
+    "symbol": "MXCT",
+    "name": "MAXCYTE INC"
+  },
+  {
+    "symbol": "TMCI",
+    "name": "TREACE MEDICAL CONCEPTS INC"
+  },
+  {
+    "symbol": "SNFCA",
+    "name": "SECURITY NATIONAL FINANCIAL CORP C"
+  },
+  {
+    "symbol": "EBMT",
+    "name": "EAGLE BANCORP MONTANA INC"
+  },
+  {
+    "symbol": "GENC",
+    "name": "GENCOR INDUSTRIES INC"
+  },
+  {
+    "symbol": "NVCT",
+    "name": "NUVECTIS PHARMA INC"
+  },
+  {
+    "symbol": "ACU",
+    "name": "ACME UNITED CORP"
+  },
+  {
+    "symbol": "FOA",
+    "name": "FINANCE OF AMERICA COMPANIES INC C"
+  },
+  {
+    "symbol": "AVD",
+    "name": "AMER VANGUARD CORP"
+  },
+  {
+    "symbol": "STRZ",
+    "name": "STARZ ENTERTAINMENT CORP"
+  },
+  {
+    "symbol": "JILL",
+    "name": "J JILL INC"
+  },
+  {
+    "symbol": "MDV",
+    "name": "MODIV INDUSTRIAL INC CLASS C"
+  },
+  {
+    "symbol": "KGEI",
+    "name": "KOLIBRI GLOBAL ENERGY INC"
+  },
+  {
+    "symbol": "MLP",
+    "name": "MAUI LAND AND PINEAPPLE INC"
+  },
+  {
+    "symbol": "KRO",
+    "name": "KRONOS WORLDWIDE INC"
+  },
+  {
+    "symbol": "ACR",
+    "name": "ACRES COMMERCIAL REALTY CORP"
+  },
+  {
+    "symbol": "TRAK",
+    "name": "REPOSITRAK INC"
+  },
+  {
+    "symbol": "ASIC",
+    "name": "ATEGRITY SPECIALTY INSURANCE COMPA"
+  },
+  {
+    "symbol": "CFBK",
+    "name": "CF BANKSHARES INC"
+  },
+  {
+    "symbol": "ARQ",
+    "name": "ARQ INC"
+  },
+  {
+    "symbol": "MNSB",
+    "name": "MAINSTREET BANCSHARES INC"
+  },
+  {
+    "symbol": "EWCZ",
+    "name": "EUROPEAN WAX CENTER INC CLASS A"
+  },
+  {
+    "symbol": "DERM",
+    "name": "JOURNEY MEDICAL CORP"
+  },
+  {
+    "symbol": "CXDO",
+    "name": "CREXENDO INC"
+  },
+  {
+    "symbol": "AOMR",
+    "name": "ANGEL OAK MORTGAGE REIT INC"
+  },
+  {
+    "symbol": "FRD",
+    "name": "FRIEDMAN INDUSTRIES INC"
+  },
+  {
+    "symbol": "ULH",
+    "name": "UNIVERSAL LOGISTICS HOLDINGS INC"
+  },
+  {
+    "symbol": "INNV",
+    "name": "INNOVAGE HOLDING CORP"
+  },
+  {
+    "symbol": "LNSR",
+    "name": "LENSAR INC"
+  },
+  {
+    "symbol": "LWAY",
+    "name": "LIFEWAY FOODS INC"
+  },
+  {
+    "symbol": "SMID",
+    "name": "SMITH MIDLAND CORP"
+  },
+  {
+    "symbol": "SPWR",
+    "name": "SUNPOWER INC"
+  },
+  {
+    "symbol": "PXED",
+    "name": "PHOENIX EDUCATION PARTNERS INC"
+  },
+  {
+    "symbol": "ANIK",
+    "name": "ANIKA THERAPEUTICS INC"
+  },
+  {
+    "symbol": "SGC",
+    "name": "SUPERIOR GROUP OF COMPANIES INC"
+  },
+  {
+    "symbol": "ESOA",
+    "name": "ENERGY SERVICES OF AMERICA CORP"
+  },
+  {
+    "symbol": "BSET",
+    "name": "BASSETT FURNITURE INDUSTRIES INC"
+  },
+  {
+    "symbol": "SBFG",
+    "name": "SB FINANCIAL GROUP INC"
+  },
+  {
+    "symbol": "SRBK",
+    "name": "SR BANCORP INC"
+  },
+  {
+    "symbol": "NODK",
+    "name": "NI HOLDINGS INC"
+  },
+  {
+    "symbol": "EPM",
+    "name": "EVOLUTION PETROLEUM CORP"
+  },
+  {
+    "symbol": "ZVIA",
+    "name": "ZEVIA CLASS A"
+  },
+  {
+    "symbol": "FLWS",
+    "name": "1-800 FLOWERS.COM INC CLASS A"
+  },
+  {
+    "symbol": "OFLX",
+    "name": "OMEGA FLEX INC"
+  },
+  {
+    "symbol": "STRW",
+    "name": "STRAWBERRY FIELDS REIT INC"
+  },
+  {
+    "symbol": "HAIN",
+    "name": "HAIN CELESTIAL GROUP INC"
+  },
+  {
+    "symbol": "ACNT",
+    "name": "ASCENT INDUSTRIES"
+  },
+  {
+    "symbol": "HPK",
+    "name": "HIGHPEAK ENERGY INC"
+  },
+  {
+    "symbol": "FNWD",
+    "name": "FINWARD BANCORP"
+  },
+  {
+    "symbol": "GAMB",
+    "name": "GAMBLING COM GROUP LTD"
+  },
+  {
+    "symbol": "NKTX",
+    "name": "NKARTA INC"
+  },
+  {
+    "symbol": "MNTK",
+    "name": "MONTAUK RENEWABLES INC"
+  },
+  {
+    "symbol": "LARK",
+    "name": "LANDMARK BANCORP INC"
+  },
+  {
+    "symbol": "PNBK",
+    "name": "PATRIOT NATIONAL BANCORP INC"
+  },
+  {
+    "symbol": "EHTH",
+    "name": "EHEALTH INC"
+  },
+  {
+    "symbol": "WHG",
+    "name": "WESTWOOD HOLDINGS GROUP INC"
+  },
+  {
+    "symbol": "SUNS",
+    "name": "SUNRISE REALTY TRUST INC"
+  },
+  {
+    "symbol": "CLAR",
+    "name": "CLARUS CORP"
+  },
+  {
+    "symbol": "FORR",
+    "name": "FORRESTER RESEARCH INC"
+  },
+  {
+    "symbol": "INV",
+    "name": "INNVENTURE INC"
+  },
+  {
+    "symbol": "CVRX",
+    "name": "CVRX INC"
+  },
+  {
+    "symbol": "AISP",
+    "name": "AIRSHIP AI HOLDINGS INC CLASS A"
+  },
+  {
+    "symbol": "LVWR",
+    "name": "LIVEWIRE GROUP INC"
+  },
+  {
+    "symbol": "BARK",
+    "name": "BARK INC CLASS A"
+  },
+  {
+    "symbol": "EML",
+    "name": "EASTERN"
+  },
+  {
+    "symbol": "PDEX",
+    "name": "PRO DEX INC"
+  },
+  {
+    "symbol": "DMRC",
+    "name": "DIGIMARC CORP"
+  },
+  {
+    "symbol": "IKT",
+    "name": "INHIBIKASE THERAPEUTICS INC"
+  },
+  {
+    "symbol": "LUCD",
+    "name": "LUCID DIAGNOSTICS INC"
+  },
+  {
+    "symbol": "AOUT",
+    "name": "AMERICAN OUTDOOR BRANDS INC"
+  },
+  {
+    "symbol": "AIRO",
+    "name": "AIRO GROUP HOLDINGS INC"
+  },
+  {
+    "symbol": "RCMT",
+    "name": "RCM TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "TCI",
+    "name": "TRANSCONTINENTAL REALTY INVESTORS"
+  },
+  {
+    "symbol": "OM",
+    "name": "OUTSET MEDICAL INC"
+  },
+  {
+    "symbol": "BRCC",
+    "name": "BRC INC CLASS A"
+  },
+  {
+    "symbol": "HNVR",
+    "name": "HANOVER BANCORP INC"
+  },
+  {
+    "symbol": "RPT",
+    "name": "RITHM PROPERTY INC TRUST"
+  },
+  {
+    "symbol": "FF",
+    "name": "FUTUREFUEL CORP"
+  },
+  {
+    "symbol": "EXFY",
+    "name": "EXPENSIFY INC CLASS A"
+  },
+  {
+    "symbol": "COSO",
+    "name": "COASTALSOUTH BANCSHARES INC"
+  },
+  {
+    "symbol": "HFFG",
+    "name": "HF FOODS GROUP INC"
+  },
+  {
+    "symbol": "GYRE",
+    "name": "GYRE THERAPEUTICS INC"
+  },
+  {
+    "symbol": "SNCR",
+    "name": "SYNCHRONOSS TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "FSP",
+    "name": "FRANKLIN STREET PROPERTIES REIT CO"
+  },
+  {
+    "symbol": "ARAY",
+    "name": "ACCURAY INC"
+  },
+  {
+    "symbol": "GWRS",
+    "name": "GLOBAL WATER RESOURCES INC"
+  },
+  {
+    "symbol": "PMTS",
+    "name": "CPI CARD GROUP INC"
+  },
+  {
+    "symbol": "CARL",
+    "name": "CARLSMED INC"
+  },
+  {
+    "symbol": "DCGO",
+    "name": "DOCGO INC"
+  },
+  {
+    "symbol": "NPWR",
+    "name": "NET POWER INC CLASS A"
+  },
+  {
+    "symbol": "RMBI",
+    "name": "RICHMOND MUTUAL BANCORPORATION INC"
+  },
+  {
+    "symbol": "CSPI",
+    "name": "CSP INC"
+  },
+  {
+    "symbol": "DH",
+    "name": "DEFINITIVE HEALTHCARE CORP CLASS A"
+  },
+  {
+    "symbol": "STIM",
+    "name": "NEURONETICS INC"
+  },
+  {
+    "symbol": "ADV",
+    "name": "ADVANTAGE SOLUTIONS INC CLASS A"
+  },
+  {
+    "symbol": "MAPS",
+    "name": "WM TECHNOLOGY INC CLASS A"
+  },
+  {
+    "symbol": "CPSS",
+    "name": "CONSUMER PORTFOLIO SERVICES INC"
+  },
+  {
+    "symbol": "RNAC",
+    "name": "CARTESIAN THERAPEUTICS INC"
+  },
+  {
+    "symbol": "UBFO",
+    "name": "UNITED SECURITY BANCSHARES"
+  },
+  {
+    "symbol": "RVSB",
+    "name": "RIVERVIEW BANCORP INC"
+  },
+  {
+    "symbol": "FBYD",
+    "name": "FALCON S BEYOND GLOBAL INC CLASS A"
+  },
+  {
+    "symbol": "ELA",
+    "name": "ENVELA CORP"
+  },
+  {
+    "symbol": "ATOM",
+    "name": "ATOMERA INC"
+  },
+  {
+    "symbol": "EEX",
+    "name": "EMERALD HOLDING INC"
+  },
+  {
+    "symbol": "ECBK",
+    "name": "ECB BANCORP INC"
+  },
+  {
+    "symbol": "AEYE",
+    "name": "AUDIOEYE INC"
+  },
+  {
+    "symbol": "SMTI",
+    "name": "SANARA MEDTECH INC"
+  },
+  {
+    "symbol": "AIRJ",
+    "name": "AIRJOULE TECHNOLOGIES CORP CLASS A"
+  },
+  {
+    "symbol": "RXT",
+    "name": "RACKSPACE TECHNOLOGY INC"
+  },
+  {
+    "symbol": "TTEC",
+    "name": "TTEC HOLDINGS INC"
+  },
+  {
+    "symbol": "VIRC",
+    "name": "VIRCO MANUFACTURING CORP"
+  },
+  {
+    "symbol": "MPX",
+    "name": "MARINE PRODUCTS CORP"
+  },
+  {
+    "symbol": "EPSN",
+    "name": "EPSILON ENERGY LTD"
+  },
+  {
+    "symbol": "LAKE",
+    "name": "LAKELAND INDUSTRIES INC"
+  },
+  {
+    "symbol": "SSTI",
+    "name": "SOUNDTHINKING INC"
+  },
+  {
+    "symbol": "LUNG",
+    "name": "PULMONX CORP"
+  },
+  {
+    "symbol": "NRDY",
+    "name": "NERDY INC CLASS A"
+  },
+  {
+    "symbol": "BTMD",
+    "name": "BIOTE CORP CLASS A"
+  },
+  {
+    "symbol": "CBNA",
+    "name": "CHAIN BRIDGE BANCORP INC CLASS A"
+  },
+  {
+    "symbol": "PNRG",
+    "name": "PRIMEENERGY RESOURCES CORP"
+  },
+  {
+    "symbol": "WALD",
+    "name": "WALDENCAST PLC CLASS A"
+  },
+  {
+    "symbol": "PAMT",
+    "name": "PAMT CORP"
+  },
+  {
+    "symbol": "ATYR",
+    "name": "ATYR PHARMA INC"
+  },
+  {
+    "symbol": "KRRO",
+    "name": "KORRO BIO INC"
+  },
+  {
+    "symbol": "ISPR",
+    "name": "ISPIRE TECHNOLOGY INC"
+  },
+  {
+    "symbol": "SI",
+    "name": "SHOULDER INNOVATIONS INC"
+  },
+  {
+    "symbol": "SFBC",
+    "name": "SOUND FINANCIAL BANCORP INC"
+  },
+  {
+    "symbol": "UNB",
+    "name": "UNION BANKSHARES INC"
+  },
+  {
+    "symbol": "LFVN",
+    "name": "LIFEVANTAGE CORP"
+  },
+  {
+    "symbol": "MYPS",
+    "name": "PLAYSTUDIOS INC CLASS A"
+  },
+  {
+    "symbol": "INH",
+    "name": "INHIBRX INC CVR"
+  },
+  {
+    "symbol": "AREN",
+    "name": "ARENA GROUP HLDGS INC"
+  },
+  {
+    "symbol": "AIRS",
+    "name": "AIRSCULPT TECHNOLOGIES INC"
+  },
+  {
+    "symbol": "GAIA",
+    "name": "GAIA INC CLASS A"
+  },
+  {
+    "symbol": "NL",
+    "name": "NL INDUSTRIES INC"
+  },
+  {
+    "symbol": "TUSK",
+    "name": "MAMMOTH ENERGY SERVICES INC"
+  },
+  {
+    "symbol": "CLPR",
+    "name": "CLIPPER REALTY INC"
+  },
+  {
+    "symbol": "HQI",
+    "name": "HIREQUEST INC"
+  },
+  {
+    "symbol": "PROP",
+    "name": "PRAIRIE OPERATING"
+  },
+  {
+    "symbol": "FTLF",
+    "name": "FITLIFE BRANDS INC"
+  },
+  {
+    "symbol": "SKIL",
+    "name": "SKILLSOFT CORP CLASS A"
+  },
+  {
+    "symbol": "AKE",
+    "name": "AKERO THERAPEUTICS CVR"
+  },
+  {
+    "symbol": "ACTU",
+    "name": "ACTUATE THERAPEUTICS INC"
+  },
+  {
+    "symbol": "AVBH",
+    "name": "AVIDBANK HOLDINGS INC"
+  },
+  {
+    "symbol": "RCEL",
+    "name": "AVITA MEDICAL INC"
+  },
+  {
+    "symbol": "EP",
+    "name": "EMPIRE PETROLEUM CORP"
+  },
+  {
+    "symbol": "VHI",
+    "name": "VALHI INC"
+  },
+  {
+    "symbol": "SWKH",
+    "name": "SWK HOLDINGS CORP"
+  },
+  {
+    "symbol": "LFT",
+    "name": "LUMENT FINANCE TRUST INC"
+  },
+  {
+    "symbol": "OPAL",
+    "name": "OPAL FUELS INC CLASS A"
+  },
+  {
+    "symbol": "CURV",
+    "name": "TORRID HOLDINGS INC"
+  },
+  {
+    "symbol": "SIEB",
+    "name": "SIEBERT FINANCIAL CORP"
+  },
+  {
+    "symbol": "SBC",
+    "name": "SBC MEDICAL GROUP HOLDINGS INC"
+  },
+  {
+    "symbol": "SVCO",
+    "name": "SILVACO GROUP INC"
+  },
+  {
+    "symbol": "COOK",
+    "name": "TRAEGER INC"
+  },
+  {
+    "symbol": "MKTW",
+    "name": "MARKETWISE INC CLASS A"
+  },
+  {
+    "symbol": "TKNO",
+    "name": "ALPHA TEKNOVA INC"
+  },
+  {
+    "symbol": "TZOO",
+    "name": "TRAVELZOO"
+  },
+  {
+    "symbol": "VALU",
+    "name": "VALUE LINE INC"
+  },
+  {
+    "symbol": "NXXT",
+    "name": "NEXTNRG INC"
+  },
+  {
+    "symbol": "TVRD",
+    "name": "TVARDI THERAPEUTICS INC"
+  },
+  {
+    "symbol": "MYO",
+    "name": "MYOMO INC"
+  },
+  {
+    "symbol": "CIX",
+    "name": "COMPX INTERNATIONAL INC CLASS A"
+  },
+  {
+    "symbol": "INMB",
+    "name": "INMUNE BIO INC"
+  },
+  {
+    "symbol": "TEAD",
+    "name": "TEADS HOLDING"
+  },
+  {
+    "symbol": "BEEP",
+    "name": "MOBILE INFRASTRUCTURE CORP"
+  },
+  {
+    "symbol": "RBKB",
+    "name": "RHINEBECK BANCORP INC"
+  },
+  {
+    "symbol": "SLND",
+    "name": "SOUTHLAND HOLDINGS INC"
+  },
+  {
+    "symbol": "KG",
+    "name": "KESTREL GROUP LTD"
+  },
+  {
+    "symbol": "CV",
+    "name": "CAPSOVISION INC"
+  },
+  {
+    "symbol": "SEAT",
+    "name": "VIVID SEATS INC CLASS A"
+  },
+  {
+    "symbol": "SLSN",
+    "name": "SOLESENCE INC"
+  },
+  {
+    "symbol": "ARL",
+    "name": "AMERICAN REALTY INVESTORS INC"
+  },
+  {
+    "symbol": "NEON",
+    "name": "NEONODE INC"
+  },
+  {
+    "symbol": "AFRI",
+    "name": "FORAFRIC GLOBAL PLC"
+  },
+  {
+    "symbol": "TSE",
+    "name": "TRINSEO PLC"
+  },
+  {
+    "symbol": "HURA",
+    "name": "TUHURA BIOSCIENCES INC"
+  },
+  {
+    "symbol": "VRM",
+    "name": "VROOM INC"
+  },
+  {
+    "symbol": "GOCO",
+    "name": "GOHEALTH INC CLASS A"
+  },
+  {
+    "symbol": "GMGI",
+    "name": "GOLDEN MATRIX GROUP INC"
+  },
+  {
+    "symbol": "ADRO",
+    "name": "CHINOOK THERAPEUTICS INC"
+  },
+  {
+    "symbol": "VGAS",
+    "name": "VERDE CLEAN FUELS INC CLASS A"
+  },
+  {
+    "symbol": "TVGN",
+    "name": "TEVOGEN BIO HOLDINGS INC"
+  },
+  {
+    "symbol": "ADRO",
+    "name": "CHINOOK THERAPEUTICS INC CVR"
+  },
+  {
+    "symbol": "SAFX",
+    "name": "XCF GLOBAL INC CLASS A"
+  },
+  {
+    "symbol": "ZSPC",
+    "name": "ZSPACE"
+  },
+  {
+    "symbol": "THRD",
+    "name": "THIRD HARMONIC BIO INC"
+  },
+  {
+    "symbol": "CAD",
+    "name": "CAD CASH"
+  },
+  {
+    "symbol": "PDLI",
+    "name": "PDL BIOPHARMA INC"
+  },
+  {
+    "symbol": "GTXI",
+    "name": "GTXI INC - CVR"
+  },
+  {
+    "symbol": "P5N994",
+    "name": "Petrocorp Inc Escrow"
+  },
+  {
+    "symbol": "SBT",
+    "name": "STERLING BANCORP INC"
+  }
+]

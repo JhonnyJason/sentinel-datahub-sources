@@ -1,0 +1,422 @@
+[
+  {
+    "symbol": "SAPG.DE",
+    "name": "SAP"
+  },
+  {
+    "symbol": "DTEGn.DE",
+    "name": "DEUTSCHE TELEKOM"
+  },
+  {
+    "symbol": "IFXGn.DE",
+    "name": "INFINEON TECHNOLOGIES"
+  },
+  {
+    "symbol": "SHLG.DE",
+    "name": "SIEMENS HEALTHINEERS"
+  },
+  {
+    "symbol": "QIA.DE",
+    "name": "QIAGEN"
+  },
+  {
+    "symbol": "SATG_p.DE",
+    "name": "SARTORIUS PREF."
+  },
+  {
+    "symbol": "NEKG.DE",
+    "name": "NEMETSCHEK"
+  },
+  {
+    "symbol": "HAGG.DE",
+    "name": "HENSOLDT"
+  },
+  {
+    "symbol": "BC8G.DE",
+    "name": "BECHTLE"
+  },
+  {
+    "symbol": "NDXG.DE",
+    "name": "NORDEX"
+  },
+  {
+    "symbol": "FNTGn.DE",
+    "name": "FREENET"
+  },
+  {
+    "symbol": "UTDI.DE",
+    "name": "UNITED INTERNET"
+  },
+  {
+    "symbol": "AIXGn.DE",
+    "name": "AIXTRON"
+  },
+  {
+    "symbol": "AFXG.DE",
+    "name": "CARL ZEISS MEDITEC"
+  },
+  {
+    "symbol": "IOSn.DE",
+    "name": "IONOS GROUP"
+  },
+  {
+    "symbol": "KTN.DE",
+    "name": "KONTRON"
+  },
+  {
+    "symbol": "AOFG.DE",
+    "name": "ATOSS SOFTWARE"
+  },
+  {
+    "symbol": "JENGn.DE",
+    "name": "JENOPTIK"
+  },
+  {
+    "symbol": "TMV.DE",
+    "name": "TEAMVIEWER AG"
+  },
+  {
+    "symbol": "EVTG.DE",
+    "name": "EVOTEC"
+  },
+  {
+    "symbol": "OBCK.DE",
+    "name": "OTTOBOCK"
+  },
+  {
+    "symbol": "WAFGn.DE",
+    "name": "SILTRONIC"
+  },
+  {
+    "symbol": "ELGG.DE",
+    "name": "ELMOS SEMICONDUCTOR"
+  },
+  {
+    "symbol": "S92G.DE",
+    "name": "SMA SOLAR TECHNOLOGY"
+  },
+  {
+    "symbol": "SMHNn.DE",
+    "name": "SUSS MICROTEC"
+  },
+  {
+    "symbol": "COKG.DE",
+    "name": "CANCOM"
+  },
+  {
+    "symbol": "EUZG.DE",
+    "name": "ECKERT & ZIEGLER"
+  },
+  {
+    "symbol": "DRWG_p.DE",
+    "name": "DRAEGERWERK PREF."
+  },
+  {
+    "symbol": "1U1.DE",
+    "name": "1&1"
+  },
+  {
+    "symbol": "NA9n.DE",
+    "name": "NAGARRO N"
+  },
+  {
+    "symbol": "TPEG.DE",
+    "name": "PVA TEPLA"
+  },
+  {
+    "symbol": "VBKG.DE",
+    "name": "VERBIO"
+  },
+  {
+    "symbol": "PNEGn.DE",
+    "name": "PNE"
+  },
+  {
+    "symbol": "GFTG.DE",
+    "name": "GFT TECHNOLOGIES"
+  },
+  {
+    "symbol": "YSNG.DE",
+    "name": "SECUNET SCTY.NETWORKS"
+  },
+  {
+    "symbol": "ADNGk.DE",
+    "name": "ADESSO"
+  },
+  {
+    "symbol": "IXXG.DE",
+    "name": "INIT"
+  },
+  {
+    "symbol": "EKTG.DE",
+    "name": "ENERGIEKONTOR"
+  },
+  {
+    "symbol": "BSLG.DE",
+    "name": "BASLER"
+  },
+  {
+    "symbol": "F3CG.DE",
+    "name": "SFC ENERGY"
+  },
+  {
+    "symbol": "FYB.DE",
+    "name": "FORMYCON"
+  },
+  {
+    "symbol": "NCH2.DE",
+    "name": "THYSSENKRUPP NUCERA"
+  },
+  {
+    "symbol": "TTRGn.DE",
+    "name": "TECHNOTRANS"
+  },
+  {
+    "symbol": "SBSG.DE",
+    "name": "STRATEC"
+  },
+  {
+    "symbol": "LPKG.DE",
+    "name": "LPKF LASER & ELTN."
+  },
+  {
+    "symbol": "AEIGn.DE",
+    "name": "ALLGEIER"
+  },
+  {
+    "symbol": "SHFG.DE",
+    "name": "SNP SCHNEIDER-NEUREITHER & PARTNER"
+  },
+  {
+    "symbol": "PSAGn.DE",
+    "name": "PSI SOFTWARE"
+  },
+  {
+    "symbol": "HRPKk.DE",
+    "name": "7C SOLARPARKEN K"
+  },
+  {
+    "symbol": "FAAS.DE",
+    "name": "FABASOFT"
+  },
+  {
+    "symbol": "SJJG.DE",
+    "name": "SERVICEWARE"
+  },
+  {
+    "symbol": "QBYn.DE",
+    "name": "Q BEYOND"
+  },
+  {
+    "symbol": "CSHG.DE",
+    "name": "CENIT"
+  },
+  {
+    "symbol": "HNL.DE",
+    "name": "HOENLE"
+  },
+  {
+    "symbol": "HPHA.DE",
+    "name": "HEIDELBERG PHARMA"
+  },
+  {
+    "symbol": "NFN.DE",
+    "name": "NFON"
+  },
+  {
+    "symbol": "PTPn.DE",
+    "name": "PENTIXAPHARM HOLDING"
+  },
+  {
+    "symbol": "YOCG.DE",
+    "name": "YOC"
+  },
+  {
+    "symbol": "E4CG.DE",
+    "name": "ECOTEL COMMUNICATION"
+  },
+  {
+    "symbol": "C3RY.DE",
+    "name": "CHERRY"
+  },
+  {
+    "symbol": "SNGGk.DE",
+    "name": "SINGULUS TECHNOLOGIES"
+  },
+  {
+    "symbol": "SWEGn.DE",
+    "name": "SCHWEIZER ELECTRONIC"
+  },
+  {
+    "symbol": "TGTG.DE",
+    "name": "11 88 0 SOLUTIONS"
+  },
+  {
+    "symbol": "IS7.DE",
+    "name": "INTICA SYSTEMS"
+  },
+  {
+    "symbol": "BIONn.DE",
+    "name": "BB BIOTECH"
+  },
+  {
+    "symbol": "PV.DE",
+    "name": "PFEIFFER VACUUM TECH."
+  },
+  {
+    "symbol": "QH9.DE",
+    "name": "ADTRAN"
+  },
+  {
+    "symbol": "SATG.DE",
+    "name": "SARTORIUS"
+  },
+  {
+    "symbol": "SLYGG.DE",
+    "name": "SHELLY GROUP AD"
+  },
+  {
+    "symbol": "ADVG.DE",
+    "name": "ADTRAN NETWORKS"
+  },
+  {
+    "symbol": "IVUG.DE",
+    "name": "IVU TRAFFIC TECHNOLOGIES"
+  },
+  {
+    "symbol": "FQT.DE",
+    "name": "FREQUENTIS"
+  },
+  {
+    "symbol": "OHBG.DE",
+    "name": "OHB"
+  },
+  {
+    "symbol": "DRWG.DE",
+    "name": "DRAEGERWERK"
+  },
+  {
+    "symbol": "SISG.DE",
+    "name": "FIRST SENSOR"
+  },
+  {
+    "symbol": "A1OS.DE",
+    "name": "ALL FOR ONE GROUP"
+  },
+  {
+    "symbol": "VOTR.DE",
+    "name": "VOLTATRON"
+  },
+  {
+    "symbol": "DAMG.DE",
+    "name": "DATA MODUL"
+  },
+  {
+    "symbol": "H2OG.DE",
+    "name": "ENAPTER"
+  },
+  {
+    "symbol": "FEVG.DE",
+    "name": "FORTEC ELEKTRONIK"
+  },
+  {
+    "symbol": "OBS.DE",
+    "name": "ORBIS"
+  },
+  {
+    "symbol": "V6CG.DE",
+    "name": "VISCOM"
+  },
+  {
+    "symbol": "P4OG.DE",
+    "name": "PLANOPTIK"
+  },
+  {
+    "symbol": "ISH1k.DE",
+    "name": "INTERSHOP COMMUNICATIONS"
+  },
+  {
+    "symbol": "M3VGn.DE",
+    "name": "MEVIS MEDICAL SOLUTIONS"
+  },
+  {
+    "symbol": "2INVn.DE",
+    "name": "2INVEST"
+  },
+  {
+    "symbol": "PTHH.DE",
+    "name": "PATH2 HYDROGEN"
+  },
+  {
+    "symbol": "H2A.DE",
+    "name": "H2APEX GROUP"
+  },
+  {
+    "symbol": "SYTG.DE",
+    "name": "SOFTING"
+  },
+  {
+    "symbol": "HACGn.DE",
+    "name": "KPS"
+  },
+  {
+    "symbol": "AAQ1k.DE",
+    "name": "AAP IMPLANTATE"
+  },
+  {
+    "symbol": "LSXG.DE",
+    "name": "LS TELCOM"
+  },
+  {
+    "symbol": "DTDGk.DE",
+    "name": "B+S BANKSYSTEME"
+  },
+  {
+    "symbol": "LRND.F",
+    "name": "LEARND"
+  },
+  {
+    "symbol": "RTCG.DE",
+    "name": "REALTECH"
+  },
+  {
+    "symbol": "NC5Ak.DE",
+    "name": "NORCOM"
+  },
+  {
+    "symbol": "LUMG.F",
+    "name": "A I S"
+  },
+  {
+    "symbol": "B1GR.F",
+    "name": "BIGREP"
+  },
+  {
+    "symbol": "C0M.F",
+    "name": "CCS ABWICKLUNGS"
+  },
+  {
+    "symbol": "CNWk.F",
+    "name": "CO DON"
+  },
+  {
+    "symbol": "GGS.F",
+    "name": "GIGASET"
+  },
+  {
+    "symbol": "M5ZG.F",
+    "name": "MANZ"
+  },
+  {
+    "symbol": "MDG1k.F",
+    "name": "MEDIGENE"
+  },
+  {
+    "symbol": "PA8.F",
+    "name": "PAION"
+  },
+  {
+    "symbol": "TIS0.F",
+    "name": "TISCON"
+  }
+]

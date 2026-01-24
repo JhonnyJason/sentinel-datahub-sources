@@ -11,6 +11,6 @@ import * as mrktStack from "./marketstackmodule.js"
 ############################################################
 export serviceStartup = ->
     log "serviceStartup"
-    # await tradovate.startSession()
-    await mrktStack.executeSpecialMission()
+    await tradovate.startSession()
+    # await mrktStack.executeSpecialMission()
     return
