@@ -36,28 +36,24 @@ export initialize = (c) ->
 
 ############################################################
 # Main export: Get all available history for a ticker
-# Returns: { dataSet, reachedHistoryStart, reachedPlanLimit }
+# Returns: DataSet with meta.historyComplete flag, or null on error/no data
 export getStockAllHistory = (ticker) ->
     log "getStockAllHistory: #{ticker}"
 
-    result = { dataSet: null, reachedHistoryStart: false, reachedPlanLimit: false }
-
     # Fetch all pages
     fetchResult = await fetchAllEodPages(ticker)
-    return fetchResult unless fetchResult? # when API is blocked, we receive null
+    return null unless fetchResult?  # API blocked
 
+    # Log errors but continue processing any data we got
     if fetchResult.error?
-        if isPlanLimitError(fetchResult.error)
-            result.reachedPlanLimit = true
-            log "We have reached our Plan limit!"
-        else
-            log "API error: #{fetchResult.error.code}: #{fetchResult.error.message}"
-        return result
+        err = fetchResult.error
+        if isPlanLimitError(err) then log "Plan limit reached: #{err.code}"
+        else log "API error: #{err.code}: #{err.message}"
 
+    # No data to process
     if fetchResult.data.length == 0
-        log "We did not receive any data!"
-        result.reachedHistoryStart = true  # No data means we've got everything (nothing)
-        return result
+        log "No data received"
+        return null
 
     # Normalize to DataSet format
     dataSet = normalizeEodResponse(fetchResult.data, ticker)
@@ -65,12 +61,11 @@ export getStockAllHistory = (ticker) ->
     # Gap-fill missing days
     dataSet = gapFillDataSet(dataSet)
 
-    result.dataSet = dataSet
-    log "We should have found all completed data!"
-    
-    result.reachedHistoryStart = true  # We fetched all available data
+    # Mark if we got complete history (no errors during fetch)
+    dataSet.meta.historyComplete = !fetchResult.error?
 
-    return result
+    log "Returning #{dataSet.data.length} data points, historyComplete: #{dataSet.meta.historyComplete}"
+    return dataSet
 
 
 ############################################################

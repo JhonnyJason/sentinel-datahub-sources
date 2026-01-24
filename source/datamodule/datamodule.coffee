@@ -18,15 +18,15 @@ export initialize = ->
 ############################################################
 export executeSpecialMission = ->
     log "executeSpecialMission"
-    symbol = "GOOG"
+    symbol = "GOOGL"
     start = performance.now()
     result = await mrktStack.getStockAllHistory(symbol)
 
     log "full data retrieval took #{performance.now() - start}ms"
-    dataSet = result.dataSet
-    result.dataSet = ""
-    olog result
-    olog dataSet.meta
-    log dataSet.data.length
-    # olog result
+    length = result.data.length
+    olog result.meta
+    log length
+    olog result.data[0]
+    olog result.data[length - 1]
+
     return
