@@ -5,14 +5,10 @@ import { createLogFunctions } from "thingy-debug"
 #endregion
 
 ############################################################
-import * as tradovate from "./tradovatemodule.js"
-import * as mrktStack from "./marketstackmodule.js"
-import * as dataM from "./datamodule.js"
+import { sciStartServer } from "./scicoremodule.js"
 
 ############################################################
 export serviceStartup = ->
     log "serviceStartup"
-    # await tradovate.startSession()
-    # await mrktStack.executeSpecialMission()
-    await dataM.executeSpecialMission()
+    await sciStartServer()
     return
