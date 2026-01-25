@@ -1,5 +1,6 @@
 import * as configmodule from "./configmodule.js"
 import * as datamodule from "./datamodule.js"
+import * as dateutilsmodule from "./dateutilsmodule.js"
 import * as debugmodule from "./debugmodule.js"
 import * as marketstackmodule from "./marketstackmodule.js"
 import * as scimodule from "./scimodule.js"
@@ -11,6 +12,7 @@ import * as tradovatemodule from "./tradovatemodule.js"
 Modules = {
     configmodule,
     datamodule,
+    dateutilsmodule,
     debugmodule,
     marketstackmodule,
     scimodule,

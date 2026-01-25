@@ -7,6 +7,7 @@ import { createLogFunctions } from "thingy-debug"
 ############################################################
 import fs from "node:fs"
 import path from "node:path"
+import { nextDay, prevDay, generateDateRange } from "./dateutilsmodule.js"
 
 ############################################################
 accessToken = null
@@ -73,9 +74,26 @@ export getStockAllHistory = (ticker) ->
 # Returns: DataSet or null
 export getStockOlderHistory = (ticker, olderThan) ->
     log "getStockOlderHistory: #{ticker} olderThan=#{olderThan}"
-    # TODO: implement - similar to getStockAllHistory but with date_to param
-    # Use date_to = day before olderThan
-    return null
+
+    date_to = prevDay(olderThan)
+    fetchResult = await fetchAllEodPages(ticker, { date_to })
+    return null unless fetchResult?
+
+    if fetchResult.error?
+        err = fetchResult.error
+        if isPlanLimitError(err) then log "Plan limit reached: #{err.code}"
+        else log "API error: #{err.code}: #{err.message}"
+
+    if fetchResult.data.length == 0
+        log "No older data available"
+        return null
+
+    dataSet = normalizeEodResponse(fetchResult.data, ticker)
+    dataSet = gapFillDataSet(dataSet)
+    dataSet.meta.historyComplete = !fetchResult.error?
+
+    log "Returning #{dataSet.data.length} older data points"
+    return dataSet
 
 
 ############################################################
@@ -83,14 +101,31 @@ export getStockOlderHistory = (ticker, olderThan) ->
 # Returns: DataSet or null
 export getStockNewerHistory = (ticker, newerThan) ->
     log "getStockNewerHistory: #{ticker} newerThan=#{newerThan}"
-    # TODO: implement - similar to getStockAllHistory but with date_from param
-    # Use date_from = day after newerThan
-    return null
+
+    date_from = nextDay(newerThan)
+    fetchResult = await fetchAllEodPages(ticker, { date_from })
+    return null unless fetchResult?
+
+    if fetchResult.error?
+        err = fetchResult.error
+        if isPlanLimitError(err) then log "Plan limit reached: #{err.code}"
+        else log "API error: #{err.code}: #{err.message}"
+
+    if fetchResult.data.length == 0
+        log "No newer data available"
+        return null
+
+    dataSet = normalizeEodResponse(fetchResult.data, ticker)
+    dataSet = gapFillDataSet(dataSet)
+
+    log "Returning #{dataSet.data.length} newer data points"
+    return dataSet
 
 
 ############################################################
 # Fetch all EOD pages for a ticker (handles pagination)
-fetchAllEodPages = (ticker) ->
+# Optional dateOptions: { date_from, date_to } for bounded queries
+fetchAllEodPages = (ticker, dateOptions = {}) ->
     log "fetchAllEodPages: #{ticker}"
     if apiBlocked then return null
     try
@@ -104,7 +139,7 @@ fetchAllEodPages = (ticker) ->
         counter = 0
 
         loop
-            pageResult = await fetchEodPage(ticker, { offset, limit })
+            pageResult = await fetchEodPage(ticker, { offset, limit, ...dateOptions })
             counter++
 
             # Check for errors
@@ -138,7 +173,8 @@ fetchAllEodPages = (ticker) ->
 
 ############################################################
 # Fetch single EOD page
-fetchEodPage = (ticker, { offset, limit }) ->
+# Optional date_from/date_to for bounded queries
+fetchEodPage = (ticker, { offset, limit, date_from, date_to }) ->
     log "fetchEodPage: #{ticker} offset=#{offset}"
 
     # Normalize ticker (BRK.B → BRK-B)
@@ -151,6 +187,8 @@ fetchEodPage = (ticker, { offset, limit }) ->
         limit: limit.toString()
         offset: offset.toString()
     })
+    if date_from? then params.set("date_from", date_from)
+    if date_to? then params.set("date_to", date_to)
 
     url = "#{apiURL}/eod?#{params.toString()}"
 
@@ -250,20 +288,6 @@ gapFillDataSet = (dataSet) ->
 
 
 ############################################################
-# Generate array of date strings from start to end (inclusive)
-generateDateRange = (startDate, endDate) ->
-    dates = []
-    current = new Date(startDate + "T00:00:00Z")
-    end = new Date(endDate + "T00:00:00Z")
-
-    while current <= end
-        dates.push(current.toISOString().substring(0, 10))
-        current.setUTCDate(current.getUTCDate() + 1)
-
-    return dates
-
-
-############################################################
 # Check if error indicates plan limit restriction
 isPlanLimitError = (error) ->
     # MarketStack returns specific error codes for plan limits
@@ -274,18 +298,18 @@ isPlanLimitError = (error) ->
 #endregion
 
 ############################################################
-export executeSpecialMission = ->
-    log "executeSpecialMission"
-    # await runTest()
-    # await storeRelevantSymbols()
-    await storeRelevantCurrencies()
-    log "sepcialMission ended... bye!"
-    return
-
-
+waitMS = (ms) -> new Promise((res) -> setTimeout(res, ms))
 
 ############################################################
-waitMS = (ms) -> new Promise((res) -> setTimeout(res, ms))
+#region deprecated code
+
+############################################################
+export executeSpecialMission = ->
+    log "executeSpecialMission"
+    # await storeRelevantSymbols()
+    # await storeRelevantCurrencies()
+    log "sepcialMission ended... bye!"
+    return
 
 ############################################################
 storeRelevantSymbols = ->
@@ -399,82 +423,4 @@ getAllSymbols = ->
 
     return allData
 
-
-############################################################
-runTest = ->
-    log "runTest"
-    result = await getAllSymbols()
-    # result = await getEndOfDayData("ASML,MSTR")
-    # log Object.keys(result) # result always is (pagination, data)
-    olog result.pagination
-    # olog result
-    return
-
-############################################################
-printCurrentRateLimits = (headers) ->
-    log headers
-    dailyLimit = headers.get("X-RateLimit-Limit-Day")
-    monthlyLimit = headers.get("X-RateLimit-Limit-Month")
-    leftPerDay = headers.get("X-RateLimit-Remaining-Day")
-    leftPerMonth = headers.get("X-RateLimit-Remaining-Month")
-    olog {
-        dailyLimit, leftPerDay, monthlyLimit, leftPerMonth
-    }
-    return
-
-
-############################################################
-getEndOfDayData = (symbolString) ->
-    log "getEndOfDayData"
-    #     ? access_key = YOUR_ACCESS_KEY
-    #     & symbols = AAPL
-        
-    # // optional parameters: 
-
-    #     & sort = DESC
-    #     & date_from = YYYY-MM-DD
-    #     & date_to = YYYY-MM-DD
-    #     & limit = 100
-    #     & offset = 0
-
-    options = {
-        access_key: accessToken
-        symbols: symbolString
-    }
-    params = new URLSearchParams(options)
-    url = apiURL + "/eod?" + params.toString()
-
-    try response = await fetch(url)
-    catch err then console.error(err)
-
-    try
-        printCurrentRateLimits(response.headers) 
-        # log "checking response"
-        if response.ok then return await response.json()
-        # log "Response was not OK :("+response.status+")"
-        console.error("status: "+response.status)
-        text = await response.text()
-        console.error(text)
-    catch err then console.error(err)
-    return
-
-# postRequest = (url, data, accessToken) ->
-#     log "postRequest"
-#     options = {
-#         method: "POST"
-#         headers: {"Content-Type": "application/json"}
-#         body: JSON.stringify(data)
-#     }    
-#     if accessToken? 
-#         options.headers['Authorization'] = "Bearer #{accessToken}"
-
-#     try response = await fetch(url, options)
-#     catch err then console.error(err)
-
-#     try
-#         if response.ok then return await response.json()
-#         console.error("status: "+response.status)
-#         text = await response.text()
-#         console.error(text)
-#     catch err then console.error(err)
-#     return
+#endregion

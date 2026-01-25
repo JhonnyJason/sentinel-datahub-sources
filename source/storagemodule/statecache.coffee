@@ -106,7 +106,7 @@ loadCache = (id) ->
 
     { contentObj, contentJson } = saver.load(id)
 
-    if contentObj? 
+    if contentObj?
         # log "received contentObj"
         jsonCache[id] = contentJson
         objCache[id] = contentObj

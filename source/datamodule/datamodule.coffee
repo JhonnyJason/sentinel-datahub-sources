@@ -8,6 +8,7 @@ import { createLogFunctions } from "thingy-debug"
 import * as mrktStack from "./marketstackmodule.js"
 import * as store from "./storagemodule.js"
 import * as symbols from "./symbolsmodule.js"
+import { nextDay, daysBetween } from "./dateutilsmodule.js"
 
 ############################################################
 # TODO: check if this is a good idea
@@ -149,24 +150,6 @@ appendDataSet = (existing, newer) ->
 ############################################################
 # Generate gap-fill array with latest closeValue
 fillGap = (gapSize, closeValue) -> Array(gapSize).fill([closeValue, closeValue, closeValue])
-
-############################################################
-# Date helpers
-nextDay = (dateStr) ->
-    d = new Date(dateStr + "T00:00:00Z")
-    d.setUTCDate(d.getUTCDate() + 1)
-    return d.toISOString().substring(0, 10)
-
-prevDay = (dateStr) ->
-    d = new Date(dateStr + "T00:00:00Z")
-    d.setUTCDate(d.getUTCDate() - 1)
-    return d.toISOString().substring(0, 10)
-
-daysBetween = (startDate, endDate) ->
-    start = new Date(startDate + "T00:00:00Z")
-    end = new Date(endDate + "T00:00:00Z")
-    return Math.floor((end - start) / (1000 * 60 * 60 * 24))
-
 
 ############################################################
 getCommodityData = (name) ->
