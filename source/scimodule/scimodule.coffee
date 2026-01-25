@@ -5,23 +5,17 @@ import { createLogFunctions } from "thingy-debug"
 #endregion
 
 ############################################################
-#region modules from the Environment
-## import * as sciBase from "thingy-sci-base"
-#endregion
+import * as scicore from "./scicoremodule.js"
 
 ############################################################
-routes = {}
+import "./accesssci.js"
 
-routes["sampleRoute"] = (res, req) ->
-    # req.body is our json
-    # handle
-    res.send("Hello World!")
+#endregion
 
-    
+
 ############################################################
 export prepareAndExpose = ->
     log "prepareAndExpose"
-    
-    ## sciBase.prepareAndExpose(null, routes)
-    ## log "Server listening!"
+    await scicore.sciStartServer()
+    log "Server listening!"
     return

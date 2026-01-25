@@ -29,7 +29,10 @@ export initialize = (cfg) ->
 ############################################################
 export executeSpecialMission = ->
     log "executeSpecialMission"
-    symbol = "GOOGL"
+    # symbol = "TSM"
+    # symbol = "ASML"
+    # symbol = "MSFT"
+    symbol = "AAPL"
     start = performance.now()
     result = await getData(symbol)
     log "full data retrieval took #{performance.now() - start}ms"

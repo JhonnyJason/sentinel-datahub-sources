@@ -1,3 +1,6 @@
 [submodule "source/bugsnitch"]
 	path = source/bugsnitch
 	url = git@github.com:JhonnyJason/service-sources-bugsnitch.git
+[submodule "source/scicore"]
+	path = source/scicore
+	url = git@github.com:JhonnyJason/service-sources-scicoremodule.git

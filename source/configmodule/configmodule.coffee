@@ -37,14 +37,31 @@ export urlTrdvt = 'https://live.tradovateapi.com/v1'
 ############################################################
 export urlMrktStack = "https://api.marketstack.com/v2"
 
-
 ############################################################
 export checkAccessMS = 600_000 # ~10m
 export checkSymbolsMS = 3_600_000 # ~1h
 
+
+############################################################
+localCfg = null
+
 ############################################################
 export name = "Sentinel Datahub"
 export version = "v0.0.1"
+
+############################################################
+export accessManagerId = localCfg.accessManagerId || ""
+export snitchSocket = localCfg.snitchSocket || "/run/bugsnitch.sk"
+
+export legalOrigins = [
+    "localhost", 
+    "localhost:3333", 
+    "sentinel-datahub-dev.dotv.ee",
+    "sentinel-datahub.dotv.ee"
+]
+
+############################################################
+export fallbackAuthCode = "aaaaaaaabbbbbbbbccccccccdddddddd"
 
 ############################################################
 export persistentStateOptions = {

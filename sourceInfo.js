@@ -1,7 +1,8 @@
 module.exports = {
     getDependencies: () => {
         return { 
-            "cached-persistentstate": "^0.0.1",
+            "secret-manager-crypto-utils": "^0.3.1",
+            "thingy-schema-validate": "^0.0.7"
         }
     }
 }
