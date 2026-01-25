@@ -5,7 +5,13 @@ import { createLogFunctions } from "thingy-debug"
 #endregion
 
 ############################################################
-export initialize = ->
+import * as cache from "./statecache.js"
+
+############################################################
+export initialize = (cfg) ->
     log "initialize"
-    #Implement or Remove :-)
+    cache.initialize(cfg.persistentStateOptions)
     return
+
+############################################################
+export { load, save, remove } from "./statecache.js"

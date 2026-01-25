@@ -45,15 +45,12 @@ DataModule is passive for commodities:
 
 ```
 initialize(config)
+    # sets configured freshnessThreshold (default: 5)
 
-getStockData(symbol) → DataSet
-    # Returns fresh stock data, fetching if needed
+getData(name) → DataSet
+    # Allmighty data retrieval, checks name if it is a commodity, a forexPair or a stock symbol
+    # Retrieves available data and loads more data if it is reasonable to do so (e.g. for stock data)
 
-getCommodityData(name) → DataSet
-    # Returns available commodity data (no fetch)
-
-# Configuration
-setFreshnessThreshold(days)  # Default: 7
 ```
 
 ---
@@ -90,3 +87,7 @@ DataSet: {
   data: [DataPoint, ...]  // index 0 = startDate, contiguous
 }
 ```
+
+**Date handling convention:**
+- All date arithmetic uses UTC midnight: `new Date(dateStr + "T00:00:00Z")`
+- Never use `new Date(dateStr)` alone — causes timezone-dependent off-by-one errors

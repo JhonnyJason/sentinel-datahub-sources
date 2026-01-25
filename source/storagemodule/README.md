@@ -1,7 +1,7 @@
 # Storage Module
 
 ## Purpose
-Public API for persistent state storage. Integrates the caching layer (`statecachemodule`) into the standard module initialization pattern.
+Public API for persistent state storage. Integrates the caching layer (`statecache`) into the standard module initialization pattern.
 
 ---
 
@@ -10,13 +10,13 @@ Public API for persistent state storage. Integrates the caching layer (`statecac
 ```
 storagemodule (public API)
     │
-    └─► statecachemodule (LRU cache)
+    └─► statecache (LRU cache)
             │
-            └─► statesavermodule (file I/O)
+            └─► statesaver (file I/O)
 ```
 
 **Why this layer exists:**
-- Adapts `statecachemodule.initialize(options)` to standard `initialize(cfg)` pattern
+- Adapts `statecache.initialize(options)` to standard `initialize(cfg)` pattern
 - Provides clean public API for other modules
 - Hides internal caching/persistence details
 
@@ -73,12 +73,17 @@ await storage.save("newdata", { key: "value" })
 
 ---
 
+## Relevant Files
+- statesaver.coffee -> implementation of the actual file I/O
+- statesaver.md -> documentation of the statesaver
+- statecache.coffee -> implementation of the caching system
+- statecache.md -> documentation of the statecache
+- storagemodule.coffee -> top level module to interface with application
+- README.md -> this file explaining the whole storagemodule
+
 ## Implementation Status
 
-**TODO:**
-- [ ] Wire up to statecachemodule
-- [ ] Add `list()` function to enumerate stored states
-- [ ] Fix statecachemodule issues (toJson, log label)
+Done. No `list()` needed - we always know the ID and get `{}` as default if state doesn't exist.
 
 ---
 

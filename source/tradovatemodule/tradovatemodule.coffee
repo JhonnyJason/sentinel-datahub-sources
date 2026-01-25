@@ -5,7 +5,7 @@ import { createLogFunctions } from "thingy-debug"
 #endregion
 
 ############################################################
-import * as data from "cached-persistentstate"
+import * as store from "./storagemodule.js"
 
 ############################################################
 userName = null
@@ -30,7 +30,7 @@ storageObj = null
 export initialize = (c) ->
     log "initialize"
     return
-    data.initialize(c.persistentStateOptions)
+    store.initialize(c.persistentStateOptions)
 
     if c.trdvtSecret? then apiSecret = c.trdvtSecret
     if c.trdvtCid? then apiCid = c.trdvtCid
@@ -43,7 +43,7 @@ export initialize = (c) ->
     if c.checkAccessMS? then checkAccessMS = c.checkAccessMS
     if c.checkSymbolsMS? then checkSymbolsMS = c.checkSymbolsMS
 
-    storageObj = data.load("datahubState") || {}
+    storageObj = store.load("datahubState") || {}
         
     olog storageObj
     return
@@ -52,7 +52,7 @@ export initialize = (c) ->
 saveToStorage = (obj) ->
     log "saveStorage"
     if obj then storageObj = obj
-    data.save("datahubState", storageObj)
+    store.save("datahubState", storageObj)
     return
 
 ############################################################

@@ -69,6 +69,26 @@ export getStockAllHistory = (ticker) ->
 
 
 ############################################################
+# Get history older than a given date (oldest available → olderThan-1day)
+# Returns: DataSet or null
+export getStockOlderHistory = (ticker, olderThan) ->
+    log "getStockOlderHistory: #{ticker} olderThan=#{olderThan}"
+    # TODO: implement - similar to getStockAllHistory but with date_to param
+    # Use date_to = day before olderThan
+    return null
+
+
+############################################################
+# Get history newer than a given date (newerThan+1day → today)
+# Returns: DataSet or null
+export getStockNewerHistory = (ticker, newerThan) ->
+    log "getStockNewerHistory: #{ticker} newerThan=#{newerThan}"
+    # TODO: implement - similar to getStockAllHistory but with date_from param
+    # Use date_from = day after newerThan
+    return null
+
+
+############################################################
 # Fetch all EOD pages for a ticker (handles pagination)
 fetchAllEodPages = (ticker) ->
     log "fetchAllEodPages: #{ticker}"

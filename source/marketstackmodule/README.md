@@ -214,6 +214,10 @@ Return: { "<symbol>/<currency>": DataSet, ... }
 
 **Gap-fill rule:** Missing trading days → `[lastClose, lastClose, lastClose]`
 
+**Date handling convention:**
+- All date arithmetic uses UTC midnight: `new Date(dateStr + "T00:00:00Z")`
+- Never use `new Date(dateStr)` alone — causes timezone-dependent off-by-one errors
+
 ---
 
 ## Files
