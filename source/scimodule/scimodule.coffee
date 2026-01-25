@@ -9,6 +9,7 @@ import * as scicore from "./scicoremodule.js"
 
 ############################################################
 import "./accesssci.js"
+import "./datasci.js"
 
 #endregion
 
