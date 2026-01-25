@@ -62,10 +62,10 @@ isForexPair = (name) ->
 getStockData = (symbol) ->
     log "getStockData #{symbol}"
     id = toStorageId(symbol)
-    dataSet = store.load(id)
+    dataSet = store.load(id) # returns {} if no data exists
 
     # No data? -> fetch all history
-    if !dataSet?
+    if !dataSet.data?
         dataSet = await mrktStack.getStockAllHistory(symbol)
         if dataSet? then store.save(id, dataSet)
         return dataSet
