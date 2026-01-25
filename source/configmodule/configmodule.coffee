@@ -43,9 +43,6 @@ export checkSymbolsMS = 3_600_000 # ~1h
 
 
 ############################################################
-localCfg = null
-
-############################################################
 export name = "Sentinel Datahub"
 export version = "v0.0.1"
 
@@ -68,3 +65,6 @@ export persistentStateOptions = {
     basePath: "../state"
     maxCacheSize: 128
 }
+
+############################################################
+localCfg = null

@@ -41,7 +41,7 @@ export initialize = (c) ->
 ############################################################
 removeDeadNonces = ->
     now = Date.now()
-    for deathTime, nonce of nonceToDeathTime when deathTime < now 
+    for nonce, deathTime of nonceToDeathTime when deathTime < now 
         delete nonceToDeathTime[nonce]
     return
 

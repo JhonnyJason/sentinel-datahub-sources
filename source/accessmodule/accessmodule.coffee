@@ -7,6 +7,9 @@ import { createLogFunctions } from "thingy-debug"
 ############################################################
 authCodeToHandle = Object.create(null)
 ## TODO upgrade the authCode Cancellation situation
+#    We currently have 1 callback for each authcode 
+#    this is becoming costly when  the number of authcodes grow
+#    The solution would be to have one heartbeat removing the old ones each cycle
 
 ############################################################
 export initialize = (c) ->

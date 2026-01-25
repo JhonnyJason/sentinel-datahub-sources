@@ -7,7 +7,7 @@ import { createLogFunctions } from "thingy-debug"
 ############################################################
 #region Modules from the Environment
 import {
-    STRINGHEX32, NONEMPTYSTRING, createValidator
+    STRINGHEX32, NONEMPTYSTRING, NUMBERORNOTHING, createValidator
 } from "thingy-schema-validate"
 
 ############################################################
@@ -24,12 +24,12 @@ import * as dataM from "./datamodule.js"
 #region wrapper functions
 
 ############################################################
-hasAccess = (req, ctx) -> 
+hasAccess = (req) -> 
     return false unless req?
     return accsM.hasAccess(req.authCode)
 
 ############################################################
-getData = (args) -> await dataM.getData(args.dataKey)
+getData = (args) -> await dataM.getData(args.dataKey, args.yearsBack)
 
 #endregion
 
@@ -53,7 +53,8 @@ sciAdd("getData", getData, {
     authOption: hasAccess,
     argsSchema: {
         authCode: STRINGHEX32,
-        dataKey: NONEMPTYSTRING
+        dataKey: NONEMPTYSTRING,
+        yearsBack: NUMBERORNOTHING
     }
     # resultSchema: ""
 })

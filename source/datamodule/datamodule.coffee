@@ -45,11 +45,40 @@ export executeSpecialMission = ->
     return
 
 ############################################################
-export getData = (name) ->
-    log "getData #{name}"
-    if isCommodityName(name) then return getCommodityData(name)
-    if isForexPair(name) then return getForexPairData(name)
-    return getStockData(name)
+export getData = (name, yearsBack) ->
+    log "getData #{name}, yearsBack: #{yearsBack}"
+    if isCommodityName(name) then dataSet = getCommodityData(name)
+    else if isForexPair(name) then dataSet = getForexPairData(name)
+    else dataSet = await getStockData(name)
+
+    return sliceByYears(dataSet, yearsBack)
+
+############################################################
+sliceByYears = (dataSet, yearsBack) ->
+    return dataSet unless yearsBack? and dataSet?.data?
+
+    # Calculate cutoff date (yearsBack years ago from today)
+    now = new Date()
+    cutoffDate = new Date(Date.UTC(now.getUTCFullYear() - yearsBack, now.getUTCMonth(), now.getUTCDate()))
+    startDate = new Date(dataSet.meta.startDate + "T00:00:00Z")
+
+    # If cutoff is before our data starts, return full dataset
+    return dataSet if cutoffDate <= startDate
+
+    # Calculate index to slice from
+    sliceIndex = daysBetween(dataSet.meta.startDate, cutoffDate.toISOString().slice(0, 10))
+    return dataSet if sliceIndex <= 0
+
+    # Slice and return new dataset
+    return {
+        meta: {
+            startDate: cutoffDate.toISOString().slice(0, 10)
+            endDate: dataSet.meta.endDate
+            interval: dataSet.meta.interval
+            historyComplete: false  # sliced data is not complete
+        }
+        data: dataSet.data.slice(sliceIndex)
+    }
 
 ############################################################
 isCommodityName = (name) ->
