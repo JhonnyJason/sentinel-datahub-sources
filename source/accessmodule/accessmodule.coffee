@@ -46,4 +46,4 @@ export unsetAccess = (authCode) ->
     return
 
 ############################################################
-export hasAccess = (authCode) -> authCodeToHandle[req.authCode]?
+export hasAccess = (authCode) -> authCodeToHandle[authCode]?
