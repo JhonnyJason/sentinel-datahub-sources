@@ -48,15 +48,23 @@ getData = (args) -> await dataM.getData(args.dataKey, args.yearsBack)
 #region Data Functions
 
 ############################################################ 
-sciAdd("getData", getData, {
-    bodySizeLimit: 600, 
+sciAdd("getEODHLCData", getData, {
+    bodySizeLimit: 1024, 
     authOption: hasAccess,
     argsSchema: {
         authCode: STRINGHEX32,
         dataKey: NONEMPTYSTRING,
         yearsBack: NUMBERORNOTHING
     }
-    # resultSchema: ""
+    resultSchema: {
+        meta: {
+            startDate: NONEMPTYSTRING,
+            endDate: NONEMPTYSTRING,
+            interval: "1d",
+            historyComplete: BOOLEAN
+        },
+        data: ARRAY
+    }
 })
 #Response is 204 when signature is valid 403 otherwise 
 
