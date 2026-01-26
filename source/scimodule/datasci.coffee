@@ -8,7 +8,7 @@ import { createLogFunctions } from "thingy-debug"
 #region Modules from the Environment
 import {
     STRINGHEX32, NONEMPTYSTRING, NUMBERORNOTHING, 
-    BOOLEAN, createValidator
+    BOOLEAN, ARRAY, createValidator
 } from "thingy-schema-validate"
 
 ############################################################
