@@ -229,13 +229,14 @@ normalizeEodResponse = (apiData, ticker) ->
     for record in apiData
         # Extract just the date part (YYYY-MM-DD) from potential ISO timestamp
         dateStr = record.date.substring(0, 10)
+        factor *= record.split_factor
         dataPoints.push({
             date: dateStr
             high: record.high * factor
             low: record.low * factor
             close: record.close * factor
         })
-        factor *= record.split_factor
+
 
     # Build DataSet
     startDate = dataPoints[0].date
