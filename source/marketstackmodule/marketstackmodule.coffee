@@ -230,9 +230,9 @@ normalizeEodResponse = (apiData, ticker) ->
         dateStr = record.date.substring(0, 10)
         dataPoints.push({
             date: dateStr
-            high: record.high
-            low: record.low
-            close: record.close
+            high: record.high * record.split_factor
+            low: record.low * record.split_factor
+            close: record.close * record.split_factor
         })
 
     # Build DataSet
