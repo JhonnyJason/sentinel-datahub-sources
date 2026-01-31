@@ -53,8 +53,9 @@ export snitchSocket = localCfg.snitchSocket || "/run/bugsnitch.sk"
 export legalOrigins = [
     "localhost", 
     "localhost:3333", 
-    "sentinel-datahub-dev.dotv.ee",
-    "sentinel-datahub.dotv.ee"
+    "sentinel-dashboard-dev.dotv.ee",
+    "sentinel-datahub.dotv.ee",
+    "sentinel.ewag-handelssysteme.de"
 ]
 
 ############################################################
