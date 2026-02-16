@@ -51,6 +51,10 @@ getData(name) → DataSet
     # Allmighty data retrieval, checks name if it is a commodity, a forexPair or a stock symbol
     # Retrieves available data and loads more data if it is reasonable to do so (e.g. for stock data)
 
+recorrectData(symbol) → DataSet
+    # Re-fetches full history and re-normalizes with correct split factors
+    # Use to fix legacy data or accumulated factor errors
+
 ```
 
 ---
@@ -83,10 +87,27 @@ All data uses the unified format (see overview.md):
 DataPoint: [high, low, close]  // 3 floats
 
 DataSet: {
-  meta: { startDate: "YYYY-MM-DD", endDate: "YYYY-MM-DD", interval: "1d" },
+  meta: {
+    startDate: "YYYY-MM-DD",
+    endDate: "YYYY-MM-DD",
+    interval: "1d",
+    splitFactors: [
+      {f: 1, end: "2000-06-20"},    // cumulative factor 1 until this date
+      {f: 2, end: "2005-02-27"},    // 2:1 split occurred
+      {f: 14, end: "2014-06-08"},   // 7:1 split occurred
+      {f: 56}                       // 4:1 split, current (no end = ongoing)
+    ]
+  },
   data: [DataPoint, ...]  // index 0 = startDate, contiguous
 }
 ```
+
+### Split Factor Handling
+- `splitFactors` tracks the cumulative split adjustment factor over time
+- Each entry `{f, end?}` = cumulative factor `f` in effect until `end` date
+- Last entry (no `end`) = current ongoing factor
+- On append (top-up): the current cumulative factor is passed to the API fetch so new data is normalized to the same scale
+- Legacy data without `splitFactors` needs re-correction via `recorrectData(symbol)`
 
 **Date handling convention:**
 - All date arithmetic uses UTC midnight: `new Date(dateStr + "T00:00:00Z")`

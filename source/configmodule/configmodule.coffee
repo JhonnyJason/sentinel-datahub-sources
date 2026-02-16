@@ -41,6 +41,10 @@ export urlMrktStack = "https://api.marketstack.com/v2"
 export checkAccessMS = 600_000 # ~10m
 export checkSymbolsMS = 3_600_000 # ~1h
 
+############################################################
+export liveDataSymbols = [ "HYG" ]
+# export liveDataHeartbeatMS = 420_000 # 7m
+export liveDataHeartbeatMS = 30_000 
 
 ############################################################
 export name = "Sentinel Datahub"

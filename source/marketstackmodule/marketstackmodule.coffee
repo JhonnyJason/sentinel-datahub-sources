@@ -7,7 +7,12 @@ import { createLogFunctions } from "thingy-debug"
 ############################################################
 import fs from "node:fs"
 import path from "node:path"
-import { nextDay, prevDay, generateDateRange } from "./dateutilsmodule.js"
+import { nextDay, prevDay, generateDateRange, isTradingHour,
+    isPreTradingHour, isTradingDay } from "./dateutilsmodule.js"
+
+import * as dataM from "./datamodule.js"
+import * as liveFeed from "./livefeedmodule.js"
+
 
 ############################################################
 accessToken = null
@@ -21,15 +26,93 @@ symbolsData = []
 currenciesData = []
 
 ############################################################
-# to protect a general rate limit - we need to block the API
-apiBlocked = false 
+liveDataSymbols = []
+liveDataHeartbeatMS = 300_000 # 5min non-pro subscribtions cannot be faster
+
+############################################################
+# Pre-trading fetch limiter — max attempts per day to avoid
+# wasting API calls on holidays we don't know about
+maxPreTradeAttempts = 3
+preTradeAttempts = 0
+preTradeDate = null
 
 ############################################################
 export initialize = (c) ->
     log "initialize"
     if c.mrktStackSecret? then accessToken = c.mrktStackSecret
     if c.urlMrktStack? then apiURL = c.urlMrktStack
+    if c.liveDataSymbols? then liveDataSymbols.push(...c.liveDataSymbols)
+    if c.liveDataHeartbeatMS? then liveDataHeartbeatMS = c.liveDataHeartbeatMS
+
     return
+    
+############################################################
+#region "live" data retrieval
+liveDataHeartbeat = ->
+    log "realTimeHeartbeat"
+    dateNow = new Date()
+    return unless isTradingDay(dateNow)
+    log "Today is a trading-day - let's see what's up..."
+
+    if  isTradingHour(dateNow)
+        log "isTradingHour: true"
+        return unless accessToken? and apiURL?
+        return if liveDataSymbols.length == 0
+
+        try
+            apiSymbols = liveDataSymbols
+                .map((symbol) -> symbol.replace(/\./g, "-"))
+                .join(",")
+
+            params = new URLSearchParams({
+                access_key: accessToken
+                symbols: apiSymbols
+            })
+
+            url = "#{apiURL}/intraday/latest?#{params.toString()}"
+            body = await requestQueue(url)
+
+            if body.error?
+                log "liveData API error: #{body.error.code}: #{body.error.message}"
+                return
+
+            latestPrices = Object.create(null)
+            for row in (body.data ? [])
+                continue unless row.symbol?
+                symbol = row.symbol.replace(/-/g, ".")
+                latestPrices[symbol] = row.last ? row.lastPrice ? row.close
+
+            try liveFeed.updatePrices(latestPrices)
+            catch err then log "error in liveFeed.updatePrices! #{err.message}"
+
+        catch err then log "liveData retrieval error: #{err.message}"
+
+    else if isPreTradingHour(dateNow)
+        log "isPreTradingHour: true"
+        # Reset counter on new day
+        todayStr = dateNow.toISOString().substring(0, 10)
+        if preTradeDate != todayStr
+            preTradeDate = todayStr
+            preTradeAttempts = 0
+        # Limit pre-trade fetches to avoid wasting API calls (e.g. unknown holidays)
+        if preTradeAttempts >= maxPreTradeAttempts
+            log "Pre-trade attempt limit reached (#{maxPreTradeAttempts}) - skipping"
+            return
+        preTradeAttempts++
+        log "Pre-trade attempt #{preTradeAttempts}/#{maxPreTradeAttempts}"
+        for symbol in liveDataSymbols
+            dataM.forceLoadNewestStockData(symbol)
+
+    else log "It's not an interesting time - we do nothing here :-)"
+    return
+
+############################################################
+export startLiveDataHeartbeat = ->
+    log "startLiveDataHeartbeat"
+    setInterval(liveDataHeartbeat, liveDataHeartbeatMS)
+    return
+
+#endregion
 
 
 ############################################################
@@ -43,7 +126,7 @@ export getStockAllHistory = (ticker) ->
 
     # Fetch all pages
     fetchResult = await fetchAllEodPages(ticker)
-    return null unless fetchResult?  # API blocked
+    return null unless fetchResult?
 
     # Log errors but continue processing any data we got
     if fetchResult.error?
@@ -99,8 +182,8 @@ export getStockOlderHistory = (ticker, olderThan) ->
 ############################################################
 # Get history newer than a given date (newerThan+1day → today)
 # Returns: DataSet or null
-export getStockNewerHistory = (ticker, newerThan) ->
-    log "getStockNewerHistory: #{ticker} newerThan=#{newerThan}"
+export getStockNewerHistory = (ticker, newerThan, startFactor = 1.0) ->
+    log "getStockNewerHistory: #{ticker} newerThan=#{newerThan} startFactor=#{startFactor}"
 
     date_from = nextDay(newerThan)
     fetchResult = await fetchAllEodPages(ticker, { date_from })
@@ -115,7 +198,7 @@ export getStockNewerHistory = (ticker, newerThan) ->
         log "No newer data available"
         return null
 
-    dataSet = normalizeEodResponse(fetchResult.data, ticker)
+    dataSet = normalizeEodResponse(fetchResult.data, ticker, startFactor)
     dataSet = gapFillDataSet(dataSet)
 
     log "Returning #{dataSet.data.length} newer data points"
@@ -127,23 +210,16 @@ export getStockNewerHistory = (ticker, newerThan) ->
 # Optional dateOptions: { date_from, date_to } for bounded queries
 fetchAllEodPages = (ticker, dateOptions = {}) ->
     log "fetchAllEodPages: #{ticker}"
-    if apiBlocked then return null
+    allData = []
+    offset = 0
+    limit = 1000
+
     try
-        apiBlocked = true
-
-        allData = []
-        offset = 0
-        limit = 1000
-
-        startMS = performance.now()
-        counter = 0
-
         loop
             pageResult = await fetchEodPage(ticker, { offset, limit, ...dateOptions })
-            counter++
 
             # Check for errors
-            err = pageResult.error 
+            err = pageResult.error
             if err? then return { error: err, data: allData }
 
             # Accumulate data
@@ -156,20 +232,7 @@ fetchAllEodPages = (ticker, dateOptions = {}) ->
             # Prepare next page
             offset += limit
 
-            # check timing and wait if we run the risk of exceeding the rate-limit
-            # the general rate limit is 5 API calls /s - check timing every 5th call
-            # if we are below 1s wait until the second has ended - then reset.
-            # This way we may run
-            if counter % 5 == 0
-                timeMS = performance.now() - startMS
-                # make it 1001ms to combat if our clock is 1promille faster
-                missingPeriodMS =  1001 - timeMS 
-                if missingPeriodMS > 0 then await waitMS(missingPeriodMS)
-                log "counter: #{counter} => missingPerdiodMS: #{missingPeriodMS}"
-                startMS = performance.now()
-
     catch err then log err
-    finally apiBlocked = false
 
 ############################################################
 # Fetch single EOD page
@@ -193,29 +256,23 @@ fetchEodPage = (ticker, { offset, limit, date_from, date_to }) ->
     url = "#{apiURL}/eod?#{params.toString()}"
 
     try
-        response = await fetch(url)
+        body = await requestQueue(url)
     catch err
-        log "Network error: #{err.message}"
+        log "Network/parse error: #{err.message}"
         return { error: { code: "network_error", message: err.message } }
 
-    try
-        body = await response.json()
+    if body.error?
+        return { error: body.error }
 
-        if body.error?
-            return { error: body.error }
-
-        return { data: body.data, pagination: body.pagination }
-    catch err
-        log "Parse error: #{err.message}"
-        return { error: { code: "parse_error", message: err.message } }
+    return { data: body.data, pagination: body.pagination }
 
 
 ############################################################
 # Normalize API response to DataSet format
 # Input: array of EOD records from API
 # Output: { meta: { startDate, endDate, interval }, data: [[h,l,c], ...] }
-normalizeEodResponse = (apiData, ticker) ->
-    log "normalizeEodResponse: #{apiData.length} records"
+normalizeEodResponse = (apiData, ticker, startFactor = 1.0) ->
+    log "normalizeEodResponse: #{apiData.length} records, startFactor=#{startFactor}"
 
     if apiData.length == 0
         return null
@@ -223,13 +280,17 @@ normalizeEodResponse = (apiData, ticker) ->
     # API data is sorted ASC (oldest first) - verify and extract
     # Each record: { date, symbol, open, high, low, close, volume, exchange, price_currency }
 
-    # Extract dates and price data
+    # Extract dates and price data, track split factor history
     dataPoints = []
-    factor = 1.0
+    splitFactors = []
+    factor = startFactor
+
     for record in apiData
-        # Extract just the date part (YYYY-MM-DD) from potential ISO timestamp
         dateStr = record.date.substring(0, 10)
-        factor *= record.split_factor
+        if record.split_factor != 1
+            # End current factor period, start new one
+            splitFactors.push({f: factor, end: prevDay(dateStr)})
+            factor *= record.split_factor
         dataPoints.push({
             date: dateStr
             high: record.high * factor
@@ -237,6 +298,8 @@ normalizeEodResponse = (apiData, ticker) ->
             close: record.close * factor
         })
 
+    # Final factor period (ongoing, no end date)
+    splitFactors.push({f: factor})
 
     # Build DataSet
     startDate = dataPoints[0].date
@@ -246,7 +309,7 @@ normalizeEodResponse = (apiData, ticker) ->
     data = dataPoints.map((p) -> [p.high, p.low, p.close])
 
     return {
-        meta: { startDate, endDate, interval: "1d" }
+        meta: { startDate, endDate, interval: "1d", splitFactors }
         data: data
         # Keep raw dates for gap-filling (will be removed after)
         _dates: dataPoints.map((p) -> p.date)
@@ -301,129 +364,61 @@ isPlanLimitError = (error) ->
 #endregion
 
 ############################################################
-waitMS = (ms) -> new Promise((res) -> setTimeout(res, ms))
+#region Throttled Request Queue
+# MarketStack rate limit: 5 requests/second
+# Strategy: allow bursts of 5, only wait if the burst was faster than 1s
+# Deduplication: identical URLs are coalesced — fetched once, result shared
 
-############################################################
-#region deprecated code
+queue = []
+pending = new Map()  # url → [{resolve, reject}, ...]
+processing = false
+windowStart = 0
+windowCount = 0
+maxPerWindow = 5
+windowMS = 1001  # 1s + 1ms safety margin
 
-############################################################
-export executeSpecialMission = ->
-    log "executeSpecialMission"
-    # await storeRelevantSymbols()
-    # await storeRelevantCurrencies()
-    log "sepcialMission ended... bye!"
-    return
+requestQueue = (url) ->
+    new Promise (resolve, reject) ->
+        if pending.has(url)
+            pending.get(url).push({ resolve, reject })
+            return
+        pending.set(url, [{ resolve, reject }])
+        queue.push(url)
+        processQueue() unless processing
 
-############################################################
-storeRelevantSymbols = ->
-    log "storeRelevantSymbols"
-    results = await getAllSymbols()
-    # log "results retrieved: #{results.length}"
-    # olog results[0]
-    for tick in results when tick.has_eod then symbolsData.push(tick)
-    dataString = JSON.stringify(symbolsData, null, 4)
-    fs.writeFileSync(symbolsDataPath, dataString)
-    return
+processQueue = ->
+    return if processing or queue.length == 0
+    processing = true
 
-storeRelevantCurrencies = ->
-    log "storeRelevantCurrencies"
-    results = await getAllCurrencies()
-    log "results retrieved: #{results.length}"
-    olog results[0]
-    currenciesData.push(el) for el in results
-    dataString = JSON.stringify(currenciesData, null, 4)
-    fs.writeFileSync(currenciesDataPath, dataString)
-    return
+    while queue.length > 0
+        # Start new measurement window
+        if windowCount == 0
+            windowStart = performance.now()
 
-
-############################################################
-getAllCurrencies = ->
-    log "getAllCurrencies"
-    access_key = accessToken
-    limit = 1000
-    offset = 0
-
-    options = { access_key, limit, offset }
-    params = new URLSearchParams(options)
-    url = apiURL + "/currencies?" + params.toString()
-
-    allData = []
-
-    try response = await fetch(url)
-    catch err then console.error(err)
-    
-    try
-        if response.ok
-            result = await response.json()
-            if result.error? then throw new Error(result.error.code+": "+result.error.message)
-            log "retrieved result!"
-            olog result.pagination
-            olog result.data[0]
-            allData.push(...result.data)
-       
-            if result.pagination.limit != limit then console.error("Pagination Limit did not match our provided Limit! #{result.pagination.limit} vs #{limit}")
-            if result.pagination.offset != offset then console.error("Pagination Offset did not match our offset! #{result.pagination.offset} vs #{offset}")
-            return allData
-
-        # log "Response was not OK :("+response.status+")"
-        console.error("status: "+response.status)
-        text = await response.text()
-        console.error(text)
-    catch err then console.error(err)
-    return allData
-
-############################################################
-getAllSymbols = ->
-    log "getAllSymbols"
-    access_key = accessToken
-    limit = 1000
-    offset = 0
-
-    options = { access_key, limit, offset }
-    params = new URLSearchParams(options)
-    url = apiURL + "/tickerslist?" + params.toString()
-
-    allData = []
-
-    dataOutstanding = true
-    while(dataOutstanding)
-        error = true
-        log "requestion offset #{offset}"
-        await waitMS(220)
-        try response = await fetch(url)
-        catch err then console.error(err)
+        windowCount++
+        url = queue.shift()
+        waiters = pending.get(url)
 
         try
-            # log "checking response"
-            if response.ok
-                result = await response.json()
-                if result.error? then throw new Error(result.error.code+": "+result.error.message)
-                # log "retrieved result!"
-                # olog result.pagination
-                # olog result.data[0]
-                allData.push(...result.data)
-                # log "allDataLength: #{allData.length}"
+            response = await fetch(url)
+            body = await response.json()
+            pending.delete(url)
+            w.resolve(body) for w in waiters
+        catch err
+            pending.delete(url)
+            w.reject(err) for w in waiters
 
-                if result.pagination.limit != limit then console.error("Pagination Limit did not match our provided Limit! #{result.pagination.limit} vs #{limit}")
-                if result.pagination.offset != offset then console.error("Pagination Offset did not match our offset! #{result.pagination.offset} vs #{offset}")
-                
-                if result.pagination.total <= allData.length then dataOutstanding = false
-                else # prepare next request url
-                    offset += limit
-                    options = { access_key, limit, offset }
-                    params = new URLSearchParams(options)
-                    url = apiURL + "/tickerslist?" + params.toString()
-                
-                error = false # all success full
-                continue
+        # After 5 requests, check if we need to slow down
+        if windowCount >= maxPerWindow
+            elapsed = performance.now() - windowStart
+            remaining = windowMS - elapsed
+            if remaining > 0 then await waitMS(remaining)
+            windowCount = 0
 
-            # log "Response was not OK :("+response.status+")"
-            console.error("status: "+response.status)
-            text = await response.text()
-            console.error(text)
-        catch err then console.error(err)
-        if error then break
-
-    return allData
+    processing = false
+    return
 
 #endregion
+
+############################################################
+waitMS = (ms) -> new Promise((res) -> setTimeout(res, ms))

@@ -5,10 +5,12 @@ import { createLogFunctions } from "thingy-debug"
 #endregion
 
 ############################################################
-import { sciStartServer } from "./scicoremodule.js"
+import { prepareAndExpose } from "./scimodule.js"
+import { startLiveDataHeartbeat } from "./marketstackmodule.js"
 
 ############################################################
 export serviceStartup = ->
     log "serviceStartup"
-    await sciStartServer()
+    startLiveDataHeartbeat()
+    await prepareAndExpose()
     return
