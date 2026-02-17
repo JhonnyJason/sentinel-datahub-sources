@@ -7,6 +7,7 @@ import { createLogFunctions } from "thingy-debug"
 ############################################################
 import { prepareAndExpose } from "./scimodule.js"
 import { startLiveDataHeartbeat } from "./marketstackmodule.js"
+import { getStockAllHistory } from "./marketstackmodule.js"
 
 ############################################################
 export serviceStartup = ->

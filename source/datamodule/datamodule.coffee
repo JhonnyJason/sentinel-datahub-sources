@@ -25,73 +25,10 @@ export initialize = (cfg) ->
     return
 
 ############################################################
-export forceLoadNewestStockData = (symbol) ->
-    id = toStorageId(symbol)
-    dataSet = store.load(id) # returns {} if no data exists
-
-    # No data? -> fetch all history
-    if !dataSet.data?
-        dataSet = await mrktStack.getStockAllHistory(symbol)
-        if dataSet? then store.save(id, dataSet)
-        return dataSet
-
-    # Expected: data up to the last trading day before today
-    # (during pre-trading, today's data doesn't exist yet)
-    now = new Date()
-    yesterday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() - 1))
-    expectedEnd = lastTradingDay(yesterday)
-
-    if dataSet.meta.endDate < expectedEnd
-        cf = getCumulativeFactor(dataSet)
-        newerData = await mrktStack.getStockNewerHistory(symbol, dataSet.meta.endDate, cf)
-        if newerData?
-            dataSet = appendDataSet(dataSet, newerData)
-            store.save(id, dataSet)
-
-    if dataSet.meta.endDate >= expectedEnd
-        log "Data is up to date (ends: #{dataSet.meta.endDate}, expected: #{expectedEnd})"
-    else
-        log "Data still behind expected (ends: #{dataSet.meta.endDate}, expected: #{expectedEnd})"
-    return
+#region Local Functions
 
 ############################################################
-export getData = (name, yearsBack) ->
-    log "getData #{name}, yearsBack: #{yearsBack}"
-    if isCommodityName(name) then dataSet = getCommodityData(name)
-    else if isForexPair(name) then dataSet = getForexPairData(name)
-    else dataSet = await getStockData(name)
-
-    return sliceByYears(dataSet, yearsBack)
-
-############################################################
-sliceByYears = (dataSet, yearsBack) ->
-    return dataSet unless yearsBack? and dataSet?.data?
-
-    # Calculate cutoff date (yearsBack years ago from today)
-    now = new Date()
-    cutoffDate = new Date(Date.UTC(now.getUTCFullYear() - yearsBack, now.getUTCMonth(), now.getUTCDate()))
-    startDate = new Date(dataSet.meta.startDate + "T00:00:00Z")
-
-    # If cutoff is before our data starts, return full dataset
-    return dataSet if cutoffDate <= startDate
-
-    # Calculate index to slice from
-    sliceIndex = daysBetween(dataSet.meta.startDate, cutoffDate.toISOString().slice(0, 10))
-    return dataSet if sliceIndex <= 0
-
-    # Slice and return new dataset
-    return {
-        meta: {
-            startDate: cutoffDate.toISOString().slice(0, 10)
-            endDate: dataSet.meta.endDate
-            interval: dataSet.meta.interval
-            historyComplete: false  # sliced data is not complete
-            splitFactors: dataSet.meta.splitFactors
-        }
-        data: dataSet.data.slice(sliceIndex)
-    }
-
-############################################################
+#region Helper Functions
 isCommodityName = (name) ->
     log "isCommodityName"
     # return symbols.isCommodityName(name) # TODO: implement
@@ -103,35 +40,6 @@ isForexPair = (name) ->
     return false
 
 ############################################################
-getStockData = (symbol) ->
-    log "getStockData #{symbol}"
-    id = toStorageId(symbol)
-    dataSet = store.load(id) # returns {} if no data exists
-
-    # No data? -> fetch all history
-    if !dataSet.data?
-        dataSet = await mrktStack.getStockAllHistory(symbol)
-        if dataSet? then store.save(id, dataSet)
-        return dataSet
-
-    # Is history incomplete? -> try to get older data
-    if !dataSet.meta.historyComplete
-        olderData = await mrktStack.getStockOlderHistory(symbol, dataSet.meta.startDate)
-        if olderData?
-            dataSet = prependDataSet(olderData, dataSet)
-            store.save(id, dataSet)
-
-    # Is data fresh enough? -> top-up with newer data
-    if !isFresh(dataSet, freshnessThreshold)
-        cf = getCumulativeFactor(dataSet)
-        newerData = await mrktStack.getStockNewerHistory(symbol, dataSet.meta.endDate, cf)
-        if newerData?
-            dataSet = appendDataSet(dataSet, newerData)
-            store.save(id, dataSet)
-
-    return dataSet
-
-############################################################
 isFresh = (dataSet, threshold) ->
     if !dataSet?.meta?.endDate? then return false
     endDate = new Date(dataSet.meta.endDate + "T00:00:00Z")
@@ -139,12 +47,15 @@ isFresh = (dataSet, threshold) ->
     daysDiff = Math.floor((now - endDate) / (1000 * 60 * 60 * 24))
     return daysDiff <= threshold
 
+
 ############################################################
 # Get the current cumulative split factor from a DataSet
 getCumulativeFactor = (dataSet) ->
     sf = dataSet.meta?.splitFactors
     return 1.0 unless sf? and sf.length > 0
-    return sf[sf.length - 1].f
+    last = sf[sf.length - 1]
+    return 1.0 if last.applied == false # pre-adjusted data: source handles splits
+    return last.f
 
 ############################################################
 # Merge split factor arrays on append (existing + newer)
@@ -212,6 +123,66 @@ appendDataSet = (existing, newer) ->
 fillGap = (gapSize, closeValue) -> Array(gapSize).fill([closeValue, closeValue, closeValue])
 
 ############################################################
+sliceByYears = (dataSet, yearsBack) ->
+    return dataSet unless yearsBack? and dataSet?.data?
+
+    # Calculate cutoff date (yearsBack years ago from today)
+    now = new Date()
+    cutoffDate = new Date(Date.UTC(now.getUTCFullYear() - yearsBack, now.getUTCMonth(), now.getUTCDate()))
+    startDate = new Date(dataSet.meta.startDate + "T00:00:00Z")
+
+    # If cutoff is before our data starts, return full dataset
+    return dataSet if cutoffDate <= startDate
+
+    # Calculate index to slice from
+    sliceIndex = daysBetween(dataSet.meta.startDate, cutoffDate.toISOString().slice(0, 10))
+    return dataSet if sliceIndex <= 0
+
+    # Slice and return new dataset
+    return {
+        meta: {
+            startDate: cutoffDate.toISOString().slice(0, 10)
+            endDate: dataSet.meta.endDate
+            interval: dataSet.meta.interval
+            historyComplete: false  # sliced data is not complete
+            splitFactors: dataSet.meta.splitFactors
+        }
+        data: dataSet.data.slice(sliceIndex)
+    }
+
+#endregion
+
+
+############################################################
+getStockData = (symbol) ->
+    log "getStockData #{symbol}"
+    id = toStorageId(symbol)
+    dataSet = store.load(id) # returns {} if no data exists
+
+    # No data? -> fetch all history
+    if !dataSet.data?
+        dataSet = await mrktStack.getStockAllHistory(symbol)
+        if dataSet? then store.save(id, dataSet)
+        return dataSet
+
+    # Is history incomplete? -> try to get older data
+    if !dataSet.meta.historyComplete
+        olderData = await mrktStack.getStockOlderHistory(symbol, dataSet.meta.startDate)
+        if olderData?
+            dataSet = prependDataSet(olderData, dataSet)
+            store.save(id, dataSet)
+
+    # Is data fresh enough? -> top-up with newer data
+    if !isFresh(dataSet, freshnessThreshold)
+        cf = getCumulativeFactor(dataSet)
+        newerData = await mrktStack.getStockNewerHistory(symbol, dataSet.meta.endDate, cf)
+        if newerData?
+            dataSet = appendDataSet(dataSet, newerData)
+            store.save(id, dataSet)
+
+    return dataSet
+
+############################################################
 getCommodityData = (name) ->
     log "getCommodityData"
     id = toStorageId(name)
@@ -224,6 +195,11 @@ getForexPairData = (name) ->
     # dataSet = store.load(id)
     ## TODO implement
     return {}
+
+#endregion
+
+############################################################
+#region Exported functions
 
 ############################################################
 # Re-fetch and re-normalize all data for a symbol
@@ -239,4 +215,43 @@ export recorrectData = (symbol) ->
         log "recorrectData failed: no data returned"
     return dataSet
 
+############################################################
+export forceLoadNewestStockData = (symbol) ->
+    id = toStorageId(symbol)
+    dataSet = store.load(id) # returns {} if no data exists
 
+    # No data? -> fetch all history
+    if !dataSet.data?
+        dataSet = await mrktStack.getStockAllHistory(symbol)
+        if dataSet? then store.save(id, dataSet)
+        return dataSet
+
+    # Expected: data up to the last trading day before today
+    # (during pre-trading, today's data doesn't exist yet)
+    now = new Date()
+    yesterday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() - 1))
+    expectedEnd = lastTradingDay(yesterday)
+
+    if dataSet.meta.endDate < expectedEnd
+        cf = getCumulativeFactor(dataSet)
+        newerData = await mrktStack.getStockNewerHistory(symbol, dataSet.meta.endDate, cf)
+        if newerData?
+            dataSet = appendDataSet(dataSet, newerData)
+            store.save(id, dataSet)
+
+    if dataSet.meta.endDate >= expectedEnd
+        log "Data is up to date (ends: #{dataSet.meta.endDate}, expected: #{expectedEnd})"
+    else
+        log "Data still behind expected (ends: #{dataSet.meta.endDate}, expected: #{expectedEnd})"
+    return
+
+############################################################
+export getData = (name, yearsBack) ->
+    log "getData #{name}, yearsBack: #{yearsBack}"
+    if isCommodityName(name) then dataSet = getCommodityData(name)
+    else if isForexPair(name) then dataSet = getForexPairData(name)
+    else dataSet = await getStockData(name)
+
+    return sliceByYears(dataSet, yearsBack)
+
+#endregion

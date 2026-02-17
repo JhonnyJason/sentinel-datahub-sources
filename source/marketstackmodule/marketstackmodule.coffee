@@ -124,28 +124,20 @@ export startLiveDataHeartbeat = ->
 export getStockAllHistory = (ticker) ->
     log "getStockAllHistory: #{ticker}"
 
-    # Fetch all pages
     fetchResult = await fetchAllEodPages(ticker)
     return null unless fetchResult?
 
-    # Log errors but continue processing any data we got
     if fetchResult.error?
         err = fetchResult.error
         if isPlanLimitError(err) then log "Plan limit reached: #{err.code}"
         else log "API error: #{err.code}: #{err.message}"
 
-    # No data to process
     if fetchResult.data.length == 0
         log "No data received"
         return null
 
-    # Normalize to DataSet format
     dataSet = normalizeEodResponse(fetchResult.data, ticker)
-
-    # Gap-fill missing days
     dataSet = gapFillDataSet(dataSet)
-
-    # Mark if we got complete history (no errors during fetch)
     dataSet.meta.historyComplete = !fetchResult.error?
 
     log "Returning #{dataSet.data.length} data points, historyComplete: #{dataSet.meta.historyComplete}"
@@ -281,30 +273,53 @@ normalizeEodResponse = (apiData, ticker, startFactor = 1.0) ->
     # Each record: { date, symbol, open, high, low, close, volume, exchange, price_currency }
 
     # Extract dates and price data, track split factor history
-    dataPoints = []
-    splitFactors = []
     factor = startFactor
+    dataPoints = []
+    splitFactors = [ { f: factor, applied: true } ] # is applied: true always good here?
+    prevRecord = null
 
     for record in apiData
-        dateStr = record.date.substring(0, 10)
-        if record.split_factor != 1
-            # End current factor period, start new one
-            splitFactors.push({f: factor, end: prevDay(dateStr)})
-            factor *= record.split_factor
-        dataPoints.push({
-            date: dateStr
-            high: record.high * factor
-            low: record.low * factor
-            close: record.close * factor
-        })
 
-    # Final factor period (ongoing, no end date)
-    splitFactors.push({f: factor})
+        if record.split_factor? and record.split_factor != 1 and prevRecord?
+            # Detect if raw data is already split-adjusted
+            # Use adj_close ratio to isolate the real price change,
+            # then check if closeRaw moved similarly (pre-adjusted)
+            # or jumped by ~split_factor (needs adjustment)
+            adjChange = record.adj_close / prevRecord.adj_close
+            rawChange = record.close / prevRecord.close
+            
+            isPreAdjusted = Math.abs(rawChange - adjChange) < 0.01
+            
+            # confirm if split-factor fits
+            splitFactorFits = Math.abs(rawChange*record.split_factor - adjChange) < 0.01
+            if(!isPreAdjusted and !splitFactorFits) then log "We were not within the range to detect preAdjusted data. Neither was the split-factor making this difference!"
+
+            # set endDate to previous factor
+            prevSplit = splitFactors[splitFactors.length - 1]
+            if prevSplit? then prevSplit.end = prevDay(date)
+
+            # Add new factor period
+            factor *= record.split_factor
+            splitFactors.push({f: factor, applied: !isPreAdjusted})
+
+        if !isPreAdjusted # adjust to carry factor
+            high = record.high * factor
+            low = record.low * factor
+            close = record.close * factor
+        else
+            high = record.high
+            low = record.low
+            close = record.close
+
+        dataPoints.push({ date, high, low, close })
+        prevRecord = record
 
     # Build DataSet
     startDate = dataPoints[0].date
     endDate = dataPoints[dataPoints.length - 1].date
-
+    
+    olog debugData[debugData.length - 1]
+    
     # Convert to array format [high, low, close]
     data = dataPoints.map((p) -> [p.high, p.low, p.close])
 
