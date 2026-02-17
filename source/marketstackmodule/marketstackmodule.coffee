@@ -279,6 +279,7 @@ normalizeEodResponse = (apiData, ticker, startFactor = 1.0) ->
     prevRecord = null
 
     for record in apiData
+        date = record.date.substring(0, 10)
 
         if record.split_factor? and record.split_factor != 1 and prevRecord?
             # Detect if raw data is already split-adjusted
@@ -317,9 +318,7 @@ normalizeEodResponse = (apiData, ticker, startFactor = 1.0) ->
     # Build DataSet
     startDate = dataPoints[0].date
     endDate = dataPoints[dataPoints.length - 1].date
-    
-    olog debugData[debugData.length - 1]
-    
+
     # Convert to array format [high, low, close]
     data = dataPoints.map((p) -> [p.high, p.low, p.close])
 

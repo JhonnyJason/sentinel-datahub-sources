@@ -165,6 +165,11 @@ getStockData = (symbol) ->
         if dataSet? then store.save(id, dataSet)
         return dataSet
 
+    # Legacy data without split factors? -> full re-fetch with proper normalization
+    if !dataSet.meta?.splitFactors?
+        log "Legacy data detected for #{symbol} — recorrecting"
+        return recorrectData(symbol)
+
     # Is history incomplete? -> try to get older data
     if !dataSet.meta.historyComplete
         olderData = await mrktStack.getStockOlderHistory(symbol, dataSet.meta.startDate)
@@ -225,6 +230,12 @@ export forceLoadNewestStockData = (symbol) ->
         dataSet = await mrktStack.getStockAllHistory(symbol)
         if dataSet? then store.save(id, dataSet)
         return dataSet
+
+    # Legacy data without split factors? -> full re-fetch with proper normalization
+    if !dataSet.meta?.splitFactors?
+        log "Legacy data detected for #{symbol} — recorrecting"
+        await recorrectData(symbol)
+        return
 
     # Expected: data up to the last trading day before today
     # (during pre-trading, today's data doesn't exist yet)
