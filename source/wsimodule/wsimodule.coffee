@@ -96,6 +96,9 @@ processMessage = (message, sock) ->
         when "subscribe"
             if liveFeed.subscribeClientSocket(sock, msgObj.argument)
                 sock.send("subscribe success #{msgObj.argument}")
+                price = liveFeed.getLatestPrice(msgObj.argument)
+                message = "liveDataUpdate #{msgObj.argument} #{price}"
+                sock.send(message)
             else
                 sock.send("subscribe error #{msgObj.argument}")
                 return result
