@@ -440,6 +440,9 @@ processQueue = ->
 
         try
             response = await fetch(url)
+            unless response.ok
+                text = await response.text()
+                throw new Error("HTTP #{response.status}: #{text.slice(0, 200)}")
             body = await response.json()
             pending.delete(url)
             w.resolve(body) for w in waiters
