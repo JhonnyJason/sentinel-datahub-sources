@@ -221,7 +221,7 @@ export recorrectData = (symbol) ->
     return dataSet
 
 ############################################################
-export forceLoadNewestStockData = (symbol) ->
+export forceLoadNewestStockData = (symbol, includeToday = false) ->
     id = toStorageId(symbol)
     dataSet = store.load(id) # returns {} if no data exists
 
@@ -237,11 +237,14 @@ export forceLoadNewestStockData = (symbol) ->
         await recorrectData(symbol)
         return
 
-    # Expected: data up to the last trading day before today
-    # (during pre-trading, today's data doesn't exist yet)
+    # includeToday: after market close, today's EOD data is available
+    # pre-trading: today's data doesn't exist yet, compare against yesterday
     now = new Date()
-    yesterday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() - 1))
-    expectedEnd = lastTradingDay(yesterday)
+    if includeToday
+        expectedEnd = lastTradingDay(now)
+    else
+        yesterday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() - 1))
+        expectedEnd = lastTradingDay(yesterday)
 
     if dataSet.meta.endDate < expectedEnd
         cf = getCumulativeFactor(dataSet)

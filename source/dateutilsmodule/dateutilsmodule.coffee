@@ -12,7 +12,12 @@ export isTradingHour = (date = new Date()) ->
 export isPreTradingHour = (date = new Date()) ->
     estHour = (date.getUTCHours() + 19) % 24
     estMinuteOfDay = estHour * 60 + date.getUTCMinutes()
-    return estMinuteOfDay > 360 and estMinuteOfDay < 420 
+    return estMinuteOfDay > 360 and estMinuteOfDay < 420
+
+export isPostTradingHour = (date = new Date()) ->
+    estHour = (date.getUTCHours() + 19) % 24
+    estMinuteOfDay = estHour * 60 + date.getUTCMinutes()
+    return estMinuteOfDay >= 1080 # 6:00 PM EST through midnight
 
 
 ############################################################

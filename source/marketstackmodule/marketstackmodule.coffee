@@ -8,7 +8,7 @@ import { createLogFunctions } from "thingy-debug"
 import fs from "node:fs"
 import path from "node:path"
 import { nextDay, prevDay, generateDateRange, isTradingHour,
-    isPreTradingHour, isTradingDay } from "./dateutilsmodule.js"
+    isPreTradingHour, isPostTradingHour, isTradingDay } from "./dateutilsmodule.js"
 
 import * as dataM from "./datamodule.js"
 import * as liveFeed from "./livefeedmodule.js"
@@ -30,11 +30,15 @@ liveDataSymbols = []
 liveDataHeartbeatMS = 300_000 # 5min non-pro subscribtions cannot be faster
 
 ############################################################
-# Pre-trading fetch limiter — max attempts per day to avoid
-# wasting API calls on holidays we don't know about
-maxPreTradeAttempts = 3
-preTradeAttempts = 0
-preTradeDate = null
+# EOD top-up limiter — shared across pre-trading and trading hours
+# max attempts per day to avoid wasting API calls on holidays
+maxEodTopUpAttempts = 3
+eodTopUpAttempts = 0
+eodTopUpDate = null
+# Post-trading has its own limiter (separate window, today's data)
+maxPostTradeAttempts = 6
+postTradeAttempts = 0
+postTradeDate = null
 
 ############################################################
 export initialize = (c) ->
@@ -56,6 +60,9 @@ liveDataHeartbeat = ->
 
     if  isTradingHour(dateNow)
         log "isTradingHour: true"
+        # EOD top-up (shared limiter with pre-trading)
+        tryEodTopUp(dateNow)
+        # Live intraday prices
         return unless accessToken? and apiURL?
         return if liveDataSymbols.length == 0
 
@@ -89,26 +96,44 @@ liveDataHeartbeat = ->
 
     else if isPreTradingHour(dateNow)
         log "isPreTradingHour: true"
-        # Reset counter on new day
+        tryEodTopUp(dateNow)
+
+    else if isPostTradingHour(dateNow)
+        log "isPostTradingHour: true"
         todayStr = dateNow.toISOString().substring(0, 10)
-        if preTradeDate != todayStr
-            preTradeDate = todayStr
-            preTradeAttempts = 0
-        # Limit pre-trade fetches to avoid wasting API calls (e.g. unknown holidays)
-        if preTradeAttempts >= maxPreTradeAttempts
-            log "Pre-trade attempt limit reached (#{maxPreTradeAttempts}) - skipping"
+        if postTradeDate != todayStr
+            postTradeDate = todayStr
+            postTradeAttempts = 0
+        if postTradeAttempts >= maxPostTradeAttempts
+            log "Post-trade attempt limit reached (#{maxPostTradeAttempts}) - skipping"
             return
-        preTradeAttempts++
-        log "Pre-trade attempt #{preTradeAttempts}/#{maxPreTradeAttempts}"
+        postTradeAttempts++
+        log "Post-trade attempt #{postTradeAttempts}/#{maxPostTradeAttempts}"
         for symbol in liveDataSymbols
-            dataM.forceLoadNewestStockData(symbol)
+            dataM.forceLoadNewestStockData(symbol, true)
 
     else log "It's not an interesting time - we do nothing here :-)"
     return
 
 ############################################################
+tryEodTopUp = (dateNow) ->
+    todayStr = dateNow.toISOString().substring(0, 10)
+    if eodTopUpDate != todayStr
+        eodTopUpDate = todayStr
+        eodTopUpAttempts = 0
+    if eodTopUpAttempts >= maxEodTopUpAttempts
+        log "EOD top-up attempt limit reached (#{maxEodTopUpAttempts}) - skipping"
+        return
+    eodTopUpAttempts++
+    log "EOD top-up attempt #{eodTopUpAttempts}/#{maxEodTopUpAttempts}"
+    for symbol in liveDataSymbols
+        dataM.forceLoadNewestStockData(symbol)
+    return
+
+############################################################
 export startLiveDataHeartbeat = ->
     log "startLiveDataHeartbeat"
+    liveDataHeartbeat()
     setInterval(liveDataHeartbeat, liveDataHeartbeatMS)
     return
 

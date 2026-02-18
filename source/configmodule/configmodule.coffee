@@ -42,7 +42,7 @@ export checkAccessMS = 600_000 # ~10m
 export checkSymbolsMS = 3_600_000 # ~1h
 
 ############################################################
-export liveDataSymbols = [ "HYG" ]
+export liveDataSymbols = [ "HYG", "SPY" ]
 # export liveDataHeartbeatMS = 420_000 # 7m
 export liveDataHeartbeatMS = 3_000_000 # 50 min
 
