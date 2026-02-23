@@ -25,9 +25,10 @@ import * as dataM from "./datamodule.js"
 #region wrapper functions
 
 ############################################################
-hasAccess = (req) -> 
-    return false unless req?
-    return accsM.hasAccess(req.authCode)
+authenticate = (req) -> 
+    return "No arg provided!" unless req?
+    return "No Access!" unless accsM.hasAccess(req.authCode) 
+    return "" # no error = authenticated 
 
 ############################################################
 getData = (args) -> await dataM.getData(args.dataKey, args.yearsBack)
@@ -39,7 +40,7 @@ getData = (args) -> await dataM.getData(args.dataKey, args.yearsBack)
 ## Config Object with all options
 # { 
 #   bodySizeLimit: # limit body size for this route -> whole payload
-#   authOption:  # add a function for request authentication (req, ctx)
+#   authOption:  # add a function for request authentication (req, ctx) return falsly on success!
 #   argsSchema: # required for arguments - will be validated
 #   resultSchema: # required for results - will be validated
 #   responseAuth: # add a function to proof response authenticity (resultString, ctx)
