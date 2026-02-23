@@ -303,7 +303,9 @@ normalizeEodResponse = (apiData, ticker, startFactor = 1.0) ->
     splitFactors = [ { f: factor, applied: true } ] # is applied: true always good here?
     prevRecord = null
 
-    for record in apiData
+    shouldApply = false
+
+    for record,i in apiData
         date = record.date.substring(0, 10)
 
         if record.split_factor? and record.split_factor != 1 and prevRecord?
@@ -313,24 +315,68 @@ normalizeEodResponse = (apiData, ticker, startFactor = 1.0) ->
             # or jumped by ~split_factor (needs adjustment)
             adjChange = record.adj_close / prevRecord.adj_close
             rawChange = record.close / prevRecord.close
+            newFactor = record.split_factor
+
+            # should be true only if we are adjusted already
+            rawChangeLikelyAdj = likelyAdjusted(rawChange, newFactor)  
+            # # might be false if we have a data bug
+            adjChangeLikelyAdj = likelyAdjusted(adjChange, newFactor)
+            # # If we are in sync with the data 
+            # likelyAdjusted = Math.abs(rawChange - adjChange) < 0.01
             
-            isPreAdjusted = Math.abs(rawChange - adjChange) < 0.01
+            # only if all indications point to likely adjusted data we set isPreAdjusted to true
+            # isPreAdjusted = likelyAdjusted and rawChangeLikelyAdj and adjChangeLikelyAdj
+            
+            # Only go with the most reiable indication :)
+            isPreAdjusted = rawChangeLikelyAdj
+
+            # Factor was Applied 
+            shouldApply = shouldApply or !isPreAdjusted
             
             # confirm if split-factor fits
             splitFactorFits = Math.abs(rawChange*record.split_factor - adjChange) < 0.01
-            if(!isPreAdjusted and !splitFactorFits) then log "We were not within the range to detect preAdjusted data. Neither was the split-factor making this difference!"
+            if(!isPreAdjusted and !splitFactorFits) then log "We were not within the range to detect preAdjusted data. Neither was the split-factor making this difference! (adjChangeLikelyAdj: #{adjChangeLikelyAdj})"
 
             # set endDate to previous factor
             prevSplit = splitFactors[splitFactors.length - 1]
             if prevSplit? then prevSplit.end = prevDay(date)
 
-            olog { factor, split_factor: record.split_factor }
+            closeRM2 = apiData[i-2]?.close
+            adjCloseRM2 = apiData[i-2]?.adj_close
+            closeRM1 = prevRecord.close
+            adjCloseRM1 = prevRecord.adj_close
+            closeRN =  record.close
+            adjCloseRN =  record.adj_close
+            closeRP1 = apiData[i+1]?.close
+            adjCloseRP1 = apiData[i+1]?.adj_close
+            closeRP2 = apiData[i+2]?.close
+            adjCloseRP2 = apiData[i+2]?.adj_close
+
+            olog { 
+                factor, 
+                split_factor: record.split_factor 
+                rawChange, 
+                adjChange, 
+                absDelta: Math.abs(rawChange - adjChange), 
+                isPreAdjusted,
+                shouldApply,
+                closeRM2,
+                adjCloseRM2,
+                adjCloseRM1,
+                closeRN,
+                adjCloseRN,
+                closeRP1,
+                adjCloseRP1,
+                closeRP2
+                adjCloseRP2
+            }
+            
             
             # Add new factor period
             factor *= record.split_factor
-            splitFactors.push({f: factor, applied: !isPreAdjusted})
+            splitFactors.push({f: factor, applied: shouldApply})
 
-        if !isPreAdjusted # adjust to carry factor
+        if shouldApply # adjust to carry factor
             high = record.high * factor
             low = record.low * factor
             close = record.close * factor
@@ -401,6 +447,19 @@ isPlanLimitError = (error) ->
     # Common codes: "function_access_restricted", "https_access_restricted"
     planLimitCodes = ["function_access_restricted", "https_access_restricted", "usage_limit_reached"]
     return error.code in planLimitCodes
+
+############################################################
+# check if a price change around a split is likely adjusted/natural
+likelyAdjusted = (change, factor) ->
+    # if factor fits the change then the corrected should be ~1 (non-adjusted)
+    # if it was already adjusted (~1) then the corrected should be ~factor
+    corrected = change * factor
+
+    deltaOne = Math.abs(corrected - 1)
+    deltaFactor = Math.abs(corrected - factor)
+
+    # if the corrected value is closer to the factor than to 1 it is likely adjusted already
+    return deltaFactor < deltaOne
 
 #endregion
 
