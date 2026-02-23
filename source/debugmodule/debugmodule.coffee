@@ -2,6 +2,8 @@ import { addModulesToDebug } from "thingy-debug"
 
 ############################################################
 modulesToDebug = {
+    accessmodule: true
+    authmodule: true
     # bugsnitch: true
     # datamodule: true
     # livefeedmodule: true
