@@ -26,8 +26,8 @@ import * as dataM from "./datamodule.js"
 
 ############################################################
 authenticate = (req) -> 
-    return "No arg provided!" unless req? and req.auth? 
-    return "No Access!" unless accsM.hasAccess(req.auth.authCode) 
+    return "No arg provided!" unless req? and req.args? 
+    return "No Access!" unless accsM.hasAccess(req.args.authCode) 
     return "" # no error = authenticated 
 
 ############################################################
