@@ -52,7 +52,7 @@ getData = (args) -> await dataM.getData(args.dataKey, args.yearsBack)
 ############################################################ 
 sciAdd("getEODHLCData", getData, {
     bodySizeLimit: 1024, 
-    authOption: hasAccess,
+    authOption: authenticate,
     argsSchema: {
         authCode: STRINGHEX32,
         dataKey: NONEMPTYSTRING,
