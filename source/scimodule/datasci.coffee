@@ -25,9 +25,9 @@ import * as dataM from "./datamodule.js"
 #region wrapper functions
 
 ############################################################
-authenticate = (req) -> 
-    return "No arg provided!" unless req? and req.args? 
-    return "No Access!" unless accsM.hasAccess(req.args.authCode) 
+authenticate = (req, ctx) -> 
+    return "No auth provided!" unless req? and ctx? and ctx.auth? 
+    return "No Access!" unless accsM.hasAccess(ctx.auth.authCode) 
     return "" # no error = authenticated 
 
 ############################################################
