@@ -324,6 +324,8 @@ normalizeEodResponse = (apiData, ticker, startFactor = 1.0) ->
             prevSplit = splitFactors[splitFactors.length - 1]
             if prevSplit? then prevSplit.end = prevDay(date)
 
+            olog { factor, split_factor: record.split_factor }
+            
             # Add new factor period
             factor *= record.split_factor
             splitFactors.push({f: factor, applied: !isPreAdjusted})
