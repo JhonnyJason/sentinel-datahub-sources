@@ -28,17 +28,16 @@ currenciesData = []
 ############################################################
 liveDataSymbols = []
 liveDataHeartbeatMS = 300_000 # 5min non-pro subscribtions cannot be faster
+liveDataEODRefreshMS = 3_600_000 # 1h probably enough
 
 ############################################################
-# EOD top-up limiter — shared across pre-trading and trading hours
+# EOD refresh limiter — shared across pre-trading and trading hours
 # max attempts per day to avoid wasting API calls on holidays
-maxEodTopUpAttempts = 3
-eodTopUpAttempts = 0
-eodTopUpDate = null
-# Post-trading has its own limiter (separate window, today's data)
-maxPostTradeAttempts = 6
-postTradeAttempts = 0
-postTradeDate = null
+eodRefreshMaxAttempts = 3 #{}
+eodRefreshAttempts = 0
+eodLastRefreshDate = null
+postTradeRefresh = false
+preTradeRefresh = false
 
 ############################################################
 export initialize = (c) ->
@@ -47,7 +46,8 @@ export initialize = (c) ->
     if c.urlMrktStack? then apiURL = c.urlMrktStack
     if c.liveDataSymbols? then liveDataSymbols.push(...c.liveDataSymbols)
     if c.liveDataHeartbeatMS? then liveDataHeartbeatMS = c.liveDataHeartbeatMS
-
+    if c.liveDataEODRefreshMS? then liveDataEODRefreshMS = c.liveDataEODRefreshMS
+    if c.eodRefreshMaxAttempts? then eodRefreshMaxAttempts = c.eodRefreshMaxAttempts
     return
     
 ############################################################
@@ -59,9 +59,7 @@ liveDataHeartbeat = ->
     log "Today is a trading-day - let's see what's up..."
 
     if  isTradingHour(dateNow)
-        log "isTradingHour: true"
-        # EOD top-up (shared limiter with pre-trading)
-        tryEodTopUp(dateNow)
+        log "isTradingHour: true"        
         # Live intraday prices
         return unless accessToken? and apiURL?
         return if liveDataSymbols.length == 0
@@ -94,47 +92,68 @@ liveDataHeartbeat = ->
 
         catch err then log "liveData retrieval error: #{err.message}"
 
-    else if isPreTradingHour(dateNow)
-        log "isPreTradingHour: true"
-        tryEodTopUp(dateNow)
-
-    else if isPostTradingHour(dateNow)
-        log "isPostTradingHour: true"
-        todayStr = dateNow.toISOString().substring(0, 10)
-        if postTradeDate != todayStr
-            postTradeDate = todayStr
-            postTradeAttempts = 0
-        if postTradeAttempts >= maxPostTradeAttempts
-            log "Post-trade attempt limit reached (#{maxPostTradeAttempts}) - skipping"
-            return
-        postTradeAttempts++
-        log "Post-trade attempt #{postTradeAttempts}/#{maxPostTradeAttempts}"
-        for symbol in liveDataSymbols
-            dataM.forceLoadNewestStockData(symbol, true)
-
     else log "It's not an interesting time - we do nothing here :-)"
     return
 
+
 ############################################################
-tryEodTopUp = (dateNow) ->
+liveDataEODRefresh = ->
+    dateNow = new Date()
     todayStr = dateNow.toISOString().substring(0, 10)
-    if eodTopUpDate != todayStr
-        eodTopUpDate = todayStr
-        eodTopUpAttempts = 0
-    if eodTopUpAttempts >= maxEodTopUpAttempts
-        log "EOD top-up attempt limit reached (#{maxEodTopUpAttempts}) - skipping"
+    tradingDay = isTradingDay(dateNow)
+    
+    includeToday = tradingDay and isPostTradingHour(dateNow)
+
+    #region additional Refresh
+    if tradingDay and isTradingHour(dateNow) # assure that reset states are cleared
+        postTradeRefresh = false
+        preTradeRefresh = false
+    
+    else if tradingDay and isPreTradingHour(dateNow) # preTrading Refresh
+        postTradeRefresh = false
+
+        if !preTradeRefresh and eodRefreshAttempts == eodRefreshMaxAttempts
+            preTradeRefresh = true
+            eodRefreshAttempts = eodRefreshMaxAttempts - 1
+
+    else if tradingDay and isPostTradingHour(dateNow) # postTrading Refresh
+        preTradeRefresh = false
+
+        if !postTradeRefresh # only once
+            postTradeRefresh = true
+            eodRefreshAttempts = 0
+
+    #endregion
+        
+
+    if eodLastRefreshDate != todayStr # start new attempts on new day
+        eodLastRefreshDate = todayStr
+        eodRefreshAttempts = 0
+    
+    if eodRefreshAttempts >= eodRefreshMaxAttempts # maxxed out
+        log "EOD refresh attempt limit reached (#{eodRefreshMaxAttempts}) - skipping"
         return
-    eodTopUpAttempts++
-    log "EOD top-up attempt #{eodTopUpAttempts}/#{maxEodTopUpAttempts}"
+
+    eodRefreshAttempts++
+    log "EOD top-up attempt #{eodRefreshAttempts}/#{eodRefreshMaxAttempts}"
+    
+    # Force Refresh for all our liveData Symbols
     for symbol in liveDataSymbols
-        dataM.forceLoadNewestStockData(symbol)
+        dataM.forceLoadNewestStockData(symbol, includeToday)
     return
+
+
 
 ############################################################
 export startLiveDataHeartbeat = ->
     log "startLiveDataHeartbeat"
+    # for live data retrieval
     liveDataHeartbeat()
     setInterval(liveDataHeartbeat, liveDataHeartbeatMS)
+
+    # best Effort keeping EOD data up to date :-)
+    liveDataEODRefresh()
+    setInterval(liveDataEODRefresh, liveDataEODRefreshMS)
     return
 
 #endregion

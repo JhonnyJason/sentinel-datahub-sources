@@ -45,15 +45,18 @@ export checkSymbolsMS = 3_600_000 # ~1h
 export liveDataSymbols = [ "HYG", "SPY" ]
 # export liveDataHeartbeatMS = 420_000 # 7m
 export liveDataHeartbeatMS = 3_000_000 # 50 min
+export liveDataEODRefreshMS = 3_600_000 # 1h
+export eodRefreshMaxAttempts = 3
 
 ############################################################
 export name = "Sentinel Datahub"
-export version = "v0.2.0"
+export version = "v0.2.1"
 
 ############################################################
 export accessManagerId = localCfg.accessManagerId || ""
 export snitchSocket = localCfg.snitchSocket || "/run/bugsnitch.sk"
 
+############################################################
 export legalOrigins = [
     "localhost", 
     "localhost:3333", 
