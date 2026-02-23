@@ -46,4 +46,8 @@ export unsetAccess = (authCode) ->
     return
 
 ############################################################
-export hasAccess = (authCode) -> authCodeToHandle[authCode]?
+export hasAccess = (authCode) -> 
+    log "hasAccess #{authCode}"
+    weHave = authCodeToHandle[authCode]?
+    log "we have accesss: #{weHave}"
+    return weHave
