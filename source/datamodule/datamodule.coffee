@@ -18,10 +18,9 @@ toStorageId = (name) -> return "did:#{name.replace(".", "-")}"
 freshnessThreshold = 5
 
 ############################################################
-export initialize = (cfg) ->
+export initialize = (c) ->
     log "initialize"
-    if cfg.freshnessThreshold? then freshnessThreshold = cfg.freshnessThreshold
-
+    if c.freshnessThreshold? then freshnessThreshold = c.freshnessThreshold
     return
 
 ############################################################
@@ -73,7 +72,8 @@ prependDataSet = (older, existing) ->
 
     if gapSize > 0
         log "WARNING: gap detected between #{older.meta.endDate} and #{existing.meta.startDate}"
-        lastClose = older.data[older.data.length - 1][2]
+        lastDP = older.data[older.data.length - 1]
+        lastClose = lastDP[lastDP.length - 1]
         gapFill = fillGap(gapSize, lastClose)
     if gapSize < 0 
         log "WARNING: gap was negative! This should NEVER happen!"
@@ -87,6 +87,7 @@ prependDataSet = (older, existing) ->
             interval: existing.meta.interval
             historyComplete: older.meta.historyComplete
             splitFactors: mergeSplitFactors(older.meta.splitFactors, existing.meta.splitFactors)
+            version: older.meta.version
         }
         data: [...older.data, ...gapFill, ...existing.data]
     }
@@ -100,7 +101,8 @@ appendDataSet = (existing, newer) ->
         
     if gapSize > 0
         log "WARNING: gap detected between #{existing.meta.endDate} and #{newer.meta.startDate}"
-        lastClose = existing.data[existing.data.length - 1][2]
+        lastDP = existing.data[existing.data.length - 1]
+        lastClose = lastDP[lastDP.length - 1]
         gapFill = fillGap(gapSize, lastClose)
     if gapSize < 0 
         log "WARNING: gap was negative! This should NEVER happen!"
@@ -114,13 +116,14 @@ appendDataSet = (existing, newer) ->
             interval: existing.meta.interval
             historyComplete: existing.meta.historyComplete
             splitFactors: mergeSplitFactors(existing.meta.splitFactors, newer.meta.splitFactors)
+            version: newer.meta.version
         }
         data: [...existing.data, ...gapFill, ...newer.data]
     }
 
 ############################################################
 # Generate gap-fill array with latest closeValue
-fillGap = (gapSize, closeValue) -> Array(gapSize).fill([closeValue, closeValue, closeValue])
+fillGap = (gapSize, closeValue) -> Array(gapSize).fill([closeValue])
 
 ############################################################
 sliceByYears = (dataSet, yearsBack) ->
@@ -146,6 +149,7 @@ sliceByYears = (dataSet, yearsBack) ->
             interval: dataSet.meta.interval
             historyComplete: false  # sliced data is not complete
             splitFactors: dataSet.meta.splitFactors
+            version: dataSet.meta.version
         }
         data: dataSet.data.slice(sliceIndex)
     }
@@ -165,8 +169,8 @@ getStockData = (symbol) ->
         if dataSet? then store.save(id, dataSet)
         return dataSet
 
-    # Legacy data without split factors? -> full re-fetch with proper normalization
-    if !dataSet.meta?.splitFactors?
+    # Legacy data? -> full re-fetch with proper normalization
+    unless dataSet.meta?.version  >= mrktStack.dataStructureVersion
         log "Legacy data detected for #{symbol} — recorrecting"
         return recorrectData(symbol)
 
@@ -231,8 +235,8 @@ export forceLoadNewestStockData = (symbol, includeToday = false) ->
         if dataSet? then store.save(id, dataSet)
         return dataSet
 
-    # Legacy data without split factors? -> full re-fetch with proper normalization
-    if !dataSet.meta?.splitFactors?
+    # Outdated data structure version? -> full re-fetch with proper normalization
+    unless dataSet.meta?.version >= mrktStack.dataStructureVersion
         log "Legacy data detected for #{symbol} — recorrecting"
         await recorrectData(symbol)
         return

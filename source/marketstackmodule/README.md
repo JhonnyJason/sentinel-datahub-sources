@@ -203,6 +203,7 @@ All endpoints return errors in this format:
 All data normalized to:
 ```
 DataPoint: [high, low, close]  // 3 floats
+GapFillPoint: [lastClose] // 1 float -> we may reliably distinguish trading days
 
 DataSet: {
   meta: { startDate: "YYYY-MM-DD", endDate: "YYYY-MM-DD", interval: "1d" },
@@ -212,7 +213,7 @@ DataSet: {
 Return: { "<symbol>/<currency>": DataSet, ... }
 ```
 
-**Gap-fill rule:** Missing trading days → `[lastClose, lastClose, lastClose]`
+**Gap-fill rule:** Missing trading days → `[lastClose]`
 
 **Date handling convention:**
 - All date arithmetic uses UTC midnight: `new Date(dateStr + "T00:00:00Z")`

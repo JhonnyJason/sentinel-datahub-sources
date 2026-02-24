@@ -84,13 +84,15 @@ Uses `cached-persistentstate` for durable storage:
 All data uses the unified format (see overview.md):
 
 ```
-DataPoint: [high, low, close]  // 3 floats
+DataPoint: [high, low, close]  // 3 floats (trading day)
+GapFillPoint: [lastClose]      // 1 float (non-trading day, distinguishable by length)
 
 DataSet: {
   meta: {
     startDate: "YYYY-MM-DD",
     endDate: "YYYY-MM-DD",
     interval: "1d",
+    version: 1,              // data structure version (from producer)
     splitFactors: [
       {f: 1, end: "2000-06-20"},    // cumulative factor 1 until this date
       {f: 2, end: "2005-02-27"},    // 2:1 split occurred
@@ -108,6 +110,12 @@ DataSet: {
 - Last entry (no `end`) = current ongoing factor
 - On append (top-up): the current cumulative factor is passed to the API fetch so new data is normalized to the same scale
 - Legacy data without `splitFactors` needs re-correction via `recorrectData(symbol)`
+
+### Data Structure Versioning
+- `dataStructureVersion` is defined and exported by the producer (marketstackmodule)
+- Stamped into `meta.version` of every produced DataSet
+- On load, datamodule checks: `unless meta.version >= dataStructureVersion` → triggers `recorrectData`
+- Handles legacy data without version (undefined >= N → false → recorrection)
 
 **Date handling convention:**
 - All date arithmetic uses UTC midnight: `new Date(dateStr + "T00:00:00Z")`

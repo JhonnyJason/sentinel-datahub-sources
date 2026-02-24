@@ -13,11 +13,12 @@ import { nextDay, prevDay, generateDateRange, isTradingHour,
 import * as dataM from "./datamodule.js"
 import * as liveFeed from "./livefeedmodule.js"
 
+############################################################
+export dataStructureVersion = 1
 
 ############################################################
 accessToken = null
 apiURL = null
-
 
 ############################################################
 symbolsDataPath = path.resolve(".", "symbols.json")
@@ -101,7 +102,7 @@ liveDataEODRefresh = ->
     dateNow = new Date()
     todayStr = dateNow.toISOString().substring(0, 10)
     tradingDay = isTradingDay(dateNow)
-    
+
     includeToday = tradingDay and isPostTradingHour(dateNow)
 
     #region additional Refresh
@@ -163,7 +164,7 @@ export startLiveDataHeartbeat = ->
 #region Stock EOD API - Pull Model
 
 ############################################################
-# Main export: Get all available history for a ticker
+# Get all available history for a ticker
 # Returns: DataSet with meta.historyComplete flag, or null on error/no data
 export getStockAllHistory = (ticker) ->
     log "getStockAllHistory: #{ticker}"
@@ -360,37 +361,6 @@ normalizeEodResponse = (apiData, ticker, startFactor = 1.0) ->
             prevSplit = splitFactors[splitFactors.length - 1]
             if prevSplit? then prevSplit.end = prevDay(date)
 
-            closeRM2 = apiData[i-2]?.close
-            adjCloseRM2 = apiData[i-2]?.adj_close
-            closeRM1 = prevRecord.close
-            adjCloseRM1 = prevRecord.adj_close
-            closeRN =  record.close
-            adjCloseRN =  record.adj_close
-            closeRP1 = apiData[i+1]?.close
-            adjCloseRP1 = apiData[i+1]?.adj_close
-            closeRP2 = apiData[i+2]?.close
-            adjCloseRP2 = apiData[i+2]?.adj_close
-
-            olog { 
-                factor, 
-                split_factor: record.split_factor 
-                rawChange, 
-                adjChange, 
-                absDelta: Math.abs(rawChange - adjChange), 
-                isPreAdjusted,
-                shouldApply,
-                closeRM2,
-                adjCloseRM2,
-                adjCloseRM1,
-                closeRN,
-                adjCloseRN,
-                closeRP1,
-                adjCloseRP1,
-                closeRP2
-                adjCloseRP2
-            }
-            
-            
             # Add new factor period
             factor *= record.split_factor
             splitFactors.push({f: factor, applied: shouldApply})
@@ -410,12 +380,13 @@ normalizeEodResponse = (apiData, ticker, startFactor = 1.0) ->
     # Build DataSet
     startDate = dataPoints[0].date
     endDate = dataPoints[dataPoints.length - 1].date
-
+    version = dataStructureVersion
+    
     # Convert to array format [high, low, close]
     data = dataPoints.map((p) -> [p.high, p.low, p.close])
 
     return {
-        meta: { startDate, endDate, interval: "1d", splitFactors }
+        meta: { startDate, endDate, interval: "1d", splitFactors, version }
         data: data
         # Keep raw dates for gap-filling (will be removed after)
         _dates: dataPoints.map((p) -> p.date)
@@ -424,7 +395,7 @@ normalizeEodResponse = (apiData, ticker, startFactor = 1.0) ->
 
 ############################################################
 # Fill gaps in data (missing trading days)
-# Missing days get [lastClose, lastClose, lastClose]
+# Missing days get [lastClose] (single element, distinguishable by length)
 gapFillDataSet = (dataSet) ->
     log "gapFillDataSet"
 
@@ -450,8 +421,8 @@ gapFillDataSet = (dataSet) ->
             filledData.push(dateMap[date])
             lastClose = dateMap[date][2]
         else
-            # Gap: use last close for all values
-            filledData.push([lastClose, lastClose, lastClose])
+            # Gap: use last close as the one value
+            filledData.push([lastClose])
 
     return {
         meta: meta
