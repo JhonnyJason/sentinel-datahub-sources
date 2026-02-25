@@ -31,11 +31,7 @@ authenticate = (req, ctx) ->
     return "" # no error = authenticated 
 
 ############################################################
-getData = (args) -> 
-    result = await dataM.getData(args.dataKey, args.yearsBack)
-    log Object.keys(result)
-    if result.meta? then log Object.keys(result.meta)
-    return result
+getData = (args) -> await dataM.getData(args.dataKey, args.yearsBack)
 
 #endregion
 
@@ -68,7 +64,8 @@ sciAdd("getEODHLCData", getData, {
             endDate: NONEMPTYSTRING,
             interval: "1d",
             splitFactors: ARRAY,
-            historyComplete: BOOLEAN
+            historyComplete: BOOLEAN,
+            version: NUMBER
         },
         data: ARRAY
     }
