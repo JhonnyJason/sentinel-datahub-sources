@@ -56,6 +56,18 @@ getCumulativeFactor = (dataSet) ->
     return 1.0 if last.applied == false # pre-adjusted data: source handles splits
     return last.f
 
+getSplitFactorState = (dataSet) ->
+    factor = 1.0
+    applied = true
+
+    sf = dataSet.meta?.splitFactors
+    if !sf? or sf.length == 0 then return { factor, applied }
+
+    last = sf[sf.length - 1]
+    factor = last.f
+    applied = last.applied
+    return { factor, applied }
+    
 ############################################################
 # Merge split factor arrays on append (existing + newer)
 mergeSplitFactors = (existingFactors, newerFactors) ->
@@ -183,8 +195,9 @@ getStockData = (symbol) ->
 
     # Is data fresh enough? -> top-up with newer data
     if !isFresh(dataSet, freshnessThreshold)
-        cf = getCumulativeFactor(dataSet)
-        newerData = await mrktStack.getStockNewerHistory(symbol, dataSet.meta.endDate, cf)
+        # cf = getCumulativeFactor(dataSet)
+        { factor, applied } = getSplitFactorState(dataSet)
+        newerData = await mrktStack.getStockNewerHistory(symbol, dataSet.meta.endDate, factor, applied)
         if newerData?
             dataSet = appendDataSet(dataSet, newerData)
             store.save(id, dataSet)
@@ -251,8 +264,9 @@ export forceLoadNewestStockData = (symbol, includeToday = false) ->
         expectedEnd = lastTradingDay(yesterday)
 
     if dataSet.meta.endDate < expectedEnd
-        cf = getCumulativeFactor(dataSet)
-        newerData = await mrktStack.getStockNewerHistory(symbol, dataSet.meta.endDate, cf)
+        # cf = getCumulativeFactor(dataSet)
+        { factor, applied } =  getSplitFactorState(dataSet)
+        newerData = await mrktStack.getStockNewerHistory(symbol, dataSet.meta.endDate, factor, applied)
         if newerData?
             dataSet = appendDataSet(dataSet, newerData)
             store.save(id, dataSet)

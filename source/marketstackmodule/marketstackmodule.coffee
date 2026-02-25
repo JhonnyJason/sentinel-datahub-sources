@@ -219,7 +219,7 @@ export getStockOlderHistory = (ticker, olderThan) ->
 ############################################################
 # Get history newer than a given date (newerThan+1day → today)
 # Returns: DataSet or null
-export getStockNewerHistory = (ticker, newerThan, startFactor = 1.0) ->
+export getStockNewerHistory = (ticker, newerThan, startFactor = 1.0, applied = true) ->
     log "getStockNewerHistory: #{ticker} newerThan=#{newerThan} startFactor=#{startFactor}"
 
     date_from = nextDay(newerThan)
@@ -235,7 +235,7 @@ export getStockNewerHistory = (ticker, newerThan, startFactor = 1.0) ->
         log "No newer data available"
         return null
 
-    dataSet = normalizeEodResponse(fetchResult.data, ticker, startFactor)
+    dataSet = normalizeEodResponse(fetchResult.data, ticker, startFactor, applied)
     dataSet = gapFillDataSet(dataSet)
 
     log "Returning #{dataSet.data.length} newer data points"
@@ -308,7 +308,7 @@ fetchEodPage = (ticker, { offset, limit, date_from, date_to }) ->
 # Normalize API response to DataSet format
 # Input: array of EOD records from API
 # Output: { meta: { startDate, endDate, interval }, data: [[h,l,c], ...] }
-normalizeEodResponse = (apiData, ticker, startFactor = 1.0) ->
+normalizeEodResponse = (apiData, ticker, startFactor = 1.0, applied = true) ->
     log "normalizeEodResponse: #{apiData.length} records, startFactor=#{startFactor}"
 
     if apiData.length == 0
@@ -320,7 +320,7 @@ normalizeEodResponse = (apiData, ticker, startFactor = 1.0) ->
     # Extract dates and price data, track split factor history
     factor = startFactor
     dataPoints = []
-    splitFactors = [ { f: factor, applied: true } ] # is applied: true always good here?
+    splitFactors = [ { f: factor, applied } ]
     prevRecord = null
 
     shouldApply = false
@@ -381,7 +381,7 @@ normalizeEodResponse = (apiData, ticker, startFactor = 1.0) ->
     startDate = dataPoints[0].date
     endDate = dataPoints[dataPoints.length - 1].date
     version = dataStructureVersion
-    
+
     # Convert to array format [high, low, close]
     data = dataPoints.map((p) -> [p.high, p.low, p.close])
 
