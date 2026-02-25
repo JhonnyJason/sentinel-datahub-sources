@@ -31,7 +31,11 @@ authenticate = (req, ctx) ->
     return "" # no error = authenticated 
 
 ############################################################
-getData = (args) -> await dataM.getData(args.dataKey, args.yearsBack)
+getData = (args) -> 
+    result = await dataM.getData(args.dataKey, args.yearsBack)
+    log Object.keys(result)
+    if result.meta? then log Object.keys(result.meta)
+    return result
 
 #endregion
 

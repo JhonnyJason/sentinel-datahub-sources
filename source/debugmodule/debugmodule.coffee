@@ -6,6 +6,7 @@ modulesToDebug = {
     # authmodule: true
     # bugsnitch: true
     datamodule: true
+    datasci: true
     # livefeedmodule: true
     marketstackmodule: true
     # scimodule: true
