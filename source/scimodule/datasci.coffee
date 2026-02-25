@@ -65,7 +65,7 @@ sciAdd("getEODHLCData", getData, {
             interval: "1d",
             splitFactors: ARRAY,
             historyComplete: BOOLEAN,
-            version: NUMBER
+            version: NUMBERORNOTHING
         },
         data: ARRAY
     }
