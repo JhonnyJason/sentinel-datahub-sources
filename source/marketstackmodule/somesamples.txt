@@ -1,0 +1,35 @@
+{"pagination":{"limit":1000,"offset":0,"count":124,"total":"124"},"data":[{"benchmark":"adx_general"},{"benchmark":"ase"},{"benchmark":"aspi"},{"benchmark":"asx200"},{"benchmark":"asx_all_share"},{"benchmark":"athens_general"},{"benchmark":"atx"},{"benchmark":"au50"},{"benchmark":"australia_all_ordinaries"},{"benchmark":"be20"},{"benchmark":"belex_15"},{"benchmark":"bet"},{"benchmark":"bist_100"},{"benchmark":"blom"},{"benchmark":"bsx"},{"benchmark":"bux"},{"benchmark":"bvpsi"},{"benchmark":"cfg_25"},{"benchmark":"ch20"},{"benchmark":"ch50"},{"benchmark":"colcap"},{"benchmark":"copenhagen"},{"benchmark":"crobex"},{"benchmark":"cse_general"},{"benchmark":"csi_300"},{"benchmark":"de40"},{"benchmark":"de_mid"},{"benchmark":"de_small"},{"benchmark":"dfm_general"},{"benchmark":"dsei"},{"benchmark":"dse_broad"},{"benchmark":"ecuador_general"},{"benchmark":"egx_30"},{"benchmark":"es35"},{"benchmark":"estirad"},{"benchmark":"eu100"},{"benchmark":"eu350"},{"benchmark":"eu50"},{"benchmark":"eu600"},{"benchmark":"euro_stoxx_banks"},{"benchmark":"fklci"},{"benchmark":"fr40"},{"benchmark":"gaborone"},{"benchmark":"gb100"},{"benchmark":"ggseci"},{"benchmark":"helsinki"},{"benchmark":"helsinki_25"},{"benchmark":"hk50"},{"benchmark":"hnx"},{"benchmark":"ibc"},{"benchmark":"ibovespa"},{"benchmark":"icex"},{"benchmark":"igpa"},{"benchmark":"ipc"},{"benchmark":"iseq"},{"benchmark":"it40"},{"benchmark":"jci"},{"benchmark":"jp225"},{"benchmark":"jpvix"},{"benchmark":"jse"},{"benchmark":"kase"},{"benchmark":"kse_100"},{"benchmark":"kuwait_all_share"},{"benchmark":"lsx_composite"},{"benchmark":"luxx"},{"benchmark":"mbi_10"},{"benchmark":"mdax"},{"benchmark":"merval"},{"benchmark":"moex"},{"benchmark":"monex"},{"benchmark":"mse"},{"benchmark":"mse_20"},{"benchmark":"msm_30"},{"benchmark":"nairobi_20"},{"benchmark":"nairobi_all_share"},{"benchmark":"nifty_50"},{"benchmark":"nl25"},{"benchmark":"nse-all_share"},{"benchmark":"nse_all_share"},{"benchmark":"nsx_overall"},{"benchmark":"nzx_50"},{"benchmark":"oslo"},{"benchmark":"peru_general"},{"benchmark":"pfts"},{"benchmark":"psei"},{"benchmark":"psi"},{"benchmark":"psi_20"},{"benchmark":"psi_geral"},{"benchmark":"px"},{"benchmark":"qe"},{"benchmark":"riga"},{"benchmark":"sa40"},{"benchmark":"saall"},{"benchmark":"sasx-10"},{"benchmark":"sasx_10"},{"benchmark":"sax"},{"benchmark":"sbitop"},{"benchmark":"sdax"},{"benchmark":"semdex"},{"benchmark":"sensex"},{"benchmark":"set_50"},{"benchmark":"shanghai"},{"benchmark":"shanghai_50"},{"benchmark":"sofix"},{"benchmark":"sti"},{"benchmark":"stockholm"},{"benchmark":"stockholm_30"},{"benchmark":"ta-125"},{"benchmark":"taiwan_stock_market_index"},{"benchmark":"tallinn"},{"benchmark":"tasi"},{"benchmark":"tedpix"},{"benchmark":"tsi"},{"benchmark":"tsx"},{"benchmark":"tun"},{"benchmark":"us100"},{"benchmark":"us1000"},{"benchmark":"us30"},{"benchmark":"us500"},{"benchmark":"use_all_share"},{"benchmark":"vilnius"},{"benchmark":"vn"},{"benchmark":"wig"},{"benchmark":"zsi_industrials"}]}
+
+
+
+[{"name":"Amundi S\u0026amp;P 500 Screened UCITS ETF - Acc","ticker":"S500.PA","has_intraday":false,"has_eod":true,"stock_exchange":{"name":"EURONEXT - EURONEXT PARIS","acronym":"","mic":"XPAR"}},
+{"name":"Amundi S\u0026amp;P 500 Screened UCITS ETF - Acc EUR HE","ticker":"S500H.PA","has_intraday":false,"has_eod":true,"stock_exchange":{"name":"EURONEXT - EURONEXT PARIS","acronym":"","mic":"XPAR"}},
+{"name":"Amundi S\u0026amp;P 500 Screened UCITS ETF - Acc","ticker":"S500.MI","has_intraday":false,"has_eod":true,"stock_exchange":{"name":"BORSA ITALIANA S.P.A.","acronym":"","mic":"XMIL"}},
+{"name":"Amundi S\u0026amp;P 500 Screened UCITS ETF - Acc EUR HE","ticker":"S500H.MI","has_intraday":false,"has_eod":true,"stock_exchange":{"name":"BORSA ITALIANA S.P.A.","acronym":"","mic":"XMIL"}},
+{"name":"","ticker":"S500P.XC","has_intraday":false,"has_eod":true,"stock_exchange":{"name":"CBOE EUROPE - CXE ORDER BOOKS","acronym":"CBOE EUROPE","mic":"CHIX"}},
+{"name":"","ticker":"S500P.XD","has_intraday":false,"has_eod":true,"stock_exchange":{"name":"CBOE EUROPE - DXE ORDER BOOKS (NL)","acronym":"CBOE EU DXE","mic":"CEUX"}},
+{"name":"","ticker":"S500HM.XD","has_intraday":false,"has_eod":true,"stock_exchange":{"name":"CBOE EUROPE - DXE ORDER BOOKS (NL)","acronym":"CBOE EU DXE","mic":"CEUX"}},
+{"name":"","ticker":"S500M.XD","has_intraday":false,"has_eod":true,"stock_exchange":{"name":"CBOE EUROPE - DXE ORDER BOOKS (NL)","acronym":"CBOE EU DXE","mic":"CEUX"}}]
+
+
+
+[
+    {"date":"2025-11-17","split_factor":10.0,"stock_split":null,"symbol":"NFLX"},
+    {"date":"2024-12-04","split_factor":4.0,"stock_split":null,"symbol":"ANET"},
+    {"date":"2022-07-18","split_factor":20.0,"stock_split":null,"symbol":"GOOGL"},
+    {"date":"2022-06-06","split_factor":20.0,"stock_split":null,"symbol":"AMZN"},
+    {"date":"2021-11-18","split_factor":4.0,"stock_split":null,"symbol":"ANET"},
+    {"date":"2020-08-31","split_factor":4.0,"stock_split":null,"symbol":"AAPL"},
+    {"date":"2015-07-15","split_factor":7.0,"stock_split":null,"symbol":"NFLX"},
+    {"date":"2014-06-09","split_factor":7.0,"stock_split":null,"symbol":"AAPL"},
+    {"date":"2014-04-03","split_factor":2.0,"stock_split":null,"symbol":"GOOGL"},
+    {"date":"2005-02-28","split_factor":2.0,"stock_split":null,"symbol":"AAPL"},
+    {"date":"2004-02-12","split_factor":2.0,"stock_split":null,"symbol":"NFLX"},
+    {"date":"2002-04-17","split_factor":2.0,"stock_split":null,"symbol":"AMAT"},
+    {"date":"2000-06-21","split_factor":2.0,"stock_split":null,"symbol":"AAPL"},
+    {"date":"2000-03-16","split_factor":2.0,"stock_split":null,"symbol":"AMAT"},
+    {"date":"1999-09-02","split_factor":2.0,"stock_split":null,"symbol":"AMZN"},
+    {"date":"1999-01-05","split_factor":3.0,"stock_split":null,"symbol":"AMZN"},
+    {"date":"1998-06-02","split_factor":2.0,"stock_split":null,"symbol":"AMZN"},
+    {"date":"1997-10-14","split_factor":2.0,"stock_split":null,"symbol":"AMAT"}
+]
