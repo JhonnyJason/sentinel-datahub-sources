@@ -25,6 +25,12 @@ import { setAccess, unsetAccess } from "./accessmodule.js"
 #endregion
 
 ############################################################
+setAdminKeys = ->
+    ## TODO implement
+    console.log "setAdminKeys - not implemented yet!"
+    return
+
+############################################################
 ## Config Object with all options
 # { 
 #   bodySizeLimit: # limit body size for this route -> whole payload
@@ -54,6 +60,15 @@ sciAdd("revokeAccess", unsetAccess, {
     bodySizeLimit: 1024, 
     authOption: signatureAuth,
     argsSchema: STRINGHEX32
+})
+#Response is 204 when signature is valid 403 otherwise
+
+
+############################################################
+sciAdd("setAdminKeys", setAdminKeys, {
+    bodySizeLimit: 4096, 
+    authOption: signatureAuth,
+    argsSchema: { adminKeys: ARRAY }
 })
 #Response is 204 when signature is valid 403 otherwise
 
