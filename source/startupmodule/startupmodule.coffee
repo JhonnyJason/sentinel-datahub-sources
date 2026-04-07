@@ -18,7 +18,10 @@ export serviceStartup = ->
     startLiveDataHeartbeat()
     await prepareAndExpose()
     
-    # # experiment - check Netflix Data
-    # dataSet = await getData("NFLX", 30)
+    # experiment for testing
+    # dataSet = await getData("WMT", 30)
+    # dataSet = await getData("AAPL", 30)
+    # dataSet = await getData("GOOGL", 30)
+    # dataSet = await getData("ANET", 30)
     # olog dataSet.meta.splitFactors
     return

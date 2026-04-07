@@ -10,8 +10,10 @@ import path from "node:path"
 import { nextDay, prevDay, generateDateRange, isTradingHour,
     isPreTradingHour, isPostTradingHour, isTradingDay } from "./dateutilsmodule.js"
 
+############################################################
 import * as dataM from "./datamodule.js"
 import * as liveFeed from "./livefeedmodule.js"
+import { request } from "./throttledrequest.js"
 
 ############################################################
 export dataStructureVersion = 1
@@ -76,7 +78,7 @@ liveDataHeartbeat = ->
             })
 
             url = "#{apiURL}/intraday/latest?#{params.toString()}"
-            body = await requestQueue(url)
+            body = await request(url)
 
             if body.error?
                 log "liveData API error: #{body.error.code}: #{body.error.message}"
@@ -220,25 +222,31 @@ export getStockOlderHistory = (ticker, olderThan) ->
 # Get history newer than a given date (newerThan+1day → today)
 # Returns: DataSet or null
 export getStockNewerHistory = (ticker, newerThan, startFactor = 1.0, applied = true) ->
-    log "getStockNewerHistory: #{ticker} newerThan=#{newerThan} startFactor=#{startFactor}"
+    log "getStockNewerHistory: #{ticker} newerThan:#{newerThan} startFactor:#{startFactor} applied:#{applied}"
 
     date_from = nextDay(newerThan)
     fetchResult = await fetchAllEodPages(ticker, { date_from })
     return null unless fetchResult?
+    # olog fetchResult
 
     if fetchResult.error?
         err = fetchResult.error
         if isPlanLimitError(err) then log "Plan limit reached: #{err.code}"
         else log "API error: #{err.code}: #{err.message}"
+        # Do something on error case?
+        return null
 
-    if fetchResult.data.length == 0
+    data  = fetchResult.data
+    # olog data
+    if !data or data.length == 0
         log "No newer data available"
         return null
 
-    dataSet = normalizeEodResponse(fetchResult.data, ticker, startFactor, applied)
+    dataSet = normalizeEodResponse(data, ticker, startFactor, applied)
     dataSet = gapFillDataSet(dataSet)
+    # olog dataSet
 
-    log "Returning #{dataSet.data.length} newer data points"
+    log "Returning #{data.length} newer data points"
     return dataSet
 
 
@@ -293,7 +301,7 @@ fetchEodPage = (ticker, { offset, limit, date_from, date_to }) ->
     url = "#{apiURL}/eod?#{params.toString()}"
 
     try
-        body = await requestQueue(url)
+        body = await request(url)
     catch err
         log "Network/parse error: #{err.message}"
         return { error: { code: "network_error", message: err.message } }
@@ -309,7 +317,7 @@ fetchEodPage = (ticker, { offset, limit, date_from, date_to }) ->
 # Input: array of EOD records from API
 # Output: { meta: { startDate, endDate, interval }, data: [[h,l,c], ...] }
 normalizeEodResponse = (apiData, ticker, startFactor = 1.0, applied = true) ->
-    log "normalizeEodResponse: #{apiData.length} records, startFactor=#{startFactor}"
+    log "normalizeEodResponse: #{apiData.length} records; startFactor:#{startFactor} applied:#{applied}"
 
     if apiData.length == 0
         return null
@@ -323,7 +331,7 @@ normalizeEodResponse = (apiData, ticker, startFactor = 1.0, applied = true) ->
     splitFactors = [ { f: factor, applied } ]
     prevRecord = null
 
-    shouldApply = false
+    shouldApply = applied # set to initial apply state
 
     for record,i in apiData
         date = record.date.substring(0, 10)
@@ -366,10 +374,12 @@ normalizeEodResponse = (apiData, ticker, startFactor = 1.0, applied = true) ->
             splitFactors.push({f: factor, applied: shouldApply})
 
         if shouldApply # adjust to carry factor
+            # log "shouldApply -> #{record.close} * #{factor} = #{record.close * factor}"
             high = record.high * factor
             low = record.low * factor
             close = record.close * factor
         else
+            # log "no Application of factor!"
             high = record.high
             low = record.low
             close = record.close

@@ -4,7 +4,7 @@ module.exports = {
             "secret-manager-crypto-utils": "^0.3.1",
             "thingy-schema-validate": "^0.0.7",
             "validatabletimestamp": "^0.0.5",
-            "ws": "^8.19.0"
+            "ws": "^8.20.0"
         }
     }
 }

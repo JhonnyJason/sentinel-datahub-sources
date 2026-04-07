@@ -5,6 +5,9 @@ import { createLogFunctions } from "thingy-debug"
 #endregion
 
 ############################################################
+import * as bs from "./bugsnitch.js"
+
+############################################################
 import * as mrktStack from "./marketstackmodule.js"
 import * as store from "./storagemodule.js"
 import * as symbols from "./symbolsmodule.js"
@@ -20,11 +23,71 @@ freshnessThreshold = 5
 ############################################################
 export initialize = (c) ->
     log "initialize"
-    if c.freshnessThreshold? then freshnessThreshold = c.freshnessThreshold
+    if c.freshnessThreshold? then freshnessThreshold = c.freshnessThreshold    
     return
 
 ############################################################
 #region Local Functions
+
+weSplitInLastXDays = (splits, cnt) ->
+    # no split happened
+    if splits.length < 2 then return false
+
+    # we had a split before
+    current = splits[splits.length - 1]
+    splitBefore = splits[splits.length - 2]
+
+    # check if that happened wihin the range of the last cnt days
+    checkStartDate = new Date()
+    checkStartDate.setDate(checkStartDate.getDate() - cnt)
+    # YYYYMMDD is actually YYYY-MM-DD -> 10 chars
+    checkYYYYMMDD = checkStartDate.toISOString().slice(0, 10)
+    # end date is already in format YYYY-MM-DD
+    return splitBefore.end > checkYYYYMMDD 
+
+
+smoothenData = (dataSet) ->
+    log "smoothenData"
+    daysBack = 60
+    splits = dataSet.meta.splitFactors
+    lastSplit = splits[splits.length - 1]
+    f = lastSplit.f
+    if f == 1 then return false
+
+    ## We need to adjust logic in the special case having had a split just within the last 60 days...
+    weSplit = weSplitInLastXDays(splits, daysBack)
+    if weSplit then bs.report("@smoothenData: we had a split within the last 60 days! We donot handle this case yet!")
+
+
+    corrected = false
+    # now we want to check if any of the new values were not adjusted for the split factor
+    # therefore we start from the oldest relevant to the newest datapoint
+    # we assume that the 60 days old datapoints are adjusted 
+    # only the most recent ones might not be adjusted
+    for i in [daysBack..1] # range: 60 - 1 
+        # log "checking index #{i}..."
+        dP = dataSet.data[dataSet.data.length - i]
+        prDP = dataSet.data[dataSet.data.length - (i + 1)]
+        
+        # log dP # check dataPoint
+        # log prDP # check previousDataPoint
+
+        # price difference between corrected current and previous price
+        deltaCorrected = Math.abs((dP[0] * f) - prDP[0]) 
+        # price difference between current and previous price
+        deltaCurrent = Math.abs(dP[0] - prDP[0]) 
+        
+        # if the corrected dP was closer to the previous price than the current dP
+        # then probably the split factor was missing and we should correct it 
+        if deltaCorrected < deltaCurrent 
+            # correct all values for the dataPoint
+            ( dP[j] = val * f ) for val,j in dP
+            corrected = true # we still have to correct all newer dataPoints
+            
+        # log dP
+
+    # corrected is only false if there was no single dataPoint to be corrected
+    return corrected
 
 ############################################################
 #region Helper Functions
@@ -187,7 +250,9 @@ getStockData = (symbol) ->
         return recorrectData(symbol)
 
     # Is history incomplete? -> try to get older data
+    ## TODO remove historyComplete flag as it is not reliably identifiable
     if !dataSet.meta.historyComplete
+        log "incomplete History -> get older Data"
         olderData = await mrktStack.getStockOlderHistory(symbol, dataSet.meta.startDate)
         if olderData?
             dataSet = prependDataSet(olderData, dataSet)
@@ -195,12 +260,18 @@ getStockData = (symbol) ->
 
     # Is data fresh enough? -> top-up with newer data
     if !isFresh(dataSet, freshnessThreshold)
-        # cf = getCumulativeFactor(dataSet)
+        log "data not Fresh -> get newer Data"
         { factor, applied } = getSplitFactorState(dataSet)
+        olog { factor, applied }
         newerData = await mrktStack.getStockNewerHistory(symbol, dataSet.meta.endDate, factor, applied)
+        # olog newerData
         if newerData?
             dataSet = appendDataSet(dataSet, newerData)
             store.save(id, dataSet)
+
+    ## TODO remove after we finished allData Updates
+    wasDamaged = smoothenData(dataSet)
+    if wasDamaged then store.save(id, dataSet)
 
     return dataSet
 

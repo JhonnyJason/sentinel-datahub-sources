@@ -5,10 +5,10 @@ modulesToDebug = {
     # accessmodule: true
     # authmodule: true
     # bugsnitch: true
-    datamodule: true
-    datasci: true
+    # datamodule: true
+    # datasci: true
     # livefeedmodule: true
-    marketstackmodule: true
+    # marketstackmodule: true
     # scimodule: true
     # startupmodule: true
     # tradovatemodule: true
