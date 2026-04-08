@@ -1,66 +1,72 @@
 ############################################################
-# Throttled Request Queue
-# MarketStack rate limit: 5 requests/second
-# Strategy: allow bursts of 5, only wait if the burst was faster than 1s
+# RequestGuard manages a Throttled Request Queue
+# Keeps timeframe parameters + only uses GET requests
+# Strategy: allows bursts of "maxPerWindow" requests then waits to complete the timewindow before any further request
 # Deduplication: identical URLs are coalesced — fetched once, result shared
-
-############################################################
-queue = []
-pending = new Map()  # url → [{resolve, reject}, ...]
-
-############################################################
-processing = false
-windowStart = 0
-windowCount = 0
-maxPerWindow = 5
-windowMS = 1001  # 1s + 1ms safety margin
 
 ############################################################
 waitMS = (ms) -> new Promise((res) -> setTimeout(res, ms))
 
 ############################################################
-processQueue = ->
-    return if processing or queue.length == 0
-    processing = true
+export class RequestGuard
+    constructor: (opts) ->
+        if !opts.maxPerWindow or !opts.windowMS 
+            throw new Error("RequestGuard.constructor: maxPerWindow and windowMS must be defined in the options!")
+        
+        @isBusy = false
+        @windowStart = 0
+        @windowCount = 0
+        @maxPerWindow = opts.maxPerWindow
+        @windowMS = opts.windowMS
+        
+        @queue = []
+        @pending = new Map()  # url → [{resolve, reject}, ...]
 
-    while queue.length > 0
-        # Start new measurement window
-        if windowCount == 0
-            windowStart = performance.now()
+    processQueue: => 
+        return if @isBusy or @queue.length == 0
+        @isBusy = true
 
-        windowCount++
-        url = queue.shift()
-        waiters = pending.get(url)
+        while @queue.length > 0
+            # Start new measurement window
+            if @windowCount == 0
+                @windowStart = performance.now()
 
-        try
-            response = await fetch(url)
-            unless response.ok
-                text = await response.text()
-                throw new Error("HTTP #{response.status}: #{text.slice(0, 200)}")
-            body = await response.json()
-            pending.delete(url)
-            w.resolve(body) for w in waiters
-        catch err
-            pending.delete(url)
-            w.reject(err) for w in waiters
+            @windowCount++
+            url = @queue.shift()
+            waiters = @pending.get(url)
 
-        # After 5 requests, check if we need to slow down
-        if windowCount >= maxPerWindow
-            elapsed = performance.now() - windowStart
-            remaining = windowMS - elapsed
-            if remaining > 0 then await waitMS(remaining)
-            windowCount = 0
+            try
+                response = await fetch(url)
+                if !response.ok
+                    text = await response.text()
+                    throw new Error("HTTP #{response.status}: #{text.slice(0, 200)}")
+                
+                body = await response.json()
+                @pending.delete(url)
+                w.resolve(body) for w in waiters
+            catch err
+                @pending.delete(url)
+                w.reject(err) for w in waiters
 
-    processing = false
-    processQueue()
-    return
+            # After maxPerWindow requests, check if we need to slow down
+            if @windowCount >= @maxPerWindow
+                elapsed = performance.now() - @windowStart
+                remaining = @windowMS - elapsed
+                if remaining > 0 then await waitMS(remaining)
+                @windowCount = 0
 
-############################################################
-export request = (url) ->
-    new Promise (resolve, reject) ->
-        if pending.has(url)
-            pending.get(url).push({ resolve, reject })
-            return
-        pending.set(url, [{ resolve, reject }])
-        queue.push(url)
-        processQueue() unless processing
+        @isBusy = false
+        return
+
+    request: (url) =>
+        promFun = (resolve, reject) =>
+            if @pending.has(url)
+                @pending.get(url).push({ resolve, reject })
+                return
+            @pending.set(url, [{ resolve, reject }])
+            @queue.push(url)
+
+        prom = new Promise(promFun) 
+        @processQueue() unless @isBusy
+        return prom
+

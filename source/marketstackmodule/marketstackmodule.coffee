@@ -13,7 +13,7 @@ import { nextDay, prevDay, generateDateRange, isTradingHour,
 ############################################################
 import * as dataM from "./datamodule.js"
 import * as liveFeed from "./livefeedmodule.js"
-import { request } from "./throttledrequest.js"
+import { request } from "./marketstackrequest.js"
 
 ############################################################
 export dataStructureVersion = 1
