@@ -69,7 +69,7 @@ liveDataHeartbeat = ->
 
         try
             apiSymbols = liveDataSymbols
-                .map((symbol) -> symbol.replace(/\./g, "-"))
+                # .map((symbol) -> symbol.replace(/\./g, "-"))
                 .join(",")
 
             params = new URLSearchParams({
@@ -286,7 +286,8 @@ fetchEodPage = (ticker, { offset, limit, date_from, date_to }) ->
     log "fetchEodPage: #{ticker} offset=#{offset}"
 
     # Normalize ticker (BRK.B → BRK-B)
-    apiTicker = ticker.replace(/\./g, "-")
+    # apiTicker = ticker.replace(/\./g, "-")
+    apiTicker = ticker # Normalization only for intraday endpoint...
 
     params = new URLSearchParams({
         access_key: accessToken
