@@ -29,6 +29,7 @@ export initialize = (c) ->
 ############################################################
 #region Local Functions
 
+############################################################
 weSplitInLastXDays = (splits, cnt) ->
     # no split happened
     if splits.length < 2 then return false
@@ -45,11 +46,12 @@ weSplitInLastXDays = (splits, cnt) ->
     # end date is already in format YYYY-MM-DD
     return splitBefore.end > checkYYYYMMDD 
 
-
+############################################################
 smoothenData = (dataSet) ->
     log "smoothenData"
-    daysBack = 60
     splits = dataSet.meta.splitFactors
+    return false unless splits.length > 0
+    daysBack = 60
     lastSplit = splits[splits.length - 1]
     f = lastSplit.f
     if f == 1 then return false
@@ -69,13 +71,39 @@ smoothenData = (dataSet) ->
         dP = dataSet.data[dataSet.data.length - i]
         prDP = dataSet.data[dataSet.data.length - (i + 1)]
         
+        # also correct when the close is 0
+        close = dP[dP.length - 1]
+        prevClose = prDP[prDP.length - 1]
+
+        if prevClose == 0
+            corrected = true
+            # regular close is 0 get fake Close from High and Low
+            if prDP.length == 3 then prDP[2] = fakeClose(prDP[0], prDP[1])
+            # non-trading Day close is 0 get close from prev datapoint
+            if prDP.length == 1 then throw Error("0 value close impossible to fix here 1!")
+            if prDP.length == 3 and prDP[2] == 0 then throw Error("0 value close impossible to fix here 1!")
+
+        if close == 0
+            corrected = true
+            # regular close is 0 get fake Close from High and Low
+            if dP.length == 3 then dP[2] = fakeClose(dP[0], dP[1])
+            # non-trading Day close is 0 get close from prev datapoint
+            if dP.length == 1 then dP[0] = prevClose
+            # regular close has high, low and clos being 0 
+            # -> turn to non-trading day and use close from prev datapoint
+            if dP.length == 3 and dP[2] == 0
+                dP.length = 1
+                dP[0] = prevClose
+
         # log dP # check dataPoint
         # log prDP # check previousDataPoint
+        close = dP[dP.length - 1]
+        prevClose = prDP[prDP.length - 1]
 
         # price difference between corrected current and previous price
-        deltaCorrected = Math.abs((dP[0] * f) - prDP[0]) 
+        deltaCorrected = Math.abs((close * f) - prevClose) 
         # price difference between current and previous price
-        deltaCurrent = Math.abs(dP[0] - prDP[0]) 
+        deltaCurrent = Math.abs(close - prevClose) 
         
         # if the corrected dP was closer to the previous price than the current dP
         # then probably the split factor was missing and we should correct it 
@@ -88,6 +116,18 @@ smoothenData = (dataSet) ->
 
     # corrected is only false if there was no single dataPoint to be corrected
     return corrected
+
+############################################################
+fakeClose = (high, low) ->
+    log "fakeClose"
+    sum = high + low
+    div = 0
+
+    if high > 0 then div++
+    if low > 0 then div++
+
+    return sum / div
+
 
 ############################################################
 #region Helper Functions
@@ -231,7 +271,7 @@ sliceByYears = (dataSet, yearsBack) ->
 
 #endregion
 
-
+dP[0]
 ############################################################
 getStockData = (symbol) ->
     log "getStockData #{symbol}"
@@ -270,8 +310,14 @@ getStockData = (symbol) ->
             store.save(id, dataSet)
 
     ## TODO remove after we finished allData Updates
-    wasDamaged = smoothenData(dataSet)
-    if wasDamaged then store.save(id, dataSet)
+    try 
+        wasDamaged = smoothenData(dataSet)
+        if wasDamaged then store.save(id, dataSet)
+    catch err
+        bs.report("@getStockData #{err.message}")
+        dataSet = await mrktStack.getStockAllHistory(symbol)
+        if dataSet? then store.save(id, dataSet)
+        return dataSet
 
     return dataSet
 

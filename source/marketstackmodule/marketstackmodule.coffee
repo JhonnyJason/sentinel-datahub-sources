@@ -98,7 +98,6 @@ liveDataHeartbeat = ->
     else log "It's not an interesting time - we do nothing here :-)"
     return
 
-
 ############################################################
 liveDataEODRefresh = ->
     dateNow = new Date()
@@ -145,8 +144,6 @@ liveDataEODRefresh = ->
         dataM.forceLoadNewestStockData(symbol, includeToday)
     return
 
-
-
 ############################################################
 export startLiveDataHeartbeat = ->
     log "startLiveDataHeartbeat"
@@ -160,7 +157,6 @@ export startLiveDataHeartbeat = ->
     return
 
 #endregion
-
 
 ############################################################
 #region Stock EOD API - Pull Model
@@ -385,6 +381,8 @@ normalizeEodResponse = (apiData, ticker, startFactor = 1.0, applied = true) ->
             low = record.low
             close = record.close
 
+        if close == 0 then close = fakeClose(high, low)
+
         dataPoints.push({ date, high, low, close })
         prevRecord = record
 
@@ -440,6 +438,21 @@ gapFillDataSet = (dataSet) ->
         data: filledData
     }
 
+
+############################################################
+# Sometimes the Close is 0, and usually we mostly value the close
+# This is a data problem from Upstream
+# Only reasonable workaroung is this "fakeClose" averaging the high and low
+# + Resilience when either high or low is 0 as well
+fakeClose = (high, low) ->
+    log "fakeClose"
+    sum = high + low
+    div = 0
+
+    if high > 0 then div++
+    if low > 0 then div++
+
+    return sum / div
 
 ############################################################
 # Check if error indicates plan limit restriction
