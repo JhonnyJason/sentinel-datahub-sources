@@ -309,8 +309,9 @@ getStockData = (symbol) ->
             store.save(id, dataSet)
 
     ## TODO remove after we finished allData Updates
-    try 
+    try
         wasDamaged = smoothenData(dataSet)
+        console.log("#{symbol} was damaged: #{wasDamaged}")
         if wasDamaged then store.save(id, dataSet)
     catch err
         bs.report("@getStockData #{err.message}")
