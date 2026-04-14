@@ -271,7 +271,6 @@ sliceByYears = (dataSet, yearsBack) ->
 
 #endregion
 
-dP[0]
 ############################################################
 getStockData = (symbol) ->
     log "getStockData #{symbol}"
