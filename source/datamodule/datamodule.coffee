@@ -279,6 +279,7 @@ getStockData = (symbol) ->
 
     # No data? -> fetch all history
     if !dataSet.data?
+        console.log("We donot have a dataset for #{symbol}")
         dataSet = await mrktStack.getStockAllHistory(symbol)
         if dataSet? then store.save(id, dataSet)
         return dataSet
