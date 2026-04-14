@@ -131,7 +131,7 @@ smoothenData = (dataSet) ->
         prevClose = prDP[prDP.length - 1]
 
         if typeof close != "number" or isNaN(close) then close = 0
-        if typeof prevClose != "number" of isNaN(prevClose) then prevClose = 0
+        if typeof prevClose != "number" or isNaN(prevClose) then prevClose = 0
 
         # price difference between corrected current and previous price
         deltaCorrected = Math.abs((close * f) - prevClose) 
