@@ -273,6 +273,7 @@ sliceByYears = (dataSet, yearsBack) ->
 
 ############################################################
 getStockData = (symbol) ->
+    console.log "getStockData #{symbol}"
     log "getStockData #{symbol}"
     id = toStorageId(symbol)
     dataSet = store.load(id) # returns {} if no data exists
@@ -286,6 +287,7 @@ getStockData = (symbol) ->
 
     # Legacy data? -> full re-fetch with proper normalization
     unless dataSet.meta?.version  >= mrktStack.dataStructureVersion
+        console.log "Legacy data detected for #{symbol} — recorrecting"
         log "Legacy data detected for #{symbol} — recorrecting"
         return recorrectData(symbol)
 
