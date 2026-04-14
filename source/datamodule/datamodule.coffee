@@ -46,36 +46,27 @@ weSplitInLastXDays = (splits, cnt) ->
     # end date is already in format YYYY-MM-DD
     return splitBefore.end > checkYYYYMMDD 
 
+
 ############################################################
-smoothenData = (dataSet) ->
-    log "smoothenData"
-    splits = dataSet.meta.splitFactors
-    return false unless splits.length > 0
-    daysBack = 60
-    lastSplit = splits[splits.length - 1]
-    f = lastSplit.f
-    if f == 1 then return false
-
-    ## We need to adjust logic in the special case having had a split just within the last 60 days...
-    weSplit = weSplitInLastXDays(splits, daysBack)
-    if weSplit then bs.report("@smoothenData: we had a split within the last 60 days! We donot handle this case yet!")
-
-
+correctZeroValues = (dataSet) ->
+    log "correctZeroValues"
+    daysBack = Math.min(60, dataSet.data.length - 1)
     corrected = false
-    # now we want to check if any of the new values were not adjusted for the split factor
-    # therefore we start from the oldest relevant to the newest datapoint
-    # we assume that the 60 days old datapoints are adjusted 
-    # only the most recent ones might not be adjusted
-    for i in [daysBack..1] # range: 60 - 1 
-        # log "checking index #{i}..."
+    return corrected unless daysBack > 0
+
+
+    for i in [daysBack..1] # first value: daysBack, last value: 1
+        
+        # get DataPoints
         dP = dataSet.data[dataSet.data.length - i]
         prDP = dataSet.data[dataSet.data.length - (i + 1)]
         
-        # also correct when the close is 0
+        # get close values
         close = dP[dP.length - 1]
         prevClose = prDP[prDP.length - 1]
 
-        if prevClose == 0
+        ## Check close Values for 0 and corect them if possible
+        if prevClose == 0 
             corrected = true
             # regular close is 0 get fake Close from High and Low
             if prDP.length == 3 then prDP[2] = fakeClose(prDP[0], prDP[1])
@@ -95,6 +86,37 @@ smoothenData = (dataSet) ->
                 dP.length = 1
                 dP[0] = prevClose
 
+    return corrected
+
+############################################################
+smoothenData = (dataSet) ->
+    log "smoothenData"
+    # first always correct Zero values!
+    corrected = correctZeroValues(dataSet)
+
+    splits = dataSet.meta.splitFactors
+    return corrected unless splits.length > 0
+
+    daysBack = Math.min(60, dataSet.data.length - 1)
+    return corrected unless daysBack > 0
+
+    lastSplit = splits[splits.length - 1]
+    f = lastSplit.f
+    if f == 1 then return corrected
+
+    ## We need to adjust logic in the special case having had a split just within the last 60 days...
+    weSplit = weSplitInLastXDays(splits, daysBack)
+    if weSplit then bs.report("@smoothenData: we had a split within the last 60 days! We donot handle this case yet!")
+
+    # now we want to check if any of the new values were not adjusted for the split factor
+    # therefore we start from the oldest relevant to the newest datapoint
+    # we assume that the 60 days old datapoints are adjusted 
+    # only the most recent ones might not be adjusted
+    for i in [daysBack..1] # range: daysBack to 1 
+        # log "checking index #{i}..."
+        dP = dataSet.data[dataSet.data.length - i]
+        prDP = dataSet.data[dataSet.data.length - (i + 1)]
+        
         # log dP # check dataPoint
         # log prDP # check previousDataPoint
         close = dP[dP.length - 1]
