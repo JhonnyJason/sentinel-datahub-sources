@@ -15,6 +15,7 @@ import { startLiveDataHeartbeat } from "./marketstackmodule.js"
 ############################################################
 export serviceStartup = ->
     log "serviceStartup"
+    console.log("starting up...")
     startLiveDataHeartbeat()
     await prepareAndExpose()
     
