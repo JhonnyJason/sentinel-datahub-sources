@@ -48,51 +48,58 @@ weSplitInLastXDays = (splits, cnt) ->
 
 
 ############################################################
-correctZeroValues = (dataSet) ->
+correctZeroAndNullValues = (dataSet) ->
     log "correctZeroValues"
-    daysBack = Math.min(60, dataSet.data.length - 1)
     corrected = false
-    return corrected unless daysBack > 0
 
 
-    for i in [daysBack..1] # first value: daysBack, last value: 1
-        
-        # get DataPoints
-        dP = dataSet.data[dataSet.data.length - i]
-        prDP = dataSet.data[dataSet.data.length - (i + 1)]
-        
-        # get close values
-        close = dP[dP.length - 1]
-        prevClose = prDP[prDP.length - 1]
+    for dP,i in dataSet.data
 
-        ## Check close Values for 0 and corect them if possible
-        if prevClose == 0 
+        if i > 0 then prDP = dataSet.data[i - 1]
+        else prDP = null
+        if prDP? then prevClose = prDP[prDP.length - 1]
+        else prevClose = null
+
+        # Fix null
+        if !dP? and prevClose?
+            dataSet.data[i] = [prevClose]
             corrected = true
-            # regular close is 0 get fake Close from High and Low
-            if prDP.length == 3 then prDP[2] = fakeClose(prDP[0], prDP[1])
-            # non-trading Day close is 0 get close from prev datapoint
-            if prDP.length == 1 then throw Error("0 value close impossible to fix here 1!")
-            if prDP.length == 3 and prDP[2] == 0 then throw Error("0 value close impossible to fix here 1!")
+            continue
+        if !dP? and !prevClose? 
+            bs.report("@correctZeroAndNullValues: null datapoint impossible to fix here!")
+            continue
 
-        if close == 0
+        # Fix C=0
+        close = dP[dP.length - 1]
+        
+        if close == 0 or (typeof close != "number") or isNaN(close)
             corrected = true
             # regular close is 0 get fake Close from High and Low
             if dP.length == 3 then dP[2] = fakeClose(dP[0], dP[1])
             # non-trading Day close is 0 get close from prev datapoint
-            if dP.length == 1 then dP[0] = prevClose
-            # regular close has high, low and clos being 0 
+            if dP.length == 1 and prevClose? then dP[0] = prevClose
+            if dP.length == 1 and (!prevClose? or  prevClose == 0)
+                bs.report("@correctZeroAndNullValues: 0 close impossible to fix here 1!")
+                continue
+            # high, low and close being 0 - so also fakeClose resulted in 0 
             # -> turn to non-trading day and use close from prev datapoint
-            if dP.length == 3 and dP[2] == 0
+            if dP.length == 3 and dP[2] == 0 and prevClose?
                 dP.length = 1
                 dP[0] = prevClose
-
+                continue
+            # high, low and close being 0 - so also fakeClose resulted in 0 
+            # also prev datapoint cannot help us out...
+            if (dP.length == 3 and dP[2] == 0) and (!prevClose? or  prevClose == 0)
+                bs.report("@correctZeroAndNullValues: 0 close impossible to fix here 2!")
+                continue
+        
     return corrected
 
 ############################################################
 smoothenData = (dataSet) ->
     log "smoothenData"
     # first always correct Zero values!
-    corrected = correctZeroValues(dataSet)
+    corrected = correctZeroAndNullValues(dataSet)
 
     splits = dataSet.meta.splitFactors
     return corrected unless splits.length > 0
@@ -102,6 +109,7 @@ smoothenData = (dataSet) ->
 
     lastSplit = splits[splits.length - 1]
     f = lastSplit.f
+    if typeof f != "number" or isNaN(f) then f = 1
     if f == 1 then return corrected
 
     ## We need to adjust logic in the special case having had a split just within the last 60 days...
@@ -122,11 +130,14 @@ smoothenData = (dataSet) ->
         close = dP[dP.length - 1]
         prevClose = prDP[prDP.length - 1]
 
+        if typeof close != "number" or isNaN(close) then close = 0
+        if typeof prevClose != "number" of isNaN(prevClose) then prevClose = 0
+
         # price difference between corrected current and previous price
         deltaCorrected = Math.abs((close * f) - prevClose) 
         # price difference between current and previous price
         deltaCurrent = Math.abs(close - prevClose) 
-        
+
         # if the corrected dP was closer to the previous price than the current dP
         # then probably the split factor was missing and we should correct it 
         if deltaCorrected < deltaCurrent 
@@ -142,11 +153,15 @@ smoothenData = (dataSet) ->
 ############################################################
 fakeClose = (high, low) ->
     log "fakeClose"
+    if typeof high != "number" or isNaN(high) then high = 0
+    if typeof low != "number" or isNaN(low) then low = 0
+
     sum = high + low
     div = 0
 
     if high > 0 then div++
     if low > 0 then div++
+    if div == 0 then return 0
 
     return sum / div
 

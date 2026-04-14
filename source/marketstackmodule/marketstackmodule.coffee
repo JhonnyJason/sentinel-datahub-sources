@@ -381,7 +381,8 @@ normalizeEodResponse = (apiData, ticker, startFactor = 1.0, applied = true) ->
             low = record.low
             close = record.close
 
-        if close == 0 then close = fakeClose(high, low)
+        if close == 0 or (typeof close != "number") or isNaN(close) 
+            close = fakeClose(high, low)
 
         dataPoints.push({ date, high, low, close })
         prevRecord = record
@@ -446,11 +447,15 @@ gapFillDataSet = (dataSet) ->
 # + Resilience when either high or low is 0 as well
 fakeClose = (high, low) ->
     log "fakeClose"
+    if typeof high != "number" or isNaN(high) then high = 0
+    if typeof low != "number" or isNaN(low) then low = 0
+
     sum = high + low
     div = 0
 
     if high > 0 then div++
     if low > 0 then div++
+    if div == 0 then return 0
 
     return sum / div
 
