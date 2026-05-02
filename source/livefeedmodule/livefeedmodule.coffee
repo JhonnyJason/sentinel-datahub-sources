@@ -5,6 +5,9 @@ import { createLogFunctions } from "thingy-debug"
 #endregion
 
 ############################################################
+# import { isTradingHour } from "./dateutilsmodule.js"
+
+############################################################
 # symbol -> latest price
 latestPrices = Object.create(null)
 # symbol -> set of subscribed sockets
@@ -103,4 +106,6 @@ export updatePrices = (prices) ->
     return
 
 ############################################################
-export getLatestPrice = (symbol) -> latestPrices[symbol] ? null
+export getLatestPrice = (symbol) -> 
+    
+    return latestPrices[symbol] ? null

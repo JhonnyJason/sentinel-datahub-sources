@@ -408,8 +408,7 @@ export forceLoadNewestStockData = (symbol, includeToday = false) ->
     # Outdated data structure version? -> full re-fetch with proper normalization
     unless dataSet.meta?.version >= mrktStack.dataStructureVersion
         log "Legacy data detected for #{symbol} — recorrecting"
-        await recorrectData(symbol)
-        return
+        return await recorrectData(symbol)
 
     # includeToday: after market close, today's EOD data is available
     # pre-trading: today's data doesn't exist yet, compare against yesterday
@@ -432,7 +431,7 @@ export forceLoadNewestStockData = (symbol, includeToday = false) ->
         log "Data is up to date (ends: #{dataSet.meta.endDate}, expected: #{expectedEnd})"
     else
         log "Data still behind expected (ends: #{dataSet.meta.endDate}, expected: #{expectedEnd})"
-    return
+    return dataSet
 
 ############################################################
 export getData = (name, yearsBack) ->

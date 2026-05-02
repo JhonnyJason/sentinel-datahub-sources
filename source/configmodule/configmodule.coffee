@@ -44,13 +44,13 @@ export checkSymbolsMS = 3_600_000 # ~1h
 ############################################################
 export liveDataSymbols = [ "HYG", "SPY" ]
 # export liveDataHeartbeatMS = 420_000 # 7m
-export liveDataHeartbeatMS = 3_000_000 # 50 min
+export liveDataHeartbeatMS = 900_000 # 15 min
 export liveDataEODRefreshMS = 3_600_000 # 1h
 export eodRefreshMaxAttempts = 3
 
 ############################################################
 export name = "Sentinel Datahub"
-export version = "v0.2.1"
+export version = "v0.2.2"
 
 ############################################################
 export accessManagerId = localCfg.accessManagerId || ""

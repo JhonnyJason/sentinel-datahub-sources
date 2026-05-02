@@ -34,6 +34,9 @@ liveDataHeartbeatMS = 300_000 # 5min non-pro subscribtions cannot be faster
 liveDataEODRefreshMS = 3_600_000 # 1h probably enough
 
 ############################################################
+symbolsToTimings = Object.create(null)
+
+############################################################
 # EOD refresh limiter — shared across pre-trading and trading hours
 # max attempts per day to avoid wasting API calls on holidays
 eodRefreshMaxAttempts = 3 #{}
@@ -86,16 +89,23 @@ liveDataHeartbeat = ->
 
             latestPrices = Object.create(null)
             for row in (body.data ? [])
-                continue unless row.symbol?
+                continue unless row.symbol? and row.date? # data corruption
                 symbol = row.symbol.replace(/-/g, ".")
-                latestPrices[symbol] = row.last ? row.lastPrice ? row.close
-
+                price = row.last ? row.lastPrice ? row.last_marketstack ? row.close
+                if !price? then continue
+                latestPrices[symbol] = price
+                if !symbolsToTimings[symbol]? then symbolsToTimings[symbol] = {}
+                symbolsToTimings[symbol].lastLiveUpdate = row.date.slice(0, 10)
+            
+            # When we get live data then it is always the newest data ;-)
             try liveFeed.updatePrices(latestPrices)
             catch err then log "error in liveFeed.updatePrices! #{err.message}"
 
         catch err then log "liveData retrieval error: #{err.message}"
 
-    else log "It's not an interesting time - we do nothing here :-)"
+    else ## check if we have the newest EOD close already 
+        log "It's not an interesting time - we do nothing here :-)"
+        
     return
 
 ############################################################
@@ -140,8 +150,21 @@ liveDataEODRefresh = ->
     log "EOD top-up attempt #{eodRefreshAttempts}/#{eodRefreshMaxAttempts}"
     
     # Force Refresh for all our liveData Symbols
+    endPrices = Object.create(null)
     for symbol in liveDataSymbols
-        dataM.forceLoadNewestStockData(symbol, includeToday)
+        try dataSet = await dataM.forceLoadNewestStockData(symbol, includeToday)
+        catch err then dataSet = null # maybe log err?
+        if !dataSet? or !dataSet.data? or dataSet.data.length == 0 then continue 
+            
+        lastDP = dataSet.data[dataSet.data.length - 1]
+        lastClose = lastDP[lastDP.length - 1]
+        if !symbolsToTimings[symbol]? then endPrices[symbol] = lastClose
+        else if dataSet.meta.endDate >= symbolsToTimings[symbol].lastLiveUpdate
+            endPrices[symbol] = lastClose
+
+    # overwrite latest liveData with the newer EoD closes
+    try liveFeed.updatePrices(endPrices)
+    catch err then log "error in liveFeed.updatePrices! #{err.message}"
     return
 
 ############################################################
