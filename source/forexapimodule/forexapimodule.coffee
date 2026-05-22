@@ -114,7 +114,8 @@ ensureSymbolIsUpToDate = (symbol) ->
         catch err 
             console.log(err)
             results.push(null)
-    
+        await waitMS(500)
+
     # missingDates = [ "2026-05-21" ]
     # results = [[ 0.9852962562, 0.9801044071, 0.9827207872 ]]
     olog { missingDates, results }
