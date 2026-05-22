@@ -19,11 +19,15 @@ toStorageId = (name) -> return "did:#{name.replace(".", "-")}"
 
 ############################################################
 freshnessThreshold = 5
+forexSymbols = new Set()
+commoditySymbols = new Set()
 
 ############################################################
 export initialize = (c) ->
     log "initialize"
     if c.freshnessThreshold? then freshnessThreshold = c.freshnessThreshold    
+    if c.forexSymbols? then forexSymbols = new Set(c.forexSymbols)
+    if c.commoditySymbols? then commoditySymbols = new Set(c.commoditySymbols)
     return
 
 ############################################################
@@ -168,15 +172,8 @@ fakeClose = (high, low) ->
 
 ############################################################
 #region Helper Functions
-isCommodityName = (name) ->
-    log "isCommodityName"
-    # return symbols.isCommodityName(name) # TODO: implement
-    return false
-
-isForexPair = (name) ->
-    log "isForexPair"
-    # return symbols.isForexPair(name) # TODO: implement
-    return false
+isCommodityName = (name) -> commoditySymbols.has(name)
+isForexPair = (name) -> forexSymbols.has(name)
 
 ############################################################
 isFresh = (dataSet, threshold) ->

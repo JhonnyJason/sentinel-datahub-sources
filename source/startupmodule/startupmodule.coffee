@@ -7,6 +7,7 @@ import { createLogFunctions } from "thingy-debug"
 ############################################################
 import { prepareAndExpose } from "./scimodule.js"
 import { startLiveDataHeartbeat } from "./marketstackmodule.js"
+import { startForexDataHeartbeat } from "./forexapimodule.js"
 
 ############################################################
 #experimental imports
@@ -16,8 +17,9 @@ import { startLiveDataHeartbeat } from "./marketstackmodule.js"
 export serviceStartup = ->
     log "serviceStartup"
     console.log("starting up...")
-    startLiveDataHeartbeat()
-    await prepareAndExpose()
+    startForexDataHeartbeat()
+    # startLiveDataHeartbeat()
+    # await prepareAndExpose()
     
     # experiment for testing
     # dataSet = await getData("WMT", 30)

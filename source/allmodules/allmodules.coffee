@@ -1,10 +1,12 @@
 import * as accessmodule from "./accessmodule.js"
 import * as authmodule from "./authmodule.js"
+import * as commoditidatamodule from "./commoditidatamodule.js"
 import * as configmodule from "./configmodule.js"
 import * as datamodule from "./datamodule.js"
 import * as dateutilsmodule from "./dateutilsmodule.js"
 import * as debugmodule from "./debugmodule.js"
 import * as earlyblockermodule from "./earlyblockermodule.js"
+import * as forexapimodule from "./forexapimodule.js"
 import * as livefeedmodule from "./livefeedmodule.js"
 import * as marketstackmodule from "./marketstackmodule.js"
 import * as scimodule from "./scimodule.js"
@@ -17,11 +19,13 @@ import * as wsimodule from "./wsimodule.js"
 Modules = {
     accessmodule,
     authmodule,
+    commoditidatamodule,
     configmodule,
     datamodule,
     dateutilsmodule,
     debugmodule,
     earlyblockermodule,
+    forexapimodule,
     livefeedmodule,
     marketstackmodule,
     scimodule,

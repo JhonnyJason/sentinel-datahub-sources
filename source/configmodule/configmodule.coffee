@@ -23,9 +23,12 @@ export trdvtSecret = localCfg.secret || "none"
 export trdvtCid = localCfg.cid || "none"
 export trdvtUsername = localCfg.name || "none"
 export trdvtPassword = localCfg.password || "none"
+
 ############################################################
 export mrktStackSecret = localCfg.mrktStackSecret || "none"
 
+############################################################
+export forexapiKey = localCfg.forexapiKey || "none"
 
 ############################################################
 # export urlTrdvt = 'https://demo.tradovateapi.com/v1'
@@ -36,10 +39,21 @@ export urlTrdvt = 'https://live.tradovateapi.com/v1'
 
 ############################################################
 export urlMrktStack = "https://api.marketstack.com/v2"
+export urlForexAPI = "https://api.metalpriceapi.com/v1"
 
 ############################################################
 export checkAccessMS = 600_000 # ~10m
 export checkSymbolsMS = 3_600_000 # ~1h
+export checkForexMS = 18_000_000 # ~5h
+export checkCommoditiesMS = 3_600_000 # ~1h
+
+############################################################
+export forexSymbols = [
+    "AUDCAD", "AUDCHF", "AUDJPY", "AUDNZD", "AUDUSD", "CADCHF", "CADJPY", "CHFJPY", "EURAUD", "EURCAD", "EURCHF", "EURGBP", "EURJPY", "EURNZD", "EURUSD", "GBPAUD", "GBPCAD", "GBPCHF", "GBPJPY", "GBPNZD", "GBPUSD", "NZDCAD", "NZDCHF", "NZDJPY", "NZDUSD", "USDCAD", "USDCHF", "USDJPY"
+]
+
+############################################################
+export commoditySymbols = [] # TODO: add commodities
 
 ############################################################
 export liveDataSymbols = [ "HYG", "SPY" ]
@@ -50,7 +64,7 @@ export eodRefreshMaxAttempts = 3
 
 ############################################################
 export name = "Sentinel Datahub"
-export version = "v0.2.2"
+export version = "v0.2.3"
 
 ############################################################
 export accessManagerId = localCfg.accessManagerId || ""

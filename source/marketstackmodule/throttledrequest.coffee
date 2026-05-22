@@ -22,7 +22,7 @@ export class RequestGuard
         @queue = []
         @pending = new Map()  # url → [{resolve, reject}, ...]
 
-    processQueue: => 
+    processQueue: =>
         return if @isBusy or @queue.length == 0
         @isBusy = true
 
