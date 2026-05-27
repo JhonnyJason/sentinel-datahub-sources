@@ -44,8 +44,8 @@ export urlForexAPI = "https://api.metalpriceapi.com/v1"
 ############################################################
 export checkAccessMS = 600_000 # ~10m
 export checkSymbolsMS = 3_600_000 # ~1h
-export checkForexMS = 18_000_000 # ~5h
-export checkCommoditiesMS = 3_600_000 # ~1h
+export checkForexMS = 72_000_000 # 20h
+export checkCommoditiesMS = 36_000_000 # ~10h
 
 ############################################################
 export forexSymbols = [
@@ -53,7 +53,9 @@ export forexSymbols = [
 ]
 
 ############################################################
-export commoditySymbols = [] # TODO: add commodities
+export commoditySymbols = [ 
+    "aluminum", "bitumen", "brent", "coal", "cobalt", "copper", "crude oil", "di-ammonium", "ethanol", "gallium", "gasoline", "germanium", "gold", "heating oil", "hrc steel", "indium", "iron ore", "iron ore cny", "kraft pulp", "lead", "lithium", "magnesium", "manganese", "methanol", "molybdenum", "naphtha", "natural gas", "neodymium", "nickel", "palladium", "platinum", "polyethylene", "polypropylene", "polyvinyl", "propane", "rhodium", "silver", "soda ash", "steel", "tellurium", "tin", "titanium", "ttf gas", "uk gas", "uranium", "urea", "zinc"
+]
 
 ############################################################
 export liveDataSymbols = [ "HYG", "SPY" ]

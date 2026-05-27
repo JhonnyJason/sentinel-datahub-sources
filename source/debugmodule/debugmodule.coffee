@@ -5,14 +5,15 @@ modulesToDebug = {
     # accessmodule: true
     # authmodule: true
     # bugsnitch: true
-    commoditidatamodule: true
+    # commoditydatamodule: true
     # datamodule: true
     # datasci: true
-    forexapimodule: true
+    # forexapimodule: true
     # livefeedmodule: true
     # marketstackmodule: true
     # scimodule: true
     # startupmodule: true
+    # symbolwatch: true
     # tradovatemodule: true
 }
 

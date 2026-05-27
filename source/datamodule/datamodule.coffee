@@ -14,8 +14,7 @@ import * as symbols from "./symbolsmodule.js"
 import { nextDay, daysBetween, lastTradingDay } from "./dateutilsmodule.js"
 
 ############################################################
-# TODO: check if this is a good idea
-toStorageId = (name) -> return "did:#{name.replace(".", "-")}"
+import * as idUtl from "./idutils.js" 
 
 ############################################################
 freshnessThreshold = 5
@@ -309,7 +308,7 @@ sliceByYears = (dataSet, yearsBack) ->
 getStockData = (symbol) ->
     console.log "getStockData #{symbol}"
     log "getStockData #{symbol}"
-    id = toStorageId(symbol)
+    id = idUtl.idForStock(symbol)
     dataSet = store.load(id) # returns {} if no data exists
 
     # No data? -> fetch all history
@@ -361,16 +360,14 @@ getStockData = (symbol) ->
 ############################################################
 getCommodityData = (name) ->
     log "getCommodityData"
-    id = toStorageId(name)
+    id = idUtl.idForCommodity(name)
     return store.load(id)
 
 ############################################################
 getForexPairData = (name) ->
     log "getForexPairData"
-    id = toStorageId(name)
-    # dataSet = store.load(id)
-    ## TODO implement
-    return {}
+    id = idUtl.idForForex(name)
+    return store.load(id)
 
 #endregion
 
@@ -382,7 +379,7 @@ getForexPairData = (name) ->
 # Fixes legacy data without splitFactors and any accumulated factor errors
 export recorrectData = (symbol) ->
     log "recorrectData #{symbol}"
-    id = toStorageId(symbol)
+    id = idUtl.idForStock(symbol)
     dataSet = await mrktStack.getStockAllHistory(symbol)
     if dataSet?
         store.save(id, dataSet)
@@ -393,7 +390,7 @@ export recorrectData = (symbol) ->
 
 ############################################################
 export forceLoadNewestStockData = (symbol, includeToday = false) ->
-    id = toStorageId(symbol)
+    id = idUtl.idForStock(symbol)
     dataSet = store.load(id) # returns {} if no data exists
 
     # No data? -> fetch all history

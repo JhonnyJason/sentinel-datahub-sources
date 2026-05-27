@@ -14,6 +14,7 @@ import { nextDay, prevDay, generateDateRange, isTradingHour,
 import * as dataM from "./datamodule.js"
 import * as liveFeed from "./livefeedmodule.js"
 import { request } from "./marketstackrequest.js"
+import { noteFailedSymbol } from "./symbolwatch.js"
 
 ############################################################
 export dataStructureVersion = 1
@@ -324,6 +325,7 @@ fetchEodPage = (ticker, { offset, limit, date_from, date_to }) ->
         body = await request(url)
     catch err
         log "Network/parse error: #{err.message}"
+        if err.message.indexOf("no_valid_symbols_provided") > 0 then noteFailedSymbol(ticker)
         return { error: { code: "network_error", message: err.message } }
 
     if body.error?

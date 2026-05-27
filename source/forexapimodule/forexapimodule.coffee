@@ -6,6 +6,7 @@ import { createLogFunctions } from "thingy-debug"
 
 ############################################################
 import * as store from "./storagemodule.js"
+import * as bs from "./bugsnitch.js"
 
 ############################################################
 baseURL = ""
@@ -15,7 +16,7 @@ apiKey = ""
 forexSymbols = []
 
 ############################################################
-heartbeatMS = 360_000_000 # ~10h
+heartbeatMS = 36_000_000 # ~10h
 
 ############################################################
 waitMS = (ms) -> new Promise((res) -> setTimeout(res, ms))
@@ -36,7 +37,7 @@ export initialize = (c) ->
 export startForexDataHeartbeat = ->
     log "startForexDataHeartbeat"
     setInterval(heartbeat, heartbeatMS)
-    heartbeat() ## just for testing... no need to start it immediately
+    # heartbeat() ## just for testing... no need to start it immediately
     return
 
 
@@ -44,7 +45,8 @@ export startForexDataHeartbeat = ->
 heartbeat = ->
     log "heartbeat"
     for symbol in forexSymbols
-        await ensureSymbolIsUpToDate(symbol)
+        try await ensureSymbolIsUpToDate(symbol)
+        catch err then bs.report("@forexapimodule.heartbeat: ensureSymbolIsUpToDate(#{symbol}) failed: #{err.messsage}")
         await waitMS(12000)
 
     return
@@ -105,14 +107,19 @@ ensureSymbolIsUpToDate = (symbol) ->
     log "ensureSymbolIsUpToDate"
     id = toStorageId(symbol)
     storeObj = store.load(id)
+    
+    if !storeObj? or !storeObj.metaData?
+        bs.report("@ensureSymbolIsUpToDate: no History for #{symbol}!")
+        return
+
     endDate = storeObj.metaData.endDate
 
     missingDates = getMissingDates(endDate)
     results = []
     for date in missingDates
         try results.push(await requestDailyData(symbol, date))
-        catch err 
-            console.log(err)
+        catch err
+            bs.report("@ensureSymbolIsUpToDate: requestDailyData failed: #{err.message}")
             results.push(null)
         await waitMS(500)
 

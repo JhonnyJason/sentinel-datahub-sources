@@ -1,6 +1,6 @@
 import * as accessmodule from "./accessmodule.js"
 import * as authmodule from "./authmodule.js"
-import * as commoditidatamodule from "./commoditidatamodule.js"
+import * as commoditydatamodule from "./commoditydatamodule.js"
 import * as configmodule from "./configmodule.js"
 import * as datamodule from "./datamodule.js"
 import * as dateutilsmodule from "./dateutilsmodule.js"
@@ -19,7 +19,7 @@ import * as wsimodule from "./wsimodule.js"
 Modules = {
     accessmodule,
     authmodule,
-    commoditidatamodule,
+    commoditydatamodule,
     configmodule,
     datamodule,
     dateutilsmodule,
