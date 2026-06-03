@@ -66,7 +66,7 @@ export eodRefreshMaxAttempts = 3
 
 ############################################################
 export name = "Sentinel Datahub"
-export version = "v0.2.3"
+export version = "v0.2.4"
 
 ############################################################
 export accessManagerId = localCfg.accessManagerId || ""

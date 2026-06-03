@@ -108,11 +108,11 @@ ensureSymbolIsUpToDate = (symbol) ->
     id = toStorageId(symbol)
     storeObj = store.load(id)
     
-    if !storeObj? or !storeObj.metaData?
+    if !storeObj? or !storeObj.meta?
         bs.report("@ensureSymbolIsUpToDate: no History for #{symbol}!")
         return
 
-    endDate = storeObj.metaData.endDate
+    endDate = storeObj.meta.endDate
 
     missingDates = getMissingDates(endDate)
     results = []
@@ -142,7 +142,7 @@ ensureSymbolIsUpToDate = (symbol) ->
         else lastClose = hlc[hlc.length - 1]
         storeObj.data.push(hlc)
 
-    storeObj.metaData.endDate = missingDates[missingDates.length - 1]
+    storeObj.meta.endDate = missingDates[missingDates.length - 1]
     store.save(id, storeObj)
     return
 
