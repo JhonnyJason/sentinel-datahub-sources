@@ -18,18 +18,18 @@ import { getData } from "./datamodule.js"
 export serviceStartup = ->
     log "serviceStartup"
     console.log("starting up...")
-    # startCommodityDataHeartbeat() # not fully tested yet!
+    # startCommodityDataHeartbeat() # not fully tested yet! not for now!
 
-    # startForexDataHeartbeat()
-    # startLiveDataHeartbeat()
-    # await prepareAndExpose()
+    startForexDataHeartbeat()
+    startLiveDataHeartbeat()
+    await prepareAndExpose()
     
     # experiment for testing
 
-    try dataSet = await getData("REIT.AS", 30)
-    catch err then console.error(err)
-    if dataSet? then console.log "We Actually god a dataSet!"
-    else console.log("We shoul have had an error...")
+    # try dataSet = await getData("REIT.AS", 30)
+    # catch err then console.error(err)
+    # if dataSet? then console.log "We Actually god a dataSet!"
+    # else console.log("We shoul have had an error...")
     
     # dataSet = await getData("AAPL", 30)
     # dataSet = await getData("GOOGL", 30)

@@ -6,9 +6,9 @@ modulesToDebug = {
     # authmodule: true
     # bugsnitch: true
     # commoditydatamodule: true
-    # datamodule: true
+    datamodule: true
     # datasci: true
-    # forexapimodule: true
+    forexapimodule: true
     # livefeedmodule: true
     # marketstackmodule: true
     # scimodule: true
