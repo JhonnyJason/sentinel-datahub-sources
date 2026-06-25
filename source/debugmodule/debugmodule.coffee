@@ -9,7 +9,7 @@ modulesToDebug = {
     datamodule: true
     # datasci: true
     forexapimodule: true
-    # livefeedmodule: true
+    livefeedmodule: true
     # marketstackmodule: true
     # scimodule: true
     # startupmodule: true

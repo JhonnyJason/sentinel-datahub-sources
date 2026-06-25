@@ -39,12 +39,14 @@ export urlTrdvt = 'https://live.tradovateapi.com/v1'
 
 ############################################################
 export urlMrktStack = "https://api.marketstack.com/v2"
-export urlForexAPI = "https://api.metalpriceapi.com/v1"
+export urlForexAPI = "https://api-eu.forexrateapi.com/v1"
 
 ############################################################
 export checkAccessMS = 600_000 # ~10m
 export checkSymbolsMS = 3_600_000 # ~1h
-export checkForexMS = 72_000_000 # 20h
+# export checkForexMS = 72_000_000 # 20h
+export checkForexMS = 1_200_000 # ~20m
+
 export checkCommoditiesMS = 36_000_000 # ~10h
 
 ############################################################

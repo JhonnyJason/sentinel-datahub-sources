@@ -16,7 +16,8 @@ apiKey = ""
 forexSymbols = []
 
 ############################################################
-heartbeatMS = 36_000_000 # ~10h
+# heartbeatMS = 36_000_000 # ~10h
+heartbeatMS = 2_160_000 # ~36m
 
 ############################################################
 waitMS = (ms) -> new Promise((res) -> setTimeout(res, ms))
@@ -37,19 +38,31 @@ export initialize = (c) ->
 export startForexDataHeartbeat = ->
     log "startForexDataHeartbeat"
     setInterval(heartbeat, heartbeatMS)
-    # heartbeat() ## just for testing... no need to start it immediately
+    heartbeat() ## just for testing... no need to start it immediately
     return
 
 
 ############################################################
 heartbeat = ->
     log "heartbeat"
+
+    try await retrieveAllLiveData()
+    catch err then bs.report("@forexapimodule.heartbeat: retrieveAllLiveData() failed: #{err.messsage}")
+
     for symbol in forexSymbols
+        await waitMS(12000)
         try await ensureSymbolIsUpToDate(symbol)
         catch err then bs.report("@forexapimodule.heartbeat: ensureSymbolIsUpToDate(#{symbol}) failed: #{err.messsage}")
-        await waitMS(12000)
-
+        ## TODO remove
+        return
+    
     return
+
+############################################################
+retrieveAllLiveData = ->
+    log "retrieveAllLiveData"
+    return
+
 
 ############################################################
 digestResponse = (obj) ->
@@ -93,9 +106,11 @@ requestDailyData = (symbol, date) ->
 
 ############################################################
 getMissingDates = (lastDate) ->
-    dayMS = 86_400_000
-    endMS = (new Date((new Date()).toISOString().slice(0,10))).getTime()
-    dateMS = (new Date(lastDate)).getTime() + dayMS
+    dayMS = 86_400_000 # 24 hours
+
+    endDate = new Date()
+    endMS = Date.UTC(endDate.getUTCFullYear(), endDate.getUTCMonth(), endDate.getUTCDate(), 0, 5,30)
+    dateMS = (new Date(lastDate+"T00:06:00.000Z")).getTime() + dayMS
     dates = []
     while dateMS < endMS
         dates.push((new Date(dateMS)).toISOString().slice(0, 10))
@@ -115,6 +130,8 @@ ensureSymbolIsUpToDate = (symbol) ->
     endDate = storeObj.meta.endDate
 
     missingDates = getMissingDates(endDate)
+    log missingDates
+
     results = []
     for date in missingDates
         try results.push(await requestDailyData(symbol, date))
@@ -129,7 +146,7 @@ ensureSymbolIsUpToDate = (symbol) ->
 
     idx = results.length
     while --idx ## cut off trailing nulls
-        if !Array.isArray(results[idx]) 
+        if !Array.isArray(results[idx])
             results.pop()
             missingDates.pop()
         else break

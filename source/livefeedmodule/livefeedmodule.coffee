@@ -25,8 +25,10 @@ allowedSymbols = new Set()
 ############################################################
 export initialize = (c) ->
     log "initialize"
-    if c.liveDataSymbols? 
-        allowedSymbols.add(sym) for sym in c.liveDataSymbols 
+    if c.liveDataSymbols?
+        allowedSymbols.add(sym) for sym in c.liveDataSymbols
+    if c.forexSymbols?
+        allowedSymbols.add(sym) for sym in c.forexSymbols
     return
 
 ############################################################
