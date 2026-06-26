@@ -2,8 +2,8 @@ import { addModulesToDebug } from "thingy-debug"
 
 ############################################################
 modulesToDebug = {
-    # accessmodule: true
-    # authmodule: true
+    accessmodule: true
+    authmodule: true
     # bugsnitch: true
     # commoditydatamodule: true
     # datamodule: true
@@ -11,6 +11,7 @@ modulesToDebug = {
     forexapimodule: true
     # livefeedmodule: true
     # marketstackmodule: true
+    scicoremodule: true
     # scimodule: true
     # startupmodule: true
     # symbolwatch: true
