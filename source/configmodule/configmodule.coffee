@@ -94,7 +94,7 @@ export fallbackAuthCode = "aaaaaaaabbbbbbbbccccccccdddddddd"
 ############################################################
 export persistentStateOptions = {
     basePath: "../state"
-    maxCacheSize: 128
+    maxCacheSize: 256
 }
 
 ############################################################
