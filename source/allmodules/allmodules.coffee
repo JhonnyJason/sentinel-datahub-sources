@@ -14,6 +14,7 @@ import * as startupmodule from "./startupmodule.js"
 import * as storagemodule from "./storagemodule.js"
 import * as symbolsmodule from "./symbolsmodule.js"
 import * as tradovatemodule from "./tradovatemodule.js"
+import * as watchdogmodule from "./watchdogmodule.js"
 import * as wsimodule from "./wsimodule.js"
 
 Modules = {
@@ -33,6 +34,7 @@ Modules = {
     storagemodule,
     symbolsmodule,
     tradovatemodule,
+    watchdogmodule,
     wsimodule,
 }
 

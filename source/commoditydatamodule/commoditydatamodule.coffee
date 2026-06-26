@@ -87,7 +87,7 @@ retrieveAllHistory = (symbol) ->
         response = await request(url)
         if !response.data? or !response.data[0]? or !response.data[0].commodity_prices?
             throw new Error("Could not retrieve data for #{symbol} from: #{startDate.toISOString().slice(0,10)} to: #{endDate.toISOString().slice(0, 10)}")
-        olog response.data
+        # olog response.data
         return
         prices = response.data[0].commodity_prices
         for price in prices

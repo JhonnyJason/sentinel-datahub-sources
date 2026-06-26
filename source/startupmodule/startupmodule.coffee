@@ -21,11 +21,12 @@ export serviceStartup = ->
     # startCommodityDataHeartbeat() # not fully tested yet! not for now!
 
     startForexDataHeartbeat()
-    # startLiveDataHeartbeat()
-    # await prepareAndExpose()
+    startLiveDataHeartbeat()
+    await prepareAndExpose()
     
-    # experiment for testing
 
+    ########################################################
+    # experiment for testing
     # try dataSet = await getData("REIT.AS", 30)
     # catch err then console.error(err)
     # if dataSet? then console.log "We Actually god a dataSet!"

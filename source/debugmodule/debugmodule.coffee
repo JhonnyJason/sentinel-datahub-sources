@@ -6,15 +6,16 @@ modulesToDebug = {
     # authmodule: true
     # bugsnitch: true
     # commoditydatamodule: true
-    datamodule: true
+    # datamodule: true
     # datasci: true
-    forexapimodule: true
-    livefeedmodule: true
+    # forexapimodule: true
+    # livefeedmodule: true
     # marketstackmodule: true
     # scimodule: true
     # startupmodule: true
     # symbolwatch: true
     # tradovatemodule: true
+    # watchdogmodule: true
 }
 
 addModulesToDebug(modulesToDebug)

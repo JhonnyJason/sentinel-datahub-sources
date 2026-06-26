@@ -337,7 +337,7 @@ getStockData = (symbol) ->
     if !isFresh(dataSet, freshnessThreshold)
         log "data not Fresh -> get newer Data"
         { factor, applied } = getSplitFactorState(dataSet)
-        olog { factor, applied }
+        # olog { factor, applied }
         newerData = await mrktStack.getStockNewerHistory(symbol, dataSet.meta.endDate, factor, applied)
         # olog newerData
         if newerData?

@@ -45,7 +45,7 @@ export initialize = (c) ->
 
     storageObj = store.load("datahubState") || {}
         
-    olog storageObj
+    # olog storageObj
     return
 
 ############################################################
@@ -110,7 +110,7 @@ refreshToken = ->
     url = urlBaseTrdvt + "/auth/renewAccessToken"
 
     resp = await getRequest(url, storageObj.accessToken)
-    olog resp
+    # olog resp
 
     if resp.accessToken? then storageObj.accessToken = resp.accessToken
     if resp.mdAccessToken? then storageObj.mdAccessToken = resp.mdAccessToken
@@ -132,7 +132,7 @@ requestAccessToken = ->
 
     url = urlBaseTrdvt + "/auth/accesstokenrequest"
     accessData = await postRequest(url, credentials)
-    olog accessData
+    # olog accessData
     
     if accessData? then saveToStorage(accessData)
     return
@@ -148,9 +148,9 @@ ensureFreshToken = ->
     now = new Date().getTime()
     timeToExpiry = exp - now
 
-    olog {
-        exp, now, timeToExpiry
-    }
+    # olog {
+    #     exp, now, timeToExpiry
+    # }
 
     if timeToExpiry < 0 then return requestAccessToken()
     if timeToExpiry < checkAccessMS * 1.9 then return refreshToken()
@@ -162,11 +162,11 @@ checkSymbols = ->
     # url = urlBaseTrdvt + "/account/list"
     # url = urlBaseTrdvt + "/currency/list"
     url = urlBaseTrdvt + "/product/list"
-    log "using url: "+url
+    # log "using url: "+url
 
     # resp = await getRequest(url, storageObj.accessToken)
     resp = await getRequest(url, storageObj.mdAccessToken)
-    olog resp
+    # olog resp
 
     ## TODO digestResponse
     return

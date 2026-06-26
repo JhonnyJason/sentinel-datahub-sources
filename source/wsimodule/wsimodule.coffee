@@ -51,9 +51,9 @@ class SocketConnection
         return
     
     noteUsage: (usage) =>
-        log "noteUsage: #{@clientId}"
+        # log "noteUsage: #{@clientId}"
         #TODO identify abusive behaviour
-        olog usage
+        # olog usage
         return
 
     close: =>
@@ -80,13 +80,13 @@ disectMessage = (message) ->
 ############################################################
 processMessage = (message, sock) ->
     log "processMessage"
-    olog { message }
+    # olog { message }
     result = Object.create(null)
     result.success = false
     result.bytes = message.length
 
     msgObj = disectMessage(message) # message: command authCode argument
-    olog msgObj
+    # olog msgObj
 
     result.error = "Unauthorized!"
     if !access.hasAccess(msgObj.authCode) then return result
@@ -120,7 +120,7 @@ processMessage = (message, sock) ->
 
 ############################################################
 export onConnect = (socket, req) ->
-    olog { headers: req.headers, url: req.url }
+    # olog { headers: req.headers, url: req.url }
     conn = new SocketConnection(socket, "#{clientIdCount}")
     clientIdCount++
     return

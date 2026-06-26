@@ -95,14 +95,14 @@ export getClientSubscriptions = (socket) ->
 ############################################################
 # Called by marketstackmodule heartbeat with { symbol: price } map
 export updatePrices = (prices) ->
-    log "updatePrices"
+    # log "updatePrices"
     updatedSymbols = Object.create(null)
 
     for symbol, price of prices
         if latestPrices[symbol] != price then updatedSymbols[symbol] = true
         latestPrices[symbol] = price
 
-    olog latestPrices
+    # olog latestPrices
 
     notifySubscribers(Object.keys(updatedSymbols))
     return

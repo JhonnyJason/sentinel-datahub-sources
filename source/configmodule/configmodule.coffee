@@ -49,6 +49,11 @@ export checkForexMS = 1_200_000 # ~20m
 
 export checkCommoditiesMS = 36_000_000 # ~10h
 
+export watchdogCheckMS = 120_000 # ~2m
+
+############################################################
+export watchdogToleranceF = 1.48
+
 ############################################################
 export forexSymbols = [
     "AUDCAD", "AUDCHF", "AUDJPY", "AUDNZD", "AUDUSD", "CADCHF", "CADJPY", "CHFJPY", "EURAUD", "EURCAD", "EURCHF", "EURGBP", "EURJPY", "EURNZD", "EURUSD", "GBPAUD", "GBPCAD", "GBPCHF", "GBPJPY", "GBPNZD", "GBPUSD", "NZDCAD", "NZDCHF", "NZDJPY", "NZDUSD", "USDCAD", "USDCHF", "USDJPY"

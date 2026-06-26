@@ -48,7 +48,7 @@ removeDeadNonces = ->
 ############################################################
 export signatureAuth = (req, ctx) ->
     log "signatureAuth"
-    olog ctx
+    # olog ctx
     
     ## check if client host relationthip is seemingly abusive
     ip = ctx.meta.ip
@@ -80,6 +80,6 @@ export signatureAuth = (req, ctx) ->
     isValid = await secUtl.verify(sig, authorizedPubKey, signedString)
     if !isValid then return "Invalid Signature!"
 
-    log "We have a fully authorized Request!"
+    # log "We have a fully authorized Request!"
     return
 
