@@ -206,10 +206,12 @@ ensureSymbolIsUpToDate = (symbol) ->
     if !endDate? 
         console.error("@#{symbol} we need to repair the endDate...")
         dateObj = new Date(storeObj.meta.startDate + "T01:01:01.000Z")
-        dateObj.setUTCDate(dateObj.getUTCDate() + storeObj.data.length)
+        dateObj.setUTCDate(dateObj.getUTCDate() + storeObj.data.length - 1)
         endDate = dateObj.toISOString().slice(0,10)
         log "Repaired endDate to: #{endDate}"
-        storeObj.endDate = endDate
+        storeObj.meta.endDate = endDate
+        endDateRepaired = true
+    else endDateRepaired = false
 
     missingDates = getMissingDates(endDate)
     # log missingDates
@@ -237,6 +239,7 @@ ensureSymbolIsUpToDate = (symbol) ->
 
     if missingDates.length <= 0 #
         log "nothing to update!"
+        if endDateRepaired then store.save(id, storeObj)
         return
 
     lastDataPoint = storeObj.data[storeObj.data.length - 1]
