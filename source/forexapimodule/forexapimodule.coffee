@@ -198,12 +198,19 @@ ensureSymbolIsUpToDate = (symbol) ->
     storeObj = store.load(id)
     log "loaded #{id}"
 
-    if !storeObj? or !storeObj.meta?
-        bs.report("@ensureSymbolIsUpToDate: no History for #{symbol}!")
+    if !storeObj? or !storeObj.meta? or !storeObj.meta.startDate? or !storeObj.data?
+        bs.report("@ensureSymbolIsUpToDate: storeObj broken for #{symbol}!")
         return
 
     endDate = storeObj.meta.endDate
-
+    if !endDate? 
+        console.error("@#{symbol} we need to repair the endDate...")
+        dateObj = new Date(storeObj.meta.startDate + "T01:01:01.000Z")
+        dateObj.setUTCDate(dateObj.getUTCDate() + storeObj.data.length)
+        endDate = dateObj.toISOString().slice(0,10)
+        log "Repaired endDate to: #{endDate}"
+        storeObj.endDate = endDate
+         
     missingDates = getMissingDates(endDate)
     # log missingDates
 
