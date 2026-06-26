@@ -68,6 +68,7 @@ heartbeat = ->
         catch err then bs.report("@forexapimodule.heartbeat: ensureSymbolIsUpToDate(#{symbol}) failed: #{err.messsage}")
     
     heartbeatRunning = false
+    log "heartbeat finished!"
     return
 
 ############################################################
@@ -191,7 +192,7 @@ getMissingDates = (lastDate) ->
 
 ############################################################
 ensureSymbolIsUpToDate = (symbol) ->
-    # log "ensureSymbolIsUpToDate"
+    log "ensureSymbolIsUpToDate"
     id = toStorageId(symbol)
     storeObj = store.load(id)
     
@@ -206,11 +207,12 @@ ensureSymbolIsUpToDate = (symbol) ->
 
     results = []
     for date in missingDates
+        log "requesting Daily Data @#{(new Date()).toISOString()}"
         try results.push(await requestDailyData(symbol, date))
         catch err
             bs.report("@ensureSymbolIsUpToDate: requestDailyData failed: #{err.message}")
             results.push(null)
-        await waitMS(500)
+        await waitMS(1700)
 
     # missingDates = [ "2026-05-21" ]
     # results = [[ 0.9852962562, 0.9801044071, 0.9827207872 ]]
@@ -218,7 +220,8 @@ ensureSymbolIsUpToDate = (symbol) ->
 
     idx = results.length
     while --idx ## cut off trailing nulls
-        if !Array.isArray(results[idx])
+        if !Array.isArray(results[idx]) and idx >= 0
+            log "cutting off #{idx}"
             results.pop()
             missingDates.pop()
         else break
