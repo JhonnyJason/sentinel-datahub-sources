@@ -8,7 +8,7 @@ modulesToDebug = {
     # commoditydatamodule: true
     # datamodule: true
     # datasci: true
-    # forexapimodule: true
+    forexapimodule: true
     # livefeedmodule: true
     # marketstackmodule: true
     # scimodule: true
