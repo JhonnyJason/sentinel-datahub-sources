@@ -433,7 +433,8 @@ export getData = (name, yearsBack) ->
     if isCommodityName(name) then dataSet = getCommodityData(name)
     else if isForexPair(name) then dataSet = getForexPairData(name)
     else dataSet = await getStockData(name)
-
-    return sliceByYears(dataSet, yearsBack)
+    result = sliceByYears(dataSet, yearsBack)
+    olog result.meta
+    return result
 
 #endregion
