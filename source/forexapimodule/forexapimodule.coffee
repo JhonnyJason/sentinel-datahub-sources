@@ -194,8 +194,10 @@ getMissingDates = (lastDate) ->
 ensureSymbolIsUpToDate = (symbol) ->
     log "ensureSymbolIsUpToDate"
     id = toStorageId(symbol)
+    log "before loading #{id}"
     storeObj = store.load(id)
-    
+    log "loaded #{id}"
+
     if !storeObj? or !storeObj.meta?
         bs.report("@ensureSymbolIsUpToDate: no History for #{symbol}!")
         return
@@ -235,7 +237,9 @@ ensureSymbolIsUpToDate = (symbol) ->
         storeObj.data.push(hlc)
 
     storeObj.meta.endDate = missingDates[missingDates.length - 1]
+    log "before saving #{id}"
     store.save(id, storeObj)
+    log "saved #{id}"
     return
 
 
