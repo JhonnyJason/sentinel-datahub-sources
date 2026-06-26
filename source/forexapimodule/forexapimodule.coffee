@@ -210,7 +210,7 @@ ensureSymbolIsUpToDate = (symbol) ->
         endDate = dateObj.toISOString().slice(0,10)
         log "Repaired endDate to: #{endDate}"
         storeObj.endDate = endDate
-         
+
     missingDates = getMissingDates(endDate)
     # log missingDates
 
@@ -234,7 +234,11 @@ ensureSymbolIsUpToDate = (symbol) ->
             results.pop()
             missingDates.pop()
         else break
-    
+
+    if missingDates.length <= 0 #
+        log "nothing to update!"
+        return
+
     lastDataPoint = storeObj.data[storeObj.data.length - 1]
     lastClose = lastDataPoint[lastDataPoint.length - 1]
 
