@@ -49,7 +49,7 @@ export initialize = (c) ->
 export startCommodityDataHeartbeat = ->
     log "startForexDataHeartbeat"
     setInterval(heartbeat, heartbeatMS)
-    heartbeat() ## just for testing... no need to start it immediately
+    # heartbeat() ## just for testing... no need to start it immediately
     return
 
 ############################################################

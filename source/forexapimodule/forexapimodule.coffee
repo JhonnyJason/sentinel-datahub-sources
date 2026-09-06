@@ -55,18 +55,24 @@ export startForexDataHeartbeat = ->
 ############################################################
 heartbeat = ->
     log "heartbeat"
-
-    try await retrieveAllLiveData()
-    catch err then bs.report("@forexapimodule.heartbeat: retrieveAllLiveData() failed: #{err.messsage}")
-
     if heartbeatRunning then return
     heartbeatRunning = true
 
+    try await retrieveAllLiveData()
+    catch err then bs.report("@forexapimodule.heartbeat: retrieveAllLiveData() failed: #{err.messsage}")
+    
+    # log "finished retrieveAllLiveData - no more test for now..."
+    # return
+
+
     for symbol in forexSymbols
-        await waitMS(32000)
+        # await waitMS(32000)
         try await ensureSymbolIsUpToDate(symbol)
         catch err then bs.report("@forexapimodule.heartbeat: ensureSymbolIsUpToDate(#{symbol}) failed: #{err.messsage}")
-    
+
+    # log "finished ensureSymbolIsUpToDate (for all symbols) - no more test for now..."
+    # return
+
     heartbeatRunning = false
     log "heartbeat finished!"
     return
@@ -79,7 +85,6 @@ retrieveAllLiveData = ->
     try await updateLiveData(allCurrencies)
     catch err then bs.report("@retrieveAllLiveData: updateLiveData failed: #{err.message}")
     return
-
 
 ############################################################
 digestLiveDataResponse = (obj) ->
@@ -146,9 +151,9 @@ digestResponse = (obj) ->
     #     }
     # }
 
-    # olog obj
-    # tsDate = new Date(obj.timestamp * 1000)
-    # log tsDate.toISOString()
+    olog obj
+    tsDate = new Date(obj.timestamp * 1000)
+    log tsDate.toISOString()
     return [ obj.rate.high, obj.rate.low, obj.rate.close ]
 
 ############################################################
@@ -202,9 +207,12 @@ ensureSymbolIsUpToDate = (symbol) ->
         bs.report("@ensureSymbolIsUpToDate: storeObj broken for #{symbol}!")
         return
 
+    try cleanupForexStoreObj(storeObj)
+    catch err then bs.report("@ensureSymbolIsUpToDate: Error in cleaning storeObj for #{symbol}!")
+
     endDate = storeObj.meta.endDate
-    if !endDate? 
-        console.error("@#{symbol} we need to repair the endDate...")
+    if !endDate?
+        log "@#{symbol} we need to repair the endDate..."
         dateObj = new Date(storeObj.meta.startDate + "T01:01:01.000Z")
         dateObj.setUTCDate(dateObj.getUTCDate() + storeObj.data.length - 1)
         endDate = dateObj.toISOString().slice(0,10)
@@ -215,10 +223,15 @@ ensureSymbolIsUpToDate = (symbol) ->
 
     missingDates = getMissingDates(endDate)
     # log missingDates
+    # missingDates = ["2026-08-24","2026-08-23", "2026-08-22", "2026-08-21", "2026-08-20", "2026-08-19", "2026-08-18", "2026-08-17" ]
+    # log "set missing dates to: "+ missingDates
+
+    # log "we donot do anythning now!"
+    # return
 
     results = []
     for date in missingDates
-        log "requesting Daily Data @#{(new Date()).toISOString()}"
+        # log "requesting Daily Data @#{(new Date()).toISOString()}"
         try results.push(await requestDailyData(symbol, date))
         catch err
             bs.report("@ensureSymbolIsUpToDate: requestDailyData failed: #{err.message}")
@@ -229,18 +242,26 @@ ensureSymbolIsUpToDate = (symbol) ->
     # results = [[ 0.9852962562, 0.9801044071, 0.9827207872 ]]
     # olog { missingDates, results }
 
-    idx = results.length
-    while --idx ## cut off trailing nulls
-        if !Array.isArray(results[idx]) and idx >= 0
-            log "cutting off #{idx}"
+    # displayObj = Object.create(null)
+    # displayObj[date] = ""+results[i] for date,i in missingDates
+
+    # olog displayObj
+
+    # log "we donot do any sorting in for now!"
+    # return
+    # if missingDates.length != results.length then throw new Error("Misalignment of missingDates vs results occured -> length is not equal!")
+
+    ## cut off trailing nulls
+    while results.length > 0 and !Array.isArray(results[results.length - 1])        
+            log "cutting off #{results.length - 1}"
             results.pop()
             missingDates.pop()
-        else break
 
     if missingDates.length <= 0 #
         log "nothing to update!"
         if endDateRepaired then store.save(id, storeObj)
         return
+
 
     lastDataPoint = storeObj.data[storeObj.data.length - 1]
     lastClose = lastDataPoint[lastDataPoint.length - 1]
@@ -251,7 +272,7 @@ ensureSymbolIsUpToDate = (symbol) ->
         storeObj.data.push(hlc)
 
     storeObj.meta.endDate = missingDates[missingDates.length - 1]
-    log "before saving #{id}"
+    # log "before saving #{id}"
     store.save(id, storeObj)
     log "saved #{id}"
     return
@@ -277,3 +298,21 @@ getLiveDataQueryURL = (currencies) ->
     params.set("api_key", apiKey)
     params.set("currencies", currencies)
     return url+"?"+params.toString()
+
+
+############################################################
+cleanupForexStoreObj = (storeObj) ->
+    data = storeObj.data
+    ## if we have a number type, then we already cleaned up here
+    dp0 = data[0]
+    if typeof dp0[0] == "number" then return
+
+    cleanData = []
+    for dp in data 
+        if typeof dp[0] == "string" then cleanData.push(dp.map((v) -> parseFloat(v)))
+        else break
+    
+    storeObj.data = cleanData
+    storeObj.meta.endDate = null
+    return
+

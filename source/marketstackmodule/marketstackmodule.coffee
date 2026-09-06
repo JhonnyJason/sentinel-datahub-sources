@@ -172,11 +172,11 @@ liveDataEODRefresh = ->
 export startLiveDataHeartbeat = ->
     log "startLiveDataHeartbeat"
     # for live data retrieval
-    liveDataHeartbeat()
+    # liveDataHeartbeat()
     setInterval(liveDataHeartbeat, liveDataHeartbeatMS)
 
     # best Effort keeping EOD data up to date :-)
-    liveDataEODRefresh()
+    # liveDataEODRefresh()
     setInterval(liveDataEODRefresh, liveDataEODRefreshMS)
     return
 

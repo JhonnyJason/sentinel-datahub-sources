@@ -21,7 +21,7 @@ export serviceStartup = ->
     # startCommodityDataHeartbeat() # not fully tested yet! not for now!
 
     startForexDataHeartbeat()
-    startLiveDataHeartbeat()
+    # startLiveDataHeartbeat()
     await prepareAndExpose()
     
 
