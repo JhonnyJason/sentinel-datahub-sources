@@ -20,21 +20,23 @@ ttlNonce = 600_000 # ~ 10 min
 
 ############################################################
 authSchema = {
-    senderId: STRINGHEX64
-    timestamp: NUMBER
-    nonce: NUMBER
     signature: STRINGHEX128
+    nonce: NUMBER
+    timestamp: NUMBER
+    senderId: STRINGHEX64
 }
 validateAuth = createValidator(authSchema)
 
 ############################################################
 nonceToDeathTime = Object.create(null)
-noSigKey = '"\'\\'
+mrkr = '\x1F' ## US Unit Separator - cannot be part of valid JSON string
 
 ############################################################
 export initialize = (c) ->
     log "initialize"
     authorizedPubKey = c.accessManagerId
+    log authorizedPubKey
+
     setInterval(removeDeadNonces, ttlNonce) 
     return
 
@@ -48,27 +50,31 @@ removeDeadNonces = ->
 ############################################################
 export signatureAuth = (req, ctx) ->
     log "signatureAuth"
-    # olog ctx
+    olog ctx
     
     ## check if client host relationthip is seemingly abusive
     ip = ctx.meta.ip
     host = ctx.meta.host
     err = isBlocked(ip, host)
     if err then return "Client Blocked!"
-    
+    # log "is not blocked!"
+
     ## check if the shape of the auth Object fits
     err = validateAuth(ctx.auth)
     if err then return "Invalid Auth Object!"
+    # log "auth object is valid!"
 
     ## check if the request froms from our expected authorized sender
     senderId = ctx.auth.senderId
     if !(senderId == authorizedPubKey) then return "Unauthorized Sender!"
+    # log "senderId is authorized!"
 
     ## check if the timestamp is valid
     timestamp = ctx.auth.timestamp
     err = checkValidity(timestamp)
     if err then return "Invalid Timestamp!"
-
+    # log "timestamp is valid!"
+    
     ## check if nonce had been used already then set it as used
     nonce = ctx.auth.nonce
     if nonceToDeathTime[nonce]? then return "Nonce used already!"
@@ -76,10 +82,11 @@ export signatureAuth = (req, ctx) ->
 
     ## check if we have a valid signature
     sig = ctx.auth.signature
-    signedString = ctx.bodyString.replace(sig, noSigKey)
+    signedString = ctx.bodyString.replace(sig, mrkr)
     isValid = await secUtl.verify(sig, authorizedPubKey, signedString)
     if !isValid then return "Invalid Signature!"
+    # log "signature is valid!"
 
-    # log "We have a fully authorized Request!"
+    log "We have a fully authorized Request!"
     return
 

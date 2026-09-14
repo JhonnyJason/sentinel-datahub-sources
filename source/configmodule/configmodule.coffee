@@ -72,7 +72,10 @@ export liveDataEODRefreshMS = localCfg.liveDataEODRefreshMS ||  3_600_000 # 1h
 export eodRefreshMaxAttempts = localCfg.eodRefreshAttempts || 3
 
 ############################################################
+# local testing: "21e35d83b9960ce67da1b2a132edc99d633cf41336ac591960aa30ad1d958a25"
+# remote testing: "d9475cc24ed55635304a4b1e310dc4200a581c8f7099ab0dfae7cec2dad94fe1"
 export accessManagerId = localCfg.accessManagerId || ""
+
 export snitchSocket = localCfg.snitchSocket || "/run/bugsnitch.sk"
 
 ############################################################
