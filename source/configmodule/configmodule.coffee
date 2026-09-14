@@ -45,7 +45,7 @@ export urlForexAPI = "https://api-eu.forexrateapi.com/v1"
 ############################################################
 export checkAccessMS = localCfg.checkAccessMS || 600_000 # ~10m
 export checkSymbolsMS = localCfg.checkSymbolsMS || 3_600_000 # ~1h
-export checkForexMS = localCfg.checkForexMS || 1_200_000 # ~20m
+export checkForexMS = localCfg.checkForexMS || 800_000 # ~13.33m
 
 export checkCommoditiesMS = localCfg.checkCommoditiesMS || 36_000_000 # ~10h
 
