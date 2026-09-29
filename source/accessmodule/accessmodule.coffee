@@ -19,18 +19,20 @@ export initialize = (c) ->
     return
 
 ############################################################
-export setAccess = ({ authCode, ttlMS }) ->
+export setAccess = ({ authCode, ttlMS, limitedFrom }) ->
     log "setAccess"
     log authCode
     log ttlMS
+    log limitedFrom
 
     deathHappens = () -> unsetAccess(authCode)
 
     handle = authCodeToHandle[authCode]
     if handle? then clearTimeout(handle.deathTimerId)
-    else handle = {}
+    else handle = Object.create(null)
 
-    handle.deathTimerId = setTimeout(deathHappens, ttlMS)    
+    handle.deathTimerId = setTimeout(deathHappens, ttlMS)
+    handle.limitedFrom = limitedFrom
     authCodeToHandle[authCode] = handle
     return
 
@@ -48,6 +50,13 @@ export unsetAccess = (authCode) ->
 ############################################################
 export hasAccess = (authCode) -> 
     log "hasAccess #{authCode}"
-    weHave = authCodeToHandle[authCode]?
-    log "we have accesss: #{weHave}"
-    return weHave
+    handle = authCodeToHandle[authCode]
+    if !handle? then return false
+
+    if handle.limitedFrom == 0 then return true
+    if handle.limitedFrom > Date.now() then return true
+    return false
+    # weHave = ?
+    # if weHave and
+    # log "we have accesss: #{weHave}"
+    # return weHave

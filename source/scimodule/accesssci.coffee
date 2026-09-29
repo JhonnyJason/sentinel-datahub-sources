@@ -49,7 +49,8 @@ sciAdd("grantAccess", setAccess, {
     authOption: signatureAuth,
     argsSchema: {
         authCode: STRINGHEX32,
-        ttlMS: NUMBER
+        ttlMS: NUMBER,
+        limitedFrom: NUMBER
     }
     # resultSchema: ""
 })
